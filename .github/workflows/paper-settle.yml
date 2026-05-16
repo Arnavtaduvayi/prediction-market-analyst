@@ -1,0 +1,41 @@
+name: Paper Trading — Daily Settle
+
+on:
+  schedule:
+    # 01:23 UTC = 9:23 PM EDT (prev day) / 6:23 PM PDT (prev day)
+    - cron: '23 1 * * *'
+  workflow_dispatch: {}
+
+jobs:
+  settle:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests cryptography
+
+      - name: Run settle check
+        run: python3 paper_cross.py settle
+        continue-on-error: true
+
+      - name: Show status
+        run: python3 paper_cross.py status
+
+      - name: Commit journal updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add paper_cross_trades.json
+          if ! git diff --staged --quiet; then
+            git commit -m "paper: settle $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          else
+            echo "No journal changes to commit."
+          fi

@@ -1,0 +1,41 @@
+name: Paper Trading — Daily Signal Capture
+
+on:
+  schedule:
+    # 13:17 UTC = 9:17 AM EDT / 6:17 AM PDT
+    - cron: '17 13 * * *'
+  workflow_dispatch: {}
+
+jobs:
+  signal:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests cryptography
+
+      - name: Run signal capture
+        run: python3 paper_cross.py signal
+        continue-on-error: true
+
+      - name: Show status
+        run: python3 paper_cross.py status
+
+      - name: Commit journal updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add paper_cross_trades.json
+          if ! git diff --staged --quiet; then
+            git commit -m "paper: daily signal capture $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          else
+            echo "No journal changes to commit."
+          fi
