@@ -5,6 +5,9 @@ __pycache__/
 .venv/
 venv/
 *.json.enc
+*.pem
+keys/
 signals.json
+paper_trades.json
 *.log
 .DS_Store
