@@ -1,7 +1,7 @@
 {
   "started": "2026-05-16T19:16:48.401618+00:00",
   "initial_bankroll": 51.0,
-  "bankroll": 40.25,
+  "bankroll": 51.25,
   "trades": [
     {
       "logged_at": "2026-05-16T19:21:38.603234+00:00",
@@ -19,10 +19,10 @@
       "divergence_at_entry": 0.28,
       "poly_trader_count": 3,
       "match_score": 0.364,
-      "status": "open",
-      "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null
+      "status": "settled",
+      "resolved_yes": false,
+      "pnl": 2.55,
+      "settled_at": "2026-05-17T05:01:44.809651+00:00"
     },
     {
       "logged_at": "2026-05-16T19:21:38.603946+00:00",
@@ -82,10 +82,10 @@
       "divergence_at_entry": -0.34,
       "poly_trader_count": 2,
       "match_score": 0.438,
-      "status": "open",
-      "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null
+      "status": "settled",
+      "resolved_yes": false,
+      "pnl": 0.78,
+      "settled_at": "2026-05-17T05:01:45.484325+00:00"
     },
     {
       "logged_at": "2026-05-16T19:39:36.898363+00:00",
@@ -103,10 +103,10 @@
       "divergence_at_entry": -0.23,
       "poly_trader_count": 2,
       "match_score": 0.533,
-      "status": "open",
-      "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null
+      "status": "settled",
+      "resolved_yes": false,
+      "pnl": 1.11,
+      "settled_at": "2026-05-17T05:01:45.726605+00:00"
     }
   ]
 }
