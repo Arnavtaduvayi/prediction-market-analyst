@@ -297,6 +297,34 @@ def cmd_status(json_output: bool = False):
 
 # ── Main ───────────────────────────────────────────────────────────────────────
 
+def cmd_cancel(reason: str = "matcher-bug"):
+    """
+    Void all currently open paper trades, refunding their cost to bankroll.
+    Use after fixing matcher bugs that caused bad entries.
+    Settled trades are untouched.
+    """
+    data = load_journal()
+    open_trades = [t for t in data["trades"] if t["status"] == "open"]
+
+    if not open_trades:
+        print("No open trades to cancel.")
+        return
+
+    refunded = 0.0
+    for t in open_trades:
+        t["status"] = "cancelled"
+        t["cancelled_at"] = datetime.now(timezone.utc).isoformat()
+        t["cancel_reason"] = reason
+        t["pnl"] = 0.0
+        refunded += t["cost"]
+        data["bankroll"] += t["cost"]
+        print(f"  CANCELLED: {t['kalshi_ticker']:<40} refund=${t['cost']:.2f}")
+
+    save_journal(data)
+    print(f"\n{len(open_trades)} trades cancelled. ${refunded:.2f} refunded.")
+    print(f"Bankroll now: ${data['bankroll']:.2f}")
+
+
 def main():
     cmd = sys.argv[1] if len(sys.argv) > 1 else "status"
     json_flag = "--json" in sys.argv
@@ -306,8 +334,11 @@ def main():
         cmd_settle()
     elif cmd == "status":
         cmd_status(json_output=json_flag)
+    elif cmd == "cancel":
+        reason = sys.argv[2] if len(sys.argv) > 2 else "manual"
+        cmd_cancel(reason=reason)
     else:
-        print("Usage: paper_cross.py {signal|settle|status [--json]}")
+        print("Usage: paper_cross.py {signal|settle|status [--json]|cancel [reason]}")
         sys.exit(1)
 
 

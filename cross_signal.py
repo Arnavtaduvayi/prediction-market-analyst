@@ -281,6 +281,24 @@ def _extract_proper_nouns(text: str) -> set[str]:
     return {w for w in words if w not in stop}
 
 
+# Generic words that aren't distinctive entity names — must not pass the
+# "team rule" alone. Two markets that share "Prime Minister United Kingdom"
+# are NOT the same market unless they share the specific person/event.
+GENERIC_TITLE_WORDS = {
+    # Sports brackets / event types (shared across many markets)
+    "Finals", "Championship", "Cup", "League", "World", "Tournament",
+    "Open", "Series", "Bowl", "Playoffs", "Conference",
+    # Political / governance boilerplate
+    "Prime", "Minister", "President", "Vice", "Governor", "Senator",
+    "Election", "Senate", "House", "Congress", "Court", "Supreme",
+    "Republican", "Democrat", "Party",
+    # Country / geography that appears in many unrelated markets
+    "United", "Kingdom", "States", "America", "American", "European",
+    # Time / generic
+    "Year", "Day", "Week", "Month", "Quarter", "First", "Second",
+}
+
+
 def find_kalshi_match(
     poly_title: str,
     poly_outcome: str,
@@ -334,19 +352,28 @@ def find_kalshi_match(
             continue
 
         # Require at least 60% of Poly proper nouns to appear in Kalshi text.
-        # This catches "Spurs" → "San Antonio" / "NBA" → "Pro Basketball" aliasing
-        # while still rejecting unrelated markets.
         kalshi_text_lower = full_kalshi.lower()
         if poly_nouns:
             matched_nouns = [n for n in poly_nouns if n.lower() in kalshi_text_lower]
             match_pct = len(matched_nouns) / len(poly_nouns)
             if match_pct < 0.60:
                 continue
-            # Special rule: if Poly mentions a sports league + a team, require team
-            # to appear (so "Spurs NBA Finals" doesn't match "Lakers NBA Finals")
+            # Strict team/entity rule: after removing leagues AND generic words,
+            # at least one DISTINCTIVE proper noun must appear in Kalshi text.
+            # This stops "Wes Streeting" → "Keir Starmer" matching just because
+            # both mention "Prime Minister United Kingdom".
             league_words = {"NBA", "NFL", "MLB", "NHL", "FIFA", "PGA", "WTA", "ATP", "UFC"}
-            team_nouns = poly_nouns - league_words - {"Finals", "Championship", "Cup", "League", "World"}
-            if team_nouns and not any(t.lower() in kalshi_text_lower for t in team_nouns):
+            distinctive = poly_nouns - league_words - GENERIC_TITLE_WORDS
+            if distinctive and not any(d.lower() in kalshi_text_lower for d in distinctive):
+                continue
+
+        # Draw-market mismatch: if Poly asks about a DRAW outcome but Kalshi
+        # is a binary "Winner" market with no draw option, reject the match.
+        poly_lower = poly_title.lower()
+        poly_is_draw = "draw" in poly_lower or "tie" in poly_lower or "end in a" in poly_lower
+        if poly_is_draw:
+            kalshi_has_draw = ("draw" in kalshi_text_lower or "tie" in kalshi_text_lower)
+            if not kalshi_has_draw:
                 continue
 
         # Require category match: if Poly has NBA, Kalshi must have NBA-related word in ticker or text
@@ -383,6 +410,12 @@ class CrossSignal:
     kalshi_rules: str
     divergence: float              # poly_current - kalshi_mid (positive = Kalshi cheap)
     side: str                      # "yes" or "no" on Kalshi
+
+
+# Max plausible divergence for same-event arbitrage. Academic studies show
+# sustained Polymarket-Kalshi gaps top out around 7% (and one-time spikes ~15%).
+# Anything above this is almost certainly a bad match.
+MAX_PLAUSIBLE_DIVERGENCE = 0.25
 
 
 def build_cross_signals(
@@ -427,16 +460,49 @@ def build_cross_signals(
 
             kalshi_mid = (bid + ask) / 2
 
-            # Determine which side to trade on Kalshi.
-            # poly_price is for the SPECIFIC outcome top traders bought on Polymarket.
-            # If they bought YES @ 0.65, poly_price = 0.65 → compare to Kalshi YES.
-            # If they bought NO @ 0.77, poly_price = 0.77 → compare to Kalshi NO (= 1 - kalshi_yes_mid).
-            if outcome.lower() in ("yes", "true", "1"):
-                divergence = poly_price - kalshi_mid
+            # Step 1: Translate the Polymarket position into an equivalent
+            # "Polymarket implied YES probability" for the Kalshi market.
+            outcome_lower = outcome.lower().strip()
+            kalshi_yes_sub = (km.get("yes_sub_title") or "").lower()
+            kalshi_no_sub = (km.get("no_sub_title") or "").lower()
+            kalshi_title_lower = km.get("title", "").lower()
+
+            poly_implied_yes: float | None = None
+
+            if outcome_lower in ("yes", "true", "1"):
+                poly_implied_yes = poly_price
+            elif outcome_lower in ("no", "false", "0"):
+                poly_implied_yes = 1.0 - poly_price
+            else:
+                # Entity outcome (player/team name) — figure out which Kalshi side it maps to.
+                outcome_words = [w for w in outcome.split() if len(w) > 2]
+                yes_hits = sum(1 for w in outcome_words if w.lower() in kalshi_yes_sub)
+                no_hits = sum(1 for w in outcome_words if w.lower() in kalshi_no_sub)
+
+                if yes_hits > no_hits and yes_hits > 0:
+                    poly_implied_yes = poly_price
+                elif no_hits > yes_hits and no_hits > 0:
+                    poly_implied_yes = 1.0 - poly_price
+                else:
+                    title_hits = sum(1 for w in outcome_words if w.lower() in kalshi_title_lower)
+                    if title_hits > 0:
+                        poly_implied_yes = poly_price
+                    else:
+                        continue  # can't determine which Kalshi side
+
+            # Step 2: Pick the side based on which is mispriced.
+            # If Polymarket says YES is more likely than Kalshi, Kalshi YES is too cheap → buy YES.
+            # If Polymarket says YES is less likely than Kalshi, Kalshi YES is too rich → buy NO.
+            divergence = poly_implied_yes - kalshi_mid
+
+            # Sanity check: same-event divergences > 25% are almost always bad matches
+            # (different markets that share keywords but aren't actually equivalent).
+            if abs(divergence) > MAX_PLAUSIBLE_DIVERGENCE:
+                continue
+
+            if divergence > 0:
                 side = "yes"
             else:
-                kalshi_no_mid = 1.0 - kalshi_mid
-                divergence = poly_price - kalshi_no_mid
                 side = "no"
 
             if abs(divergence) < min_divergence:
@@ -463,7 +529,18 @@ def build_cross_signals(
             ))
 
     results.sort(key=lambda s: abs(s.divergence), reverse=True)
-    return results
+
+    # Deduplicate: never bet two sides of the same Kalshi event.
+    # Ticker format: KXMLBGAME-26MAY171215MIATB-MIA → event = KXMLBGAME-26MAY171215MIATB
+    seen_events: set[str] = set()
+    deduped: list[CrossSignal] = []
+    for s in results:
+        event_key = "-".join(s.kalshi_ticker.split("-")[:-1])
+        if event_key in seen_events:
+            continue
+        seen_events.add(event_key)
+        deduped.append(s)
+    return deduped
 
 
 # ── Output ─────────────────────────────────────────────────────────────────────
