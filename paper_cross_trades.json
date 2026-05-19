@@ -1,7 +1,7 @@
 {
   "started": "2026-05-16T19:16:48.401618+00:00",
   "initial_bankroll": 51.0,
-  "bankroll": 50.56,
+  "bankroll": 46.09,
   "trades": [
     {
       "logged_at": "2026-05-16T19:21:38.603234+00:00",
@@ -404,6 +404,48 @@
       "resolved_yes": true,
       "pnl": 0.1,
       "settled_at": "2026-05-18T05:17:53.829798+00:00"
+    },
+    {
+      "logged_at": "2026-05-19T13:33:59.871659+00:00",
+      "kalshi_ticker": "KXMLBF5-26MAY191840BALTB-TB",
+      "kalshi_title": "Baltimore vs Tampa Bay first 5 innings winner?",
+      "poly_title": "Baltimore Orioles vs. Tampa Bay Rays",
+      "poly_slug": "mlb-bal-tb-2026-05-18",
+      "poly_outcome": "Tampa Bay Rays",
+      "side": "yes",
+      "contracts": 5,
+      "entry_price": 0.47,
+      "cost": 2.35,
+      "poly_price_at_entry": 0.6562088450941017,
+      "kalshi_yes_mid_at_entry": 0.465,
+      "divergence_at_entry": 0.1912,
+      "poly_trader_count": 2,
+      "match_score": 0.364,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null
+    },
+    {
+      "logged_at": "2026-05-19T13:33:59.871715+00:00",
+      "kalshi_ticker": "KXMLBGAME-26MAY191840BALTB-TB",
+      "kalshi_title": "Baltimore vs Tampa Bay Winner?",
+      "poly_title": "Baltimore Orioles vs. Tampa Bay Rays",
+      "poly_slug": "mlb-bal-tb-2026-05-18",
+      "poly_outcome": "Tampa Bay Rays",
+      "side": "yes",
+      "contracts": 4,
+      "entry_price": 0.53,
+      "cost": 2.12,
+      "poly_price_at_entry": 0.6562088450941017,
+      "kalshi_yes_mid_at_entry": 0.525,
+      "divergence_at_entry": 0.1312,
+      "poly_trader_count": 2,
+      "match_score": 0.571,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null
     }
   ]
 }
