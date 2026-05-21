@@ -1,0 +1,20 @@
+[Unit]
+Description=Prediction Market — Executor Agent
+After=predmkt-brain.service network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=predmkt
+Group=predmkt
+WorkingDirectory=/opt/predmkt
+Environment="PYTHONUNBUFFERED=1"
+ExecStart=/opt/predmkt/.venv/bin/python /opt/predmkt/executor.py --loop --interval 420
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=predmkt-executor
+
+[Install]
+WantedBy=multi-user.target

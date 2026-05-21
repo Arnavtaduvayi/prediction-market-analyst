@@ -1,0 +1,14 @@
+[Unit]
+Description=Prediction Market — Weekly Target Refresh
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=predmkt
+Group=predmkt
+WorkingDirectory=/opt/predmkt
+Environment="PYTHONUNBUFFERED=1"
+ExecStart=/opt/predmkt/.venv/bin/python /opt/predmkt/targets.py --candidates 150
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=predmkt-targets

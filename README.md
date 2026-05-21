@@ -81,15 +81,33 @@ python3 paper_cross.py status
 python3 paper_cross.py cancel reason-here
 ```
 
-## GitHub Actions
+## Production deployment — VPS (recommended)
 
-Three workflows run the entire bot in the cloud — your laptop can be off:
+**See [docs/VPS.md](docs/VPS.md) for the full 10-minute deploy.**
 
-| Workflow | Schedule | Purpose |
+One command on a fresh Ubuntu VPS sets up 4 long-running systemd services
+that mirror the LunarResearcher architecture exactly:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Arnavtaduvayi/prediction-market-analyst/main/scripts/deploy.sh | sudo bash
+```
+
+| Service | Interval | Purpose |
 |---|---|---|
-| `paper-targets.yml` | Sundays 12:37 UTC | Weekly whale list refresh |
-| `paper-signal.yml` | Daily 13:17 UTC | scanner → brain → executor |
-| `paper-exit.yml` | Hourly :23 | Check exit triggers + settle |
+| `predmkt-scanner` | 300s | Score Kalshi markets |
+| `predmkt-brain` | 360s | Evaluate survivors |
+| `predmkt-executor` | 420s | Consensus + Kelly sizing |
+| `predmkt-exit` | **60s** | Catch volume spikes / targets in near-real-time |
+| `predmkt-targets.timer` | weekly | Refresh whale list |
+| `predmkt-commit.timer` | hourly | Push journal state to GitHub |
+
+Total cost: **$5/month** (Hetzner CX22).
+
+## GitHub Actions (fallback / manual override)
+
+Workflows still exist but `schedule` triggers are disabled — only manual
+`workflow_dispatch` runs. Use these only if not yet on a VPS, or for
+ad-hoc one-off runs.
 
 ## Inspiration / source repos
 

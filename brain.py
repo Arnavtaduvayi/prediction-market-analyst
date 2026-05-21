@@ -253,9 +253,16 @@ def evaluate(market: dict, target_wallets: list[str], since_ts: int) -> dict:
         no_votes = side_votes.count("no")
         side = "yes" if yes_votes > no_votes else "no" if no_votes > yes_votes else None
 
-    # Confidence: 3/4 checks pass AND side has majority
+    # Confidence calculation:
+    #   - 3+ checks pass → standard confidence (0.80-0.95)
+    #   - 2 checks pass with unanimous side agreement → softer entry (0.65-0.75)
+    #   - Otherwise → invalid
+    unanimous = len(set(side_votes)) == 1 if side_votes else False
     if checks_passed >= 3 and side is not None:
-        confidence = 0.50 + 0.10 * checks_passed + (0.05 if len(set(side_votes)) == 1 else 0)
+        confidence = 0.55 + 0.10 * checks_passed + (0.05 if unanimous else 0)
+    elif checks_passed == 2 and side is not None and unanimous:
+        # Two checks passed AND they agreed on direction — moderate-confidence entry
+        confidence = 0.65 + (0.05 if edge.get("net_edge", 0) > 0.05 else 0)
     else:
         confidence = 0.0
 
@@ -274,7 +281,7 @@ def evaluate(market: dict, target_wallets: list[str], since_ts: int) -> dict:
         "whale": whale,
         "disposition": disp,
         "edge_gate": edge,
-        "valid": checks_passed >= 3 and side is not None and confidence >= 0.75,
+        "valid": confidence >= 0.65 and side is not None,
     }
 
 
@@ -334,5 +341,25 @@ def run() -> dict:
     return result
 
 
+def loop(interval_seconds: int = 360):
+    """Continuous mode: run brain every N seconds. Used by systemd."""
+    import sys as _sys
+    print(f"Brain loop starting (interval={interval_seconds}s)", flush=True)
+    while True:
+        try:
+            run()
+        except Exception as e:
+            print(f"  Brain error: {e}", file=_sys.stderr, flush=True)
+        time.sleep(interval_seconds)
+
+
 if __name__ == "__main__":
-    run()
+    import argparse
+    p = argparse.ArgumentParser()
+    p.add_argument("--loop", action="store_true")
+    p.add_argument("--interval", type=int, default=360)
+    args = p.parse_args()
+    if args.loop:
+        loop(args.interval)
+    else:
+        run()

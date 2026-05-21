@@ -1,9 +1,10 @@
 name: Paper Trading — Daily Signal Capture
 
 on:
-  schedule:
-    # 13:17 UTC = 9:17 AM EDT / 6:17 AM PDT
-    - cron: '17 13 * * *'
+  # Schedule disabled — VPS handles continuous monitoring now.
+  # Re-enable by uncommenting the schedule block.
+  # schedule:
+  #   - cron: '17 13 * * *'
   workflow_dispatch: {}
 
 jobs:

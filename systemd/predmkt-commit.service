@@ -1,0 +1,13 @@
+[Unit]
+Description=Prediction Market — Commit Journal Updates to GitHub
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=predmkt
+Group=predmkt
+WorkingDirectory=/opt/predmkt
+ExecStart=/opt/predmkt/scripts/commit_journal.sh
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=predmkt-commit

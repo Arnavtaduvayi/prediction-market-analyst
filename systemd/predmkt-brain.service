@@ -1,0 +1,20 @@
+[Unit]
+Description=Prediction Market — Brain Agent
+After=predmkt-scanner.service network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=predmkt
+Group=predmkt
+WorkingDirectory=/opt/predmkt
+Environment="PYTHONUNBUFFERED=1"
+ExecStart=/opt/predmkt/.venv/bin/python /opt/predmkt/brain.py --loop --interval 360
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=predmkt-brain
+
+[Install]
+WantedBy=multi-user.target

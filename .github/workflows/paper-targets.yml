@@ -1,9 +1,9 @@
 name: Paper Trading — Weekly Target Refresh
 
 on:
-  schedule:
-    # Sundays at 12:37 UTC — refresh the whale target list weekly
-    - cron: '37 12 * * 0'
+  # Schedule disabled — VPS predmkt-targets.timer handles weekly refresh.
+  # schedule:
+  #   - cron: '37 12 * * 0'
   workflow_dispatch: {}
 
 jobs:

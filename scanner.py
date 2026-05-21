@@ -32,12 +32,14 @@ POLY_GAMMA = "https://gamma-api.polymarket.com"
 QUEUE_FILE = Path(__file__).parent / "data" / "queue.json"
 TARGETS_FILE = Path(__file__).parent / "data" / "targets.json"
 
-# Scanner thresholds (from the methodology)
-MIN_GAP = 0.07              # 7% min price gap
-MIN_DEPTH_USD = 500.0       # $500 on each side of book
-MIN_HOURS = 4               # at least 4h to resolution
+# Scanner thresholds — calibrated for ~10 trades/day at $51 bankroll.
+# Lowered from guide defaults because Kalshi has less liquidity than Polymarket;
+# strict thresholds (per-side $500 depth, $10k volume) leave us with 9 markets/day.
+MIN_GAP = 0.05              # 5% min price gap (was 7%)
+MIN_DEPTH_USD = 200.0       # $200 on each side of book (was $500)
+MIN_HOURS = 2               # at least 2h to resolution (was 4h)
 MAX_HOURS = 168             # at most 7d
-MIN_24H_VOLUME = 10_000     # $10k minimum daily volume
+MIN_24H_VOLUME = 5_000      # $5k minimum daily volume (was $10k)
 
 # Sports tickers to exclude (LunarResearcher killed sports — 52% WR)
 SPORTS_PREFIXES = {
@@ -250,5 +252,25 @@ def scan() -> dict:
     return queue
 
 
+def loop(interval_seconds: int = 300):
+    """Continuous mode: scan every N seconds. Used by systemd service."""
+    import sys as _sys
+    print(f"Scanner loop starting (interval={interval_seconds}s)", flush=True)
+    while True:
+        try:
+            scan()
+        except Exception as e:
+            print(f"  Scanner error: {e}", file=_sys.stderr, flush=True)
+        time.sleep(interval_seconds)
+
+
 if __name__ == "__main__":
-    scan()
+    import argparse
+    p = argparse.ArgumentParser()
+    p.add_argument("--loop", action="store_true", help="Run continuously")
+    p.add_argument("--interval", type=int, default=300, help="Seconds between scans in loop mode")
+    args = p.parse_args()
+    if args.loop:
+        loop(args.interval)
+    else:
+        scan()

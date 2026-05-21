@@ -223,5 +223,25 @@ def run():
     print(f"\n  Bankroll: ${data['bankroll']:.2f}")
 
 
+def loop(interval_seconds: int = 60):
+    """Continuous mode: check exits every N seconds. Critical to react fast."""
+    import sys as _sys
+    print(f"Exit monitor loop starting (interval={interval_seconds}s)", flush=True)
+    while True:
+        try:
+            run()
+        except Exception as e:
+            print(f"  Exit monitor error: {e}", file=_sys.stderr, flush=True)
+        time.sleep(interval_seconds)
+
+
 if __name__ == "__main__":
-    run()
+    import argparse
+    p = argparse.ArgumentParser()
+    p.add_argument("--loop", action="store_true")
+    p.add_argument("--interval", type=int, default=60, help="Seconds between exit checks")
+    args = p.parse_args()
+    if args.loop:
+        loop(args.interval)
+    else:
+        run()

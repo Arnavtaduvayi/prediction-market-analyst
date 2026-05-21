@@ -1,0 +1,10 @@
+[Unit]
+Description=Prediction Market — Commit Journal Every Hour
+
+[Timer]
+OnCalendar=*-*-* *:23:00 UTC
+Persistent=true
+RandomizedDelaySec=60
+
+[Install]
+WantedBy=timers.target

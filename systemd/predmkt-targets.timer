@@ -1,0 +1,11 @@
+[Unit]
+Description=Prediction Market — Weekly Targets Refresh Timer
+
+[Timer]
+# Sundays at 12:37 UTC
+OnCalendar=Sun *-*-* 12:37:00 UTC
+Persistent=true
+RandomizedDelaySec=300
+
+[Install]
+WantedBy=timers.target

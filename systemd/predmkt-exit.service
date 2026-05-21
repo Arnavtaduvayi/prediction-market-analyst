@@ -1,0 +1,21 @@
+[Unit]
+Description=Prediction Market — Exit Monitor
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=predmkt
+Group=predmkt
+WorkingDirectory=/opt/predmkt
+Environment="PYTHONUNBUFFERED=1"
+# 60s polling — critical for catching volume spikes and target hits in real time
+ExecStart=/opt/predmkt/.venv/bin/python /opt/predmkt/exit_monitor.py --loop --interval 60
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=predmkt-exit
+
+[Install]
+WantedBy=multi-user.target

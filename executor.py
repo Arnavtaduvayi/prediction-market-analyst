@@ -183,6 +183,27 @@ def run(dry_run: bool = False) -> dict:
     return {"new_trades": new_trades}
 
 
+def loop(interval_seconds: int = 420, dry_run: bool = False):
+    """Continuous mode: run executor every N seconds."""
+    import sys as _sys, time as _time
+    print(f"Executor loop starting (interval={interval_seconds}s)", flush=True)
+    while True:
+        try:
+            run(dry_run=dry_run)
+        except Exception as e:
+            print(f"  Executor error: {e}", file=_sys.stderr, flush=True)
+        _time.sleep(interval_seconds)
+
+
 if __name__ == "__main__":
     import sys
-    run(dry_run="--dry-run" in sys.argv)
+    import argparse
+    p = argparse.ArgumentParser()
+    p.add_argument("--loop", action="store_true")
+    p.add_argument("--interval", type=int, default=420)
+    p.add_argument("--dry-run", action="store_true")
+    args = p.parse_args()
+    if args.loop:
+        loop(args.interval, dry_run=args.dry_run)
+    else:
+        run(dry_run=args.dry_run)
