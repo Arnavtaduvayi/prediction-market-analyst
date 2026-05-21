@@ -9,5 +9,8 @@ venv/
 keys/
 signals.json
 paper_trades.json
+data/wallet_cache/
+data/queue.json
+data/thesis.json
 *.log
 .DS_Store

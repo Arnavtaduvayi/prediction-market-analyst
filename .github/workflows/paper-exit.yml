@@ -1,0 +1,38 @@
+name: Paper Trading — Exit Monitor (hourly)
+
+on:
+  schedule:
+    # Every hour at minute 23 — checks target-hit, volume-spike, stale-thesis triggers
+    - cron: '23 * * * *'
+  workflow_dispatch: {}
+
+jobs:
+  exit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests cryptography
+
+      - name: Run exit monitor
+        run: python3 paper_cross.py exit
+        continue-on-error: true
+
+      - name: Commit journal updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add paper_cross_trades.json
+          if ! git diff --staged --quiet; then
+            git commit -m "paper: exit check $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          else
+            echo "No journal changes."
+          fi
