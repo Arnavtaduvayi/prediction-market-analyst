@@ -1,7 +1,7 @@
 {
   "started": "2026-05-16T19:16:48.401618+00:00",
   "initial_bankroll": 51.0,
-  "bankroll": 47.970000000000006,
+  "bankroll": 51.970000000000006,
   "trades": [
     {
       "logged_at": "2026-05-16T19:21:38.603234+00:00",
@@ -463,10 +463,10 @@
       "divergence_at_entry": 0.1312,
       "poly_trader_count": 2,
       "match_score": 0.571,
-      "status": "open",
-      "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null
+      "status": "settled",
+      "resolved_yes": true,
+      "pnl": 1.88,
+      "settled_at": "2026-05-21T05:36:59.467923+00:00"
     }
   ]
 }
