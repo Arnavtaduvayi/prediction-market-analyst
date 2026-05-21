@@ -24,7 +24,7 @@ from pathlib import Path
 JOURNAL_FILE = Path(__file__).parent / "paper_cross_trades.json"
 THESIS_FILE = Path(__file__).parent / "data" / "thesis.json"
 
-INITIAL_BANKROLL = 51.0
+INITIAL_BANKROLL = 75.0
 
 # Kelly settings (per LunarResearcher: cap at quarter Kelly)
 KELLY_CAP = 0.25            # never bet more than 25% of bankroll

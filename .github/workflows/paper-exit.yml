@@ -1,9 +1,9 @@
 name: Paper Trading — Exit Monitor (hourly)
 
 on:
-  # Schedule disabled — VPS runs exit_monitor every 60s now.
-  # schedule:
-  #   - cron: '23 * * * *'
+  schedule:
+    # Every hour at :23 — exit triggers + settle resolved markets
+    - cron: '23 * * * *'
   workflow_dispatch: {}
 
 jobs:

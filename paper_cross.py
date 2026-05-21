@@ -21,7 +21,7 @@ from pathlib import Path
 
 JOURNAL_FILE = Path(__file__).parent / "paper_cross_trades.json"
 TARGETS_FILE = Path(__file__).parent / "data" / "targets.json"
-INITIAL_BANKROLL = 51.0
+INITIAL_BANKROLL = 75.0
 
 
 def load_journal() -> dict:
