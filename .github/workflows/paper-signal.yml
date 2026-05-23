@@ -1,9 +1,12 @@
-name: Paper Trading — Daily Signal Capture
+name: Paper Trading — Hourly Signal Capture
 
 on:
   schedule:
-    # 13:17 UTC = 9:17 AM EDT / 6:17 AM PDT — daily signal pipeline
-    - cron: '17 13 * * *'
+    # Hourly at :07 — full pipeline (scanner → brain → executor).
+    # Brain's whale check refetches recent target-wallet trades each run,
+    # so this also gives us hourly whale activity monitoring.
+    # Staggered from exit-monitor at :23 to avoid concurrent commits.
+    - cron: '7 * * * *'
   workflow_dispatch: {}
 
 jobs:

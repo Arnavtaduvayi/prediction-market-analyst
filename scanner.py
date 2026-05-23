@@ -32,14 +32,13 @@ POLY_GAMMA = "https://gamma-api.polymarket.com"
 QUEUE_FILE = Path(__file__).parent / "data" / "queue.json"
 TARGETS_FILE = Path(__file__).parent / "data" / "targets.json"
 
-# Scanner thresholds — calibrated for ~10 trades/day at $51 bankroll.
-# Lowered from guide defaults because Kalshi has less liquidity than Polymarket;
-# strict thresholds (per-side $500 depth, $10k volume) leave us with 9 markets/day.
-MIN_GAP = 0.05              # 5% min price gap (was 7%)
-MIN_DEPTH_USD = 200.0       # $200 on each side of book (was $500)
-MIN_HOURS = 2               # at least 2h to resolution (was 4h)
+# Scanner thresholds — calibrated for ~3-5 trades/day at $75 bankroll.
+# Loosened from guide defaults because Kalshi has less liquidity than Polymarket.
+MIN_GAP = 0.05              # 5% min price gap
+MIN_DEPTH_USD = 100.0       # $100 on each side of book (was $200)
+MIN_HOURS = 2               # at least 2h to resolution
 MAX_HOURS = 168             # at most 7d
-MIN_24H_VOLUME = 5_000      # $5k minimum daily volume (was $10k)
+MIN_24H_VOLUME = 5_000      # $5k minimum daily volume
 
 # Sports tickers to exclude (LunarResearcher killed sports — 52% WR)
 SPORTS_PREFIXES = {

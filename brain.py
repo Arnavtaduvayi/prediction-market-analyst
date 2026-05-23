@@ -281,7 +281,7 @@ def evaluate(market: dict, target_wallets: list[str], since_ts: int) -> dict:
         "whale": whale,
         "disposition": disp,
         "edge_gate": edge,
-        "valid": confidence >= 0.65 and side is not None,
+        "valid": confidence >= 0.55 and side is not None,
     }
 
 
