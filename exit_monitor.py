@@ -26,7 +26,8 @@ from pathlib import Path
 
 import requests
 
-JOURNAL_FILE = Path(__file__).parent / "paper_cross_trades.json"
+WHALE_JOURNAL = Path(__file__).parent / "paper_cross_trades.json"
+DISPOSITION_JOURNAL = Path(__file__).parent / "paper_disposition_trades.json"
 KALSHI_API = "https://api.elections.kalshi.com/trade-api/v2"
 
 # Exit thresholds (from the LunarResearcher methodology)
@@ -54,14 +55,14 @@ def _get(url: str, params: dict = None) -> dict:
     return {}
 
 
-def load_journal() -> dict:
-    if JOURNAL_FILE.exists():
-        return json.loads(JOURNAL_FILE.read_text())
-    return {"started": "", "initial_bankroll": 51.0, "bankroll": 51.0, "trades": []}
+def load_journal(path: Path) -> dict:
+    if path.exists():
+        return json.loads(path.read_text())
+    return {"started": "", "initial_bankroll": 75.0, "bankroll": 75.0, "trades": []}
 
 
-def save_journal(data: dict):
-    JOURNAL_FILE.write_text(json.dumps(data, indent=2, default=str))
+def save_journal(data: dict, path: Path):
+    path.write_text(json.dumps(data, indent=2, default=str))
 
 
 def current_kalshi_state(ticker: str) -> dict:
@@ -109,7 +110,14 @@ def check_exit_triggers(trade: dict, state: dict) -> tuple[str | None, float]:
     """
     Returns (exit_reason, exit_price) or (None, 0.0) if no exit fired.
     exit_price is what we'd sell at (Kalshi YES bid if side=yes, ask-flip if side=no).
+
+    Disposition trades (hold_to_settlement=True) skip all triggers — they only
+    settle when the market resolves.
     """
+    # Disposition strategy holds to settlement — no early exits
+    if trade.get("hold_to_settlement"):
+        return None, 0.0
+
     side = trade["side"]
     yes_mid = state.get("yes_mid")
     if yes_mid is None:
@@ -199,28 +207,33 @@ def settle_or_exit(trade: dict) -> tuple[str, float]:
     return "HOLD", 0.0
 
 
-def run():
-    data = load_journal()
+def process_journal(path: Path, label: str):
+    """Run exit checks for one bot's journal."""
+    data = load_journal(path)
     open_trades = [t for t in data["trades"] if t["status"] == "open"]
 
     if not open_trades:
-        print(f"[{datetime.now().isoformat(timespec='seconds')}] No open trades.")
+        print(f"  [{label}] No open trades.")
         return
 
-    print(f"[{datetime.now().isoformat(timespec='seconds')}] Checking {len(open_trades)} open trades...")
-
+    print(f"  [{label}] Checking {len(open_trades)} open trades...")
     for trade in open_trades:
         action, delta = settle_or_exit(trade)
         if action == "HOLD":
-            print(f"  HOLD       {trade['kalshi_ticker']:<42}")
+            print(f"    [{label}] HOLD       {trade['kalshi_ticker']:<42}")
         else:
             data["bankroll"] += delta
-            print(f"  {action:<10} {trade['kalshi_ticker']:<42} "
+            print(f"    [{label}] {action:<14} {trade['kalshi_ticker']:<42} "
                   f"pnl=${trade.get('pnl', 0):+.2f}  bankroll → ${data['bankroll']:.2f}")
         time.sleep(0.2)
+    save_journal(data, path)
 
-    save_journal(data)
-    print(f"\n  Bankroll: ${data['bankroll']:.2f}")
+
+def run():
+    ts = datetime.now().isoformat(timespec='seconds')
+    print(f"[{ts}] Exit monitor — both bots")
+    process_journal(WHALE_JOURNAL, "whale")
+    process_journal(DISPOSITION_JOURNAL, "disposition")
 
 
 def loop(interval_seconds: int = 60):

@@ -244,14 +244,31 @@ def evaluate(market: dict, target_wallets: list[str], since_ts: int) -> dict:
 
     checks_passed = sum([base["pass"], whale["pass"], disp["pass"], edge["pass"]])
 
-    # Pick side: agreement among the checks that have an opinion
+    # Side selection (fixed: base-rate gets priority when it has strong opinion).
+    # Bug previously: disposition heuristic could outvote a clear Polymarket signal,
+    # producing trades where Kalshi YES is priced 99c but Polymarket implies 65%.
+    base_side = base.get("side_hint")
+    base_gap = abs(base.get("gap") or 0)
     side_votes = [c.get("side_hint") for c in (base, whale, disp) if c.get("side_hint") in ("yes", "no")]
-    if not side_votes:
+
+    if base_side and base_gap >= 0.15:
+        # Polymarket disagrees strongly with Kalshi — that's the signal. Use it.
+        side = base_side
+    elif base_side and whale.get("side_hint") == base_side:
+        # Base rate and whale align — high-confidence signal
+        side = base_side
+    elif not side_votes:
         side = None
     else:
         yes_votes = side_votes.count("yes")
         no_votes = side_votes.count("no")
-        side = "yes" if yes_votes > no_votes else "no" if no_votes > yes_votes else None
+        if yes_votes > no_votes:
+            side = "yes"
+        elif no_votes > yes_votes:
+            side = "no"
+        else:
+            # Tie — fall back to base rate if it has any opinion, else skip
+            side = base_side
 
     # Confidence calculation:
     #   - 3+ checks pass → standard confidence (0.80-0.95)
