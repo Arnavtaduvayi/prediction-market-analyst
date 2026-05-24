@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-05-21T14:23:28.248726+00:00",
+  "generated_at": "2026-05-24T14:17:26.847042+00:00",
   "criteria": {
     "min_trades": 100,
     "min_win_rate": 0.7
   },
-  "n_qualified": 26,
+  "n_qualified": 133,
   "targets": [
     {
       "wallet": "0xc2e7800b5af46e6093872b177b7a5e7f0563be51",
@@ -20,8 +20,8 @@
         "lal"
       ],
       "username": "beachboy4",
-      "leaderboard_pnl": 5101526.340866317,
-      "leaderboard_vol": 221493209.14309102
+      "leaderboard_pnl": 5103513.914609049,
+      "leaderboard_vol": 221493209.143091
     },
     {
       "wallet": "0x56687bf447db6ffa42ffe2204a05edaa20f55839",
@@ -38,7 +38,7 @@
       ],
       "username": "Theo4",
       "leaderboard_pnl": 22053933.752321757,
-      "leaderboard_vol": 43013258.515682
+      "leaderboard_vol": 43013258.515682004
     },
     {
       "wallet": "0x1f2dd6d473f3e824cd2f8a89d9c69fb96f6ad0cf",
@@ -56,6 +56,39 @@
       "username": "Fredi9999",
       "leaderboard_pnl": 16619506.631730152,
       "leaderboard_vol": 76611316.905154
+    },
+    {
+      "wallet": "0x241f846866c2de4fb67cdb0ca6b963d85e56ef50",
+      "n_trades": 3500,
+      "n_closed_positions": 10,
+      "wins": 10,
+      "losses": 0,
+      "win_rate": 1.0,
+      "total_pnl": 17803065.22,
+      "top_categories": [
+        "fed",
+        "the"
+      ],
+      "username": "Pestle",
+      "leaderboard_pnl": 1900079.7486699629,
+      "leaderboard_vol": 187129091.92520702
+    },
+    {
+      "wallet": "0x44c1dfe43260c94ed4f1d00de2e1f80fb113ebc1",
+      "n_trades": 3500,
+      "n_closed_positions": 10,
+      "wins": 10,
+      "losses": 0,
+      "win_rate": 1.0,
+      "total_pnl": 14321613.47,
+      "top_categories": [
+        "israel",
+        "people",
+        "avatar"
+      ],
+      "username": "aenews2",
+      "leaderboard_pnl": 1977272.7471299018,
+      "leaderboard_vol": 220569004.872488
     },
     {
       "wallet": "0xd235973291b2b75ff4070e9c0b01728c520b0f29",
@@ -88,8 +121,8 @@
         "ucl"
       ],
       "username": "432614799197",
-      "leaderboard_pnl": 4526176.046413317,
-      "leaderboard_vol": 185485956.86208296
+      "leaderboard_pnl": 4526176.046413312,
+      "leaderboard_vol": 185485956.86208293
     },
     {
       "wallet": "0x78b9ac44a6d7d7a076c14e0ad518b301b63c6b76",
@@ -106,7 +139,41 @@
       ],
       "username": "Len9311238",
       "leaderboard_pnl": 8709972.988069998,
-      "leaderboard_vol": 16402744.764627
+      "leaderboard_vol": 16402744.764626998
+    },
+    {
+      "wallet": "0x24c8cf69a0e0a17eee21f69d29752bfa32e823e1",
+      "n_trades": 3500,
+      "n_closed_positions": 10,
+      "wins": 10,
+      "losses": 0,
+      "win_rate": 1.0,
+      "total_pnl": 8214156.14,
+      "top_categories": [
+        "next",
+        "us",
+        "who"
+      ],
+      "username": "debased",
+      "leaderboard_pnl": 1480643.4692411574,
+      "leaderboard_vol": 457162065.4626008
+    },
+    {
+      "wallet": "0x5bffcf561bcae83af680ad600cb99f1184d6ffbe",
+      "n_trades": 3500,
+      "n_closed_positions": 10,
+      "wins": 10,
+      "losses": 0,
+      "win_rate": 1.0,
+      "total_pnl": 8050839.53,
+      "top_categories": [
+        "fed",
+        "presidential",
+        "democratic"
+      ],
+      "username": "YatSen",
+      "leaderboard_pnl": 2314191.6890283497,
+      "leaderboard_vol": 342323925.0011539
     },
     {
       "wallet": "0x863134d00841b2e200492805a01e1e2f5defaa53",
@@ -123,7 +190,7 @@
       ],
       "username": "RepTrump",
       "leaderboard_pnl": 7532409.671579,
-      "leaderboard_vol": 13983231.103425002
+      "leaderboard_vol": 13983231.103425
     },
     {
       "wallet": "0x94f199fb7789f1aef7fff6b758d6b375100f4c7a",
@@ -143,6 +210,40 @@
       "leaderboard_vol": 20086062.154324997
     },
     {
+      "wallet": "0x02227b8f5a9636e895607edd3185ed6ee5598ff7",
+      "n_trades": 206,
+      "n_closed_positions": 10,
+      "wins": 10,
+      "losses": 0,
+      "win_rate": 1.0,
+      "total_pnl": 6620271.23,
+      "top_categories": [
+        "ucl",
+        "cdr",
+        "elc"
+      ],
+      "username": "HorizonSplendidView",
+      "leaderboard_pnl": 1991767.5134605914,
+      "leaderboard_vol": 22184124.26408099
+    },
+    {
+      "wallet": "0x36a3f17401e395ef4cb1b7f42bcdb8ab8e15fafb",
+      "n_trades": 335,
+      "n_closed_positions": 10,
+      "wins": 10,
+      "losses": 0,
+      "win_rate": 1.0,
+      "total_pnl": 6576403.07,
+      "top_categories": [
+        "epl",
+        "lal",
+        "atp"
+      ],
+      "username": "gfjoigfsjoigsjoi",
+      "leaderboard_pnl": 2930573.327551775,
+      "leaderboard_vol": 22894560.046664998
+    },
+    {
       "wallet": "0xdb27bf2ac5d428a9c63dbc914611036855a6c56e",
       "n_trades": 1119,
       "n_closed_positions": 10,
@@ -156,8 +257,25 @@
         "nfl"
       ],
       "username": "DrPufferfish",
-      "leaderboard_pnl": 3545152.0865378478,
-      "leaderboard_vol": 248466180.92618102
+      "leaderboard_pnl": 3573801.97309333,
+      "leaderboard_vol": 248466180.92618096
+    },
+    {
+      "wallet": "0x37c1874a60d348903594a96703e0507c518fc53a",
+      "n_trades": 3500,
+      "n_closed_positions": 10,
+      "wins": 10,
+      "losses": 0,
+      "win_rate": 1.0,
+      "total_pnl": 6415875.17,
+      "top_categories": [
+        "nba",
+        "epl",
+        "uel"
+      ],
+      "username": "CemeterySun",
+      "leaderboard_pnl": 1927132.6771167573,
+      "leaderboard_vol": 148678304.557928
     },
     {
       "wallet": "0x9495425feeb0c250accb89275c97587011b19a27",
@@ -173,8 +291,8 @@
         "efa"
       ],
       "username": "LaBradfordSmith22",
-      "leaderboard_pnl": 4322081.029124091,
-      "leaderboard_vol": 87229095.02950701
+      "leaderboard_pnl": 5104569.007441245,
+      "leaderboard_vol": 93904609.22774799
     },
     {
       "wallet": "0x8119010a6e589062aa03583bb3f39ca632d9f887",
@@ -207,7 +325,7 @@
         "epl"
       ],
       "username": "SeriouslySirius",
-      "leaderboard_pnl": 3648171.8070388893,
+      "leaderboard_pnl": 3648171.807038878,
       "leaderboard_vol": 192646024.935228
     },
     {
@@ -224,8 +342,23 @@
         "ufc"
       ],
       "username": "0x2a2C53bD278c04DA9962Fcf96490E17F3DfB9Bc1-1772479215461",
-      "leaderboard_pnl": 4231419.684108592,
-      "leaderboard_vol": 476826628.21783286
+      "leaderboard_pnl": 4218012.945459549,
+      "leaderboard_vol": 476826628.217833
+    },
+    {
+      "wallet": "0x461f3e886dca22e561eee224d283e08b8fb47a07",
+      "n_trades": 2776,
+      "n_closed_positions": 10,
+      "wins": 10,
+      "losses": 0,
+      "win_rate": 1.0,
+      "total_pnl": 5855361.93,
+      "top_categories": [
+        "mlb"
+      ],
+      "username": "HyperLiquid0xb",
+      "leaderboard_pnl": 1496846.9446368003,
+      "leaderboard_vol": 48318876.83294
     },
     {
       "wallet": "0x885783760858e1bd5dd09a3c3f916cfa251ac270",
@@ -242,7 +375,7 @@
       ],
       "username": "BetTom42",
       "leaderboard_pnl": 5642135.735356,
-      "leaderboard_vol": 11212839.523403
+      "leaderboard_vol": 11212839.523403002
     },
     {
       "wallet": "0x6a72f61820b26b1fe4d956e17b6dc2a1ea3033ee",
@@ -258,8 +391,8 @@
         "nfl"
       ],
       "username": "kch123",
-      "leaderboard_pnl": 12547335.030179424,
-      "leaderboard_vol": 290487019.67040104
+      "leaderboard_pnl": 11871316.19101671,
+      "leaderboard_vol": 291998390.24754
     },
     {
       "wallet": "0xe90bec87d9ef430f27f9dcfe72c34b76967d5da2",
@@ -275,7 +408,7 @@
         "ufc"
       ],
       "username": "gmanas",
-      "leaderboard_pnl": 4955880.748692171,
+      "leaderboard_pnl": 4955880.748692166,
       "leaderboard_vol": 529047708.50599104
     },
     {
@@ -297,7 +430,7 @@
     },
     {
       "wallet": "0x006cc834cc092684f1b56626e23bedb3835c16ea",
-      "n_trades": 650,
+      "n_trades": 662,
       "n_closed_positions": 10,
       "wins": 10,
       "losses": 0,
@@ -309,8 +442,8 @@
         "epl"
       ],
       "username": "0x006cc834Cc092684F1B56626E23BEdB3835c16ea-1729683673397",
-      "leaderboard_pnl": 4607528.244921841,
-      "leaderboard_vol": 60683943.825656
+      "leaderboard_pnl": 4559405.134092826,
+      "leaderboard_vol": 60885325.78565598
     },
     {
       "wallet": "0x94a428cfa4f84b264e01f70d93d02bc96cb36356",
@@ -326,25 +459,91 @@
         "presidential"
       ],
       "username": "GCottrell93",
-      "leaderboard_pnl": 3423078.8772487147,
-      "leaderboard_vol": 18003497.34815295
+      "leaderboard_pnl": 3420851.1810322558,
+      "leaderboard_vol": 18003497.348152954
     },
     {
       "wallet": "0x9f2fe025f84839ca81dd8e0338892605702d2ca8",
-      "n_trades": 293,
+      "n_trades": 307,
       "n_closed_positions": 10,
       "wins": 10,
       "losses": 0,
       "win_rate": 1.0,
-      "total_pnl": 4468051.13,
+      "total_pnl": 4640346.78,
       "top_categories": [
         "nba",
-        "ufc",
-        "epl"
+        "ufc"
       ],
       "username": "surfandturf",
-      "leaderboard_pnl": 3869177.021069006,
-      "leaderboard_vol": 45222051.458073
+      "leaderboard_pnl": 3725136.5917017427,
+      "leaderboard_vol": 48525086.653091
+    },
+    {
+      "wallet": "0xbddf61af533ff524d27154e589d2d7a81510c684",
+      "n_trades": 617,
+      "n_closed_positions": 10,
+      "wins": 10,
+      "losses": 0,
+      "win_rate": 1.0,
+      "total_pnl": 4481798.79,
+      "top_categories": [
+        "nba",
+        "epl",
+        "ucl"
+      ],
+      "username": "Countryside",
+      "leaderboard_pnl": 2208742.0741031026,
+      "leaderboard_vol": 292991048.97778606
+    },
+    {
+      "wallet": "0x9d84ce0306f8551e02efef1680475fc0f1dc1344",
+      "n_trades": 3500,
+      "n_closed_positions": 10,
+      "wins": 10,
+      "losses": 0,
+      "win_rate": 1.0,
+      "total_pnl": 4402008.01,
+      "top_categories": [
+        "presidential",
+        "democratic",
+        "who"
+      ],
+      "username": "ImJustKen",
+      "leaderboard_pnl": 3111408.1265496593,
+      "leaderboard_vol": 474649166.3874568
+    },
+    {
+      "wallet": "0x7fb7ad0d194d7123e711e7db6c9d418fac14e33d",
+      "n_trades": 3500,
+      "n_closed_positions": 10,
+      "wins": 10,
+      "losses": 0,
+      "win_rate": 1.0,
+      "total_pnl": 4353738.49,
+      "top_categories": [
+        "mlb",
+        "nfl"
+      ],
+      "username": "0x7fB7Ad0d194D7123e711e7db6C9D418fAc14E33d-1750343282446",
+      "leaderboard_pnl": 2282134.8592162603,
+      "leaderboard_vol": 120653816.22352698
+    },
+    {
+      "wallet": "0xb90494d9a5d8f71f1930b2aa4b599f95c344c255",
+      "n_trades": 550,
+      "n_closed_positions": 10,
+      "wins": 10,
+      "losses": 0,
+      "win_rate": 1.0,
+      "total_pnl": 4206915.19,
+      "top_categories": [
+        "epl",
+        "lal",
+        "uel"
+      ],
+      "username": "Airpods123",
+      "leaderboard_pnl": 1023043.7455307825,
+      "leaderboard_vol": 39993174.55873299
     },
     {
       "wallet": "0x16f91db2592924cfed6e03b7e5cb5bb1e32299e3",
@@ -364,6 +563,53 @@
       "leaderboard_vol": 9457725.034338009
     },
     {
+      "wallet": "0x65e4246d770fd503ea97caa47e84db7fb5aba3bd",
+      "n_trades": 846,
+      "n_closed_positions": 10,
+      "wins": 10,
+      "losses": 0,
+      "win_rate": 1.0,
+      "total_pnl": 4110413.33,
+      "top_categories": [
+        "mlb"
+      ],
+      "username": "0x75dd80d38fa3c36c4b55836eb8cdfbde35f8b19",
+      "leaderboard_pnl": 1475784.2464370003,
+      "leaderboard_vol": 28493251.792303998
+    },
+    {
+      "wallet": "0x7ee1b64be7016b0b0234ab6cabcaa689fd18dae8",
+      "n_trades": 549,
+      "n_closed_positions": 10,
+      "wins": 10,
+      "losses": 0,
+      "win_rate": 1.0,
+      "total_pnl": 3968041.38,
+      "top_categories": [
+        "mlb"
+      ],
+      "username": "0x9982F8D01f0b1A746d4e9b50Bd-c8c5C5Ff268a5",
+      "leaderboard_pnl": 1189928.5860140007,
+      "leaderboard_vol": 23095757.228261
+    },
+    {
+      "wallet": "0x0b9cae2b0dfe7a71c413e0604eaac1c352f87e44",
+      "n_trades": 3500,
+      "n_closed_positions": 10,
+      "wins": 10,
+      "losses": 0,
+      "win_rate": 1.0,
+      "total_pnl": 3937143.12,
+      "top_categories": [
+        "ucl",
+        "nfl",
+        "cbb"
+      ],
+      "username": "geniusMC",
+      "leaderboard_pnl": 2168193.491371261,
+      "leaderboard_vol": 98394292.871576
+    },
+    {
       "wallet": "0x14964aefa2cd7caff7878b3820a690a03c5aa429",
       "n_trades": 1831,
       "n_closed_positions": 10,
@@ -377,8 +623,8 @@
         "boxing"
       ],
       "username": "gmpm",
-      "leaderboard_pnl": 3603036.6456839014,
-      "leaderboard_vol": 85100130.830447
+      "leaderboard_pnl": 3623844.7179779382,
+      "leaderboard_vol": 85100130.83044702
     },
     {
       "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
@@ -394,59 +640,203 @@
         "ucl"
       ],
       "username": "swisstony",
-      "leaderboard_pnl": 8720128.506577684,
-      "leaderboard_vol": 796788033.0751112
+      "leaderboard_pnl": 8863769.229081351,
+      "leaderboard_vol": 808544081.1780732
     },
     {
-      "wallet": "0x507e52ef684ca2dd91f90a9d26d149dd3288beae",
+      "wallet": "0x03e8a544e97eeff5753bc1e90d46e5ef22af1697",
+      "n_trades": 1318,
+      "n_closed_positions": 10,
+      "wins": 10,
+      "losses": 0,
+      "win_rate": 1.0,
+      "total_pnl": 3183108.7,
+      "top_categories": [
+        "nhl",
+        "nba"
+      ],
+      "username": "weflyhigh",
+      "leaderboard_pnl": 1291554.7755304794,
+      "leaderboard_vol": 120443915.51792596
+    },
+    {
+      "wallet": "0x17db3fcd93ba12d38382a0cade24b200185c5f6d",
+      "n_trades": 390,
+      "n_closed_positions": 10,
+      "wins": 10,
+      "losses": 0,
+      "win_rate": 1.0,
+      "total_pnl": 3157171.71,
+      "top_categories": [
+        "lol",
+        "nba"
+      ],
+      "username": "fengdubiying",
+      "leaderboard_pnl": 3133968.2010023133,
+      "leaderboard_vol": 17303665.903119992
+    },
+    {
+      "wallet": "0xed2239a9150c3920000d0094d28fa51c7db03dd0",
+      "n_trades": 199,
+      "n_closed_positions": 10,
+      "wins": 10,
+      "losses": 0,
+      "win_rate": 1.0,
+      "total_pnl": 3127966.08,
+      "top_categories": [
+        "presidential",
+        "pennsylvania",
+        "michigan"
+      ],
+      "username": "Michie",
+      "leaderboard_pnl": 3095007.670859059,
+      "leaderboard_vol": 8450962.774299005
+    },
+    {
+      "wallet": "0x033a07b3de5947eab4306676ad74eb546da30d50",
+      "n_trades": 111,
+      "n_closed_positions": 3,
+      "wins": 3,
+      "losses": 0,
+      "win_rate": 1.0,
+      "total_pnl": 3115550.42,
+      "top_categories": [
+        "presidential",
+        "kamala"
+      ],
+      "username": "RandomGenius-190",
+      "leaderboard_pnl": 3115550.407118868,
+      "leaderboard_vol": 8794464.960355
+    },
+    {
+      "wallet": "0x876426b52898c295848f56760dd24b55eda2604a",
+      "n_trades": 145,
+      "n_closed_positions": 10,
+      "wins": 10,
+      "losses": 0,
+      "win_rate": 1.0,
+      "total_pnl": 2926080.36,
+      "top_categories": [
+        "nba"
+      ],
+      "username": "0x876426B52898C295848f56760dd24B55Eda2604a-1770663426746",
+      "leaderboard_pnl": 1554380.7971780004,
+      "leaderboard_vol": 12196466.263985995
+    },
+    {
+      "wallet": "0xbacd00c9080a82ded56f504ee8810af732b0ab35",
       "n_trades": 3500,
       "n_closed_positions": 10,
       "wins": 10,
       "losses": 0,
       "win_rate": 1.0,
-      "total_pnl": 1147153.57,
+      "total_pnl": 2864760.95,
+      "top_categories": [
+        "will",
+        "us",
+        "who"
+      ],
+      "username": "ScottyNooo",
+      "leaderboard_pnl": 1146956.0853294325,
+      "leaderboard_vol": 128750915.62965599
+    },
+    {
+      "wallet": "0x6bab41a0dc40d6dd4c1a915b8c01969479fd1292",
+      "n_trades": 3500,
+      "n_closed_positions": 10,
+      "wins": 10,
+      "losses": 0,
+      "win_rate": 1.0,
+      "total_pnl": 2835485.41,
+      "top_categories": [
+        "will",
+        "people",
+        "arch"
+      ],
+      "username": "Dropper",
+      "leaderboard_pnl": 1123654.294868748,
+      "leaderboard_vol": 46006598.73313299
+    },
+    {
+      "wallet": "0x343d4466dc323b850e5249394894c7381d91456e",
+      "n_trades": 146,
+      "n_closed_positions": 10,
+      "wins": 10,
+      "losses": 0,
+      "win_rate": 1.0,
+      "total_pnl": 2614152.9,
+      "top_categories": [
+        "mlb"
+      ],
+      "username": "tazcot",
+      "leaderboard_pnl": 2604547.667341,
+      "leaderboard_vol": 8132604.965826999
+    },
+    {
+      "wallet": "0xd7f85d0eb0fe0732ca38d9107ad0d4d01b1289e4",
+      "n_trades": 116,
+      "n_closed_positions": 10,
+      "wins": 10,
+      "losses": 0,
+      "win_rate": 1.0,
+      "total_pnl": 2612524.72,
+      "top_categories": [
+        "presidential",
+        "lighter",
+        "russia"
+      ],
+      "username": "tdrhrhhd",
+      "leaderboard_pnl": 2454306.1958900234,
+      "leaderboard_vol": 15008100.803975
+    },
+    {
+      "wallet": "0x02d5f92b780ec7c98d7ad0624ff017f7ae4688c7",
+      "n_trades": 517,
+      "n_closed_positions": 10,
+      "wins": 10,
+      "losses": 0,
+      "win_rate": 1.0,
+      "total_pnl": 2584809.09,
+      "top_categories": [
+        "mlb"
+      ],
+      "username": "hominylute",
+      "leaderboard_pnl": 894953.628931,
+      "leaderboard_vol": 8303489.07769
+    },
+    {
+      "wallet": "0x5350afcd8bd8ceffdf4da32420d6d31be0822fda",
+      "n_trades": 1171,
+      "n_closed_positions": 10,
+      "wins": 10,
+      "losses": 0,
+      "win_rate": 1.0,
+      "total_pnl": 2564814.67,
+      "top_categories": [
+        "nfl",
+        "nba",
+        "cfb"
+      ],
+      "username": "simonbanza",
+      "leaderboard_pnl": 930657.1984626541,
+      "leaderboard_vol": 41002329.028799996
+    },
+    {
+      "wallet": "0xd25c72ac0928385610611c8148803dc717334d20",
+      "n_trades": 113,
+      "n_closed_positions": 7,
+      "wins": 7,
+      "losses": 0,
+      "win_rate": 1.0,
+      "total_pnl": 2420902.3,
       "top_categories": [
         "sea",
-        "bun",
-        "ucl"
+        "fl1",
+        "uel"
       ],
-      "username": "GamblingIsAllYouNeed",
-      "leaderboard_pnl": 4904571.130917595,
-      "leaderboard_vol": 430424919.505928
-    },
-    {
-      "wallet": "0x2005d16a84ceefa912d4e380cd32e7ff827875ea",
-      "n_trades": 3500,
-      "n_closed_positions": 10,
-      "wins": 10,
-      "losses": 0,
-      "win_rate": 1.0,
-      "total_pnl": 1121850.19,
-      "top_categories": [
-        "nba",
-        "atp",
-        "nfl"
-      ],
-      "username": "RN1",
-      "leaderboard_pnl": 9051058.510413414,
-      "leaderboard_vol": 570983658.3342991
-    },
-    {
-      "wallet": "0xee613b3fc183ee44f9da9c05f53e2da107e3debf",
-      "n_trades": 3500,
-      "n_closed_positions": 10,
-      "wins": 10,
-      "losses": 0,
-      "win_rate": 1.0,
-      "total_pnl": 864358.0,
-      "top_categories": [
-        "cfb",
-        "nba",
-        "cbb"
-      ],
-      "username": "sovereign2013",
-      "leaderboard_pnl": 3588720.2180176266,
-      "leaderboard_vol": 399254826.474778
+      "username": "FeatherLeather",
+      "leaderboard_pnl": 2097480.476399747,
+      "leaderboard_vol": 5237151.235279998
     }
   ]
 }
