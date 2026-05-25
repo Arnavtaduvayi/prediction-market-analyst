@@ -1,31 +1,19 @@
 {
-  "generated_at": "2026-05-25T17:14:38.657379+00:00",
-  "n_scanned": 8,
-  "n_signals": 2,
+  "generated_at": "2026-05-25T19:56:35.048420+00:00",
+  "n_scanned": 3,
+  "n_signals": 1,
   "signals": [
     {
-      "ticker": "KXRANKLISTSONGSPOTUSA-26JUN01-ARI",
-      "title": "Will Ariana Grande be 1 on the Any Spotify Daily Top Songs USA chart in May 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.97,
-      "yes_mid": 0.965,
-      "true_prob": 0.985,
-      "edge": 0.02,
-      "hours_left": 164.8,
+      "ticker": "KXSPACEXCOUNT-26MAY-12",
+      "title": "How many launches will SpaceX have in 2026?",
+      "type": "longshot_sell",
+      "side": "no",
+      "fill_price": 0.96,
+      "yes_mid": 0.035,
+      "true_prob": 0.9706,
+      "edge": 0.0056,
+      "hours_left": 162.1,
       "close_time": "2026-06-01T14:00:00Z"
-    },
-    {
-      "ticker": "KXSONGCHARTDRA-26MAY30",
-      "title": "Will exactly 3 unique songs from Drake be on the top 3 songs on the Billboard Hot 100 chart for the week of May 30, 2026 before May 30, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.99,
-      "yes_mid": 0.98,
-      "true_prob": 0.99,
-      "edge": 0.02,
-      "hours_left": 106.8,
-      "close_time": "2026-05-30T03:59:00Z"
     }
   ]
 }
