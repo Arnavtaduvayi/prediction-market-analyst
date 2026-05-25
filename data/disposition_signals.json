@@ -1,43 +1,6 @@
 {
-  "generated_at": "2026-05-25T21:20:58.822324+00:00",
-  "n_scanned": 7,
-  "n_signals": 3,
-  "signals": [
-    {
-      "ticker": "KXBTCD-26MAY2617-T75249.99",
-      "title": "Bitcoin price  on May 26, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.97,
-      "yes_mid": 0.965,
-      "true_prob": 0.985,
-      "edge": 0.02,
-      "hours_left": 23.7,
-      "close_time": "2026-05-26T21:00:00Z"
-    },
-    {
-      "ticker": "KXBTCD-26MAY2617-T75499.99",
-      "title": "Bitcoin price  on May 26, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.94,
-      "yes_mid": 0.935,
-      "true_prob": 0.955,
-      "edge": 0.02,
-      "hours_left": 23.7,
-      "close_time": "2026-05-26T21:00:00Z"
-    },
-    {
-      "ticker": "KXBTCD-26MAY2617-T75749.99",
-      "title": "Bitcoin price  on May 26, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.92,
-      "yes_mid": 0.915,
-      "true_prob": 0.935,
-      "edge": 0.02,
-      "hours_left": 23.7,
-      "close_time": "2026-05-26T21:00:00Z"
-    }
-  ]
+  "generated_at": "2026-05-25T23:18:57.897098+00:00",
+  "n_scanned": 3,
+  "n_signals": 0,
+  "signals": []
 }
