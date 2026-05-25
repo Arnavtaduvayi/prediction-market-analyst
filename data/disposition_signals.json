@@ -1,19 +1,31 @@
 {
-  "generated_at": "2026-05-24T16:20:28.595807+00:00",
-  "n_scanned": 4,
-  "n_signals": 1,
+  "generated_at": "2026-05-25T15:44:34.492579+00:00",
+  "n_scanned": 6,
+  "n_signals": 2,
   "signals": [
     {
-      "ticker": "KXTOPBBSPOTSDRA-26MAY30-9",
-      "title": "How many spots on the Billboard Hot 100's top 10 will Drake hold for the week of May 30, 2026?",
+      "ticker": "KXBTCD-26MAY2517-T76499.99",
+      "title": "Bitcoin price  on May 25, 2026?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.98,
-      "yes_mid": 0.975,
+      "fill_price": 0.99,
+      "yes_mid": 0.985,
       "true_prob": 0.99,
       "edge": 0.02,
-      "hours_left": 131.7,
-      "close_time": "2026-05-30T03:59:00Z"
+      "hours_left": 5.3,
+      "close_time": "2026-05-25T21:00:00Z"
+    },
+    {
+      "ticker": "KXBTCD-26MAY2517-T76749.99",
+      "title": "Bitcoin price  on May 25, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.97,
+      "yes_mid": 0.96,
+      "true_prob": 0.98,
+      "edge": 0.02,
+      "hours_left": 5.3,
+      "close_time": "2026-05-25T21:00:00Z"
     }
   ]
 }
