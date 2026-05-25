@@ -1,31 +1,31 @@
 {
-  "generated_at": "2026-05-25T15:44:34.492579+00:00",
-  "n_scanned": 6,
+  "generated_at": "2026-05-25T17:14:38.657379+00:00",
+  "n_scanned": 8,
   "n_signals": 2,
   "signals": [
     {
-      "ticker": "KXBTCD-26MAY2517-T76499.99",
-      "title": "Bitcoin price  on May 25, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.99,
-      "yes_mid": 0.985,
-      "true_prob": 0.99,
-      "edge": 0.02,
-      "hours_left": 5.3,
-      "close_time": "2026-05-25T21:00:00Z"
-    },
-    {
-      "ticker": "KXBTCD-26MAY2517-T76749.99",
-      "title": "Bitcoin price  on May 25, 2026?",
+      "ticker": "KXRANKLISTSONGSPOTUSA-26JUN01-ARI",
+      "title": "Will Ariana Grande be 1 on the Any Spotify Daily Top Songs USA chart in May 2026?",
       "type": "favorite_buy",
       "side": "yes",
       "fill_price": 0.97,
-      "yes_mid": 0.96,
-      "true_prob": 0.98,
+      "yes_mid": 0.965,
+      "true_prob": 0.985,
       "edge": 0.02,
-      "hours_left": 5.3,
-      "close_time": "2026-05-25T21:00:00Z"
+      "hours_left": 164.8,
+      "close_time": "2026-06-01T14:00:00Z"
+    },
+    {
+      "ticker": "KXSONGCHARTDRA-26MAY30",
+      "title": "Will exactly 3 unique songs from Drake be on the top 3 songs on the Billboard Hot 100 chart for the week of May 30, 2026 before May 30, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.99,
+      "yes_mid": 0.98,
+      "true_prob": 0.99,
+      "edge": 0.02,
+      "hours_left": 106.8,
+      "close_time": "2026-05-30T03:59:00Z"
     }
   ]
 }
