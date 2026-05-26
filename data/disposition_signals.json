@@ -1,19 +1,31 @@
 {
-  "generated_at": "2026-05-26T16:52:20.842516+00:00",
-  "n_scanned": 5,
-  "n_signals": 1,
+  "generated_at": "2026-05-26T19:27:07.802247+00:00",
+  "n_scanned": 7,
+  "n_signals": 2,
   "signals": [
     {
-      "ticker": "KXRANKLISTSONGSPOTUSA-26JUN01-ARI",
-      "title": "Will Ariana Grande be 1 on the Any Spotify Daily Top Songs USA chart in May 2026?",
+      "ticker": "KXHIGHTNOLA-26MAY26-B85.5",
+      "title": "Will the maximum temperature be  85-86\u00b0 on May 26, 2026?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.93,
-      "yes_mid": 0.925,
-      "true_prob": 0.945,
+      "fill_price": 0.98,
+      "yes_mid": 0.975,
+      "true_prob": 0.99,
       "edge": 0.02,
-      "hours_left": 141.1,
-      "close_time": "2026-06-01T14:00:00Z"
+      "hours_left": 10.6,
+      "close_time": "2026-05-27T06:00:00Z"
+    },
+    {
+      "ticker": "KXTOPMONTHLY-26MAY-BRU",
+      "title": "Artist with the most monthly Spotify listeners at the end of May 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.91,
+      "yes_mid": 0.905,
+      "true_prob": 0.925,
+      "edge": 0.02,
+      "hours_left": 116.5,
+      "close_time": "2026-05-31T15:59:00Z"
     }
   ]
 }
