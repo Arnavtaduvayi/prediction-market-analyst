@@ -1,19 +1,6 @@
 {
-  "generated_at": "2026-05-27T19:32:46.326167+00:00",
-  "n_scanned": 3,
-  "n_signals": 1,
-  "signals": [
-    {
-      "ticker": "KXWT20MATCH-26MAY271330DURSUR-DUR",
-      "title": "Surrey vs Durham Winner?",
-      "type": "longshot_sell",
-      "side": "no",
-      "fill_price": 0.94,
-      "yes_mid": 0.045,
-      "true_prob": 0.9622,
-      "edge": 0.0072,
-      "hours_left": 50.0,
-      "close_time": "2026-05-29T21:30:00Z"
-    }
-  ]
+  "generated_at": "2026-05-27T22:06:44.077921+00:00",
+  "n_scanned": 10,
+  "n_signals": 0,
+  "signals": []
 }
