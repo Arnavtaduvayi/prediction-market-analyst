@@ -1,6 +1,31 @@
 {
-  "generated_at": "2026-05-27T22:06:44.077921+00:00",
-  "n_scanned": 10,
-  "n_signals": 0,
-  "signals": []
+  "generated_at": "2026-05-27T23:36:52.655323+00:00",
+  "n_scanned": 5,
+  "n_signals": 2,
+  "signals": [
+    {
+      "ticker": "KXBTCD-26MAY2817-T72249.99",
+      "title": "Bitcoin price  on May 28, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.94,
+      "yes_mid": 0.925,
+      "true_prob": 0.945,
+      "edge": 0.02,
+      "hours_left": 21.4,
+      "close_time": "2026-05-28T21:00:00Z"
+    },
+    {
+      "ticker": "KXRT-BAC-75",
+      "title": "Backrooms Rotten Tomatoes score?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.98,
+      "yes_mid": 0.965,
+      "true_prob": 0.985,
+      "edge": 0.02,
+      "hours_left": 110.4,
+      "close_time": "2026-06-01T14:00:00Z"
+    }
+  ]
 }
