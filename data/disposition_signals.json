@@ -1,55 +1,6 @@
 {
-  "generated_at": "2026-05-27T12:32:06.671725+00:00",
-  "n_scanned": 13,
-  "n_signals": 4,
-  "signals": [
-    {
-      "ticker": "KXBTCD-26MAY2717-T73999.99",
-      "title": "Bitcoin price  on May 27, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.97,
-      "yes_mid": 0.96,
-      "true_prob": 0.98,
-      "edge": 0.02,
-      "hours_left": 8.5,
-      "close_time": "2026-05-27T21:00:00Z"
-    },
-    {
-      "ticker": "KXBTCD-26MAY2717-T74249.99",
-      "title": "Bitcoin price  on May 27, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.96,
-      "yes_mid": 0.955,
-      "true_prob": 0.975,
-      "edge": 0.02,
-      "hours_left": 8.5,
-      "close_time": "2026-05-27T21:00:00Z"
-    },
-    {
-      "ticker": "KXBTCD-26MAY2717-T74499.99",
-      "title": "Bitcoin price  on May 27, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.93,
-      "yes_mid": 0.925,
-      "true_prob": 0.945,
-      "edge": 0.02,
-      "hours_left": 8.5,
-      "close_time": "2026-05-27T21:00:00Z"
-    },
-    {
-      "ticker": "KXSPACEXCOUNT-26MAY-12",
-      "title": "How many launches will SpaceX have in 2026?",
-      "type": "longshot_sell",
-      "side": "no",
-      "fill_price": 0.98,
-      "yes_mid": 0.015,
-      "true_prob": 0.9874,
-      "edge": 0.0024,
-      "hours_left": 121.5,
-      "close_time": "2026-06-01T14:00:00Z"
-    }
-  ]
+  "generated_at": "2026-05-27T14:47:36.806771+00:00",
+  "n_scanned": 6,
+  "n_signals": 0,
+  "signals": []
 }
