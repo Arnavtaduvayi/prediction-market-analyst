@@ -21,7 +21,10 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
+from cooldown import is_in_cooldown, cooldown_remaining_hours
+
 JOURNAL_FILE = Path(__file__).parent / "paper_cross_trades.json"
+DISPOSITION_JOURNAL = Path(__file__).parent / "paper_disposition_trades.json"
 THESIS_FILE = Path(__file__).parent / "data" / "thesis.json"
 
 INITIAL_BANKROLL = 75.0
@@ -89,6 +92,11 @@ def run(dry_run: bool = False) -> dict:
     existing_tickers = {t["kalshi_ticker"] for t in data["trades"] if t["status"] == "open"}
     theses = json.loads(THESIS_FILE.read_text()).get("theses", [])
 
+    # Combine trade history from both journals for cross-bot cooldown
+    all_trades = list(data["trades"])
+    if DISPOSITION_JOURNAL.exists():
+        all_trades += json.loads(DISPOSITION_JOURNAL.read_text()).get("trades", [])
+
     print(f"Executor: {len(theses)} candidate theses, {available_slots} slots available")
 
     new_trades = []
@@ -97,6 +105,11 @@ def run(dry_run: bool = False) -> dict:
             break
         ticker = th["ticker"]
         if ticker in existing_tickers:
+            continue
+
+        if is_in_cooldown(ticker, all_trades):
+            remaining = cooldown_remaining_hours(ticker, all_trades)
+            print(f"  SKIP (cooldown {remaining:.1f}h left): {ticker}")
             continue
 
         # Apply consensus rule

@@ -16,7 +16,10 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
+from cooldown import is_in_cooldown, cooldown_remaining_hours
+
 JOURNAL_FILE = Path(__file__).parent / "paper_disposition_trades.json"
+WHALE_JOURNAL = Path(__file__).parent / "paper_cross_trades.json"
 SIGNALS_FILE = Path(__file__).parent / "data" / "disposition_signals.json"
 
 INITIAL_BANKROLL = 75.0
@@ -71,6 +74,11 @@ def run():
     existing_tickers = {t["kalshi_ticker"] for t in data["trades"] if t["status"] == "open"}
     signals = json.loads(SIGNALS_FILE.read_text()).get("signals", [])
 
+    # Cross-bot cooldown — include whale journal so we don't double-enter
+    all_trades = list(data["trades"])
+    if WHALE_JOURNAL.exists():
+        all_trades += json.loads(WHALE_JOURNAL.read_text()).get("trades", [])
+
     print(f"[disposition] {len(signals)} candidate signals, {available_slots} slots available")
 
     new_trades = []
@@ -78,6 +86,11 @@ def run():
         if len(new_trades) >= available_slots:
             break
         if s["ticker"] in existing_tickers:
+            continue
+
+        if is_in_cooldown(s["ticker"], all_trades):
+            remaining = cooldown_remaining_hours(s["ticker"], all_trades)
+            print(f"  [disposition] SKIP (cooldown {remaining:.1f}h): {s['ticker']}")
             continue
 
         kelly_frac = kelly_size(s["true_prob"], s["fill_price"])
