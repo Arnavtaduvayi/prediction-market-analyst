@@ -1,6 +1,19 @@
 {
-  "generated_at": "2026-05-27T14:47:36.806771+00:00",
-  "n_scanned": 6,
-  "n_signals": 0,
-  "signals": []
+  "generated_at": "2026-05-27T16:45:30.960317+00:00",
+  "n_scanned": 4,
+  "n_signals": 1,
+  "signals": [
+    {
+      "ticker": "KXAAAGASM-26MAY31-4.30",
+      "title": "Will average **gas prices** be above $4.30?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.91,
+      "yes_mid": 0.905,
+      "true_prob": 0.925,
+      "edge": 0.02,
+      "hours_left": 83.3,
+      "close_time": "2026-05-31T03:59:00Z"
+    }
+  ]
 }
