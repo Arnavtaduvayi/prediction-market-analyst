@@ -1,7 +1,7 @@
 {
   "started": "2026-05-16T19:16:48.401618+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 75.81,
+  "bankroll": 72.84,
   "trades": [
     {
       "logged_at": "2026-05-16T19:21:38.603234+00:00",
@@ -515,6 +515,29 @@
       "settled_at": "2026-05-26T22:00:07.152551+00:00",
       "exit_reason": "STALE_THESIS",
       "exit_price": 0.97
+    },
+    {
+      "logged_at": "2026-05-27T04:45:17.558579+00:00",
+      "kalshi_ticker": "KXSPACEXCOUNT-26MAY-12",
+      "kalshi_title": "How many launches will SpaceX have in 2026?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.99,
+      "cost": 2.97,
+      "yes_mid_at_entry": 0.015,
+      "thesis_estimate": -0.025,
+      "thesis_target_price": -0.019,
+      "thesis_confidence": 0.65,
+      "consensus_votes": 1,
+      "size_multiplier": 0.5,
+      "kelly_fraction": 0.05,
+      "checks_passed": 2,
+      "hours_left_at_entry": 129.3,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
     }
   ],
   "bankroll_topups": [
