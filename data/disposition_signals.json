@@ -1,31 +1,67 @@
 {
-  "generated_at": "2026-05-27T23:36:52.655323+00:00",
-  "n_scanned": 5,
-  "n_signals": 2,
+  "generated_at": "2026-05-28T04:26:32.212665+00:00",
+  "n_scanned": 18,
+  "n_signals": 5,
   "signals": [
     {
-      "ticker": "KXBTCD-26MAY2817-T72249.99",
-      "title": "Bitcoin price  on May 28, 2026?",
+      "ticker": "KXAAAGASM-26MAY31-4.20",
+      "title": "Will average **gas prices** be above $4.20?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.94,
-      "yes_mid": 0.925,
-      "true_prob": 0.945,
+      "fill_price": 0.99,
+      "yes_mid": 0.985,
+      "true_prob": 0.99,
       "edge": 0.02,
-      "hours_left": 21.4,
-      "close_time": "2026-05-28T21:00:00Z"
+      "hours_left": 71.6,
+      "close_time": "2026-05-31T03:59:00Z"
     },
     {
-      "ticker": "KXRT-BAC-75",
-      "title": "Backrooms Rotten Tomatoes score?",
+      "ticker": "KXWTI-26MAY2814-T86.99",
+      "title": "Will the WTI crude oil settlement price be above 86.99 USD/Bbl on May 28, 2026?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.98,
-      "yes_mid": 0.965,
-      "true_prob": 0.985,
+      "fill_price": 0.96,
+      "yes_mid": 0.955,
+      "true_prob": 0.975,
       "edge": 0.02,
-      "hours_left": 110.4,
-      "close_time": "2026-06-01T14:00:00Z"
+      "hours_left": 14.1,
+      "close_time": "2026-05-28T18:30:00Z"
+    },
+    {
+      "ticker": "KXBTCD-26MAY2917-T75499.99",
+      "title": "Bitcoin price  on May 29, 2026?",
+      "type": "longshot_sell",
+      "side": "no",
+      "fill_price": 0.89,
+      "yes_mid": 0.095,
+      "true_prob": 0.9202,
+      "edge": 0.0152,
+      "hours_left": 40.6,
+      "close_time": "2026-05-29T21:00:00Z"
+    },
+    {
+      "ticker": "KXBTCD-26MAY2917-T75999.99",
+      "title": "Bitcoin price  on May 29, 2026?",
+      "type": "longshot_sell",
+      "side": "no",
+      "fill_price": 0.94,
+      "yes_mid": 0.05,
+      "true_prob": 0.958,
+      "edge": 0.008,
+      "hours_left": 40.6,
+      "close_time": "2026-05-29T21:00:00Z"
+    },
+    {
+      "ticker": "KXBBCHARTDRAKE-26JUN06B-DRA",
+      "title": "Will Drake rank 1, 2, and 3 on the Billboard 200 chart dated June 06, 2026?",
+      "type": "longshot_sell",
+      "side": "no",
+      "fill_price": 0.98,
+      "yes_mid": 0.015,
+      "true_prob": 0.9874,
+      "edge": 0.0024,
+      "hours_left": 95.6,
+      "close_time": "2026-06-01T03:59:00Z"
     }
   ]
 }
