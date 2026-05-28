@@ -1,7 +1,7 @@
 {
   "started": "2026-05-16T19:16:48.401618+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 66.99600000000001,
+  "bankroll": 64.05600000000001,
   "trades": [
     {
       "logged_at": "2026-05-16T19:21:38.603234+00:00",
@@ -651,6 +651,29 @@
       "kelly_fraction": 0.05,
       "checks_passed": 2,
       "hours_left_at_entry": 4.0,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
+    },
+    {
+      "logged_at": "2026-05-28T19:43:56.739169+00:00",
+      "kalshi_ticker": "KXAAAGASM-26MAY31-4.40",
+      "kalshi_title": "Will average **gas prices** be above $4.40?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.98,
+      "cost": 2.94,
+      "yes_mid_at_entry": 0.03,
+      "thesis_estimate": -0.010000000000000002,
+      "thesis_target_price": -0.004,
+      "thesis_confidence": 0.65,
+      "consensus_votes": 1,
+      "size_multiplier": 0.5,
+      "kelly_fraction": 0.05,
+      "checks_passed": 2,
+      "hours_left_at_entry": 56.3,
       "status": "open",
       "resolved_yes": null,
       "pnl": null,
