@@ -1,43 +1,55 @@
 {
-  "generated_at": "2026-05-28T19:43:56.741456+00:00",
-  "n_scanned": 10,
-  "n_signals": 3,
+  "generated_at": "2026-05-28T22:04:51.226995+00:00",
+  "n_scanned": 11,
+  "n_signals": 4,
   "signals": [
     {
-      "ticker": "KXHIGHMIA-26MAY28-B85.5",
-      "title": "Will the **high temp in Miami** be 85-86\u00b0 on May 28, 2026?",
+      "ticker": "KXBTCD-26MAY2917-T70999.99",
+      "title": "Bitcoin price  on May 29, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.98,
+      "yes_mid": 0.975,
+      "true_prob": 0.99,
+      "edge": 0.02,
+      "hours_left": 23.0,
+      "close_time": "2026-05-29T21:00:00Z"
+    },
+    {
+      "ticker": "KXBTCD-26MAY2917-T71999.99",
+      "title": "Bitcoin price  on May 29, 2026?",
       "type": "favorite_buy",
       "side": "yes",
       "fill_price": 0.92,
-      "yes_mid": 0.91,
-      "true_prob": 0.93,
+      "yes_mid": 0.915,
+      "true_prob": 0.935,
       "edge": 0.02,
-      "hours_left": 9.3,
-      "close_time": "2026-05-29T04:59:00Z"
+      "hours_left": 23.0,
+      "close_time": "2026-05-29T21:00:00Z"
     },
     {
-      "ticker": "KXRANKLISTSONGSPOTUSA-26JUN01-ARI",
-      "title": "Will Ariana Grande be 1 on the Any Spotify Daily Top Songs USA chart in May 2026?",
+      "ticker": "KXTESTMATCH-26MAY270600NZIRL-NZ",
+      "title": "Ireland vs New Zealand Winner?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.94,
-      "yes_mid": 0.935,
-      "true_prob": 0.955,
+      "fill_price": 0.97,
+      "yes_mid": 0.96,
+      "true_prob": 0.98,
       "edge": 0.02,
-      "hours_left": 90.3,
-      "close_time": "2026-06-01T14:00:00Z"
+      "hours_left": 131.9,
+      "close_time": "2026-06-03T10:00:00Z"
     },
     {
-      "ticker": "KXAAAGASM-26MAY31-4.40",
-      "title": "Will average **gas prices** be above $4.40?",
+      "ticker": "KXBTCD-26MAY2917-T75999.99",
+      "title": "Bitcoin price  on May 29, 2026?",
       "type": "longshot_sell",
       "side": "no",
-      "fill_price": 0.96,
-      "yes_mid": 0.03,
-      "true_prob": 0.9748,
-      "edge": 0.0048,
-      "hours_left": 56.3,
-      "close_time": "2026-05-31T03:59:00Z"
+      "fill_price": 0.94,
+      "yes_mid": 0.05,
+      "true_prob": 0.958,
+      "edge": 0.008,
+      "hours_left": 23.0,
+      "close_time": "2026-05-29T21:00:00Z"
     }
   ]
 }
