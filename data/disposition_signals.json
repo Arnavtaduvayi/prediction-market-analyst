@@ -1,55 +1,31 @@
 {
-  "generated_at": "2026-05-29T16:53:27.633657+00:00",
-  "n_scanned": 6,
-  "n_signals": 4,
+  "generated_at": "2026-05-29T19:39:41.495337+00:00",
+  "n_scanned": 3,
+  "n_signals": 2,
   "signals": [
     {
-      "ticker": "KXBTCD-26MAY2917-T72499.99",
-      "title": "Bitcoin price  on May 29, 2026?",
+      "ticker": "KXAAAGASM-26MAY31-4.30",
+      "title": "Will average **gas prices** be above $4.30?",
       "type": "favorite_buy",
       "side": "yes",
       "fill_price": 0.97,
       "yes_mid": 0.965,
       "true_prob": 0.985,
       "edge": 0.02,
-      "hours_left": 4.1,
-      "close_time": "2026-05-29T21:00:00Z"
+      "hours_left": 32.4,
+      "close_time": "2026-05-31T03:59:00Z"
     },
     {
-      "ticker": "KXBTCD-26MAY2917-T72999.99",
-      "title": "Bitcoin price  on May 29, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.92,
-      "yes_mid": 0.915,
-      "true_prob": 0.935,
-      "edge": 0.02,
-      "hours_left": 4.1,
-      "close_time": "2026-05-29T21:00:00Z"
-    },
-    {
-      "ticker": "KXRT-BAC-85",
-      "title": "Backrooms Rotten Tomatoes score?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.99,
-      "yes_mid": 0.985,
-      "true_prob": 0.99,
-      "edge": 0.02,
-      "hours_left": 69.1,
-      "close_time": "2026-06-01T14:00:00Z"
-    },
-    {
-      "ticker": "KXWT20MATCH-26MAY291100WINPAK-WIN",
-      "title": "Pakistan vs West Indies Winner?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.98,
-      "yes_mid": 0.975,
-      "true_prob": 0.99,
-      "edge": 0.02,
-      "hours_left": 50.1,
-      "close_time": "2026-05-31T19:00:00Z"
+      "ticker": "KXAAAGASM-26MAY31-4.36",
+      "title": "Will average **gas prices** be above $4.36?",
+      "type": "longshot_sell",
+      "side": "no",
+      "fill_price": 0.97,
+      "yes_mid": 0.02,
+      "true_prob": 0.9832,
+      "edge": 0.0032,
+      "hours_left": 32.4,
+      "close_time": "2026-05-31T03:59:00Z"
     }
   ]
 }

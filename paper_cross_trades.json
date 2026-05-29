@@ -1,7 +1,7 @@
 {
   "started": "2026-05-16T19:16:48.401618+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 72.846,
+  "bankroll": 69.876,
   "trades": [
     {
       "logged_at": "2026-05-16T19:21:38.603234+00:00",
@@ -729,6 +729,29 @@
       "pnl": 0.09,
       "settled_at": "2026-05-29T16:55:53.264621+00:00",
       "exit_reason": "SETTLED_WIN"
+    },
+    {
+      "logged_at": "2026-05-29T19:39:41.493163+00:00",
+      "kalshi_ticker": "KXAAAGASM-26MAY31-4.36",
+      "kalshi_title": "Will average **gas prices** be above $4.36?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.99,
+      "cost": 2.97,
+      "yes_mid_at_entry": 0.02,
+      "thesis_estimate": -0.02,
+      "thesis_target_price": -0.014,
+      "thesis_confidence": 0.65,
+      "consensus_votes": 1,
+      "size_multiplier": 0.5,
+      "kelly_fraction": 0.05,
+      "checks_passed": 2,
+      "hours_left_at_entry": 32.4,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
     }
   ],
   "bankroll_topups": [
