@@ -1,31 +1,31 @@
 {
-  "generated_at": "2026-05-28T23:28:09.521022+00:00",
-  "n_scanned": 7,
-  "n_signals": 3,
+  "generated_at": "2026-05-29T04:29:04.223084+00:00",
+  "n_scanned": 11,
+  "n_signals": 4,
   "signals": [
     {
-      "ticker": "KXBTCD-26MAY2917-T70999.99",
-      "title": "Bitcoin price  on May 29, 2026?",
+      "ticker": "KXRANKLISTSONGSPOTUSA-26JUN01-ARI",
+      "title": "Will Ariana Grande be 1 on the Any Spotify Daily Top Songs USA chart in May 2026?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.97,
-      "yes_mid": 0.965,
-      "true_prob": 0.985,
+      "fill_price": 0.98,
+      "yes_mid": 0.975,
+      "true_prob": 0.99,
       "edge": 0.02,
-      "hours_left": 21.6,
-      "close_time": "2026-05-29T21:00:00Z"
+      "hours_left": 81.5,
+      "close_time": "2026-06-01T14:00:00Z"
     },
     {
-      "ticker": "KXBTCD-26MAY2917-T71499.99",
-      "title": "Bitcoin price  on May 29, 2026?",
+      "ticker": "KXRT-BAC-80",
+      "title": "Backrooms Rotten Tomatoes score?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.95,
-      "yes_mid": 0.945,
-      "true_prob": 0.965,
+      "fill_price": 0.98,
+      "yes_mid": 0.97,
+      "true_prob": 0.99,
       "edge": 0.02,
-      "hours_left": 21.6,
-      "close_time": "2026-05-29T21:00:00Z"
+      "hours_left": 81.5,
+      "close_time": "2026-06-01T14:00:00Z"
     },
     {
       "ticker": "KXTESTMATCH-26MAY270600NZIRL-NZ",
@@ -36,8 +36,20 @@
       "yes_mid": 0.965,
       "true_prob": 0.985,
       "edge": 0.02,
-      "hours_left": 130.5,
+      "hours_left": 125.5,
       "close_time": "2026-06-03T10:00:00Z"
+    },
+    {
+      "ticker": "KXAAAGASM-26MAY31-4.45",
+      "title": "Will average **gas prices** be above $4.45?",
+      "type": "longshot_sell",
+      "side": "no",
+      "fill_price": 0.97,
+      "yes_mid": 0.02,
+      "true_prob": 0.9832,
+      "edge": 0.0032,
+      "hours_left": 47.5,
+      "close_time": "2026-05-31T03:59:00Z"
     }
   ]
 }
