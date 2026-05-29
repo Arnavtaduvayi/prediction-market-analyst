@@ -1,43 +1,67 @@
 {
-  "generated_at": "2026-05-29T04:29:04.223084+00:00",
-  "n_scanned": 11,
-  "n_signals": 4,
+  "generated_at": "2026-05-29T08:52:04.399084+00:00",
+  "n_scanned": 15,
+  "n_signals": 6,
   "signals": [
     {
-      "ticker": "KXRANKLISTSONGSPOTUSA-26JUN01-ARI",
-      "title": "Will Ariana Grande be 1 on the Any Spotify Daily Top Songs USA chart in May 2026?",
+      "ticker": "KXBTCD-26MAY2917-T71999.99",
+      "title": "Bitcoin price  on May 29, 2026?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.98,
-      "yes_mid": 0.975,
-      "true_prob": 0.99,
+      "fill_price": 0.96,
+      "yes_mid": 0.955,
+      "true_prob": 0.975,
       "edge": 0.02,
-      "hours_left": 81.5,
-      "close_time": "2026-06-01T14:00:00Z"
+      "hours_left": 12.2,
+      "close_time": "2026-05-29T21:00:00Z"
     },
     {
-      "ticker": "KXRT-BAC-80",
-      "title": "Backrooms Rotten Tomatoes score?",
+      "ticker": "KXBTCD-26MAY2917-T72499.99",
+      "title": "Bitcoin price  on May 29, 2026?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.98,
-      "yes_mid": 0.97,
-      "true_prob": 0.99,
+      "fill_price": 0.91,
+      "yes_mid": 0.905,
+      "true_prob": 0.925,
       "edge": 0.02,
-      "hours_left": 81.5,
-      "close_time": "2026-06-01T14:00:00Z"
+      "hours_left": 12.2,
+      "close_time": "2026-05-29T21:00:00Z"
     },
     {
       "ticker": "KXTESTMATCH-26MAY270600NZIRL-NZ",
       "title": "Ireland vs New Zealand Winner?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.97,
-      "yes_mid": 0.965,
-      "true_prob": 0.985,
+      "fill_price": 0.98,
+      "yes_mid": 0.97,
+      "true_prob": 0.99,
       "edge": 0.02,
-      "hours_left": 125.5,
+      "hours_left": 121.2,
       "close_time": "2026-06-03T10:00:00Z"
+    },
+    {
+      "ticker": "KXTESTMATCH-26MAY270600NZIRL-IRL",
+      "title": "Ireland vs New Zealand Winner?",
+      "type": "longshot_sell",
+      "side": "no",
+      "fill_price": 0.96,
+      "yes_mid": 0.035,
+      "true_prob": 0.9706,
+      "edge": 0.0056,
+      "hours_left": 121.2,
+      "close_time": "2026-06-03T10:00:00Z"
+    },
+    {
+      "ticker": "KXAAAGASM-26MAY31-4.40",
+      "title": "Will average **gas prices** be above $4.40?",
+      "type": "longshot_sell",
+      "side": "no",
+      "fill_price": 0.97,
+      "yes_mid": 0.025,
+      "true_prob": 0.979,
+      "edge": 0.004,
+      "hours_left": 43.2,
+      "close_time": "2026-05-31T03:59:00Z"
     },
     {
       "ticker": "KXAAAGASM-26MAY31-4.45",
@@ -48,7 +72,7 @@
       "yes_mid": 0.02,
       "true_prob": 0.9832,
       "edge": 0.0032,
-      "hours_left": 47.5,
+      "hours_left": 43.2,
       "close_time": "2026-05-31T03:59:00Z"
     }
   ]
