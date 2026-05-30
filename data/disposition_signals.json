@@ -1,31 +1,67 @@
 {
-  "generated_at": "2026-05-30T12:12:33.698569+00:00",
-  "n_scanned": 6,
-  "n_signals": 2,
+  "generated_at": "2026-05-30T14:47:44.209429+00:00",
+  "n_scanned": 9,
+  "n_signals": 5,
   "signals": [
     {
-      "ticker": "KXAAAGASW-26JUN01-4.300",
-      "title": "Will average **gas prices** be above $4.300?",
+      "ticker": "KXBTCD-26MAY3017-T72499.99",
+      "title": "Bitcoin price on May 30, 2026?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.93,
-      "yes_mid": 0.925,
-      "true_prob": 0.945,
+      "fill_price": 0.98,
+      "yes_mid": 0.975,
+      "true_prob": 0.99,
       "edge": 0.02,
-      "hours_left": 39.8,
-      "close_time": "2026-06-01T03:59:00Z"
+      "hours_left": 6.2,
+      "close_time": "2026-05-30T21:00:00Z"
     },
     {
-      "ticker": "KXSPACEXCOUNT-26MAY-12",
-      "title": "How many launches will SpaceX have in 2026?",
+      "ticker": "KXBTCD-26MAY3017-T72749.99",
+      "title": "Bitcoin price on May 30, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.99,
+      "yes_mid": 0.98,
+      "true_prob": 0.99,
+      "edge": 0.02,
+      "hours_left": 6.2,
+      "close_time": "2026-05-30T21:00:00Z"
+    },
+    {
+      "ticker": "KXBTCD-26MAY3017-T72999.99",
+      "title": "Bitcoin price on May 30, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.97,
+      "yes_mid": 0.965,
+      "true_prob": 0.985,
+      "edge": 0.02,
+      "hours_left": 6.2,
+      "close_time": "2026-05-30T21:00:00Z"
+    },
+    {
+      "ticker": "KXODIMATCH-26MAY300730AUSPAK-PAK",
+      "title": "Pakistan vs Australia Winner?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.92,
+      "yes_mid": 0.91,
+      "true_prob": 0.93,
+      "edge": 0.02,
+      "hours_left": 52.7,
+      "close_time": "2026-06-01T19:30:00Z"
+    },
+    {
+      "ticker": "KXODIMATCH-26MAY300730AUSPAK-AUS",
+      "title": "Pakistan vs Australia Winner?",
       "type": "longshot_sell",
       "side": "no",
-      "fill_price": 0.98,
-      "yes_mid": 0.015,
-      "true_prob": 0.9874,
-      "edge": 0.0024,
-      "hours_left": 49.8,
-      "close_time": "2026-06-01T14:00:00Z"
+      "fill_price": 0.9,
+      "yes_mid": 0.09,
+      "true_prob": 0.9244,
+      "edge": 0.0144,
+      "hours_left": 52.7,
+      "close_time": "2026-06-01T19:30:00Z"
     }
   ]
 }
