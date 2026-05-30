@@ -1,7 +1,7 @@
 {
   "started": "2026-05-16T19:16:48.401618+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 72.816,
+  "bankroll": 70.026,
   "trades": [
     {
       "logged_at": "2026-05-16T19:21:38.603234+00:00",
@@ -820,6 +820,29 @@
       "kelly_fraction": 0.05,
       "checks_passed": 2,
       "hours_left_at_entry": 9.8,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
+    },
+    {
+      "logged_at": "2026-05-30T22:10:38.492942+00:00",
+      "kalshi_ticker": "KXBTCD-26JUN0517-T77999.99",
+      "kalshi_title": "Bitcoin price on Jun 5, 2026?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.9299999999999999,
+      "cost": 2.79,
+      "yes_mid_at_entry": 0.08,
+      "thesis_estimate": 0.04,
+      "thesis_target_price": 0.046,
+      "thesis_confidence": 0.65,
+      "consensus_votes": 1,
+      "size_multiplier": 0.5,
+      "kelly_fraction": 0.05,
+      "checks_passed": 2,
+      "hours_left_at_entry": 142.8,
       "status": "open",
       "resolved_yes": null,
       "pnl": null,
