@@ -1,31 +1,6 @@
 {
-  "generated_at": "2026-05-30T18:12:17.648441+00:00",
-  "n_scanned": 4,
-  "n_signals": 2,
-  "signals": [
-    {
-      "ticker": "KXBTCD-26MAY3017-T73249.99",
-      "title": "Bitcoin price on May 30, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.96,
-      "yes_mid": 0.955,
-      "true_prob": 0.975,
-      "edge": 0.02,
-      "hours_left": 2.8,
-      "close_time": "2026-05-30T21:00:00Z"
-    },
-    {
-      "ticker": "KXAAAGASM-26MAY31-4.35",
-      "title": "Will average **gas prices** be above $4.35?",
-      "type": "longshot_sell",
-      "side": "no",
-      "fill_price": 0.97,
-      "yes_mid": 0.025,
-      "true_prob": 0.979,
-      "edge": 0.004,
-      "hours_left": 9.8,
-      "close_time": "2026-05-31T03:59:00Z"
-    }
-  ]
+  "generated_at": "2026-05-30T20:16:20.887290+00:00",
+  "n_scanned": 2,
+  "n_signals": 0,
+  "signals": []
 }
