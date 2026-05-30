@@ -1,18 +1,30 @@
 {
-  "generated_at": "2026-05-30T10:11:27.337283+00:00",
-  "n_scanned": 5,
-  "n_signals": 1,
+  "generated_at": "2026-05-30T12:12:33.698569+00:00",
+  "n_scanned": 6,
+  "n_signals": 2,
   "signals": [
     {
-      "ticker": "KXRT-BAC-85",
-      "title": "Backrooms Rotten Tomatoes score?",
+      "ticker": "KXAAAGASW-26JUN01-4.300",
+      "title": "Will average **gas prices** be above $4.300?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.99,
-      "yes_mid": 0.985,
-      "true_prob": 0.99,
+      "fill_price": 0.93,
+      "yes_mid": 0.925,
+      "true_prob": 0.945,
       "edge": 0.02,
-      "hours_left": 51.8,
+      "hours_left": 39.8,
+      "close_time": "2026-06-01T03:59:00Z"
+    },
+    {
+      "ticker": "KXSPACEXCOUNT-26MAY-12",
+      "title": "How many launches will SpaceX have in 2026?",
+      "type": "longshot_sell",
+      "side": "no",
+      "fill_price": 0.98,
+      "yes_mid": 0.015,
+      "true_prob": 0.9874,
+      "edge": 0.0024,
+      "hours_left": 49.8,
       "close_time": "2026-06-01T14:00:00Z"
     }
   ]
