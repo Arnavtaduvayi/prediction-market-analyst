@@ -2,7 +2,7 @@
   "strategy": "disposition",
   "started": "2026-05-24T16:20:28.596974+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 61.36000000000004,
+  "bankroll": 64.36000000000004,
   "trades": [
     {
       "logged_at": "2026-05-24T16:20:28.597136+00:00",
@@ -679,11 +679,11 @@
       "edge_at_entry": 0.02,
       "kelly_fraction": 0.025,
       "hours_left_at_entry": 16.8,
-      "status": "open",
-      "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null,
+      "status": "settled",
+      "resolved_yes": true,
+      "pnl": 0.05,
+      "settled_at": "2026-05-30T21:29:37.109781+00:00",
+      "exit_reason": "SETTLED_WIN",
       "hold_to_settlement": true
     },
     {
@@ -701,11 +701,11 @@
       "edge_at_entry": 0.02,
       "kelly_fraction": 0.0156,
       "hours_left_at_entry": 16.8,
-      "status": "open",
-      "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null,
+      "status": "settled",
+      "resolved_yes": true,
+      "pnl": 0.08,
+      "settled_at": "2026-05-30T21:29:37.417090+00:00",
+      "exit_reason": "SETTLED_WIN",
       "hold_to_settlement": true
     },
     {
@@ -745,11 +745,11 @@
       "edge_at_entry": 0.02,
       "kelly_fraction": 0.03,
       "hours_left_at_entry": 4.8,
-      "status": "open",
-      "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null,
+      "status": "settled",
+      "resolved_yes": true,
+      "pnl": 0.05,
+      "settled_at": "2026-05-30T21:29:38.026767+00:00",
+      "exit_reason": "SETTLED_WIN",
       "hold_to_settlement": true
     },
     {
