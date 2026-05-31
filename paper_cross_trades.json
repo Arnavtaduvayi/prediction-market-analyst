@@ -1,7 +1,7 @@
 {
   "started": "2026-05-16T19:16:48.401618+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 69.996,
+  "bankroll": 67.056,
   "trades": [
     {
       "logged_at": "2026-05-16T19:21:38.603234+00:00",
@@ -872,6 +872,29 @@
       "settled_at": "2026-05-31T04:56:56.714903+00:00",
       "exit_reason": "VOLUME_EXIT",
       "exit_price": 0.98
+    },
+    {
+      "logged_at": "2026-05-31T05:28:41.677466+00:00",
+      "kalshi_ticker": "KXSONGCHARTDRA-26JUN06",
+      "kalshi_title": "Will exactly 3 unique songs from Drake be on the top 3 songs on the Billboard Hot 100 chart for the week of June 06, 2026?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.98,
+      "cost": 2.94,
+      "yes_mid_at_entry": 0.025,
+      "thesis_estimate": -0.015,
+      "thesis_target_price": -0.009,
+      "thesis_confidence": 0.65,
+      "consensus_votes": 1,
+      "size_multiplier": 0.5,
+      "kelly_fraction": 0.05,
+      "checks_passed": 2,
+      "hours_left_at_entry": 142.5,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
     }
   ],
   "bankroll_topups": [
