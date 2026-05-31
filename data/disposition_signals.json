@@ -1,55 +1,19 @@
 {
-  "generated_at": "2026-05-31T11:47:15.085948+00:00",
-  "n_scanned": 9,
-  "n_signals": 4,
+  "generated_at": "2026-05-31T14:07:23.955569+00:00",
+  "n_scanned": 5,
+  "n_signals": 1,
   "signals": [
     {
-      "ticker": "KXBTCD-26JUN0517-T68999.99",
-      "title": "Bitcoin price on Jun 5, 2026?",
+      "ticker": "KXLLM1-26JUN06-ANTH",
+      "title": "Best AI in Jun 2026?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.94,
-      "yes_mid": 0.935,
-      "true_prob": 0.955,
+      "fill_price": 0.97,
+      "yes_mid": 0.965,
+      "true_prob": 0.985,
       "edge": 0.02,
-      "hours_left": 129.2,
-      "close_time": "2026-06-05T21:00:00Z"
-    },
-    {
-      "ticker": "KXBTCD-26JUN0517-T69499.99",
-      "title": "Bitcoin price on Jun 5, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.93,
-      "yes_mid": 0.915,
-      "true_prob": 0.935,
-      "edge": 0.02,
-      "hours_left": 129.2,
-      "close_time": "2026-06-05T21:00:00Z"
-    },
-    {
-      "ticker": "KXBTCD-26MAY3117-T72249.99",
-      "title": "Bitcoin price on May 31, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.98,
-      "yes_mid": 0.975,
-      "true_prob": 0.99,
-      "edge": 0.02,
-      "hours_left": 9.2,
-      "close_time": "2026-05-31T21:00:00Z"
-    },
-    {
-      "ticker": "KXBTCD-26MAY3117-T72999.99",
-      "title": "Bitcoin price on May 31, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.94,
-      "yes_mid": 0.93,
-      "true_prob": 0.95,
-      "edge": 0.02,
-      "hours_left": 9.2,
-      "close_time": "2026-05-31T21:00:00Z"
+      "hours_left": 143.9,
+      "close_time": "2026-06-06T14:00:00Z"
     }
   ]
 }
