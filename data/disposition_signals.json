@@ -1,8 +1,20 @@
 {
-  "generated_at": "2026-05-31T14:07:23.955569+00:00",
+  "generated_at": "2026-05-31T15:39:13.613526+00:00",
   "n_scanned": 5,
-  "n_signals": 1,
+  "n_signals": 2,
   "signals": [
+    {
+      "ticker": "KXBTCD-26MAY3117-T72999.99",
+      "title": "Bitcoin price on May 31, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.93,
+      "yes_mid": 0.925,
+      "true_prob": 0.945,
+      "edge": 0.02,
+      "hours_left": 5.4,
+      "close_time": "2026-05-31T21:00:00Z"
+    },
     {
       "ticker": "KXLLM1-26JUN06-ANTH",
       "title": "Best AI in Jun 2026?",
@@ -12,7 +24,7 @@
       "yes_mid": 0.965,
       "true_prob": 0.985,
       "edge": 0.02,
-      "hours_left": 143.9,
+      "hours_left": 142.4,
       "close_time": "2026-06-06T14:00:00Z"
     }
   ]
