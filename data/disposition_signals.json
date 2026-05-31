@@ -1,6 +1,31 @@
 {
-  "generated_at": "2026-05-31T19:39:44.074633+00:00",
-  "n_scanned": 0,
-  "n_signals": 0,
-  "signals": []
+  "generated_at": "2026-05-31T21:13:21.835552+00:00",
+  "n_scanned": 3,
+  "n_signals": 2,
+  "signals": [
+    {
+      "ticker": "KXBTCD-26JUN0517-T69499.99",
+      "title": "Bitcoin price on Jun 5, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.93,
+      "yes_mid": 0.92,
+      "true_prob": 0.94,
+      "edge": 0.02,
+      "hours_left": 119.8,
+      "close_time": "2026-06-05T21:00:00Z"
+    },
+    {
+      "ticker": "KXHIGHLAX-26MAY31-B72.5",
+      "title": "Will the **high temp in LA** be 72-73\u00b0 on May 31, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.99,
+      "yes_mid": 0.985,
+      "true_prob": 0.99,
+      "edge": 0.02,
+      "hours_left": 10.8,
+      "close_time": "2026-06-01T07:59:00Z"
+    }
+  ]
 }
