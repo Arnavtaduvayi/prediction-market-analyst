@@ -1,7 +1,7 @@
 {
   "started": "2026-05-16T19:16:48.401618+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 70.026,
+  "bankroll": 67.056,
   "trades": [
     {
       "logged_at": "2026-05-16T19:21:38.603234+00:00",
@@ -843,6 +843,29 @@
       "kelly_fraction": 0.05,
       "checks_passed": 2,
       "hours_left_at_entry": 142.8,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
+    },
+    {
+      "logged_at": "2026-05-31T00:12:36.661934+00:00",
+      "kalshi_ticker": "KXBTCMINMON-BTC-26MAY31-7000000",
+      "kalshi_title": "Will BTC trimmed mean be below $70000.00 by 11:59 PM ET on May 31, 2026?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.99,
+      "cost": 2.97,
+      "yes_mid_at_entry": 0.015,
+      "thesis_estimate": -0.025,
+      "thesis_target_price": -0.019,
+      "thesis_confidence": 0.65,
+      "consensus_votes": 1,
+      "size_multiplier": 0.5,
+      "kelly_fraction": 0.05,
+      "checks_passed": 2,
+      "hours_left_at_entry": 27.8,
       "status": "open",
       "resolved_yes": null,
       "pnl": null,
