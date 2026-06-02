@@ -1,43 +1,6 @@
 {
-  "generated_at": "2026-06-02T00:24:15.679913+00:00",
-  "n_scanned": 4,
-  "n_signals": 3,
-  "signals": [
-    {
-      "ticker": "KXBTCD-26JUN0517-T66499.99",
-      "title": "Bitcoin price on Jun 5, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.95,
-      "yes_mid": 0.945,
-      "true_prob": 0.965,
-      "edge": 0.02,
-      "hours_left": 92.6,
-      "close_time": "2026-06-05T21:00:00Z"
-    },
-    {
-      "ticker": "KXBTCD-26JUN0517-T66999.99",
-      "title": "Bitcoin price on Jun 5, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.94,
-      "yes_mid": 0.92,
-      "true_prob": 0.94,
-      "edge": 0.02,
-      "hours_left": 92.6,
-      "close_time": "2026-06-05T21:00:00Z"
-    },
-    {
-      "ticker": "KXLLM1-26JUN06-ANTH",
-      "title": "Best AI in Jun 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.98,
-      "yes_mid": 0.975,
-      "true_prob": 0.99,
-      "edge": 0.02,
-      "hours_left": 109.6,
-      "close_time": "2026-06-06T14:00:00Z"
-    }
-  ]
+  "generated_at": "2026-06-02T06:00:28.877238+00:00",
+  "n_scanned": 10,
+  "n_signals": 0,
+  "signals": []
 }
