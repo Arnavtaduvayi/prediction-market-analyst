@@ -1,19 +1,6 @@
 {
-  "generated_at": "2026-06-02T18:52:19.518689+00:00",
-  "n_scanned": 12,
-  "n_signals": 1,
-  "signals": [
-    {
-      "ticker": "KXLLM1-26JUN06-ANTH",
-      "title": "Best AI in Jun 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.98,
-      "yes_mid": 0.975,
-      "true_prob": 0.99,
-      "edge": 0.02,
-      "hours_left": 91.2,
-      "close_time": "2026-06-06T14:00:00Z"
-    }
-  ]
+  "generated_at": "2026-06-02T21:58:16.954259+00:00",
+  "n_scanned": 5,
+  "n_signals": 0,
+  "signals": []
 }
