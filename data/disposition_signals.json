@@ -1,18 +1,30 @@
 {
-  "generated_at": "2026-06-03T10:04:17.137053+00:00",
-  "n_scanned": 7,
-  "n_signals": 1,
+  "generated_at": "2026-06-03T14:55:19.291549+00:00",
+  "n_scanned": 11,
+  "n_signals": 2,
   "signals": [
     {
-      "ticker": "KXBTCD-26JUN0317-T64499.99",
+      "ticker": "KXBTCD-26JUN0317-T64999.99",
       "title": "Bitcoin price on Jun 3, 2026?",
       "type": "favorite_buy",
       "side": "yes",
       "fill_price": 0.95,
-      "yes_mid": 0.94,
-      "true_prob": 0.96,
+      "yes_mid": 0.945,
+      "true_prob": 0.965,
       "edge": 0.02,
-      "hours_left": 11.0,
+      "hours_left": 6.1,
+      "close_time": "2026-06-03T21:00:00Z"
+    },
+    {
+      "ticker": "KXBTCD-26JUN0317-T68749.99",
+      "title": "Bitcoin price on Jun 3, 2026?",
+      "type": "longshot_sell",
+      "side": "no",
+      "fill_price": 0.96,
+      "yes_mid": 0.03,
+      "true_prob": 0.9748,
+      "edge": 0.0048,
+      "hours_left": 6.1,
       "close_time": "2026-06-03T21:00:00Z"
     }
   ]
