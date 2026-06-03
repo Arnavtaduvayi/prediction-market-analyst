@@ -1,6 +1,31 @@
 {
-  "generated_at": "2026-06-02T23:58:43.466074+00:00",
-  "n_scanned": 5,
-  "n_signals": 0,
-  "signals": []
+  "generated_at": "2026-06-03T05:08:16.594246+00:00",
+  "n_scanned": 16,
+  "n_signals": 2,
+  "signals": [
+    {
+      "ticker": "KXBTCD-26JUN0517-T62499.99",
+      "title": "Bitcoin price on Jun 5, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.93,
+      "yes_mid": 0.925,
+      "true_prob": 0.945,
+      "edge": 0.02,
+      "hours_left": 63.9,
+      "close_time": "2026-06-05T21:00:00Z"
+    },
+    {
+      "ticker": "KXTRUMPSAY-26JUN08-HOTT",
+      "title": "Will Trump say \"Hottest\" before Jun 8, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.93,
+      "yes_mid": 0.925,
+      "true_prob": 0.945,
+      "edge": 0.02,
+      "hours_left": 128.9,
+      "close_time": "2026-06-08T14:00:00Z"
+    }
+  ]
 }

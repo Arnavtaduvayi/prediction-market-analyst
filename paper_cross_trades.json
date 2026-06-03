@@ -1,7 +1,7 @@
 {
   "started": "2026-05-16T19:16:48.401618+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 75.836,
+  "bankroll": 72.076,
   "trades": [
     {
       "logged_at": "2026-05-16T19:21:38.603234+00:00",
@@ -921,6 +921,29 @@
       "settled_at": "2026-05-31T14:58:40.060537+00:00",
       "exit_reason": "TARGET_HIT",
       "exit_price": 0.94
+    },
+    {
+      "logged_at": "2026-06-03T05:08:16.591770+00:00",
+      "kalshi_ticker": "KXTRUMPSAY-26JUN08-HOTT",
+      "kalshi_title": "Will Trump say \"Hottest\" before Jun 8, 2026?",
+      "side": "no",
+      "contracts": 47,
+      "entry_price": 0.07999999999999996,
+      "cost": 3.76,
+      "yes_mid_at_entry": 0.925,
+      "thesis_estimate": 0.505,
+      "thesis_target_price": 0.568,
+      "thesis_confidence": 0.85,
+      "consensus_votes": 1,
+      "size_multiplier": 0.5,
+      "kelly_fraction": 0.05,
+      "checks_passed": 3,
+      "hours_left_at_entry": 128.9,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
     }
   ],
   "bankroll_topups": [
