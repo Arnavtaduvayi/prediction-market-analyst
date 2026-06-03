@@ -939,11 +939,12 @@
       "kelly_fraction": 0.05,
       "checks_passed": 3,
       "hours_left_at_entry": 128.9,
-      "status": "open",
+      "status": "exited",
       "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null
+      "pnl": -3.76,
+      "settled_at": "2026-06-03T12:16:55.649494+00:00",
+      "exit_reason": "VOLUME_EXIT",
+      "exit_price": 0.0
     }
   ],
   "bankroll_topups": [
