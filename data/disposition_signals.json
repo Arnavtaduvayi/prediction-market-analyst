@@ -1,31 +1,43 @@
 {
-  "generated_at": "2026-06-03T14:55:19.291549+00:00",
-  "n_scanned": 11,
-  "n_signals": 2,
+  "generated_at": "2026-06-03T18:56:02.714571+00:00",
+  "n_scanned": 9,
+  "n_signals": 3,
   "signals": [
     {
-      "ticker": "KXBTCD-26JUN0317-T64999.99",
+      "ticker": "KXBTCD-26JUN0317-T65249.99",
       "title": "Bitcoin price on Jun 3, 2026?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.95,
-      "yes_mid": 0.945,
-      "true_prob": 0.965,
+      "fill_price": 0.94,
+      "yes_mid": 0.935,
+      "true_prob": 0.955,
       "edge": 0.02,
-      "hours_left": 6.1,
+      "hours_left": 2.1,
       "close_time": "2026-06-03T21:00:00Z"
     },
     {
-      "ticker": "KXBTCD-26JUN0317-T68749.99",
-      "title": "Bitcoin price on Jun 3, 2026?",
+      "ticker": "KXT20MATCH-26JUN031330MIDSUR-SUR",
+      "title": "Surrey vs Middlesex Winner?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.97,
+      "yes_mid": 0.965,
+      "true_prob": 0.985,
+      "edge": 0.02,
+      "hours_left": 50.6,
+      "close_time": "2026-06-05T21:30:00Z"
+    },
+    {
+      "ticker": "KXT20MATCH-26JUN031330MIDSUR-MID",
+      "title": "Surrey vs Middlesex Winner?",
       "type": "longshot_sell",
       "side": "no",
       "fill_price": 0.96,
-      "yes_mid": 0.03,
-      "true_prob": 0.9748,
-      "edge": 0.0048,
-      "hours_left": 6.1,
-      "close_time": "2026-06-03T21:00:00Z"
+      "yes_mid": 0.035,
+      "true_prob": 0.9706,
+      "edge": 0.0056,
+      "hours_left": 50.6,
+      "close_time": "2026-06-05T21:30:00Z"
     }
   ]
 }
