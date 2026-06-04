@@ -1,43 +1,19 @@
 {
-  "generated_at": "2026-06-04T16:29:03.408671+00:00",
-  "n_scanned": 7,
-  "n_signals": 3,
+  "generated_at": "2026-06-04T19:31:18.945010+00:00",
+  "n_scanned": 5,
+  "n_signals": 1,
   "signals": [
     {
-      "ticker": "KXODIMATCH-26JUN040730AUSPAK-PAK",
-      "title": "Pakistan vs Australia Winner?",
+      "ticker": "KXHIGHNY-26JUN04-B86.5",
+      "title": "Will the **high temp in NYC** be 86-87\u00b0 on Jun 4, 2026?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.92,
-      "yes_mid": 0.915,
-      "true_prob": 0.935,
+      "fill_price": 0.99,
+      "yes_mid": 0.985,
+      "true_prob": 0.99,
       "edge": 0.02,
-      "hours_left": 51.0,
-      "close_time": "2026-06-06T19:30:00Z"
-    },
-    {
-      "ticker": "KXODIMATCH-26JUN040730AUSPAK-AUS",
-      "title": "Pakistan vs Australia Winner?",
-      "type": "longshot_sell",
-      "side": "no",
-      "fill_price": 0.91,
-      "yes_mid": 0.085,
-      "true_prob": 0.9286,
-      "edge": 0.0136,
-      "hours_left": 51.0,
-      "close_time": "2026-06-06T19:30:00Z"
-    },
-    {
-      "ticker": "KXBTCD-26JUN0517-T66999.99",
-      "title": "Bitcoin price on Jun 5, 2026?",
-      "type": "longshot_sell",
-      "side": "no",
-      "fill_price": 0.94,
-      "yes_mid": 0.055,
-      "true_prob": 0.9538,
-      "edge": 0.0088,
-      "hours_left": 28.5,
-      "close_time": "2026-06-05T21:00:00Z"
+      "hours_left": 9.5,
+      "close_time": "2026-06-05T04:59:00Z"
     }
   ]
 }
