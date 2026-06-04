@@ -21,6 +21,18 @@ from pathlib import Path
 
 WHALE_JOURNAL = Path(__file__).parent / "paper_cross_trades.json"
 DISPOSITION_JOURNAL = Path(__file__).parent / "paper_disposition_trades.json"
+CALENDAR_JOURNAL = Path(__file__).parent / "paper_calendar_trades.json"
+SPOT_JOURNAL = Path(__file__).parent / "paper_spot_trades.json"
+FLOW_JOURNAL = Path(__file__).parent / "paper_flow_trades.json"
+
+ALL_JOURNALS = [
+    (WHALE_JOURNAL, "whale-copy"),
+    (DISPOSITION_JOURNAL, "disposition"),
+    (CALENDAR_JOURNAL, "calendar-arb"),
+    (SPOT_JOURNAL, "spot-conv"),
+    (FLOW_JOURNAL, "flow-mom"),
+]
+
 TARGETS_FILE = Path(__file__).parent / "data" / "targets.json"
 INITIAL_BANKROLL = 75.0
 
@@ -67,8 +79,8 @@ def journal_stats(path: Path, label: str) -> dict:
 
 
 def cmd_signal():
-    """Full signal pipeline: scanner → (whale + disposition) → both executors."""
-    print(f"[{datetime.now().isoformat(timespec='seconds')}] === SIGNAL PIPELINE (both bots) ===\n")
+    """Full signal pipeline: scanner → 5 bots in sequence."""
+    print(f"[{datetime.now().isoformat(timespec='seconds')}] === 5-BOT SIGNAL PIPELINE ===\n")
 
     if not TARGETS_FILE.exists():
         print("No whale target list — building one (this takes a few minutes)...")
@@ -81,24 +93,27 @@ def cmd_signal():
     scanner.scan()
     print()
 
-    # ── Bot A: Whale-copy ────────────────────────────────────────
+    # Bot A: Whale-copy
     print("─── BOT A: WHALE-COPY ───")
-    import brain
-    brain.run()
-    print()
+    import brain; brain.run(); print()
+    import executor; executor.run(); print()
 
-    import executor
-    executor.run()
-    print()
-
-    # ── Bot B: Disposition (longshot/favorite bias) ──────────────
+    # Bot B: Disposition (longshot/favorite bias)
     print("─── BOT B: DISPOSITION ───")
-    import disposition
-    disposition.run()
-    print()
+    import disposition; disposition.run(); print()
+    import executor_disposition; executor_disposition.run(); print()
 
-    import executor_disposition
-    executor_disposition.run()
+    # Bot C: Strike monotonicity arbitrage
+    print("─── BOT C: CALENDAR ARB ───")
+    import bot_calendar; bot_calendar.run(); print()
+
+    # Bot D: BTC spot convergence
+    print("─── BOT D: SPOT CONVERGENCE ───")
+    import bot_spot; bot_spot.run(); print()
+
+    # Bot E: Order flow momentum
+    print("─── BOT E: FLOW MOMENTUM ───")
+    import bot_flow; bot_flow.run()
 
 
 def cmd_exit():
@@ -134,70 +149,72 @@ def _cancel_journal(path: Path, reason: str, label: str):
 
 
 def cmd_cancel(reason: str = "manual"):
-    """Cancel open trades in BOTH bot journals."""
-    _cancel_journal(WHALE_JOURNAL, reason, "whale")
-    _cancel_journal(DISPOSITION_JOURNAL, reason, "disposition")
+    """Cancel open trades in ALL bot journals."""
+    for path, label in ALL_JOURNALS:
+        _cancel_journal(path, reason, label)
 
 
 def cmd_status(json_output: bool = False):
-    whale = journal_stats(WHALE_JOURNAL, "whale-copy")
-    disp  = journal_stats(DISPOSITION_JOURNAL, "disposition")
+    stats_by_label = {label: journal_stats(path, label) for path, label in ALL_JOURNALS}
+    whale = stats_by_label["whale-copy"]
+    disp  = stats_by_label["disposition"]
+    cal   = stats_by_label["calendar-arb"]
+    spot  = stats_by_label["spot-conv"]
+    flow  = stats_by_label["flow-mom"]
 
     if json_output:
-        print(json.dumps({
-            "whale_copy": whale,
-            "disposition": disp,
-            "combined": {
-                "total_pnl": round(whale["total_pnl"] + disp["total_pnl"], 2),
-                "settled": whale["settled"] + disp["settled"],
-                "open": whale["open"] + disp["open"],
-                "wins": whale["wins"] + disp["wins"],
-                "losses": whale["losses"] + disp["losses"],
-            },
-        }, indent=2, default=str))
+        combined = {
+            "total_pnl": round(sum(s["total_pnl"] for s in stats_by_label.values()), 2),
+            "settled": sum(s["settled"] for s in stats_by_label.values()),
+            "open": sum(s["open"] for s in stats_by_label.values()),
+            "wins": sum(s["wins"] for s in stats_by_label.values()),
+            "losses": sum(s["losses"] for s in stats_by_label.values()),
+        }
+        out = {"combined": combined, **stats_by_label}
+        print(json.dumps(out, indent=2, default=str))
         return
 
-    # Pre-format strings to avoid f-string nesting issues
-    w_init = f"${whale['initial_bankroll']:.2f}"
-    d_init = f"${disp['initial_bankroll']:.2f}"
-    w_bank = f"${whale['bankroll']:.2f}"
-    d_bank = f"${disp['bankroll']:.2f}"
-    w_pnl  = f"${whale['total_pnl']:+.2f}"
-    d_pnl  = f"${disp['total_pnl']:+.2f}"
-    w_ret  = f"{whale['return_pct']:+.2f}%"
-    d_ret  = f"{disp['return_pct']:+.2f}%"
-    w_wr   = f"{whale['win_rate']:.0f}%"
-    d_wr   = f"{disp['win_rate']:.0f}%"
-    w_wl   = f"{whale['wins']}W / {whale['losses']}L"
-    d_wl   = f"{disp['wins']}W / {disp['losses']}L"
+    bots = [("A", "WHALE-COPY", whale, "Polymarket whales"),
+            ("B", "DISPOSITION", disp, "Longshot/favorite"),
+            ("C", "CALENDAR ARB", cal, "Strike monotonicity"),
+            ("D", "SPOT CONV", spot, "BTC fair-value model"),
+            ("E", "FLOW MOM", flow, "Order flow imbalance")]
 
-    bar = "═" * 78
-    sep = "─" * 25 + "  " + "─" * 22 + "  " + "─" * 22
-
+    bar = "═" * 95
     print(f"\n{bar}")
-    print(f"  PAPER TRADING SCORECARD — Side-by-side bot comparison")
+    print(f"  PAPER TRADING — 5-BOT SCORECARD")
     print(bar)
-    print(f"  {'':25}  {'Bot A: WHALE-COPY':>22}  {'Bot B: DISPOSITION':>22}")
-    print(f"  {sep}")
-    print(f"  {'Strategy':<25}  {'Follow Polymarket':>22}  {'Longshot/favorite':>22}")
-    print(f"  {'':25}  {'smart money':>22}  {'bias (Whelan)':>22}")
-    print(f"  {sep}")
-    print(f"  {'Initial bankroll':<25}  {w_init:>22}  {d_init:>22}")
-    print(f"  {'Current bankroll':<25}  {w_bank:>22}  {d_bank:>22}")
-    print(f"  {'Total P&L':<25}  {w_pnl:>22}  {d_pnl:>22}")
-    print(f"  {'Return %':<25}  {w_ret:>22}  {d_ret:>22}")
-    print(f"  {'Settled trades':<25}  {str(whale['settled']):>22}  {str(disp['settled']):>22}")
-    print(f"  {'Win rate':<25}  {w_wr:>22}  {d_wr:>22}")
-    print(f"  {'W/L':<25}  {w_wl:>22}  {d_wl:>22}")
-    print(f"  {'Open trades':<25}  {str(whale['open']):>22}  {str(disp['open']):>22}")
+    header = "  " + f"{'Metric':<18}"
+    for letter, name, _, _ in bots:
+        header += f"{f'Bot {letter}':>15}"
+    print(header)
+    print("  " + f"{'':<18}" + "".join(f"{name:>15}" for _, name, _, _ in bots))
+    print("  " + f"{'─'*18}" + "".join(f"{'─'*15}" for _ in bots))
+
+    def row(label, fmt_fn):
+        line = "  " + f"{label:<18}"
+        for _, _, s, _ in bots:
+            line += f"{fmt_fn(s):>15}"
+        print(line)
+
+    row("Bankroll",      lambda s: f"${s['bankroll']:.2f}")
+    row("P&L",           lambda s: f"${s['total_pnl']:+.2f}")
+    row("Return %",      lambda s: f"{s['return_pct']:+.2f}%")
+    row("Settled",       lambda s: str(s['settled']))
+    row("Win rate",      lambda s: f"{s['win_rate']:.0f}%" if s['settled'] else "—")
+    row("W / L",         lambda s: f"{s['wins']}W/{s['losses']}L")
+    row("Open",          lambda s: str(s['open']))
     print(bar)
 
-    combined_pnl = whale["total_pnl"] + disp["total_pnl"]
-    combined_bankroll = whale["bankroll"] + disp["bankroll"]
-    combined_initial = whale["initial_bankroll"] + disp["initial_bankroll"]
-    print(f"  COMBINED:  bankroll ${combined_bankroll:.2f}  /  P&L ${combined_pnl:+.2f}  "
-          f"({combined_pnl/combined_initial*100:+.1f}%)")
-    print(f"{'═'*78}\n")
+    total_pnl = sum(s["total_pnl"] for _, _, s, _ in bots)
+    total_bank = sum(s["bankroll"] for _, _, s, _ in bots)
+    total_init = sum(s["initial_bankroll"] for _, _, s, _ in bots)
+    total_settled = sum(s["settled"] for _, _, s, _ in bots)
+    total_open = sum(s["open"] for _, _, s, _ in bots)
+    print(f"  COMBINED: bankroll ${total_bank:.2f}  P&L ${total_pnl:+.2f}  "
+          f"({total_pnl/total_init*100:+.2f}%)  "
+          f"settled={total_settled}  open={total_open}")
+    print(f"{bar}\n")
 
     # Detail: recent trades from each
     def _show_recent(stats, name):
@@ -222,8 +239,8 @@ def cmd_status(json_output: bool = False):
                       f"{t.get('contracts',0)}x @ ${t.get('entry_price',0):.3f}  {extra}")
         print()
 
-    _show_recent(whale, "whale-copy")
-    _show_recent(disp, "disposition")
+    for label, s in stats_by_label.items():
+        _show_recent(s, label)
 
 
 def main():

@@ -28,6 +28,18 @@ import requests
 
 WHALE_JOURNAL = Path(__file__).parent / "paper_cross_trades.json"
 DISPOSITION_JOURNAL = Path(__file__).parent / "paper_disposition_trades.json"
+CALENDAR_JOURNAL = Path(__file__).parent / "paper_calendar_trades.json"
+SPOT_JOURNAL = Path(__file__).parent / "paper_spot_trades.json"
+FLOW_JOURNAL = Path(__file__).parent / "paper_flow_trades.json"
+
+JOURNALS = [
+    (WHALE_JOURNAL, "whale"),
+    (DISPOSITION_JOURNAL, "disposition"),
+    (CALENDAR_JOURNAL, "calendar"),
+    (SPOT_JOURNAL, "spot"),
+    (FLOW_JOURNAL, "flow"),
+]
+
 KALSHI_API = "https://api.elections.kalshi.com/trade-api/v2"
 
 # Exit thresholds (from the LunarResearcher methodology)
@@ -231,9 +243,9 @@ def process_journal(path: Path, label: str):
 
 def run():
     ts = datetime.now().isoformat(timespec='seconds')
-    print(f"[{ts}] Exit monitor — both bots")
-    process_journal(WHALE_JOURNAL, "whale")
-    process_journal(DISPOSITION_JOURNAL, "disposition")
+    print(f"[{ts}] Exit monitor — all 5 bots")
+    for path, label in JOURNALS:
+        process_journal(path, label)
 
 
 def loop(interval_seconds: int = 60):

@@ -35,7 +35,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add paper_cross_trades.json paper_disposition_trades.json data/disposition_signals.json 2>/dev/null || true
+          git add paper_cross_trades.json paper_disposition_trades.json paper_calendar_trades.json paper_spot_trades.json paper_flow_trades.json data/disposition_signals.json 2>/dev/null || true
           if ! git diff --staged --quiet; then
             git commit -m "paper: signal capture $(date -u +%Y-%m-%dT%H:%MZ)"
             git push
