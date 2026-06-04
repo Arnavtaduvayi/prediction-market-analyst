@@ -1,6 +1,31 @@
 {
-  "generated_at": "2026-06-04T05:01:22.729353+00:00",
-  "n_scanned": 13,
-  "n_signals": 0,
-  "signals": []
+  "generated_at": "2026-06-04T08:58:28.222842+00:00",
+  "n_scanned": 6,
+  "n_signals": 2,
+  "signals": [
+    {
+      "ticker": "KXFINALSATTEND-26JUN-PET",
+      "title": "Will Pete Davidson attend Pro Basketball Finals Game 1: New York vs. San Antonio in 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.97,
+      "yes_mid": 0.965,
+      "true_prob": 0.985,
+      "edge": 0.02,
+      "hours_left": 5.1,
+      "close_time": "2026-06-04T14:00:00Z"
+    },
+    {
+      "ticker": "KXLLM1-26JUN06-ANTH",
+      "title": "Best AI in Jun 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.98,
+      "yes_mid": 0.975,
+      "true_prob": 0.99,
+      "edge": 0.02,
+      "hours_left": 53.0,
+      "close_time": "2026-06-06T14:00:00Z"
+    }
+  ]
 }
