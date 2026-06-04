@@ -1,19 +1,31 @@
 {
-  "generated_at": "2026-06-04T21:51:58.554592+00:00",
+  "generated_at": "2026-06-04T23:19:43.998409+00:00",
   "n_scanned": 7,
-  "n_signals": 1,
+  "n_signals": 2,
   "signals": [
     {
-      "ticker": "KXAAAGASD-26JUN05-4.200",
-      "title": "Will average **gas prices** be above $4.200?",
+      "ticker": "KXLLM1-26JUN06-ANTH",
+      "title": "Best AI in Jun 2026?",
       "type": "favorite_buy",
       "side": "yes",
       "fill_price": 0.98,
       "yes_mid": 0.975,
       "true_prob": 0.99,
       "edge": 0.02,
-      "hours_left": 6.1,
-      "close_time": "2026-06-05T03:59:00Z"
+      "hours_left": 38.7,
+      "close_time": "2026-06-06T14:00:00Z"
+    },
+    {
+      "ticker": "KXRT-SCA-20",
+      "title": "Scary Movie Rotten Tomatoes score?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.98,
+      "yes_mid": 0.97,
+      "true_prob": 0.99,
+      "edge": 0.02,
+      "hours_left": 86.7,
+      "close_time": "2026-06-08T14:00:00Z"
     }
   ]
 }
