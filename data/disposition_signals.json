@@ -1,31 +1,31 @@
 {
-  "generated_at": "2026-06-04T08:58:28.222842+00:00",
-  "n_scanned": 6,
+  "generated_at": "2026-06-04T12:12:54.205905+00:00",
+  "n_scanned": 12,
   "n_signals": 2,
   "signals": [
     {
-      "ticker": "KXFINALSATTEND-26JUN-PET",
-      "title": "Will Pete Davidson attend Pro Basketball Finals Game 1: New York vs. San Antonio in 2026?",
+      "ticker": "KXBTCD-26JUN0417-T59499.99",
+      "title": "Bitcoin price on Jun 4, 2026?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.97,
-      "yes_mid": 0.965,
-      "true_prob": 0.985,
+      "fill_price": 0.93,
+      "yes_mid": 0.925,
+      "true_prob": 0.945,
       "edge": 0.02,
-      "hours_left": 5.1,
-      "close_time": "2026-06-04T14:00:00Z"
+      "hours_left": 8.8,
+      "close_time": "2026-06-04T21:00:00Z"
     },
     {
-      "ticker": "KXLLM1-26JUN06-ANTH",
-      "title": "Best AI in Jun 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.98,
-      "yes_mid": 0.975,
-      "true_prob": 0.99,
-      "edge": 0.02,
-      "hours_left": 53.0,
-      "close_time": "2026-06-06T14:00:00Z"
+      "ticker": "KXBTCD-26JUN0417-T64749.99",
+      "title": "Bitcoin price on Jun 4, 2026?",
+      "type": "longshot_sell",
+      "side": "no",
+      "fill_price": 0.91,
+      "yes_mid": 0.085,
+      "true_prob": 0.9286,
+      "edge": 0.0136,
+      "hours_left": 8.8,
+      "close_time": "2026-06-04T21:00:00Z"
     }
   ]
 }
