@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-06-04T19:31:18.945010+00:00",
-  "n_scanned": 5,
+  "generated_at": "2026-06-04T21:51:58.554592+00:00",
+  "n_scanned": 7,
   "n_signals": 1,
   "signals": [
     {
-      "ticker": "KXHIGHNY-26JUN04-B86.5",
-      "title": "Will the **high temp in NYC** be 86-87\u00b0 on Jun 4, 2026?",
+      "ticker": "KXAAAGASD-26JUN05-4.200",
+      "title": "Will average **gas prices** be above $4.200?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.99,
-      "yes_mid": 0.985,
+      "fill_price": 0.98,
+      "yes_mid": 0.975,
       "true_prob": 0.99,
       "edge": 0.02,
-      "hours_left": 9.5,
-      "close_time": "2026-06-05T04:59:00Z"
+      "hours_left": 6.1,
+      "close_time": "2026-06-05T03:59:00Z"
     }
   ]
 }

@@ -2,7 +2,7 @@
   "strategy": "flow_momentum",
   "started": "2026-06-04T15:55:51.949036+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 65.25000000000001,
+  "bankroll": 61.04000000000001,
   "trades": [
     {
       "logged_at": "2026-06-04T15:55:54.305861+00:00",
@@ -126,6 +126,46 @@
       "settled_at": "2026-06-04T19:34:35.808804+00:00",
       "exit_reason": "VOLUME_EXIT",
       "exit_price": 0.66
+    },
+    {
+      "logged_at": "2026-06-04T21:51:59.829906+00:00",
+      "strategy": "flow_momentum",
+      "kalshi_ticker": "KXBTCD-26JUN0517-T62999.99",
+      "kalshi_title": "Bitcoin price on Jun 5, 2026?",
+      "side": "yes",
+      "contracts": 5,
+      "entry_price": 0.59,
+      "cost": 2.95,
+      "yes_mid_at_entry": 0.585,
+      "flow_share_at_entry": 0.915,
+      "flow_volume_at_entry": 5407.14,
+      "hours_left_at_entry": 23.2,
+      "thesis_target_price": 0.625,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
+    },
+    {
+      "logged_at": "2026-06-04T21:51:59.829954+00:00",
+      "strategy": "flow_momentum",
+      "kalshi_ticker": "KXTESTMATCH-26JUN040600NZENG-ENG",
+      "kalshi_title": "England vs New Zealand Winner?",
+      "side": "yes",
+      "contracts": 2,
+      "entry_price": 0.63,
+      "cost": 1.26,
+      "yes_mid_at_entry": 0.615,
+      "flow_share_at_entry": 0.853,
+      "flow_volume_at_entry": 3674.52,
+      "hours_left_at_entry": 156.1,
+      "thesis_target_price": 0.655,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
     }
   ]
 }
