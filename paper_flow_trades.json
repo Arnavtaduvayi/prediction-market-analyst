@@ -2,7 +2,7 @@
   "strategy": "flow_momentum",
   "started": "2026-06-04T15:55:51.949036+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 61.04000000000001,
+  "bankroll": 64.99000000000001,
   "trades": [
     {
       "logged_at": "2026-06-04T15:55:54.305861+00:00",
@@ -59,11 +59,11 @@
       "flow_volume_at_entry": 1136.09,
       "hours_left_at_entry": 5.0,
       "thesis_target_price": 0.765,
-      "status": "open",
-      "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null
+      "status": "settled",
+      "resolved_yes": true,
+      "pnl": -3.36,
+      "settled_at": "2026-06-04T21:57:24.872522+00:00",
+      "exit_reason": "SETTLED_LOSS"
     },
     {
       "logged_at": "2026-06-04T16:29:05.011765+00:00",
@@ -79,11 +79,11 @@
       "flow_volume_at_entry": 208.02,
       "hours_left_at_entry": 4.5,
       "thesis_target_price": 0.84,
-      "status": "open",
-      "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null
+      "status": "settled",
+      "resolved_yes": true,
+      "pnl": -3.25,
+      "settled_at": "2026-06-04T21:57:25.122137+00:00",
+      "exit_reason": "SETTLED_LOSS"
     },
     {
       "logged_at": "2026-06-04T19:31:20.213250+00:00",
@@ -141,11 +141,12 @@
       "flow_volume_at_entry": 5407.14,
       "hours_left_at_entry": 23.2,
       "thesis_target_price": 0.625,
-      "status": "open",
+      "status": "exited",
       "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null
+      "pnl": -0.2,
+      "settled_at": "2026-06-04T21:57:25.427529+00:00",
+      "exit_reason": "VOLUME_EXIT",
+      "exit_price": 0.55
     },
     {
       "logged_at": "2026-06-04T21:51:59.829954+00:00",
@@ -161,11 +162,12 @@
       "flow_volume_at_entry": 3674.52,
       "hours_left_at_entry": 156.1,
       "thesis_target_price": 0.655,
-      "status": "open",
+      "status": "exited",
       "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null
+      "pnl": -0.06,
+      "settled_at": "2026-06-04T21:57:25.738929+00:00",
+      "exit_reason": "VOLUME_EXIT",
+      "exit_price": 0.6
     }
   ]
 }
