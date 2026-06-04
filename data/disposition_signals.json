@@ -1,31 +1,43 @@
 {
-  "generated_at": "2026-06-04T16:01:26.245107+00:00",
-  "n_scanned": 9,
-  "n_signals": 2,
+  "generated_at": "2026-06-04T16:29:03.408671+00:00",
+  "n_scanned": 7,
+  "n_signals": 3,
   "signals": [
     {
-      "ticker": "KXBTCD-26JUN0417-T61749.99",
-      "title": "Bitcoin price on Jun 4, 2026?",
+      "ticker": "KXODIMATCH-26JUN040730AUSPAK-PAK",
+      "title": "Pakistan vs Australia Winner?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.98,
-      "yes_mid": 0.97,
-      "true_prob": 0.99,
+      "fill_price": 0.92,
+      "yes_mid": 0.915,
+      "true_prob": 0.935,
       "edge": 0.02,
-      "hours_left": 5.0,
-      "close_time": "2026-06-04T21:00:00Z"
+      "hours_left": 51.0,
+      "close_time": "2026-06-06T19:30:00Z"
     },
     {
       "ticker": "KXODIMATCH-26JUN040730AUSPAK-AUS",
       "title": "Pakistan vs Australia Winner?",
       "type": "longshot_sell",
       "side": "no",
-      "fill_price": 0.95,
-      "yes_mid": 0.045,
-      "true_prob": 0.9622,
-      "edge": 0.0072,
-      "hours_left": 51.5,
+      "fill_price": 0.91,
+      "yes_mid": 0.085,
+      "true_prob": 0.9286,
+      "edge": 0.0136,
+      "hours_left": 51.0,
       "close_time": "2026-06-06T19:30:00Z"
+    },
+    {
+      "ticker": "KXBTCD-26JUN0517-T66999.99",
+      "title": "Bitcoin price on Jun 5, 2026?",
+      "type": "longshot_sell",
+      "side": "no",
+      "fill_price": 0.94,
+      "yes_mid": 0.055,
+      "true_prob": 0.9538,
+      "edge": 0.0088,
+      "hours_left": 28.5,
+      "close_time": "2026-06-05T21:00:00Z"
     }
   ]
 }
