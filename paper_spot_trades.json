@@ -2,6 +2,29 @@
   "strategy": "spot_convergence",
   "started": "2026-06-04T15:55:51.945472+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 75.0,
-  "trades": []
+  "bankroll": 72.16,
+  "trades": [
+    {
+      "logged_at": "2026-06-05T16:09:36.993170+00:00",
+      "strategy": "spot_convergence",
+      "kalshi_ticker": "KXBTCD-26JUN0517-T60999.99",
+      "kalshi_title": "Bitcoin price on Jun 5, 2026?",
+      "side": "no",
+      "contracts": 4,
+      "entry_price": 0.71,
+      "cost": 2.84,
+      "strike": 60999.99,
+      "spot_at_entry": 60246.0,
+      "fair_yes_estimate": 0.1711,
+      "kalshi_mid_at_entry": 0.3,
+      "divergence_at_entry": -0.1289,
+      "hours_left_at_entry": 4.9,
+      "hold_to_settlement": true,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
+    }
+  ]
 }
