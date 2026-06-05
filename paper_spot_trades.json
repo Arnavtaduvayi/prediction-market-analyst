@@ -20,11 +20,11 @@
       "divergence_at_entry": -0.1289,
       "hours_left_at_entry": 4.9,
       "hold_to_settlement": true,
-      "status": "open",
-      "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null
+      "status": "settled",
+      "resolved_yes": true,
+      "pnl": -2.84,
+      "settled_at": "2026-06-05T21:53:59.571256+00:00",
+      "exit_reason": "SETTLED_LOSS"
     }
   ]
 }
