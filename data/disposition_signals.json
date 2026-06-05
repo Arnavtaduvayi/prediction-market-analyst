@@ -1,31 +1,31 @@
 {
-  "generated_at": "2026-06-05T19:05:40.638690+00:00",
-  "n_scanned": 4,
+  "generated_at": "2026-06-05T20:53:23.356549+00:00",
+  "n_scanned": 5,
   "n_signals": 2,
   "signals": [
     {
-      "ticker": "KXRT-SCA-20",
-      "title": "Scary Movie Rotten Tomatoes score?",
+      "ticker": "KXNETFLIXTOPVIEWSTV-26JUN08-15",
+      "title": "Will the #1 Show on Netflix have at least 15 million views?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.99,
-      "yes_mid": 0.97,
-      "true_prob": 0.99,
+      "fill_price": 0.97,
+      "yes_mid": 0.965,
+      "true_prob": 0.985,
       "edge": 0.02,
-      "hours_left": 66.9,
-      "close_time": "2026-06-08T14:00:00Z"
+      "hours_left": 79.1,
+      "close_time": "2026-06-09T03:59:00Z"
     },
     {
-      "ticker": "KXT20MATCH-26JUN051230GLAWOR-WOR",
-      "title": "Worcestershire vs Glamorgan Winner?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.94,
-      "yes_mid": 0.935,
-      "true_prob": 0.955,
-      "edge": 0.02,
-      "hours_left": 49.4,
-      "close_time": "2026-06-07T20:30:00Z"
+      "ticker": "KXLIUSAELIMINATIONW-26JUN05-KCC",
+      "title": "Will KC be eliminated from Love Island USA Season 8 before Jun 6, 2026?",
+      "type": "longshot_sell",
+      "side": "no",
+      "fill_price": 0.97,
+      "yes_mid": 0.025,
+      "true_prob": 0.979,
+      "edge": 0.004,
+      "hours_left": 7.1,
+      "close_time": "2026-06-06T03:59:00Z"
     }
   ]
 }
