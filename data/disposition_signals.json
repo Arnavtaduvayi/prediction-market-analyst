@@ -1,6 +1,31 @@
 {
-  "generated_at": "2026-06-05T16:09:36.885404+00:00",
-  "n_scanned": 5,
-  "n_signals": 0,
-  "signals": []
+  "generated_at": "2026-06-05T19:05:40.638690+00:00",
+  "n_scanned": 4,
+  "n_signals": 2,
+  "signals": [
+    {
+      "ticker": "KXRT-SCA-20",
+      "title": "Scary Movie Rotten Tomatoes score?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.99,
+      "yes_mid": 0.97,
+      "true_prob": 0.99,
+      "edge": 0.02,
+      "hours_left": 66.9,
+      "close_time": "2026-06-08T14:00:00Z"
+    },
+    {
+      "ticker": "KXT20MATCH-26JUN051230GLAWOR-WOR",
+      "title": "Worcestershire vs Glamorgan Winner?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.94,
+      "yes_mid": 0.935,
+      "true_prob": 0.955,
+      "edge": 0.02,
+      "hours_left": 49.4,
+      "close_time": "2026-06-07T20:30:00Z"
+    }
+  ]
 }
