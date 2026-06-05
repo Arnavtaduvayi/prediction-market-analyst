@@ -1,119 +1,108 @@
-# Prediction Market Analyst — Multi-Agent v2
+# Prediction Market Analyst — 5-Bot Paper Trading System
 
-A four-agent paper-trading bot that mirrors top Polymarket whales onto
-Kalshi markets. Inspired by the LunarResearcher / `warproxxx/poly_data`
-methodology, adapted to use Kalshi for US-resident execution.
+A multi-strategy paper-trading bot for Kalshi (CFTC-regulated, US-legal).
+Runs five completely different strategies side-by-side to discover what
+actually has edge.
 
-> **v1 (weather strategy, naive cross-platform matcher) lives in `/legacy`.**
+> **Status:** Paper trading only. Currently testing 5 strategies in parallel.
+> See live results in `paper_*_trades.json` files — workflows commit them
+> after every run.
+
+## The 5 bots
+
+| Bot | Strategy | Edge thesis | Source |
+|---|---|---|---|
+| **A: Whale-Copy** | Follow top Polymarket whale trades to Kalshi equivalents | Polymarket leads price discovery (academic) | `warproxxx/poly_data` methodology |
+| **B: Disposition** | Buy heavy favorites (YES > $0.90) / sell extreme longshots (< $0.10), hold to settlement | Whelan paper on 72M Kalshi trades | `karlwhelan.com` |
+| **C: Calendar Arb** | Find strike-monotonicity violations on multi-strike markets, lock in risk-free spread | Pure math, no prediction | Original |
+| **D: Spot Convergence** | Compare Kalshi BTC prices to actual BTC spot via lognormal model | Real price data must converge at settlement | CoinGecko + Black-Scholes |
+| **E: Flow Momentum** | Detect 70%+ taker imbalance with thin price move, bet WITH the flow | Microstructure / informed trading | Standard OFI research |
+
+Each bot has its own $75 paper bankroll. Combined paper-mode allocation: $375.
 
 ## Architecture
 
 ```
-┌─────────────┐  weekly  ┌──────────┐  daily   ┌─────────┐  daily   ┌──────────┐
-│  targets.py │ ───────► │ scanner  │ ───────► │  brain  │ ───────► │ executor │
-└─────────────┘          │   .py    │          │   .py   │          │   .py    │
-   ↓ 100+ trades         │ scores   │          │ 4 checks│          │ consensus│
-   ↓ 70%+ WR             │ Kalshi   │          │ + thesis│          │ + Kelly  │
-   ↓                     └──────────┘          └─────────┘          └────┬─────┘
-   targets.json           queue.json            thesis.json              │
-                                                                          ▼
-                                                                  paper_cross_trades.json
-                                                                          ▲
-                                                                          │
-                                                                  ┌───────┴──────┐
-                                                                  │ exit_monitor │  hourly
-                                                                  │     .py      │
-                                                                  └──────────────┘
-                                                                   • TARGET_HIT (85%)
-                                                                   • VOLUME_EXIT (3×)
-                                                                   • STALE_THESIS (24h)
-                                                                   • SETTLED
+                       ┌────────────────┐
+                       │   scanner.py   │  ← filters Kalshi universe
+                       │  → queue.json  │     (depth ≥$100, vol ≥$5k,
+                       └────────┬───────┘      hours 2-168, no sports)
+                                │
+       ┌────────────┬───────────┼───────────┬────────────┐
+       ▼            ▼           ▼           ▼            ▼
+  ┌─────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐
+  │  brain  │ │disposition│ │bot_cal-  │ │bot_spot  │ │bot_flow  │
+  │   .py   │ │   .py    │ │endar.py  │ │   .py    │ │   .py    │
+  └────┬────┘ └─────┬────┘ └─────┬────┘ └─────┬────┘ └─────┬────┘
+       │           │             │            │            │
+       ▼           ▼             ▼            ▼            ▼
+  ┌─────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐
+  │executor │ │executor_ │ │ (signal+ │ │ (signal+ │ │ (signal+ │
+  │   .py   │ │ disp.py  │ │executor) │ │executor) │ │executor) │
+  └────┬────┘ └─────┬────┘ └─────┬────┘ └─────┬────┘ └─────┬────┘
+       │           │             │            │            │
+       ▼           ▼             ▼            ▼            ▼
+   paper_cross  paper_disp   paper_cal-   paper_spot  paper_flow
+   _trades     _trades      endar_trades _trades     _trades
+   .json       .json        .json        .json       .json
+                                                          ▲
+                                                          │
+                          ┌───────────────────────────────┘
+                          │
+                  ┌───────┴───────┐
+                  │ exit_monitor  │  ← runs hourly on all 5 journals
+                  │     .py       │     TARGET_HIT / VOLUME_EXIT /
+                  └───────────────┘     STALE_THESIS / SETTLED
 ```
 
-## Filters (kill markets that would lose money)
+## Universal rules (apply to all bots)
 
-**Whale targets (targets.py):**
-- ≥ 100 lifetime Polymarket trades
-- ≥ 70% win rate (computed from closed-position realized PnL)
-- Sorted by total PnL, top 50 saved
-
-**Market scanner (scanner.py) — kills ≥90%:**
-- Min depth: $500 on each side of book
-- Min 24h volume: $10,000
-- Time-to-resolution: 4h to 7d
-- **No sports markets** (52% WR proven in source methodology)
-
-**Brain (brain.py) — 4 checks per surviving market:**
-1. Base rate (matching Polymarket price)
-2. Whale presence (top 20 wallets active in equivalent market)
-3. Disposition bias (longshot bias <$0.15, favorite under-pricing >$0.85)
-4. Edge gate (net edge > spread + 2% slippage)
-
-Requires **3/4 checks pass** AND ≥75% confidence to generate a thesis.
-
-**Executor (executor.py):**
-- 2-3 source checks agree → full Quarter-Kelly position
-- 1 source check only → half position
-- Hard cap: 10% of bankroll per trade, 5 max open positions
-
-**Exit monitor (exit_monitor.py) — runs hourly:**
-- `TARGET_HIT`: Kalshi price hits 85% of expected move
-- `VOLUME_EXIT`: 10-min volume > 3× baseline (smart money leaving)
-- `STALE_THESIS`: 24h open + < 2% price move (thesis didn't play out)
-- `SETTLED_*`: fallback if all triggers missed and market resolved
+- **Cooldown** (`cooldown.py`): no re-entering the same Kalshi ticker for 24h after a non-resolution exit. Prevents bid-ask spread bleed from re-entry loops.
+- **Position cap**: each bot has its own MAX_OPEN_POSITIONS (5-12 depending on bot)
+- **Kelly sizing**: Quarter-Kelly with strategy-specific per-trade caps (3-10% of bankroll)
+- **Scanner filter**: shared across all bots — depth ≥$100/side, 24h vol ≥$5k, 2h-7d to resolution, no sports
 
 ## Usage
 
 ```bash
-# Build the whale target list (takes ~3 minutes)
-python3 targets.py --candidates 100
-
-# Run the full daily signal pipeline
+# Run the full 5-bot signal pipeline
 python3 paper_cross.py signal
 
-# Run exit checks (do this every hour or so)
+# Run exit checks across all 5 journals
 python3 paper_cross.py exit
 
-# Check scorecard
+# Side-by-side scorecard
 python3 paper_cross.py status
 
-# Cancel all open paper trades (e.g., after a code change)
-python3 paper_cross.py cancel reason-here
+# JSON output (for piping/analytics)
+python3 paper_cross.py status --json
+
+# Cancel all open positions in all bots
+python3 paper_cross.py cancel <reason>
+
+# Refresh Polymarket whale list (weekly)
+python3 targets.py --candidates 150
 ```
 
-## Production deployment — VPS (recommended)
+## GitHub Actions (current setup)
 
-**See [docs/VPS.md](docs/VPS.md) for the full 10-minute deploy.**
+Three workflows run in the cloud — laptop independence:
 
-One command on a fresh Ubuntu VPS sets up 4 long-running systemd services
-that mirror the LunarResearcher architecture exactly:
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/Arnavtaduvayi/prediction-market-analyst/main/scripts/deploy.sh | sudo bash
-```
-
-| Service | Interval | Purpose |
+| Workflow | Schedule | Job |
 |---|---|---|
-| `predmkt-scanner` | 300s | Score Kalshi markets |
-| `predmkt-brain` | 360s | Evaluate survivors |
-| `predmkt-executor` | 420s | Consensus + Kelly sizing |
-| `predmkt-exit` | **60s** | Catch volume spikes / targets in near-real-time |
-| `predmkt-targets.timer` | weekly | Refresh whale list |
-| `predmkt-commit.timer` | hourly | Push journal state to GitHub |
+| `paper-signal.yml` | Every hour at :07 | Full 5-bot pipeline |
+| `paper-exit.yml` | Every hour at :23 | Exit triggers + settlements |
+| `paper-targets.yml` | Sundays 12:37 UTC | Refresh whale list |
 
-Total cost: **$5/month** (Hetzner CX22).
+All journals committed back to repo on every run.
 
-## GitHub Actions (fallback / manual override)
+## Production deployment — VPS
 
-Workflows still exist but `schedule` triggers are disabled — only manual
-`workflow_dispatch` runs. Use these only if not yet on a VPS, or for
-ad-hoc one-off runs.
+For continuous monitoring with sub-minute polling, see [`docs/VPS.md`](docs/VPS.md). One-command deploy on Hetzner CX22 ($4.55/mo).
 
-## Inspiration / source repos
+## Current results
 
-- `warproxxx/poly_data` — the dataset behind whale identification
-- `Polymarket/agents` — the official agent framework
-- LunarResearcher methodology — multi-agent + exit-trigger approach
+Live numbers in each `paper_*_trades.json`. Updated by GitHub Actions after every workflow run. The `CHANGELOG.md` tracks major findings.
 
 ## v1 (legacy)
 
