@@ -1,6 +1,43 @@
 {
-  "generated_at": "2026-06-05T04:41:28.269023+00:00",
-  "n_scanned": 0,
-  "n_signals": 0,
-  "signals": []
+  "generated_at": "2026-06-05T08:52:39.382515+00:00",
+  "n_scanned": 12,
+  "n_signals": 3,
+  "signals": [
+    {
+      "ticker": "KXBTCD-26JUN0517-T59249.99",
+      "title": "Bitcoin price on Jun 5, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.92,
+      "yes_mid": 0.915,
+      "true_prob": 0.935,
+      "edge": 0.02,
+      "hours_left": 12.2,
+      "close_time": "2026-06-05T21:00:00Z"
+    },
+    {
+      "ticker": "KXLLM1-26JUN06-ANTH",
+      "title": "Best AI in Jun 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.98,
+      "yes_mid": 0.975,
+      "true_prob": 0.99,
+      "edge": 0.02,
+      "hours_left": 29.2,
+      "close_time": "2026-06-06T14:00:00Z"
+    },
+    {
+      "ticker": "KXWTI-26JUN0514-T88.99",
+      "title": "Will the WTI crude oil settlement price be above 88.99 USD/Bbl on Jun 5, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.97,
+      "yes_mid": 0.965,
+      "true_prob": 0.985,
+      "edge": 0.02,
+      "hours_left": 9.6,
+      "close_time": "2026-06-05T18:30:00Z"
+    }
+  ]
 }
