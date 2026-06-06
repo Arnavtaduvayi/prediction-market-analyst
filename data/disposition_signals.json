@@ -1,20 +1,8 @@
 {
-  "generated_at": "2026-06-06T18:18:03.424570+00:00",
-  "n_scanned": 6,
-  "n_signals": 3,
+  "generated_at": "2026-06-06T20:19:40.656795+00:00",
+  "n_scanned": 4,
+  "n_signals": 2,
   "signals": [
-    {
-      "ticker": "KXBTCD-26JUN0617-T59499.99",
-      "title": "Bitcoin price on Jun 6, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.95,
-      "yes_mid": 0.945,
-      "true_prob": 0.965,
-      "edge": 0.02,
-      "hours_left": 2.7,
-      "close_time": "2026-06-06T21:00:00Z"
-    },
     {
       "ticker": "KXTESTMATCH-26JUN040600NZENG-ENG",
       "title": "England vs New Zealand Winner?",
@@ -24,20 +12,20 @@
       "yes_mid": 0.925,
       "true_prob": 0.945,
       "edge": 0.02,
-      "hours_left": 111.7,
+      "hours_left": 109.7,
       "close_time": "2026-06-11T10:00:00Z"
     },
     {
-      "ticker": "KXTESTMATCH-26JUN060000AFGIND-IND",
-      "title": "India vs Afghanistan Winner?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.98,
-      "yes_mid": 0.97,
-      "true_prob": 0.99,
-      "edge": 0.02,
-      "hours_left": 153.7,
-      "close_time": "2026-06-13T04:00:00Z"
+      "ticker": "KXTESTMATCH-26JUN040600NZENG-NZ",
+      "title": "England vs New Zealand Winner?",
+      "type": "longshot_sell",
+      "side": "no",
+      "fill_price": 0.91,
+      "yes_mid": 0.075,
+      "true_prob": 0.937,
+      "edge": 0.012,
+      "hours_left": 109.7,
+      "close_time": "2026-06-11T10:00:00Z"
     }
   ]
 }
