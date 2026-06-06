@@ -1,43 +1,43 @@
 {
-  "generated_at": "2026-06-06T16:17:16.761811+00:00",
-  "n_scanned": 7,
+  "generated_at": "2026-06-06T18:18:03.424570+00:00",
+  "n_scanned": 6,
   "n_signals": 3,
   "signals": [
     {
-      "ticker": "KXAAAGASW-26JUN08-4.140",
-      "title": "Will average **gas prices** be above $4.140?",
+      "ticker": "KXBTCD-26JUN0617-T59499.99",
+      "title": "Bitcoin price on Jun 6, 2026?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.98,
-      "yes_mid": 0.97,
-      "true_prob": 0.99,
+      "fill_price": 0.95,
+      "yes_mid": 0.945,
+      "true_prob": 0.965,
       "edge": 0.02,
-      "hours_left": 35.7,
-      "close_time": "2026-06-08T03:59:00Z"
+      "hours_left": 2.7,
+      "close_time": "2026-06-06T21:00:00Z"
     },
     {
       "ticker": "KXTESTMATCH-26JUN040600NZENG-ENG",
       "title": "England vs New Zealand Winner?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.94,
-      "yes_mid": 0.93,
-      "true_prob": 0.95,
+      "fill_price": 0.93,
+      "yes_mid": 0.925,
+      "true_prob": 0.945,
       "edge": 0.02,
-      "hours_left": 113.7,
+      "hours_left": 111.7,
       "close_time": "2026-06-11T10:00:00Z"
     },
     {
-      "ticker": "KXTOPSONG-26JUN13-HAT",
-      "title": "Will hate that i made you love me be #1 on the Billboard Hot 100 during the week of Jun 13, 2026",
+      "ticker": "KXTESTMATCH-26JUN060000AFGIND-IND",
+      "title": "India vs Afghanistan Winner?",
       "type": "favorite_buy",
       "side": "yes",
       "fill_price": 0.98,
-      "yes_mid": 0.975,
+      "yes_mid": 0.97,
       "true_prob": 0.99,
       "edge": 0.02,
-      "hours_left": 35.7,
-      "close_time": "2026-06-08T03:59:00Z"
+      "hours_left": 153.7,
+      "close_time": "2026-06-13T04:00:00Z"
     }
   ]
 }
