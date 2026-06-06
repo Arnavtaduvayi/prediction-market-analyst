@@ -1,55 +1,31 @@
 {
-  "generated_at": "2026-06-06T07:54:48.940165+00:00",
-  "n_scanned": 11,
-  "n_signals": 4,
+  "generated_at": "2026-06-06T10:16:58.152952+00:00",
+  "n_scanned": 4,
+  "n_signals": 2,
   "signals": [
     {
-      "ticker": "KXBTCD-26JUN0617-T58499.99",
+      "ticker": "KXBTCD-26JUN0617-T58749.99",
       "title": "Bitcoin price on Jun 6, 2026?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.97,
-      "yes_mid": 0.965,
-      "true_prob": 0.985,
+      "fill_price": 0.95,
+      "yes_mid": 0.935,
+      "true_prob": 0.955,
       "edge": 0.02,
-      "hours_left": 13.1,
+      "hours_left": 10.7,
       "close_time": "2026-06-06T21:00:00Z"
     },
     {
-      "ticker": "KXTESTMATCH-26JUN060000AFGIND-IND",
-      "title": "India vs Afghanistan Winner?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.98,
-      "yes_mid": 0.975,
-      "true_prob": 0.99,
-      "edge": 0.02,
-      "hours_left": 164.1,
-      "close_time": "2026-06-13T04:00:00Z"
-    },
-    {
-      "ticker": "KXTOPBBSPOTSDRA-26JUN13-2",
-      "title": "How many spots on the Billboard Hot 100's top 10 will Drake hold for the week of Jun 13, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.97,
-      "yes_mid": 0.965,
-      "true_prob": 0.985,
-      "edge": 0.02,
-      "hours_left": 164.1,
-      "close_time": "2026-06-13T03:59:00Z"
-    },
-    {
-      "ticker": "KXTOPSONG-26JUN13-HAT",
-      "title": "Will hate that i made you love me be #1 on the Billboard Hot 100 during the week of Jun 13, 2026",
+      "ticker": "KXBTCD-26JUN0617-T58999.99",
+      "title": "Bitcoin price on Jun 6, 2026?",
       "type": "favorite_buy",
       "side": "yes",
       "fill_price": 0.93,
-      "yes_mid": 0.92,
-      "true_prob": 0.94,
+      "yes_mid": 0.91,
+      "true_prob": 0.93,
       "edge": 0.02,
-      "hours_left": 44.1,
-      "close_time": "2026-06-08T03:59:00Z"
+      "hours_left": 10.7,
+      "close_time": "2026-06-06T21:00:00Z"
     }
   ]
 }
