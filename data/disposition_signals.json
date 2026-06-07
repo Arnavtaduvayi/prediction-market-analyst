@@ -1,6 +1,19 @@
 {
-  "generated_at": "2026-06-07T20:22:25.842075+00:00",
-  "n_scanned": 1,
-  "n_signals": 0,
-  "signals": []
+  "generated_at": "2026-06-07T22:15:32.886266+00:00",
+  "n_scanned": 8,
+  "n_signals": 1,
+  "signals": [
+    {
+      "ticker": "KXLIUSAELIMINATION-26JUN07-KEN",
+      "title": "Will Kenzie be eliminated from Love Island USA S8E5?",
+      "type": "longshot_sell",
+      "side": "no",
+      "fill_price": 0.98,
+      "yes_mid": 0.015,
+      "true_prob": 0.9874,
+      "edge": 0.0024,
+      "hours_left": 5.7,
+      "close_time": "2026-06-08T03:59:00Z"
+    }
+  ]
 }

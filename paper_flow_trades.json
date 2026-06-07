@@ -2,7 +2,7 @@
   "strategy": "flow_momentum",
   "started": "2026-06-04T15:55:51.949036+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 72.65,
+  "bankroll": 69.2,
   "trades": [
     {
       "logged_at": "2026-06-04T15:55:54.305861+00:00",
@@ -690,6 +690,26 @@
       "settled_at": "2026-06-07T14:25:09.401643+00:00",
       "exit_reason": "TARGET_HIT",
       "exit_price": 0.49
+    },
+    {
+      "logged_at": "2026-06-07T22:15:34.395731+00:00",
+      "strategy": "flow_momentum",
+      "kalshi_ticker": "KXLIUSAELIMINATION-26JUN07-SIN",
+      "kalshi_title": "Will Sincere be eliminated from Love Island USA S8E5?",
+      "side": "yes",
+      "contracts": 15,
+      "entry_price": 0.23,
+      "cost": 3.45,
+      "yes_mid_at_entry": 0.225,
+      "flow_share_at_entry": 0.871,
+      "flow_volume_at_entry": 598.96,
+      "hours_left_at_entry": 5.7,
+      "thesis_target_price": 0.265,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
     }
   ]
 }
