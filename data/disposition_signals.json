@@ -1,18 +1,42 @@
 {
-  "generated_at": "2026-06-06T22:14:41.429685+00:00",
-  "n_scanned": 7,
-  "n_signals": 2,
+  "generated_at": "2026-06-07T00:16:07.792756+00:00",
+  "n_scanned": 8,
+  "n_signals": 4,
   "signals": [
+    {
+      "ticker": "KXAAAGASD-26JUN07-4.165",
+      "title": "Will average **gas prices** be above $4.165?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.94,
+      "yes_mid": 0.935,
+      "true_prob": 0.955,
+      "edge": 0.02,
+      "hours_left": 3.7,
+      "close_time": "2026-06-07T03:59:00Z"
+    },
+    {
+      "ticker": "KXBTCD-26JUN0717-T57999.99",
+      "title": "Bitcoin price on Jun 7, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.96,
+      "yes_mid": 0.955,
+      "true_prob": 0.975,
+      "edge": 0.02,
+      "hours_left": 20.8,
+      "close_time": "2026-06-07T21:00:00Z"
+    },
     {
       "ticker": "KXTESTMATCH-26JUN040600NZENG-ENG",
       "title": "England vs New Zealand Winner?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.95,
-      "yes_mid": 0.94,
-      "true_prob": 0.96,
+      "fill_price": 0.94,
+      "yes_mid": 0.93,
+      "true_prob": 0.95,
       "edge": 0.02,
-      "hours_left": 107.8,
+      "hours_left": 105.7,
       "close_time": "2026-06-11T10:00:00Z"
     },
     {
@@ -24,7 +48,7 @@
       "yes_mid": 0.975,
       "true_prob": 0.99,
       "edge": 0.02,
-      "hours_left": 149.8,
+      "hours_left": 147.7,
       "close_time": "2026-06-13T04:00:00Z"
     }
   ]
