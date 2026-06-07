@@ -1,19 +1,6 @@
 {
-  "generated_at": "2026-06-07T18:14:31.466461+00:00",
-  "n_scanned": 3,
-  "n_signals": 1,
-  "signals": [
-    {
-      "ticker": "KXHIGHTBOS-26JUN07-B82.5",
-      "title": "Will the maximum temperature be 82-83\u00b0 on Jun 7, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.99,
-      "yes_mid": 0.985,
-      "true_prob": 0.99,
-      "edge": 0.02,
-      "hours_left": 10.8,
-      "close_time": "2026-06-08T05:00:00Z"
-    }
-  ]
+  "generated_at": "2026-06-07T20:22:25.842075+00:00",
+  "n_scanned": 1,
+  "n_signals": 0,
+  "signals": []
 }
