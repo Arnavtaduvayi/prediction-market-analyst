@@ -664,11 +664,11 @@
       "flow_volume_at_entry": 220.43,
       "hours_left_at_entry": 11.5,
       "thesis_target_price": 0.43,
-      "status": "open",
-      "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null
+      "status": "settled",
+      "resolved_yes": false,
+      "pnl": -3.2,
+      "settled_at": "2026-06-08T01:37:47.051385+00:00",
+      "exit_reason": "SETTLED_LOSS"
     },
     {
       "logged_at": "2026-06-07T14:15:52.267446+00:00",
@@ -705,11 +705,12 @@
       "flow_volume_at_entry": 598.96,
       "hours_left_at_entry": 5.7,
       "thesis_target_price": 0.265,
-      "status": "open",
+      "status": "exited",
       "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null
+      "pnl": -3.45,
+      "settled_at": "2026-06-08T01:37:47.564155+00:00",
+      "exit_reason": "VOLUME_EXIT",
+      "exit_price": 0.0
     },
     {
       "logged_at": "2026-06-08T00:20:50.703011+00:00",
