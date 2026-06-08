@@ -1,31 +1,43 @@
 {
-  "generated_at": "2026-06-08T19:31:27.648149+00:00",
-  "n_scanned": 6,
-  "n_signals": 2,
+  "generated_at": "2026-06-08T22:00:14.278198+00:00",
+  "n_scanned": 8,
+  "n_signals": 3,
   "signals": [
-    {
-      "ticker": "KXCBDECISIONCANADA-26JUN-H0",
-      "title": "Will Bank of Canada Hike rates by 0bps at their June 2026 meeting?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.98,
-      "yes_mid": 0.975,
-      "true_prob": 0.99,
-      "edge": 0.02,
-      "hours_left": 42.0,
-      "close_time": "2026-06-10T13:29:00Z"
-    },
     {
       "ticker": "KXFINALSATTEND-26JUN09-DJT",
       "title": "Will Donald J Trump attend Pro Basketball Finals Game 3: New York vs. San Antonio in 2026?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.98,
-      "yes_mid": 0.975,
+      "fill_price": 0.99,
+      "yes_mid": 0.985,
       "true_prob": 0.99,
       "edge": 0.02,
-      "hours_left": 18.5,
+      "hours_left": 16.0,
       "close_time": "2026-06-09T14:00:00Z"
+    },
+    {
+      "ticker": "KXLIUSAELIMINATIONW-26JUN12-BRY",
+      "title": "Will Bryce be eliminated from Love Island USA Season 8 before Jun 13, 2026?",
+      "type": "longshot_sell",
+      "side": "no",
+      "fill_price": 0.92,
+      "yes_mid": 0.075,
+      "true_prob": 0.937,
+      "edge": 0.012,
+      "hours_left": 102.0,
+      "close_time": "2026-06-13T03:59:00Z"
+    },
+    {
+      "ticker": "KXNETFLIXTOPVIEWSTV-26JUN08-18",
+      "title": "Will the #1 Show on Netflix have at least 18 million views?",
+      "type": "longshot_sell",
+      "side": "no",
+      "fill_price": 0.93,
+      "yes_mid": 0.065,
+      "true_prob": 0.9454,
+      "edge": 0.0104,
+      "hours_left": 6.0,
+      "close_time": "2026-06-09T03:59:00Z"
     }
   ]
 }
