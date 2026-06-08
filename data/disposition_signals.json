@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-08T22:00:14.278198+00:00",
-  "n_scanned": 8,
-  "n_signals": 3,
+  "generated_at": "2026-06-08T23:20:46.518260+00:00",
+  "n_scanned": 4,
+  "n_signals": 2,
   "signals": [
     {
       "ticker": "KXFINALSATTEND-26JUN09-DJT",
@@ -12,20 +12,8 @@
       "yes_mid": 0.985,
       "true_prob": 0.99,
       "edge": 0.02,
-      "hours_left": 16.0,
+      "hours_left": 14.7,
       "close_time": "2026-06-09T14:00:00Z"
-    },
-    {
-      "ticker": "KXLIUSAELIMINATIONW-26JUN12-BRY",
-      "title": "Will Bryce be eliminated from Love Island USA Season 8 before Jun 13, 2026?",
-      "type": "longshot_sell",
-      "side": "no",
-      "fill_price": 0.92,
-      "yes_mid": 0.075,
-      "true_prob": 0.937,
-      "edge": 0.012,
-      "hours_left": 102.0,
-      "close_time": "2026-06-13T03:59:00Z"
     },
     {
       "ticker": "KXNETFLIXTOPVIEWSTV-26JUN08-18",
@@ -36,7 +24,7 @@
       "yes_mid": 0.065,
       "true_prob": 0.9454,
       "edge": 0.0104,
-      "hours_left": 6.0,
+      "hours_left": 4.6,
       "close_time": "2026-06-09T03:59:00Z"
     }
   ]
