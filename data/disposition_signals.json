@@ -1,6 +1,19 @@
 {
-  "generated_at": "2026-06-08T11:18:56.127552+00:00",
-  "n_scanned": 15,
-  "n_signals": 0,
-  "signals": []
+  "generated_at": "2026-06-08T16:14:38.352994+00:00",
+  "n_scanned": 11,
+  "n_signals": 1,
+  "signals": [
+    {
+      "ticker": "KXCOUNTYCHAMPMATCH-26JUN070600HAMSUR-SUR",
+      "title": "Surrey vs Hampshire Winner?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.91,
+      "yes_mid": 0.905,
+      "true_prob": 0.925,
+      "edge": 0.02,
+      "hours_left": 113.8,
+      "close_time": "2026-06-13T10:00:00Z"
+    }
+  ]
 }
