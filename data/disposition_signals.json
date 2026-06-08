@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-06-07T22:15:32.886266+00:00",
-  "n_scanned": 8,
+  "generated_at": "2026-06-08T00:20:49.794326+00:00",
+  "n_scanned": 5,
   "n_signals": 1,
   "signals": [
     {
-      "ticker": "KXLIUSAELIMINATION-26JUN07-KEN",
-      "title": "Will Kenzie be eliminated from Love Island USA S8E5?",
-      "type": "longshot_sell",
-      "side": "no",
-      "fill_price": 0.98,
-      "yes_mid": 0.015,
-      "true_prob": 0.9874,
-      "edge": 0.0024,
-      "hours_left": 5.7,
-      "close_time": "2026-06-08T03:59:00Z"
+      "ticker": "KXTESTMATCH-26JUN060000AFGIND-IND",
+      "title": "India vs Afghanistan Winner?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.99,
+      "yes_mid": 0.985,
+      "true_prob": 0.99,
+      "edge": 0.02,
+      "hours_left": 123.7,
+      "close_time": "2026-06-13T04:00:00Z"
     }
   ]
 }
