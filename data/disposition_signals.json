@@ -1,19 +1,31 @@
 {
-  "generated_at": "2026-06-08T16:14:38.352994+00:00",
-  "n_scanned": 11,
-  "n_signals": 1,
+  "generated_at": "2026-06-08T19:31:27.648149+00:00",
+  "n_scanned": 6,
+  "n_signals": 2,
   "signals": [
     {
-      "ticker": "KXCOUNTYCHAMPMATCH-26JUN070600HAMSUR-SUR",
-      "title": "Surrey vs Hampshire Winner?",
+      "ticker": "KXCBDECISIONCANADA-26JUN-H0",
+      "title": "Will Bank of Canada Hike rates by 0bps at their June 2026 meeting?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.91,
-      "yes_mid": 0.905,
-      "true_prob": 0.925,
+      "fill_price": 0.98,
+      "yes_mid": 0.975,
+      "true_prob": 0.99,
       "edge": 0.02,
-      "hours_left": 113.8,
-      "close_time": "2026-06-13T10:00:00Z"
+      "hours_left": 42.0,
+      "close_time": "2026-06-10T13:29:00Z"
+    },
+    {
+      "ticker": "KXFINALSATTEND-26JUN09-DJT",
+      "title": "Will Donald J Trump attend Pro Basketball Finals Game 3: New York vs. San Antonio in 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.98,
+      "yes_mid": 0.975,
+      "true_prob": 0.99,
+      "edge": 0.02,
+      "hours_left": 18.5,
+      "close_time": "2026-06-09T14:00:00Z"
     }
   ]
 }
