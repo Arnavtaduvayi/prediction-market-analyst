@@ -2,7 +2,7 @@
   "strategy": "flow_momentum",
   "started": "2026-06-04T15:55:51.949036+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 59.769999999999996,
+  "bankroll": 54.809999999999995,
   "trades": [
     {
       "logged_at": "2026-06-04T15:55:54.305861+00:00",
@@ -897,6 +897,46 @@
       "settled_at": "2026-06-09T04:41:43.608498+00:00",
       "exit_reason": "VOLUME_EXIT",
       "exit_price": 0.37
+    },
+    {
+      "logged_at": "2026-06-09T08:41:12.019025+00:00",
+      "strategy": "flow_momentum",
+      "kalshi_ticker": "KXNPBGAME-26JUN090500YOMTOH-YOM",
+      "kalshi_title": "Yomiuri Giants vs Tohoku Rakuten Golden Eagles winner?",
+      "side": "yes",
+      "contracts": 6,
+      "entry_price": 0.44,
+      "cost": 2.64,
+      "yes_mid_at_entry": 0.43,
+      "flow_share_at_entry": 1.0,
+      "flow_volume_at_entry": 1101.04,
+      "hours_left_at_entry": 48.3,
+      "thesis_target_price": 0.47,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
+    },
+    {
+      "logged_at": "2026-06-09T08:41:12.019101+00:00",
+      "strategy": "flow_momentum",
+      "kalshi_ticker": "KXKBOGAME-26JUN090530SAMKTW-SAM",
+      "kalshi_title": "Samsung Lions vs KT Wiz winner?",
+      "side": "yes",
+      "contracts": 4,
+      "entry_price": 0.58,
+      "cost": 2.32,
+      "yes_mid_at_entry": 0.57,
+      "flow_share_at_entry": 0.987,
+      "flow_volume_at_entry": 749.73,
+      "hours_left_at_entry": 48.9,
+      "thesis_target_price": 0.61,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
     }
   ]
 }

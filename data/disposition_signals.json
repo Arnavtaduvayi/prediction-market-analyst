@@ -1,19 +1,91 @@
 {
-  "generated_at": "2026-06-09T04:20:51.011939+00:00",
-  "n_scanned": 5,
-  "n_signals": 1,
+  "generated_at": "2026-06-09T08:41:08.467210+00:00",
+  "n_scanned": 18,
+  "n_signals": 7,
   "signals": [
     {
-      "ticker": "KXINXU-26JUN09H1600-T7324.9999",
-      "title": "Will the S&P 500 be above 7324.9999 on Jun 9, 2026 at 4pm EDT?",
+      "ticker": "KXBTCD-26JUN0917-T59999.99",
+      "title": "Bitcoin price on Jun 9, 2026?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.97,
-      "yes_mid": 0.96,
-      "true_prob": 0.98,
+      "fill_price": 0.99,
+      "yes_mid": 0.98,
+      "true_prob": 0.99,
       "edge": 0.02,
-      "hours_left": 15.7,
+      "hours_left": 12.4,
+      "close_time": "2026-06-09T21:00:00Z"
+    },
+    {
+      "ticker": "KXBTCD-26JUN0917-T60999.99",
+      "title": "Bitcoin price on Jun 9, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.94,
+      "yes_mid": 0.93,
+      "true_prob": 0.95,
+      "edge": 0.02,
+      "hours_left": 12.4,
+      "close_time": "2026-06-09T21:00:00Z"
+    },
+    {
+      "ticker": "KXINXU-26JUN09H1600-T7349.9999",
+      "title": "Will the S&P 500 be above 7349.9999 on Jun 9, 2026 at 4pm EDT?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.96,
+      "yes_mid": 0.95,
+      "true_prob": 0.97,
+      "edge": 0.02,
+      "hours_left": 11.4,
       "close_time": "2026-06-09T20:00:00Z"
+    },
+    {
+      "ticker": "KXBTCD-26JUN0917-T64499.99",
+      "title": "Bitcoin price on Jun 9, 2026?",
+      "type": "longshot_sell",
+      "side": "no",
+      "fill_price": 0.91,
+      "yes_mid": 0.085,
+      "true_prob": 0.9286,
+      "edge": 0.0136,
+      "hours_left": 12.4,
+      "close_time": "2026-06-09T21:00:00Z"
+    },
+    {
+      "ticker": "KXBTCD-26JUN1217-T67999.99",
+      "title": "Bitcoin price on Jun 12, 2026?",
+      "type": "longshot_sell",
+      "side": "no",
+      "fill_price": 0.91,
+      "yes_mid": 0.085,
+      "true_prob": 0.9286,
+      "edge": 0.0136,
+      "hours_left": 84.4,
+      "close_time": "2026-06-12T21:00:00Z"
+    },
+    {
+      "ticker": "KXLIUSAELIMINATIONW-26JUN12-BRY",
+      "title": "Will Bryce be eliminated from Love Island USA Season 8 before Jun 13, 2026?",
+      "type": "longshot_sell",
+      "side": "no",
+      "fill_price": 0.93,
+      "yes_mid": 0.065,
+      "true_prob": 0.9454,
+      "edge": 0.0104,
+      "hours_left": 91.3,
+      "close_time": "2026-06-13T03:59:00Z"
+    },
+    {
+      "ticker": "KXLIUSAELIMINATIONW-26JUN12-GAB",
+      "title": "Will Gabriel be eliminated from Love Island USA Season 8 before Jun 13, 2026?",
+      "type": "longshot_sell",
+      "side": "no",
+      "fill_price": 0.93,
+      "yes_mid": 0.065,
+      "true_prob": 0.9454,
+      "edge": 0.0104,
+      "hours_left": 91.3,
+      "close_time": "2026-06-13T03:59:00Z"
     }
   ]
 }
