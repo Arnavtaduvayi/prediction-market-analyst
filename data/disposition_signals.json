@@ -1,19 +1,6 @@
 {
-  "generated_at": "2026-06-09T19:26:49.744413+00:00",
-  "n_scanned": 6,
-  "n_signals": 1,
-  "signals": [
-    {
-      "ticker": "KXLIUSAELIMINATIONW-26JUN12-BRY",
-      "title": "Will Bryce be eliminated from Love Island USA Season 8 before Jun 13, 2026?",
-      "type": "longshot_sell",
-      "side": "no",
-      "fill_price": 0.93,
-      "yes_mid": 0.065,
-      "true_prob": 0.9454,
-      "edge": 0.0104,
-      "hours_left": 80.6,
-      "close_time": "2026-06-13T03:59:00Z"
-    }
-  ]
+  "generated_at": "2026-06-09T21:57:32.209263+00:00",
+  "n_scanned": 3,
+  "n_signals": 0,
+  "signals": []
 }
