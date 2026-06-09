@@ -1,31 +1,19 @@
 {
-  "generated_at": "2026-06-08T23:20:46.518260+00:00",
-  "n_scanned": 4,
-  "n_signals": 2,
+  "generated_at": "2026-06-09T04:20:51.011939+00:00",
+  "n_scanned": 5,
+  "n_signals": 1,
   "signals": [
     {
-      "ticker": "KXFINALSATTEND-26JUN09-DJT",
-      "title": "Will Donald J Trump attend Pro Basketball Finals Game 3: New York vs. San Antonio in 2026?",
+      "ticker": "KXINXU-26JUN09H1600-T7324.9999",
+      "title": "Will the S&P 500 be above 7324.9999 on Jun 9, 2026 at 4pm EDT?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.99,
-      "yes_mid": 0.985,
-      "true_prob": 0.99,
+      "fill_price": 0.97,
+      "yes_mid": 0.96,
+      "true_prob": 0.98,
       "edge": 0.02,
-      "hours_left": 14.7,
-      "close_time": "2026-06-09T14:00:00Z"
-    },
-    {
-      "ticker": "KXNETFLIXTOPVIEWSTV-26JUN08-18",
-      "title": "Will the #1 Show on Netflix have at least 18 million views?",
-      "type": "longshot_sell",
-      "side": "no",
-      "fill_price": 0.93,
-      "yes_mid": 0.065,
-      "true_prob": 0.9454,
-      "edge": 0.0104,
-      "hours_left": 4.6,
-      "close_time": "2026-06-09T03:59:00Z"
+      "hours_left": 15.7,
+      "close_time": "2026-06-09T20:00:00Z"
     }
   ]
 }
