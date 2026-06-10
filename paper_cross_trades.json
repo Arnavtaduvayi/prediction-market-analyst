@@ -1,7 +1,7 @@
 {
   "started": "2026-05-16T19:16:48.401618+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 72.62599999999995,
+  "bankroll": 69.68599999999995,
   "trades": [
     {
       "logged_at": "2026-05-16T19:21:38.603234+00:00",
@@ -1348,6 +1348,29 @@
       "settled_at": "2026-06-09T18:26:08.880450+00:00",
       "exit_reason": "VOLUME_EXIT",
       "exit_price": 0.7
+    },
+    {
+      "logged_at": "2026-06-10T09:01:59.451529+00:00",
+      "kalshi_ticker": "KXLIUSAELIMINATIONW-26JUN12-JEN",
+      "kalshi_title": "Will Jen be eliminated from Love Island USA Season 8 before Jun 13, 2026?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.98,
+      "cost": 2.94,
+      "yes_mid_at_entry": 0.025,
+      "thesis_estimate": -0.015,
+      "thesis_target_price": -0.009,
+      "thesis_confidence": 0.65,
+      "consensus_votes": 1,
+      "size_multiplier": 0.5,
+      "kelly_fraction": 0.05,
+      "checks_passed": 2,
+      "hours_left_at_entry": 67.0,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
     }
   ],
   "bankroll_topups": [
