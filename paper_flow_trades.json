@@ -2,7 +2,7 @@
   "strategy": "flow_momentum",
   "started": "2026-06-04T15:55:51.949036+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 62.749999999999986,
+  "bankroll": 57.52999999999998,
   "trades": [
     {
       "logged_at": "2026-06-04T15:55:54.305861+00:00",
@@ -1149,6 +1149,46 @@
       "settled_at": "2026-06-10T14:31:40.026254+00:00",
       "exit_reason": "VOLUME_EXIT",
       "exit_price": 0.27
+    },
+    {
+      "logged_at": "2026-06-10T16:44:04.510876+00:00",
+      "strategy": "flow_momentum",
+      "kalshi_ticker": "KXBRENTD-26JUN1017-T93.50",
+      "kalshi_title": "Will the brent crude oil close price be above 93.50 USD/Bbl on June 10, 2026 at 5:00 PM EDT?",
+      "side": "yes",
+      "contracts": 4,
+      "entry_price": 0.63,
+      "cost": 2.52,
+      "yes_mid_at_entry": 0.62,
+      "flow_share_at_entry": 0.923,
+      "flow_volume_at_entry": 912.14,
+      "hours_left_at_entry": 4.3,
+      "thesis_target_price": 0.66,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
+    },
+    {
+      "logged_at": "2026-06-10T16:44:04.510982+00:00",
+      "strategy": "flow_momentum",
+      "kalshi_ticker": "KXBTCD-26JUN1217-T61999.99",
+      "kalshi_title": "Bitcoin price on Jun 12, 2026?",
+      "side": "no",
+      "contracts": 6,
+      "entry_price": 0.44999999999999996,
+      "cost": 2.7,
+      "yes_mid_at_entry": 0.56,
+      "flow_share_at_entry": 0.905,
+      "flow_volume_at_entry": 213.86,
+      "hours_left_at_entry": 52.3,
+      "thesis_target_price": 0.52,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
     }
   ]
 }
