@@ -1,6 +1,31 @@
 {
-  "generated_at": "2026-06-09T23:26:06.959600+00:00",
-  "n_scanned": 2,
-  "n_signals": 0,
-  "signals": []
+  "generated_at": "2026-06-10T04:42:05.633373+00:00",
+  "n_scanned": 12,
+  "n_signals": 2,
+  "signals": [
+    {
+      "ticker": "KXBTCD-26JUN1017-T58749.99",
+      "title": "Bitcoin price on Jun 10, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.93,
+      "yes_mid": 0.92,
+      "true_prob": 0.94,
+      "edge": 0.02,
+      "hours_left": 16.3,
+      "close_time": "2026-06-10T21:00:00Z"
+    },
+    {
+      "ticker": "KXCPIYOY-26MAY-T4.1",
+      "title": "Will the rate of CPI inflation be above 4.1% for the year ending in May 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.92,
+      "yes_mid": 0.915,
+      "true_prob": 0.935,
+      "edge": 0.02,
+      "hours_left": 7.8,
+      "close_time": "2026-06-10T12:29:00Z"
+    }
+  ]
 }
