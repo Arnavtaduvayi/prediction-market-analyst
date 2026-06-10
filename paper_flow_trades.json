@@ -2,7 +2,7 @@
   "strategy": "flow_momentum",
   "started": "2026-06-04T15:55:51.949036+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 63.94999999999998,
+  "bankroll": 61.399999999999984,
   "trades": [
     {
       "logged_at": "2026-06-04T15:55:54.305861+00:00",
@@ -1128,6 +1128,26 @@
       "settled_at": "2026-06-10T11:06:30.430812+00:00",
       "exit_reason": "VOLUME_EXIT",
       "exit_price": 0.31
+    },
+    {
+      "logged_at": "2026-06-10T12:35:57.355385+00:00",
+      "strategy": "flow_momentum",
+      "kalshi_ticker": "KXINXU-26JUN10H1600-T7349.9999",
+      "kalshi_title": "Will the S&P 500 be above 7349.9999 on Jun 10, 2026 at 4pm EDT?",
+      "side": "no",
+      "contracts": 5,
+      "entry_price": 0.51,
+      "cost": 2.55,
+      "yes_mid_at_entry": 0.51,
+      "flow_share_at_entry": 0.727,
+      "flow_volume_at_entry": 1025.66,
+      "hours_left_at_entry": 7.4,
+      "thesis_target_price": 0.47,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
     }
   ]
 }

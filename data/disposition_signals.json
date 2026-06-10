@@ -1,31 +1,79 @@
 {
-  "generated_at": "2026-06-10T09:01:59.454428+00:00",
-  "n_scanned": 15,
-  "n_signals": 2,
+  "generated_at": "2026-06-10T12:35:55.014261+00:00",
+  "n_scanned": 13,
+  "n_signals": 6,
   "signals": [
     {
-      "ticker": "KXLIUSAELIMINATIONW-26JUN12-JEN",
-      "title": "Will Jen be eliminated from Love Island USA Season 8 before Jun 13, 2026?",
-      "type": "longshot_sell",
-      "side": "no",
-      "fill_price": 0.97,
-      "yes_mid": 0.025,
-      "true_prob": 0.979,
-      "edge": 0.004,
-      "hours_left": 67.0,
-      "close_time": "2026-06-13T03:59:00Z"
+      "ticker": "KXBTCD-26JUN1017-T59249.99",
+      "title": "Bitcoin price on Jun 10, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.95,
+      "yes_mid": 0.935,
+      "true_prob": 0.955,
+      "edge": 0.02,
+      "hours_left": 8.4,
+      "close_time": "2026-06-10T21:00:00Z"
     },
     {
-      "ticker": "KXLIUSAELIMINATIONW-26JUN12-GAB",
-      "title": "Will Gabriel be eliminated from Love Island USA Season 8 before Jun 13, 2026?",
-      "type": "longshot_sell",
-      "side": "no",
-      "fill_price": 0.98,
-      "yes_mid": 0.015,
-      "true_prob": 0.9874,
-      "edge": 0.0024,
-      "hours_left": 67.0,
-      "close_time": "2026-06-13T03:59:00Z"
+      "ticker": "KXBTCD-26JUN1017-T59999.99",
+      "title": "Bitcoin price on Jun 10, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.91,
+      "yes_mid": 0.905,
+      "true_prob": 0.925,
+      "edge": 0.02,
+      "hours_left": 8.4,
+      "close_time": "2026-06-10T21:00:00Z"
+    },
+    {
+      "ticker": "KXNASDAQ100U-26JUN10H1600-T28099.99",
+      "title": "Will the Nasdaq-100 be above 28099.99 at the end of Jun 10, 2026 at 4pm EDT?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.94,
+      "yes_mid": 0.93,
+      "true_prob": 0.95,
+      "edge": 0.02,
+      "hours_left": 7.4,
+      "close_time": "2026-06-10T20:00:00Z"
+    },
+    {
+      "ticker": "KXSILVERD-26JUN1017-T63",
+      "title": "Will the silver close price be above 63 USD/t.oz on June 10, 2026 at 5:00 PM EDT?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.92,
+      "yes_mid": 0.915,
+      "true_prob": 0.935,
+      "edge": 0.02,
+      "hours_left": 8.4,
+      "close_time": "2026-06-10T21:00:00Z"
+    },
+    {
+      "ticker": "KXWTI-26JUN1014-T85.99",
+      "title": "Will the WTI crude oil settlement price be above 85.99 USD/Bbl on Jun 10, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.97,
+      "yes_mid": 0.965,
+      "true_prob": 0.985,
+      "edge": 0.02,
+      "hours_left": 5.9,
+      "close_time": "2026-06-10T18:30:00Z"
+    },
+    {
+      "ticker": "KXWTI-26JUN1014-T86.99",
+      "title": "Will the WTI crude oil settlement price be above 86.99 USD/Bbl on Jun 10, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.93,
+      "yes_mid": 0.925,
+      "true_prob": 0.945,
+      "edge": 0.02,
+      "hours_left": 5.9,
+      "close_time": "2026-06-10T18:30:00Z"
     }
   ]
 }
