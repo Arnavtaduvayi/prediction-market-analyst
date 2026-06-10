@@ -1,6 +1,19 @@
 {
-  "generated_at": "2026-06-10T19:44:53.990549+00:00",
-  "n_scanned": 2,
-  "n_signals": 0,
-  "signals": []
+  "generated_at": "2026-06-10T22:16:14.075765+00:00",
+  "n_scanned": 6,
+  "n_signals": 1,
+  "signals": [
+    {
+      "ticker": "KXHIGHLAX-26JUN10-B75.5",
+      "title": "Will the **high temp in LA** be 75-76\u00b0 on Jun 10, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.98,
+      "yes_mid": 0.975,
+      "true_prob": 0.99,
+      "edge": 0.02,
+      "hours_left": 9.7,
+      "close_time": "2026-06-11T07:59:00Z"
+    }
+  ]
 }
