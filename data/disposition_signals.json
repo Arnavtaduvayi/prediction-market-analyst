@@ -1,19 +1,6 @@
 {
-  "generated_at": "2026-06-10T16:44:03.083924+00:00",
-  "n_scanned": 8,
-  "n_signals": 1,
-  "signals": [
-    {
-      "ticker": "KXRT-DIS-87",
-      "title": "Disclosure Day Rotten Tomatoes score?",
-      "type": "longshot_sell",
-      "side": "no",
-      "fill_price": 0.97,
-      "yes_mid": 0.02,
-      "true_prob": 0.9832,
-      "edge": 0.0032,
-      "hours_left": 117.3,
-      "close_time": "2026-06-15T14:00:00Z"
-    }
-  ]
+  "generated_at": "2026-06-10T19:44:53.990549+00:00",
+  "n_scanned": 2,
+  "n_signals": 0,
+  "signals": []
 }
