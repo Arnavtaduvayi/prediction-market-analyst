@@ -2,7 +2,7 @@
   "strategy": "disposition",
   "started": "2026-05-24T16:20:28.596974+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 56.48000000000006,
+  "bankroll": 58.48000000000006,
   "trades": [
     {
       "logged_at": "2026-05-24T16:20:28.597136+00:00",
@@ -2505,11 +2505,11 @@
       "edge_at_entry": 0.0152,
       "kelly_fraction": 0.03,
       "hours_left_at_entry": 4.2,
-      "status": "open",
-      "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null,
+      "status": "settled",
+      "resolved_yes": false,
+      "pnl": 0.2,
+      "settled_at": "2026-06-12T17:18:50.841527+00:00",
+      "exit_reason": "SETTLED_WIN",
       "hold_to_settlement": true
     },
     {
