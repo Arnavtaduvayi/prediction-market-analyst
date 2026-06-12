@@ -1,42 +1,42 @@
 {
-  "generated_at": "2026-06-11T23:48:40.627443+00:00",
-  "n_scanned": 7,
+  "generated_at": "2026-06-12T04:59:03.715847+00:00",
+  "n_scanned": 11,
   "n_signals": 3,
   "signals": [
     {
-      "ticker": "KXHIGHTATL-26JUN11-B91.5",
-      "title": "Will the maximum temperature be 91-92\u00b0 on Jun 11, 2026?",
+      "ticker": "KXBTCD-26JUN1217-T61999.99",
+      "title": "Bitcoin price on Jun 12, 2026?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.98,
-      "yes_mid": 0.975,
+      "fill_price": 0.92,
+      "yes_mid": 0.91,
+      "true_prob": 0.93,
+      "edge": 0.02,
+      "hours_left": 16.1,
+      "close_time": "2026-06-12T21:00:00Z"
+    },
+    {
+      "ticker": "KXFEDDECISION-26JUN-H0",
+      "title": "Will the Federal Reserve Hike rates by 0bps at their June 2026 meeting?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.99,
+      "yes_mid": 0.985,
       "true_prob": 0.99,
       "edge": 0.02,
-      "hours_left": 5.2,
-      "close_time": "2026-06-12T05:00:00Z"
+      "hours_left": 133.0,
+      "close_time": "2026-06-17T17:59:00Z"
     },
     {
-      "ticker": "KXLIUSAELIMINATION-26JUN11-COR",
-      "title": "Will Corbin be eliminated from Love Island USA before Jun 12, 2026?",
-      "type": "longshot_sell",
-      "side": "no",
-      "fill_price": 0.9,
-      "yes_mid": 0.095,
-      "true_prob": 0.9202,
-      "edge": 0.0152,
-      "hours_left": 4.2,
-      "close_time": "2026-06-12T03:59:00Z"
-    },
-    {
-      "ticker": "KXLIUSAELIMINATIONW-26JUN12-BRY",
-      "title": "Will Bryce be eliminated from Love Island USA Season 8 before Jun 13, 2026?",
+      "ticker": "KXLIUSAELIMINATIONW-26JUN12-TRI",
+      "title": "Will Trinity be eliminated from Love Island USA Season 8 before Jun 13, 2026?",
       "type": "longshot_sell",
       "side": "no",
       "fill_price": 0.98,
       "yes_mid": 0.015,
       "true_prob": 0.9874,
       "edge": 0.0024,
-      "hours_left": 28.2,
+      "hours_left": 23.0,
       "close_time": "2026-06-13T03:59:00Z"
     }
   ]
