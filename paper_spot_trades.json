@@ -2,7 +2,7 @@
   "strategy": "spot_convergence",
   "started": "2026-06-04T15:55:51.945472+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 72.16,
+  "bankroll": 66.64,
   "trades": [
     {
       "logged_at": "2026-06-05T16:09:36.993170+00:00",
@@ -25,6 +25,50 @@
       "pnl": -2.84,
       "settled_at": "2026-06-05T21:53:59.571256+00:00",
       "exit_reason": "SETTLED_LOSS"
+    },
+    {
+      "logged_at": "2026-06-12T22:01:02.451876+00:00",
+      "strategy": "spot_convergence",
+      "kalshi_ticker": "KXBTCD-26JUN1317-T62499.99",
+      "kalshi_title": "Bitcoin price on Jun 13, 2026?",
+      "side": "no",
+      "contracts": 36,
+      "entry_price": 0.07999999999999996,
+      "cost": 2.88,
+      "strike": 62499.99,
+      "spot_at_entry": 63453.0,
+      "fair_yes_estimate": 0.7092,
+      "kalshi_mid_at_entry": 0.93,
+      "divergence_at_entry": -0.2208,
+      "hours_left_at_entry": 23.0,
+      "hold_to_settlement": true,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
+    },
+    {
+      "logged_at": "2026-06-12T22:01:02.451911+00:00",
+      "strategy": "spot_convergence",
+      "kalshi_ticker": "KXBTCD-26JUN1317-T62999.99",
+      "kalshi_title": "Bitcoin price on Jun 13, 2026?",
+      "side": "no",
+      "contracts": 12,
+      "entry_price": 0.21999999999999997,
+      "cost": 2.64,
+      "strike": 62999.99,
+      "spot_at_entry": 63453.0,
+      "fair_yes_estimate": 0.6058,
+      "kalshi_mid_at_entry": 0.79,
+      "divergence_at_entry": -0.1842,
+      "hours_left_at_entry": 23.0,
+      "hold_to_settlement": true,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
     }
   ]
 }

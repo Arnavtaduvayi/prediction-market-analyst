@@ -1,42 +1,42 @@
 {
-  "generated_at": "2026-06-12T19:19:51.407297+00:00",
-  "n_scanned": 4,
+  "generated_at": "2026-06-12T22:01:02.287258+00:00",
+  "n_scanned": 5,
   "n_signals": 3,
   "signals": [
+    {
+      "ticker": "KXBTCD-26JUN1317-T62499.99",
+      "title": "Bitcoin price on Jun 13, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.94,
+      "yes_mid": 0.93,
+      "true_prob": 0.95,
+      "edge": 0.02,
+      "hours_left": 23.0,
+      "close_time": "2026-06-13T21:00:00Z"
+    },
     {
       "ticker": "KXLIUSAELIMINATIONW-26JUN12-BEA",
       "title": "Will Beatriz be eliminated from Love Island USA Season 8 before Jun 13, 2026?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.98,
-      "yes_mid": 0.975,
+      "fill_price": 0.99,
+      "yes_mid": 0.98,
       "true_prob": 0.99,
       "edge": 0.02,
-      "hours_left": 8.7,
+      "hours_left": 6.0,
       "close_time": "2026-06-13T03:59:00Z"
     },
     {
-      "ticker": "KXLIUSAELIMINATIONW-26JUN12-COR",
-      "title": "Will Corbin be eliminated from Love Island USA Season 8 before Jun 13, 2026?",
+      "ticker": "KXLIUSAELIMINATIONW-26JUN12-BRY",
+      "title": "Will Bryce be eliminated from Love Island USA Season 8 before Jun 13, 2026?",
       "type": "longshot_sell",
       "side": "no",
       "fill_price": 0.98,
       "yes_mid": 0.015,
       "true_prob": 0.9874,
       "edge": 0.0024,
-      "hours_left": 8.7,
-      "close_time": "2026-06-13T03:59:00Z"
-    },
-    {
-      "ticker": "KXLIUSAELIMINATIONW-26JUN12-TRI",
-      "title": "Will Trinity be eliminated from Love Island USA Season 8 before Jun 13, 2026?",
-      "type": "longshot_sell",
-      "side": "no",
-      "fill_price": 0.98,
-      "yes_mid": 0.015,
-      "true_prob": 0.9874,
-      "edge": 0.0024,
-      "hours_left": 8.7,
+      "hours_left": 6.0,
       "close_time": "2026-06-13T03:59:00Z"
     }
   ]
