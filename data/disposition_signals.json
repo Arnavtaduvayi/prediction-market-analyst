@@ -1,31 +1,19 @@
 {
-  "generated_at": "2026-06-12T22:01:02.287258+00:00",
-  "n_scanned": 5,
-  "n_signals": 3,
+  "generated_at": "2026-06-12T23:41:26.945250+00:00",
+  "n_scanned": 2,
+  "n_signals": 2,
   "signals": [
     {
-      "ticker": "KXBTCD-26JUN1317-T62499.99",
+      "ticker": "KXBTCD-26JUN1317-T62249.99",
       "title": "Bitcoin price on Jun 13, 2026?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.94,
-      "yes_mid": 0.93,
-      "true_prob": 0.95,
+      "fill_price": 0.97,
+      "yes_mid": 0.955,
+      "true_prob": 0.975,
       "edge": 0.02,
-      "hours_left": 23.0,
+      "hours_left": 21.3,
       "close_time": "2026-06-13T21:00:00Z"
-    },
-    {
-      "ticker": "KXLIUSAELIMINATIONW-26JUN12-BEA",
-      "title": "Will Beatriz be eliminated from Love Island USA Season 8 before Jun 13, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.99,
-      "yes_mid": 0.98,
-      "true_prob": 0.99,
-      "edge": 0.02,
-      "hours_left": 6.0,
-      "close_time": "2026-06-13T03:59:00Z"
     },
     {
       "ticker": "KXLIUSAELIMINATIONW-26JUN12-BRY",
@@ -36,7 +24,7 @@
       "yes_mid": 0.015,
       "true_prob": 0.9874,
       "edge": 0.0024,
-      "hours_left": 6.0,
+      "hours_left": 4.3,
       "close_time": "2026-06-13T03:59:00Z"
     }
   ]
