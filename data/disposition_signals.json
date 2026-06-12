@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-12T13:38:11.840838+00:00",
-  "n_scanned": 6,
+  "generated_at": "2026-06-12T16:54:37.655622+00:00",
+  "n_scanned": 5,
   "n_signals": 1,
   "signals": [
     {
-      "ticker": "KXBTCD-26JUN1217-T61999.99",
+      "ticker": "KXBTCD-26JUN1217-T62999.99",
       "title": "Bitcoin price on Jun 12, 2026?",
       "type": "favorite_buy",
       "side": "yes",
       "fill_price": 0.92,
-      "yes_mid": 0.905,
-      "true_prob": 0.925,
+      "yes_mid": 0.915,
+      "true_prob": 0.935,
       "edge": 0.02,
-      "hours_left": 7.4,
+      "hours_left": 4.1,
       "close_time": "2026-06-12T21:00:00Z"
     }
   ]
