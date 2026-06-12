@@ -2483,11 +2483,11 @@
       "edge_at_entry": 0.02,
       "kelly_fraction": 0.03,
       "hours_left_at_entry": 5.2,
-      "status": "open",
-      "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null,
+      "status": "settled",
+      "resolved_yes": false,
+      "pnl": -0.98,
+      "settled_at": "2026-06-12T13:44:32.385973+00:00",
+      "exit_reason": "SETTLED_LOSS",
       "hold_to_settlement": true
     },
     {
