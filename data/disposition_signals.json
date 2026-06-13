@@ -1,19 +1,6 @@
 {
-  "generated_at": "2026-06-13T20:24:55.473778+00:00",
-  "n_scanned": 3,
-  "n_signals": 1,
-  "signals": [
-    {
-      "ticker": "KXHIGHTMIN-26JUN13-B75.5",
-      "title": "Will the maximum temperature be 75-76\u00b0 on Jun 13, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.99,
-      "yes_mid": 0.985,
-      "true_prob": 0.99,
-      "edge": 0.02,
-      "hours_left": 9.6,
-      "close_time": "2026-06-14T06:00:00Z"
-    }
-  ]
+  "generated_at": "2026-06-13T22:16:24.368702+00:00",
+  "n_scanned": 5,
+  "n_signals": 0,
+  "signals": []
 }
