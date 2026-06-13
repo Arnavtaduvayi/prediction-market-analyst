@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-12T23:41:26.945250+00:00",
-  "n_scanned": 2,
+  "generated_at": "2026-06-13T04:45:38.527279+00:00",
+  "n_scanned": 11,
   "n_signals": 2,
   "signals": [
     {
@@ -9,23 +9,23 @@
       "type": "favorite_buy",
       "side": "yes",
       "fill_price": 0.97,
-      "yes_mid": 0.955,
-      "true_prob": 0.975,
+      "yes_mid": 0.965,
+      "true_prob": 0.985,
       "edge": 0.02,
-      "hours_left": 21.3,
+      "hours_left": 16.3,
       "close_time": "2026-06-13T21:00:00Z"
     },
     {
-      "ticker": "KXLIUSAELIMINATIONW-26JUN12-BRY",
-      "title": "Will Bryce be eliminated from Love Island USA Season 8 before Jun 13, 2026?",
-      "type": "longshot_sell",
-      "side": "no",
-      "fill_price": 0.98,
-      "yes_mid": 0.015,
-      "true_prob": 0.9874,
-      "edge": 0.0024,
-      "hours_left": 4.3,
-      "close_time": "2026-06-13T03:59:00Z"
+      "ticker": "KXODIMATCH-26JUN130400AFGIND-IND",
+      "title": "India vs Afghanistan Winner?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.91,
+      "yes_mid": 0.905,
+      "true_prob": 0.925,
+      "edge": 0.02,
+      "hours_left": 59.3,
+      "close_time": "2026-06-15T16:00:00Z"
     }
   ]
 }
