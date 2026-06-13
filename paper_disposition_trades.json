@@ -2,7 +2,7 @@
   "strategy": "disposition",
   "started": "2026-05-24T16:20:28.596974+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 55.79000000000007,
+  "bankroll": 60.79000000000007,
   "trades": [
     {
       "logged_at": "2026-05-24T16:20:28.597136+00:00",
@@ -1999,11 +1999,11 @@
       "edge_at_entry": 0.012,
       "kelly_fraction": 0.03,
       "hours_left_at_entry": 102.0,
-      "status": "open",
-      "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null,
+      "status": "settled",
+      "resolved_yes": false,
+      "pnl": 0.08,
+      "settled_at": "2026-06-13T16:53:13.472785+00:00",
+      "exit_reason": "SETTLED_WIN",
       "hold_to_settlement": true
     },
     {
@@ -2175,11 +2175,11 @@
       "edge_at_entry": 0.004,
       "kelly_fraction": 0.03,
       "hours_left_at_entry": 67.0,
-      "status": "open",
-      "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null,
+      "status": "settled",
+      "resolved_yes": false,
+      "pnl": 0.03,
+      "settled_at": "2026-06-13T16:53:13.879062+00:00",
+      "exit_reason": "SETTLED_WIN",
       "hold_to_settlement": true
     },
     {
@@ -2571,11 +2571,11 @@
       "edge_at_entry": 0.0024,
       "kelly_fraction": 0.03,
       "hours_left_at_entry": 23.0,
-      "status": "open",
-      "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null,
+      "status": "settled",
+      "resolved_yes": false,
+      "pnl": 0.02,
+      "settled_at": "2026-06-13T16:53:14.848675+00:00",
+      "exit_reason": "SETTLED_WIN",
       "hold_to_settlement": true
     },
     {
@@ -2615,11 +2615,11 @@
       "edge_at_entry": 0.02,
       "kelly_fraction": 0.03,
       "hours_left_at_entry": 8.7,
-      "status": "open",
-      "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null,
+      "status": "settled",
+      "resolved_yes": true,
+      "pnl": 0.02,
+      "settled_at": "2026-06-13T16:53:15.134398+00:00",
+      "exit_reason": "SETTLED_WIN",
       "hold_to_settlement": true
     },
     {
@@ -2637,11 +2637,11 @@
       "edge_at_entry": 0.0024,
       "kelly_fraction": 0.03,
       "hours_left_at_entry": 8.7,
-      "status": "open",
-      "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null,
+      "status": "settled",
+      "resolved_yes": false,
+      "pnl": 0.02,
+      "settled_at": "2026-06-13T16:53:15.420458+00:00",
+      "exit_reason": "SETTLED_WIN",
       "hold_to_settlement": true
     },
     {
