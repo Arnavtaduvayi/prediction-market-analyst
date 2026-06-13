@@ -1,31 +1,19 @@
 {
-  "generated_at": "2026-06-13T04:45:38.527279+00:00",
-  "n_scanned": 11,
-  "n_signals": 2,
+  "generated_at": "2026-06-13T08:32:10.983916+00:00",
+  "n_scanned": 9,
+  "n_signals": 1,
   "signals": [
     {
-      "ticker": "KXBTCD-26JUN1317-T62249.99",
+      "ticker": "KXBTCD-26JUN1317-T62749.99",
       "title": "Bitcoin price on Jun 13, 2026?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.97,
-      "yes_mid": 0.965,
-      "true_prob": 0.985,
+      "fill_price": 0.96,
+      "yes_mid": 0.95,
+      "true_prob": 0.97,
       "edge": 0.02,
-      "hours_left": 16.3,
+      "hours_left": 12.5,
       "close_time": "2026-06-13T21:00:00Z"
-    },
-    {
-      "ticker": "KXODIMATCH-26JUN130400AFGIND-IND",
-      "title": "India vs Afghanistan Winner?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.91,
-      "yes_mid": 0.905,
-      "true_prob": 0.925,
-      "edge": 0.02,
-      "hours_left": 59.3,
-      "close_time": "2026-06-15T16:00:00Z"
     }
   ]
 }
