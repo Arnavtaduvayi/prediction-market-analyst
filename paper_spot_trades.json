@@ -2,7 +2,7 @@
   "strategy": "spot_convergence",
   "started": "2026-06-04T15:55:51.945472+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 56.529999999999994,
+  "bankroll": 64.53,
   "trades": [
     {
       "logged_at": "2026-06-05T16:09:36.993170+00:00",
@@ -218,11 +218,11 @@
       "divergence_at_entry": -0.1401,
       "hours_left_at_entry": 15.0,
       "hold_to_settlement": true,
-      "status": "open",
-      "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null
+      "status": "settled",
+      "resolved_yes": true,
+      "pnl": -1.8,
+      "settled_at": "2026-06-14T22:37:40.504914+00:00",
+      "exit_reason": "SETTLED_LOSS"
     },
     {
       "logged_at": "2026-06-14T06:01:59.507737+00:00",
@@ -240,11 +240,11 @@
       "divergence_at_entry": -0.1309,
       "hours_left_at_entry": 15.0,
       "hold_to_settlement": true,
-      "status": "open",
-      "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null
+      "status": "settled",
+      "resolved_yes": true,
+      "pnl": -1.76,
+      "settled_at": "2026-06-14T22:37:40.752705+00:00",
+      "exit_reason": "SETTLED_LOSS"
     },
     {
       "logged_at": "2026-06-14T06:01:59.507754+00:00",
@@ -262,11 +262,11 @@
       "divergence_at_entry": -0.1262,
       "hours_left_at_entry": 15.0,
       "hold_to_settlement": true,
-      "status": "open",
-      "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null
+      "status": "settled",
+      "resolved_yes": true,
+      "pnl": -1.44,
+      "settled_at": "2026-06-14T22:37:41.169658+00:00",
+      "exit_reason": "SETTLED_LOSS"
     },
     {
       "logged_at": "2026-06-14T09:54:22.039886+00:00",
@@ -284,11 +284,11 @@
       "divergence_at_entry": -0.1236,
       "hours_left_at_entry": 11.1,
       "hold_to_settlement": true,
-      "status": "open",
-      "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null
+      "status": "settled",
+      "resolved_yes": false,
+      "pnl": 6.32,
+      "settled_at": "2026-06-14T22:37:41.425665+00:00",
+      "exit_reason": "SETTLED_WIN"
     }
   ]
 }

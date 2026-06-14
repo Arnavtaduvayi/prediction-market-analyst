@@ -2,7 +2,7 @@
   "strategy": "flow_momentum",
   "started": "2026-06-04T15:55:51.949036+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 59.29999999999998,
+  "bankroll": 63.58999999999998,
   "trades": [
     {
       "logged_at": "2026-06-04T15:55:54.305861+00:00",
@@ -1856,11 +1856,12 @@
       "flow_volume_at_entry": 5030.75,
       "hours_left_at_entry": 22.7,
       "thesis_target_price": 0.29,
-      "status": "open",
+      "status": "exited",
       "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null
+      "pnl": 0.91,
+      "settled_at": "2026-06-14T22:37:41.676322+00:00",
+      "exit_reason": "TARGET_HIT",
+      "exit_price": 0.33
     },
     {
       "logged_at": "2026-06-14T22:20:52.993618+00:00",
