@@ -1,6 +1,19 @@
 {
-  "generated_at": "2026-06-14T20:24:42.920213+00:00",
-  "n_scanned": 2,
-  "n_signals": 0,
-  "signals": []
+  "generated_at": "2026-06-14T22:20:51.577249+00:00",
+  "n_scanned": 6,
+  "n_signals": 1,
+  "signals": [
+    {
+      "ticker": "KXAAAGASW-26JUN15-4.060",
+      "title": "Will average **gas prices** be above $4.060?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.98,
+      "yes_mid": 0.975,
+      "true_prob": 0.99,
+      "edge": 0.02,
+      "hours_left": 5.7,
+      "close_time": "2026-06-15T03:59:00Z"
+    }
+  ]
 }
