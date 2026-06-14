@@ -1,7 +1,7 @@
 {
   "started": "2026-05-16T19:16:48.401618+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 72.75599999999994,
+  "bankroll": 70.97599999999994,
   "trades": [
     {
       "logged_at": "2026-05-16T19:21:38.603234+00:00",
@@ -1540,6 +1540,29 @@
       "settled_at": "2026-06-12T19:26:30.533782+00:00",
       "exit_reason": "VOLUME_EXIT",
       "exit_price": 0.98
+    },
+    {
+      "logged_at": "2026-06-14T09:54:21.982127+00:00",
+      "kalshi_ticker": "KXWT20MATCH-26JUN140930PAKIND-PAK",
+      "kalshi_title": "India vs Pakistan Winner?",
+      "side": "no",
+      "contracts": 2,
+      "entry_price": 0.89,
+      "cost": 1.78,
+      "yes_mid_at_entry": 0.12,
+      "thesis_estimate": 0.07999999999999999,
+      "thesis_target_price": 0.086,
+      "thesis_confidence": 0.65,
+      "consensus_votes": 1,
+      "size_multiplier": 0.5,
+      "kelly_fraction": 0.0341,
+      "checks_passed": 2,
+      "hours_left_at_entry": 55.6,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
     }
   ],
   "bankroll_topups": [
