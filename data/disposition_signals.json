@@ -1,43 +1,6 @@
 {
-  "generated_at": "2026-06-14T16:45:05.426873+00:00",
-  "n_scanned": 5,
-  "n_signals": 3,
-  "signals": [
-    {
-      "ticker": "KXBTCD-26JUN1417-T63249.99",
-      "title": "Bitcoin price on Jun 14, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.97,
-      "yes_mid": 0.965,
-      "true_prob": 0.985,
-      "edge": 0.02,
-      "hours_left": 4.3,
-      "close_time": "2026-06-14T21:00:00Z"
-    },
-    {
-      "ticker": "KXBTCD-26JUN1417-T63499.99",
-      "title": "Bitcoin price on Jun 14, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.92,
-      "yes_mid": 0.915,
-      "true_prob": 0.935,
-      "edge": 0.02,
-      "hours_left": 4.3,
-      "close_time": "2026-06-14T21:00:00Z"
-    },
-    {
-      "ticker": "KXFEDDECISION-26JUN-H0",
-      "title": "Will the Federal Reserve Hike rates by 0bps at their June 2026 meeting?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.99,
-      "yes_mid": 0.985,
-      "true_prob": 0.99,
-      "edge": 0.02,
-      "hours_left": 73.3,
-      "close_time": "2026-06-17T17:59:00Z"
-    }
-  ]
+  "generated_at": "2026-06-14T18:21:00.087421+00:00",
+  "n_scanned": 2,
+  "n_signals": 0,
+  "signals": []
 }
