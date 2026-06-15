@@ -1,67 +1,19 @@
 {
-  "generated_at": "2026-06-15T13:26:42.753450+00:00",
-  "n_scanned": 15,
-  "n_signals": 5,
+  "generated_at": "2026-06-15T18:47:04.891220+00:00",
+  "n_scanned": 6,
+  "n_signals": 1,
   "signals": [
     {
-      "ticker": "KXBTCD-26JUN1517-T63749.99",
+      "ticker": "KXBTCD-26JUN1517-T65999.99",
       "title": "Bitcoin price on Jun 15, 2026?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.99,
-      "yes_mid": 0.985,
+      "fill_price": 0.98,
+      "yes_mid": 0.97,
       "true_prob": 0.99,
       "edge": 0.02,
-      "hours_left": 7.6,
+      "hours_left": 2.2,
       "close_time": "2026-06-15T21:00:00Z"
-    },
-    {
-      "ticker": "KXBTCD-26JUN1517-T64499.99",
-      "title": "Bitcoin price on Jun 15, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.99,
-      "yes_mid": 0.985,
-      "true_prob": 0.99,
-      "edge": 0.02,
-      "hours_left": 7.6,
-      "close_time": "2026-06-15T21:00:00Z"
-    },
-    {
-      "ticker": "KXETHD-26JUN1517-T1649.99",
-      "title": "Ethereum price at Jun 15, 2026 at 5pm EDT?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.99,
-      "yes_mid": 0.985,
-      "true_prob": 0.99,
-      "edge": 0.02,
-      "hours_left": 7.6,
-      "close_time": "2026-06-15T21:00:00Z"
-    },
-    {
-      "ticker": "KXGOLDD-26JUN1517-T4307",
-      "title": "Will the gold close price be above 4307 USD/t.oz on June 15, 2026 at 5:00 PM EDT?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.91,
-      "yes_mid": 0.905,
-      "true_prob": 0.925,
-      "edge": 0.02,
-      "hours_left": 7.6,
-      "close_time": "2026-06-15T21:00:00Z"
-    },
-    {
-      "ticker": "KXBTCD-26JUN1917-T72499.99",
-      "title": "Bitcoin price on Jun 19, 2026?",
-      "type": "longshot_sell",
-      "side": "no",
-      "fill_price": 0.96,
-      "yes_mid": 0.03,
-      "true_prob": 0.9748,
-      "edge": 0.0048,
-      "hours_left": 103.6,
-      "close_time": "2026-06-19T21:00:00Z"
     }
   ]
 }

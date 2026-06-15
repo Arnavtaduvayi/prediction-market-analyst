@@ -2,7 +2,7 @@
   "strategy": "flow_momentum",
   "started": "2026-06-04T15:55:51.949036+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 71.8,
+  "bankroll": 66.06,
   "trades": [
     {
       "logged_at": "2026-06-04T15:55:54.305861+00:00",
@@ -1967,6 +1967,46 @@
       "settled_at": "2026-06-15T14:40:02.694312+00:00",
       "exit_reason": "TARGET_HIT",
       "exit_price": 0.78
+    },
+    {
+      "logged_at": "2026-06-15T18:47:06.318960+00:00",
+      "strategy": "flow_momentum",
+      "kalshi_ticker": "KXBTCD-26JUN1517-T66749.99",
+      "kalshi_title": "Bitcoin price on Jun 15, 2026?",
+      "side": "yes",
+      "contracts": 6,
+      "entry_price": 0.55,
+      "cost": 3.3,
+      "yes_mid_at_entry": 0.54,
+      "flow_share_at_entry": 0.879,
+      "flow_volume_at_entry": 3499.48,
+      "hours_left_at_entry": 2.2,
+      "thesis_target_price": 0.58,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
+    },
+    {
+      "logged_at": "2026-06-15T18:47:06.319020+00:00",
+      "strategy": "flow_momentum",
+      "kalshi_ticker": "KXT20MATCH-26JUN170400AUSBAN-AUS",
+      "kalshi_title": "Bangladesh vs Australia Winner?",
+      "side": "yes",
+      "contracts": 4,
+      "entry_price": 0.61,
+      "cost": 2.44,
+      "yes_mid_at_entry": 0.605,
+      "flow_share_at_entry": 0.891,
+      "flow_volume_at_entry": 406.22,
+      "hours_left_at_entry": 89.2,
+      "thesis_target_price": 0.645,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
     }
   ]
 }
