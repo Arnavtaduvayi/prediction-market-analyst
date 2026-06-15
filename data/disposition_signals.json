@@ -1,19 +1,31 @@
 {
-  "generated_at": "2026-06-14T22:20:51.577249+00:00",
-  "n_scanned": 6,
-  "n_signals": 1,
+  "generated_at": "2026-06-15T00:21:42.968445+00:00",
+  "n_scanned": 4,
+  "n_signals": 2,
   "signals": [
     {
-      "ticker": "KXAAAGASW-26JUN15-4.060",
-      "title": "Will average **gas prices** be above $4.060?",
+      "ticker": "KXATTENDUFC250-26JUN-JROG",
+      "title": "Will Joe Rogan attend any UFC Freedom 250 event in person?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.98,
-      "yes_mid": 0.975,
+      "fill_price": 0.991,
+      "yes_mid": 0.9905,
       "true_prob": 0.99,
       "edge": 0.02,
-      "hours_left": 5.7,
-      "close_time": "2026-06-15T03:59:00Z"
+      "hours_left": 13.7,
+      "close_time": "2026-06-15T14:00:00Z"
+    },
+    {
+      "ticker": "KXLLM1-26JUN20-ANTH",
+      "title": "Best AI in Jun 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.97,
+      "yes_mid": 0.965,
+      "true_prob": 0.985,
+      "edge": 0.02,
+      "hours_left": 133.7,
+      "close_time": "2026-06-20T14:00:00Z"
     }
   ]
 }
