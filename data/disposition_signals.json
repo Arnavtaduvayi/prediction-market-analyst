@@ -1,31 +1,19 @@
 {
-  "generated_at": "2026-06-15T00:21:42.968445+00:00",
-  "n_scanned": 4,
-  "n_signals": 2,
+  "generated_at": "2026-06-15T06:34:48.818344+00:00",
+  "n_scanned": 5,
+  "n_signals": 1,
   "signals": [
     {
-      "ticker": "KXATTENDUFC250-26JUN-JROG",
-      "title": "Will Joe Rogan attend any UFC Freedom 250 event in person?",
+      "ticker": "KXINXDUD-26JUN15H1600-T7431.46",
+      "title": "Will the S&P 500 be above 7431.46 on Jun 15, 2026 at 4pm EDT?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.991,
-      "yes_mid": 0.9905,
-      "true_prob": 0.99,
+      "fill_price": 0.92,
+      "yes_mid": 0.915,
+      "true_prob": 0.935,
       "edge": 0.02,
-      "hours_left": 13.7,
-      "close_time": "2026-06-15T14:00:00Z"
-    },
-    {
-      "ticker": "KXLLM1-26JUN20-ANTH",
-      "title": "Best AI in Jun 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.97,
-      "yes_mid": 0.965,
-      "true_prob": 0.985,
-      "edge": 0.02,
-      "hours_left": 133.7,
-      "close_time": "2026-06-20T14:00:00Z"
+      "hours_left": 13.4,
+      "close_time": "2026-06-15T20:00:00Z"
     }
   ]
 }
