@@ -1,6 +1,67 @@
 {
-  "generated_at": "2026-06-16T11:31:29.405567+00:00",
-  "n_scanned": 6,
-  "n_signals": 0,
-  "signals": []
+  "generated_at": "2026-06-16T17:20:09.643002+00:00",
+  "n_scanned": 14,
+  "n_signals": 5,
+  "signals": [
+    {
+      "ticker": "KXGOLDD-26JUN1617-T4297",
+      "title": "Will the gold close price be above 4297 USD/t.oz on June 16, 2026 at 5:00 PM EDT?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.95,
+      "yes_mid": 0.945,
+      "true_prob": 0.965,
+      "edge": 0.02,
+      "hours_left": 3.7,
+      "close_time": "2026-06-16T21:00:00Z"
+    },
+    {
+      "ticker": "KXLLM1-26JUN20-ANTH",
+      "title": "Best AI in Jun 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.98,
+      "yes_mid": 0.975,
+      "true_prob": 0.99,
+      "edge": 0.02,
+      "hours_left": 92.7,
+      "close_time": "2026-06-20T14:00:00Z"
+    },
+    {
+      "ticker": "KXRT-TOY-87",
+      "title": "Toy Story 5 Rotten Tomatoes score?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.97,
+      "yes_mid": 0.965,
+      "true_prob": 0.985,
+      "edge": 0.02,
+      "hours_left": 140.7,
+      "close_time": "2026-06-22T14:00:00Z"
+    },
+    {
+      "ticker": "KXWT20MATCH-26JUN161330IRLENG-ENG",
+      "title": "England vs Ireland Winner?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.96,
+      "yes_mid": 0.955,
+      "true_prob": 0.975,
+      "edge": 0.02,
+      "hours_left": 52.2,
+      "close_time": "2026-06-18T21:30:00Z"
+    },
+    {
+      "ticker": "KXWT20MATCH-26JUN161330IRLENG-IRL",
+      "title": "England vs Ireland Winner?",
+      "type": "longshot_sell",
+      "side": "no",
+      "fill_price": 0.93,
+      "yes_mid": 0.06,
+      "true_prob": 0.9496,
+      "edge": 0.0096,
+      "hours_left": 52.2,
+      "close_time": "2026-06-18T21:30:00Z"
+    }
+  ]
 }
