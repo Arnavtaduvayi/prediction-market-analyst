@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-06-15T23:56:52.401030+00:00",
-  "n_scanned": 4,
+  "generated_at": "2026-06-16T05:26:37.370351+00:00",
+  "n_scanned": 6,
   "n_signals": 2,
   "signals": [
     {
-      "ticker": "KXHIGHTPHX-26JUN15-B108.5",
-      "title": "Will the maximum temperature be 108-109\u00b0 on Jun 15, 2026?",
+      "ticker": "KXFEDDECISION-26JUN-H0",
+      "title": "Will the Federal Reserve Hike rates by 0bps at their June 2026 meeting?",
       "type": "favorite_buy",
       "side": "yes",
       "fill_price": 0.99,
       "yes_mid": 0.985,
       "true_prob": 0.99,
       "edge": 0.02,
-      "hours_left": 7.1,
-      "close_time": "2026-06-16T07:00:00Z"
+      "hours_left": 36.6,
+      "close_time": "2026-06-17T17:59:00Z"
     },
     {
       "ticker": "KXLLM1-26JUN20-ANTH",
@@ -24,7 +24,7 @@
       "yes_mid": 0.965,
       "true_prob": 0.985,
       "edge": 0.02,
-      "hours_left": 110.1,
+      "hours_left": 104.6,
       "close_time": "2026-06-20T14:00:00Z"
     }
   ]
