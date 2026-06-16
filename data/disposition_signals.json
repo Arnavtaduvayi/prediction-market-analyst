@@ -1,31 +1,6 @@
 {
-  "generated_at": "2026-06-16T05:26:37.370351+00:00",
+  "generated_at": "2026-06-16T11:31:29.405567+00:00",
   "n_scanned": 6,
-  "n_signals": 2,
-  "signals": [
-    {
-      "ticker": "KXFEDDECISION-26JUN-H0",
-      "title": "Will the Federal Reserve Hike rates by 0bps at their June 2026 meeting?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.99,
-      "yes_mid": 0.985,
-      "true_prob": 0.99,
-      "edge": 0.02,
-      "hours_left": 36.6,
-      "close_time": "2026-06-17T17:59:00Z"
-    },
-    {
-      "ticker": "KXLLM1-26JUN20-ANTH",
-      "title": "Best AI in Jun 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.97,
-      "yes_mid": 0.965,
-      "true_prob": 0.985,
-      "edge": 0.02,
-      "hours_left": 104.6,
-      "close_time": "2026-06-20T14:00:00Z"
-    }
-  ]
+  "n_signals": 0,
+  "signals": []
 }
