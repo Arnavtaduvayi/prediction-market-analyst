@@ -2086,11 +2086,11 @@
       "flow_volume_at_entry": 2632.68,
       "hours_left_at_entry": 9.5,
       "thesis_target_price": 0.635,
-      "status": "open",
-      "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null
+      "status": "settled",
+      "resolved_yes": false,
+      "pnl": -3.0,
+      "settled_at": "2026-06-16T21:23:32.244560+00:00",
+      "exit_reason": "SETTLED_LOSS"
     },
     {
       "logged_at": "2026-06-16T11:31:30.409752+00:00",
