@@ -1,55 +1,6 @@
 {
-  "generated_at": "2026-06-17T10:01:31.121117+00:00",
-  "n_scanned": 11,
-  "n_signals": 4,
-  "signals": [
-    {
-      "ticker": "KXBTCD-26JUN1717-T63499.99",
-      "title": "Bitcoin price on Jun 17, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.91,
-      "yes_mid": 0.905,
-      "true_prob": 0.925,
-      "edge": 0.02,
-      "hours_left": 11.0,
-      "close_time": "2026-06-17T21:00:00Z"
-    },
-    {
-      "ticker": "KXODIMATCH-26JUN170400AFGIND-IND",
-      "title": "India vs Afghanistan Winner?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.97,
-      "yes_mid": 0.965,
-      "true_prob": 0.985,
-      "edge": 0.02,
-      "hours_left": 54.0,
-      "close_time": "2026-06-19T16:00:00Z"
-    },
-    {
-      "ticker": "KXT20MATCH-26JUN170400AUSBAN-AUS",
-      "title": "Bangladesh vs Australia Winner?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.96,
-      "yes_mid": 0.955,
-      "true_prob": 0.975,
-      "edge": 0.02,
-      "hours_left": 50.0,
-      "close_time": "2026-06-19T12:00:00Z"
-    },
-    {
-      "ticker": "KXODIMATCH-26JUN170400AFGIND-AFG",
-      "title": "India vs Afghanistan Winner?",
-      "type": "longshot_sell",
-      "side": "no",
-      "fill_price": 0.96,
-      "yes_mid": 0.035,
-      "true_prob": 0.9706,
-      "edge": 0.0056,
-      "hours_left": 54.0,
-      "close_time": "2026-06-19T16:00:00Z"
-    }
-  ]
+  "generated_at": "2026-06-17T13:51:30.395018+00:00",
+  "n_scanned": 0,
+  "n_signals": 0,
+  "signals": []
 }
