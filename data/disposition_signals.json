@@ -1,43 +1,6 @@
 {
-  "generated_at": "2026-06-17T20:29:12.492776+00:00",
-  "n_scanned": 6,
-  "n_signals": 3,
-  "signals": [
-    {
-      "ticker": "KXRT-TOY-90",
-      "title": "Toy Story 5 Rotten Tomatoes score?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.93,
-      "yes_mid": 0.925,
-      "true_prob": 0.945,
-      "edge": 0.02,
-      "hours_left": 113.5,
-      "close_time": "2026-06-22T14:00:00Z"
-    },
-    {
-      "ticker": "KXWT20MATCH-26JUN171330PAKRSA-RSA",
-      "title": "South Africa vs Pakistan Winner?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.98,
-      "yes_mid": 0.975,
-      "true_prob": 0.99,
-      "edge": 0.02,
-      "hours_left": 49.0,
-      "close_time": "2026-06-19T21:30:00Z"
-    },
-    {
-      "ticker": "KXWT20MATCH-26JUN171330PAKRSA-PAK",
-      "title": "South Africa vs Pakistan Winner?",
-      "type": "longshot_sell",
-      "side": "no",
-      "fill_price": 0.97,
-      "yes_mid": 0.025,
-      "true_prob": 0.979,
-      "edge": 0.004,
-      "hours_left": 49.0,
-      "close_time": "2026-06-19T21:30:00Z"
-    }
-  ]
+  "generated_at": "2026-06-17T22:51:32.018573+00:00",
+  "n_scanned": 2,
+  "n_signals": 0,
+  "signals": []
 }
