@@ -2,7 +2,7 @@
   "strategy": "flow_momentum",
   "started": "2026-06-04T15:55:51.949036+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 65.22999999999999,
+  "bankroll": 58.999999999999986,
   "trades": [
     {
       "logged_at": "2026-06-04T15:55:54.305861+00:00",
@@ -2237,6 +2237,46 @@
       "settled_at": "2026-06-17T05:21:01.720469+00:00",
       "exit_reason": "VOLUME_EXIT",
       "exit_price": 0.06
+    },
+    {
+      "logged_at": "2026-06-17T20:29:14.206214+00:00",
+      "strategy": "flow_momentum",
+      "kalshi_ticker": "KXBTCD-26JUN1917-T65999.99",
+      "kalshi_title": "Bitcoin price on Jun 19, 2026?",
+      "side": "yes",
+      "contracts": 18,
+      "entry_price": 0.18,
+      "cost": 3.24,
+      "yes_mid_at_entry": 0.175,
+      "flow_share_at_entry": 0.913,
+      "flow_volume_at_entry": 385.17,
+      "hours_left_at_entry": 48.6,
+      "thesis_target_price": 0.215,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
+    },
+    {
+      "logged_at": "2026-06-17T20:29:14.206270+00:00",
+      "strategy": "flow_momentum",
+      "kalshi_ticker": "KXETHD-26JUN1917-T1809.99",
+      "kalshi_title": "Ethereum price at Jun 19, 2026 at 5pm EDT?",
+      "side": "yes",
+      "contracts": 23,
+      "entry_price": 0.13,
+      "cost": 2.99,
+      "yes_mid_at_entry": 0.125,
+      "flow_share_at_entry": 0.876,
+      "flow_volume_at_entry": 201.22,
+      "hours_left_at_entry": 48.6,
+      "thesis_target_price": 0.165,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
     }
   ]
 }
