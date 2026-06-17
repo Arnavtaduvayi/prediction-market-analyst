@@ -1,43 +1,55 @@
 {
-  "generated_at": "2026-06-17T05:07:05.035420+00:00",
-  "n_scanned": 10,
-  "n_signals": 3,
+  "generated_at": "2026-06-17T10:01:31.121117+00:00",
+  "n_scanned": 11,
+  "n_signals": 4,
   "signals": [
     {
-      "ticker": "KXBTCD-26JUN1717-T64249.99",
+      "ticker": "KXBTCD-26JUN1717-T63499.99",
       "title": "Bitcoin price on Jun 17, 2026?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.93,
-      "yes_mid": 0.925,
-      "true_prob": 0.945,
+      "fill_price": 0.91,
+      "yes_mid": 0.905,
+      "true_prob": 0.925,
       "edge": 0.02,
-      "hours_left": 15.9,
+      "hours_left": 11.0,
       "close_time": "2026-06-17T21:00:00Z"
     },
     {
-      "ticker": "KXWT20MATCH-26JUN170930NEDIND-IND",
-      "title": "India vs Netherlands Winner?",
+      "ticker": "KXODIMATCH-26JUN170400AFGIND-IND",
+      "title": "India vs Afghanistan Winner?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.97,
+      "yes_mid": 0.965,
+      "true_prob": 0.985,
+      "edge": 0.02,
+      "hours_left": 54.0,
+      "close_time": "2026-06-19T16:00:00Z"
+    },
+    {
+      "ticker": "KXT20MATCH-26JUN170400AUSBAN-AUS",
+      "title": "Bangladesh vs Australia Winner?",
       "type": "favorite_buy",
       "side": "yes",
       "fill_price": 0.96,
-      "yes_mid": 0.935,
-      "true_prob": 0.955,
+      "yes_mid": 0.955,
+      "true_prob": 0.975,
       "edge": 0.02,
-      "hours_left": 60.4,
-      "close_time": "2026-06-19T17:30:00Z"
+      "hours_left": 50.0,
+      "close_time": "2026-06-19T12:00:00Z"
     },
     {
-      "ticker": "KXWT20MATCH-26JUN170530BANAUS-BAN",
-      "title": "Australia vs Bangladesh Winner?",
+      "ticker": "KXODIMATCH-26JUN170400AFGIND-AFG",
+      "title": "India vs Afghanistan Winner?",
       "type": "longshot_sell",
       "side": "no",
-      "fill_price": 0.93,
-      "yes_mid": 0.065,
-      "true_prob": 0.9454,
-      "edge": 0.0104,
-      "hours_left": 56.4,
-      "close_time": "2026-06-19T13:30:00Z"
+      "fill_price": 0.96,
+      "yes_mid": 0.035,
+      "true_prob": 0.9706,
+      "edge": 0.0056,
+      "hours_left": 54.0,
+      "close_time": "2026-06-19T16:00:00Z"
     }
   ]
 }
