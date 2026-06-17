@@ -1,7 +1,7 @@
 {
   "started": "2026-05-16T19:16:48.401618+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 72.77599999999994,
+  "bankroll": 69.95599999999995,
   "trades": [
     {
       "logged_at": "2026-05-16T19:21:38.603234+00:00",
@@ -1588,6 +1588,29 @@
       "settled_at": "2026-06-16T17:27:11.589945+00:00",
       "exit_reason": "STALE_THESIS",
       "exit_price": 0.98
+    },
+    {
+      "logged_at": "2026-06-17T05:07:05.032392+00:00",
+      "kalshi_ticker": "KXWT20MATCH-26JUN170530BANAUS-BAN",
+      "kalshi_title": "Australia vs Bangladesh Winner?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.94,
+      "cost": 2.82,
+      "yes_mid_at_entry": 0.065,
+      "thesis_estimate": 0.025,
+      "thesis_target_price": 0.031,
+      "thesis_confidence": 0.65,
+      "consensus_votes": 1,
+      "size_multiplier": 0.5,
+      "kelly_fraction": 0.05,
+      "checks_passed": 2,
+      "hours_left_at_entry": 56.4,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
     }
   ],
   "bankroll_topups": [
