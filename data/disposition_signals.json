@@ -1,18 +1,54 @@
 {
-  "generated_at": "2026-06-18T10:46:30.391617+00:00",
-  "n_scanned": 7,
-  "n_signals": 1,
+  "generated_at": "2026-06-18T14:19:55.671199+00:00",
+  "n_scanned": 12,
+  "n_signals": 4,
   "signals": [
     {
       "ticker": "KXBTCD-26JUN1817-T62249.99",
       "title": "Bitcoin price on Jun 18, 2026?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.96,
-      "yes_mid": 0.955,
-      "true_prob": 0.975,
+      "fill_price": 0.98,
+      "yes_mid": 0.97,
+      "true_prob": 0.99,
       "edge": 0.02,
-      "hours_left": 10.3,
+      "hours_left": 6.7,
+      "close_time": "2026-06-18T21:00:00Z"
+    },
+    {
+      "ticker": "KXBTCD-26JUN1817-T62499.99",
+      "title": "Bitcoin price on Jun 18, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.94,
+      "yes_mid": 0.935,
+      "true_prob": 0.955,
+      "edge": 0.02,
+      "hours_left": 6.7,
+      "close_time": "2026-06-18T21:00:00Z"
+    },
+    {
+      "ticker": "KXETHD-26JUN1817-T1669.99",
+      "title": "Ethereum price at Jun 18, 2026 at 5pm EDT?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.98,
+      "yes_mid": 0.97,
+      "true_prob": 0.99,
+      "edge": 0.02,
+      "hours_left": 6.7,
+      "close_time": "2026-06-18T21:00:00Z"
+    },
+    {
+      "ticker": "KXSOLD-26JUN1817-T68.9999",
+      "title": "SOL price on Jun 18, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.95,
+      "yes_mid": 0.935,
+      "true_prob": 0.955,
+      "edge": 0.02,
+      "hours_left": 6.7,
       "close_time": "2026-06-18T21:00:00Z"
     }
   ]
