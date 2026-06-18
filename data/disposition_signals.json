@@ -1,6 +1,31 @@
 {
-  "generated_at": "2026-06-18T21:28:32.008887+00:00",
+  "generated_at": "2026-06-18T23:56:17.484532+00:00",
   "n_scanned": 5,
-  "n_signals": 0,
-  "signals": []
+  "n_signals": 2,
+  "signals": [
+    {
+      "ticker": "KXHIGHTPHX-26JUN18-B108.5",
+      "title": "Will the maximum temperature be 108-109\u00b0 on Jun 18, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.95,
+      "yes_mid": 0.93,
+      "true_prob": 0.95,
+      "edge": 0.02,
+      "hours_left": 7.1,
+      "close_time": "2026-06-19T07:00:00Z"
+    },
+    {
+      "ticker": "KXODIMATCH-26JUN200400AFGIND-IND",
+      "title": "India vs Afghanistan Winner?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.92,
+      "yes_mid": 0.915,
+      "true_prob": 0.935,
+      "edge": 0.02,
+      "hours_left": 88.1,
+      "close_time": "2026-06-22T16:00:00Z"
+    }
+  ]
 }
