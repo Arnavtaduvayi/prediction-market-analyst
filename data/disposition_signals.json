@@ -1,6 +1,31 @@
 {
-  "generated_at": "2026-06-17T22:51:32.018573+00:00",
-  "n_scanned": 2,
-  "n_signals": 0,
-  "signals": []
+  "generated_at": "2026-06-18T00:25:38.048913+00:00",
+  "n_scanned": 7,
+  "n_signals": 2,
+  "signals": [
+    {
+      "ticker": "KXBTCD-26JUN1917-T60999.99",
+      "title": "Bitcoin price on Jun 19, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.98,
+      "yes_mid": 0.975,
+      "true_prob": 0.99,
+      "edge": 0.02,
+      "hours_left": 44.6,
+      "close_time": "2026-06-19T21:00:00Z"
+    },
+    {
+      "ticker": "KXBTCD-26JUN1917-T61999.99",
+      "title": "Bitcoin price on Jun 19, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.95,
+      "yes_mid": 0.945,
+      "true_prob": 0.965,
+      "edge": 0.02,
+      "hours_left": 44.6,
+      "close_time": "2026-06-19T21:00:00Z"
+    }
+  ]
 }
