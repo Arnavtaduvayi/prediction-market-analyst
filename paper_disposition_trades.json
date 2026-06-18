@@ -2,7 +2,7 @@
   "strategy": "disposition",
   "started": "2026-05-24T16:20:28.596974+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 56.80000000000007,
+  "bankroll": 60.80000000000007,
   "trades": [
     {
       "logged_at": "2026-05-24T16:20:28.597136+00:00",
@@ -3517,11 +3517,11 @@
       "edge_at_entry": 0.02,
       "kelly_fraction": 0.03,
       "hours_left_at_entry": 14.9,
-      "status": "open",
-      "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null,
+      "status": "settled",
+      "resolved_yes": true,
+      "pnl": 0.06,
+      "settled_at": "2026-06-18T21:32:02.667936+00:00",
+      "exit_reason": "SETTLED_WIN",
       "hold_to_settlement": true
     },
     {
@@ -3539,11 +3539,11 @@
       "edge_at_entry": 0.0152,
       "kelly_fraction": 0.03,
       "hours_left_at_entry": 14.9,
-      "status": "open",
-      "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null,
+      "status": "settled",
+      "resolved_yes": false,
+      "pnl": 0.1,
+      "settled_at": "2026-06-18T21:32:02.951204+00:00",
+      "exit_reason": "SETTLED_WIN",
       "hold_to_settlement": true
     },
     {
@@ -3561,11 +3561,11 @@
       "edge_at_entry": 0.02,
       "kelly_fraction": 0.03,
       "hours_left_at_entry": 6.7,
-      "status": "open",
-      "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null,
+      "status": "settled",
+      "resolved_yes": true,
+      "pnl": 0.06,
+      "settled_at": "2026-06-18T21:32:03.284642+00:00",
+      "exit_reason": "SETTLED_WIN",
       "hold_to_settlement": true
     },
     {
@@ -3583,11 +3583,11 @@
       "edge_at_entry": 0.02,
       "kelly_fraction": 0.03,
       "hours_left_at_entry": 6.7,
-      "status": "open",
-      "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null,
+      "status": "settled",
+      "resolved_yes": true,
+      "pnl": 0.02,
+      "settled_at": "2026-06-18T21:32:03.570306+00:00",
+      "exit_reason": "SETTLED_WIN",
       "hold_to_settlement": true
     }
   ]
