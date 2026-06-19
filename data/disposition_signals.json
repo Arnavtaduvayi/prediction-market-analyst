@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-19T14:19:57.688768+00:00",
-  "n_scanned": 4,
+  "generated_at": "2026-06-19T17:26:42.025085+00:00",
+  "n_scanned": 8,
   "n_signals": 3,
   "signals": [
     {
-      "ticker": "KXBTCD-26JUN1917-T61499.99",
+      "ticker": "KXBTCD-26JUN1917-T61999.99",
       "title": "Bitcoin price on Jun 19, 2026?",
       "type": "favorite_buy",
       "side": "yes",
@@ -12,19 +12,7 @@
       "yes_mid": 0.97,
       "true_prob": 0.99,
       "edge": 0.02,
-      "hours_left": 6.7,
-      "close_time": "2026-06-19T21:00:00Z"
-    },
-    {
-      "ticker": "KXBTCD-26JUN1917-T61999.99",
-      "title": "Bitcoin price on Jun 19, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.94,
-      "yes_mid": 0.93,
-      "true_prob": 0.95,
-      "edge": 0.02,
-      "hours_left": 6.7,
+      "hours_left": 3.6,
       "close_time": "2026-06-19T21:00:00Z"
     },
     {
@@ -32,11 +20,23 @@
       "title": "India vs Afghanistan Winner?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.92,
-      "yes_mid": 0.915,
-      "true_prob": 0.935,
+      "fill_price": 0.91,
+      "yes_mid": 0.905,
+      "true_prob": 0.925,
       "edge": 0.02,
-      "hours_left": 73.7,
+      "hours_left": 70.6,
+      "close_time": "2026-06-22T16:00:00Z"
+    },
+    {
+      "ticker": "KXODIMATCH-26JUN200400AFGIND-AFG",
+      "title": "India vs Afghanistan Winner?",
+      "type": "longshot_sell",
+      "side": "no",
+      "fill_price": 0.9,
+      "yes_mid": 0.095,
+      "true_prob": 0.9202,
+      "edge": 0.0152,
+      "hours_left": 70.6,
       "close_time": "2026-06-22T16:00:00Z"
     }
   ]
