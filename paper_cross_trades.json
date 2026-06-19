@@ -1,7 +1,7 @@
 {
   "started": "2026-05-16T19:16:48.401618+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 70.50599999999994,
+  "bankroll": 67.53599999999994,
   "trades": [
     {
       "logged_at": "2026-05-16T19:21:38.603234+00:00",
@@ -1749,6 +1749,29 @@
       "kelly_fraction": 0.0486,
       "checks_passed": 2,
       "hours_left_at_entry": 70.6,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
+    },
+    {
+      "logged_at": "2026-06-19T20:01:41.959946+00:00",
+      "kalshi_ticker": "KXRT-TOY-95",
+      "kalshi_title": "Toy Story 5 Rotten Tomatoes score?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.99,
+      "cost": 2.97,
+      "yes_mid_at_entry": 0.015,
+      "thesis_estimate": -0.025,
+      "thesis_target_price": -0.019,
+      "thesis_confidence": 0.65,
+      "consensus_votes": 1,
+      "size_multiplier": 0.5,
+      "kelly_fraction": 0.05,
+      "checks_passed": 2,
+      "hours_left_at_entry": 66.0,
       "status": "open",
       "resolved_yes": null,
       "pnl": null,

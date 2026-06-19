@@ -1,20 +1,8 @@
 {
-  "generated_at": "2026-06-19T17:26:42.025085+00:00",
-  "n_scanned": 8,
-  "n_signals": 3,
+  "generated_at": "2026-06-19T20:01:41.963054+00:00",
+  "n_scanned": 5,
+  "n_signals": 2,
   "signals": [
-    {
-      "ticker": "KXBTCD-26JUN1917-T61999.99",
-      "title": "Bitcoin price on Jun 19, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.98,
-      "yes_mid": 0.97,
-      "true_prob": 0.99,
-      "edge": 0.02,
-      "hours_left": 3.6,
-      "close_time": "2026-06-19T21:00:00Z"
-    },
     {
       "ticker": "KXODIMATCH-26JUN200400AFGIND-IND",
       "title": "India vs Afghanistan Winner?",
@@ -24,20 +12,20 @@
       "yes_mid": 0.905,
       "true_prob": 0.925,
       "edge": 0.02,
-      "hours_left": 70.6,
+      "hours_left": 68.0,
       "close_time": "2026-06-22T16:00:00Z"
     },
     {
-      "ticker": "KXODIMATCH-26JUN200400AFGIND-AFG",
-      "title": "India vs Afghanistan Winner?",
+      "ticker": "KXRT-TOY-95",
+      "title": "Toy Story 5 Rotten Tomatoes score?",
       "type": "longshot_sell",
       "side": "no",
-      "fill_price": 0.9,
-      "yes_mid": 0.095,
-      "true_prob": 0.9202,
-      "edge": 0.0152,
-      "hours_left": 70.6,
-      "close_time": "2026-06-22T16:00:00Z"
+      "fill_price": 0.98,
+      "yes_mid": 0.015,
+      "true_prob": 0.9874,
+      "edge": 0.0024,
+      "hours_left": 66.0,
+      "close_time": "2026-06-22T14:00:00Z"
     }
   ]
 }
