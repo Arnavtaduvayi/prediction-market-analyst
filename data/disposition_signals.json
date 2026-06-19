@@ -1,6 +1,43 @@
 {
-  "generated_at": "2026-06-19T05:20:39.183833+00:00",
-  "n_scanned": 9,
-  "n_signals": 0,
-  "signals": []
+  "generated_at": "2026-06-19T10:56:18.528227+00:00",
+  "n_scanned": 10,
+  "n_signals": 3,
+  "signals": [
+    {
+      "ticker": "KXBTCD-26JUN1917-T60999.99",
+      "title": "Bitcoin price on Jun 19, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.95,
+      "yes_mid": 0.945,
+      "true_prob": 0.965,
+      "edge": 0.02,
+      "hours_left": 10.1,
+      "close_time": "2026-06-19T21:00:00Z"
+    },
+    {
+      "ticker": "KXETHD-26JUN1917-T1649.99",
+      "title": "Ethereum price at Jun 19, 2026 at 5pm EDT?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.92,
+      "yes_mid": 0.915,
+      "true_prob": 0.935,
+      "edge": 0.02,
+      "hours_left": 10.1,
+      "close_time": "2026-06-19T21:00:00Z"
+    },
+    {
+      "ticker": "KXNPBGAME-26JUN190500HIRYAK-YAK",
+      "title": "Hiroshima Toyo Carp vs Tokyo Yakult Swallows winner?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.99,
+      "yes_mid": 0.985,
+      "true_prob": 0.99,
+      "edge": 0.02,
+      "hours_left": 46.1,
+      "close_time": "2026-06-21T09:00:00Z"
+    }
+  ]
 }
