@@ -1,31 +1,6 @@
 {
-  "generated_at": "2026-06-19T23:10:41.632125+00:00",
-  "n_scanned": 5,
-  "n_signals": 2,
-  "signals": [
-    {
-      "ticker": "KXHIGHTPHX-26JUN19-B107.5",
-      "title": "Will the maximum temperature be 107-108\u00b0 on Jun 19, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.99,
-      "yes_mid": 0.98,
-      "true_prob": 0.99,
-      "edge": 0.02,
-      "hours_left": 7.9,
-      "close_time": "2026-06-20T07:00:00Z"
-    },
-    {
-      "ticker": "KXNETFLIXRANKMOVIE-26JUN22-MAT",
-      "title": "Top US Netflix Movie on Jun 22, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.95,
-      "yes_mid": 0.945,
-      "true_prob": 0.965,
-      "edge": 0.02,
-      "hours_left": 76.8,
-      "close_time": "2026-06-23T03:59:00Z"
-    }
-  ]
+  "generated_at": "2026-06-20T04:27:41.101455+00:00",
+  "n_scanned": 3,
+  "n_signals": 0,
+  "signals": []
 }
