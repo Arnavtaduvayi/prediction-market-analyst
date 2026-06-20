@@ -1,55 +1,31 @@
 {
-  "generated_at": "2026-06-20T16:45:03.496758+00:00",
-  "n_scanned": 10,
-  "n_signals": 4,
+  "generated_at": "2026-06-20T18:23:27.681604+00:00",
+  "n_scanned": 5,
+  "n_signals": 2,
   "signals": [
     {
-      "ticker": "KXBTCD-26JUN2017-T62749.99",
+      "ticker": "KXBTCD-26JUN2017-T63249.99",
       "title": "Bitcoin price on Jun 20, 2026?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.99,
-      "yes_mid": 0.98,
-      "true_prob": 0.99,
+      "fill_price": 0.94,
+      "yes_mid": 0.93,
+      "true_prob": 0.95,
       "edge": 0.02,
-      "hours_left": 4.3,
+      "hours_left": 2.6,
       "close_time": "2026-06-20T21:00:00Z"
     },
     {
-      "ticker": "KXBTCD-26JUN2617-T59999.99",
-      "title": "Bitcoin price on Jun 26, 2026?",
+      "ticker": "KXNETFLIXRANKMOVIE-26JUN22-MAT",
+      "title": "Top US Netflix Movie on Jun 22, 2026?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.92,
-      "yes_mid": 0.915,
-      "true_prob": 0.935,
+      "fill_price": 0.99,
+      "yes_mid": 0.985,
+      "true_prob": 0.99,
       "edge": 0.02,
-      "hours_left": 148.3,
-      "close_time": "2026-06-26T21:00:00Z"
-    },
-    {
-      "ticker": "KXTESTMATCH-26JUN170600NZENG-NZ",
-      "title": "England vs New Zealand Winner?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.93,
-      "yes_mid": 0.92,
-      "true_prob": 0.94,
-      "edge": 0.02,
-      "hours_left": 89.3,
-      "close_time": "2026-06-24T10:00:00Z"
-    },
-    {
-      "ticker": "KXRANKLIST1SONG-26JUN27-CHO",
-      "title": "Will Choosin' Texas be #1 on the Billboard Hot 100 in June 2026?",
-      "type": "longshot_sell",
-      "side": "no",
-      "fill_price": 0.98,
-      "yes_mid": 0.015,
-      "true_prob": 0.9874,
-      "edge": 0.0024,
-      "hours_left": 165.3,
-      "close_time": "2026-06-27T14:00:00Z"
+      "hours_left": 57.6,
+      "close_time": "2026-06-23T03:59:00Z"
     }
   ]
 }
