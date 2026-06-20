@@ -1,31 +1,19 @@
 {
-  "generated_at": "2026-06-20T18:23:27.681604+00:00",
-  "n_scanned": 5,
-  "n_signals": 2,
+  "generated_at": "2026-06-20T20:24:29.923168+00:00",
+  "n_scanned": 6,
+  "n_signals": 1,
   "signals": [
     {
-      "ticker": "KXBTCD-26JUN2017-T63249.99",
-      "title": "Bitcoin price on Jun 20, 2026?",
+      "ticker": "KXTESTMATCH-26JUN170600NZENG-NZ",
+      "title": "England vs New Zealand Winner?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.94,
-      "yes_mid": 0.93,
-      "true_prob": 0.95,
+      "fill_price": 0.93,
+      "yes_mid": 0.925,
+      "true_prob": 0.945,
       "edge": 0.02,
-      "hours_left": 2.6,
-      "close_time": "2026-06-20T21:00:00Z"
-    },
-    {
-      "ticker": "KXNETFLIXRANKMOVIE-26JUN22-MAT",
-      "title": "Top US Netflix Movie on Jun 22, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.99,
-      "yes_mid": 0.985,
-      "true_prob": 0.99,
-      "edge": 0.02,
-      "hours_left": 57.6,
-      "close_time": "2026-06-23T03:59:00Z"
+      "hours_left": 85.6,
+      "close_time": "2026-06-24T10:00:00Z"
     }
   ]
 }
