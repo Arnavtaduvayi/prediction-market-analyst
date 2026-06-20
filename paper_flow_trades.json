@@ -2,7 +2,7 @@
   "strategy": "flow_momentum",
   "started": "2026-06-04T15:55:51.949036+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 52.97999999999998,
+  "bankroll": 48.95999999999998,
   "trades": [
     {
       "logged_at": "2026-06-04T15:55:54.305861+00:00",
@@ -2572,6 +2572,46 @@
       "settled_at": "2026-06-20T14:37:07.263072+00:00",
       "exit_reason": "VOLUME_EXIT",
       "exit_price": 0.25
+    },
+    {
+      "logged_at": "2026-06-20T16:45:05.624045+00:00",
+      "strategy": "flow_momentum",
+      "kalshi_ticker": "KXWT20MATCH-26JUN201330SCOENG-SCO",
+      "kalshi_title": "England vs Scotland Winner?",
+      "side": "yes",
+      "contracts": 22,
+      "entry_price": 0.12,
+      "cost": 2.64,
+      "yes_mid_at_entry": 0.115,
+      "flow_share_at_entry": 0.846,
+      "flow_volume_at_entry": 2268.09,
+      "hours_left_at_entry": 52.8,
+      "thesis_target_price": 0.155,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
+    },
+    {
+      "logged_at": "2026-06-20T16:45:05.624113+00:00",
+      "strategy": "flow_momentum",
+      "kalshi_ticker": "KXT20MATCH-26JUN210400AUSBAN-AUS",
+      "kalshi_title": "Bangladesh vs Australia Winner?",
+      "side": "yes",
+      "contracts": 2,
+      "entry_price": 0.69,
+      "cost": 1.38,
+      "yes_mid_at_entry": 0.685,
+      "flow_share_at_entry": 1.0,
+      "flow_volume_at_entry": 458.91,
+      "hours_left_at_entry": 67.3,
+      "thesis_target_price": 0.725,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
     }
   ]
 }
