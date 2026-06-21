@@ -1,30 +1,18 @@
 {
-  "generated_at": "2026-06-20T22:20:24.259507+00:00",
-  "n_scanned": 9,
-  "n_signals": 2,
+  "generated_at": "2026-06-21T00:19:26.257836+00:00",
+  "n_scanned": 6,
+  "n_signals": 1,
   "signals": [
-    {
-      "ticker": "KXCOUNTYCHAMPMATCH-26JUN190600YORLEI-LEI",
-      "title": "Leicestershire vs Yorkshire Winner?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.95,
-      "yes_mid": 0.925,
-      "true_prob": 0.945,
-      "edge": 0.02,
-      "hours_left": 107.7,
-      "close_time": "2026-06-25T10:00:00Z"
-    },
     {
       "ticker": "KXTESTMATCH-26JUN170600NZENG-NZ",
       "title": "England vs New Zealand Winner?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.93,
-      "yes_mid": 0.925,
-      "true_prob": 0.945,
+      "fill_price": 0.92,
+      "yes_mid": 0.915,
+      "true_prob": 0.935,
       "edge": 0.02,
-      "hours_left": 83.7,
+      "hours_left": 81.7,
       "close_time": "2026-06-24T10:00:00Z"
     }
   ]

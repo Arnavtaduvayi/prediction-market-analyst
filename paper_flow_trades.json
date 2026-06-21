@@ -2,7 +2,7 @@
   "strategy": "flow_momentum",
   "started": "2026-06-04T15:55:51.949036+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 55.14999999999997,
+  "bankroll": 50.169999999999966,
   "trades": [
     {
       "logged_at": "2026-06-04T15:55:54.305861+00:00",
@@ -2719,6 +2719,46 @@
       "settled_at": "2026-06-20T22:38:17.045620+00:00",
       "exit_reason": "VOLUME_EXIT",
       "exit_price": 0.07
+    },
+    {
+      "logged_at": "2026-06-21T00:19:27.442086+00:00",
+      "strategy": "flow_momentum",
+      "kalshi_ticker": "KXT20MATCH-26JUN202030NEWWAS-WAS",
+      "kalshi_title": "Washington Freedom vs MI New York Winner?",
+      "side": "yes",
+      "contracts": 6,
+      "entry_price": 0.41,
+      "cost": 2.46,
+      "yes_mid_at_entry": 0.405,
+      "flow_share_at_entry": 0.924,
+      "flow_volume_at_entry": 19106.01,
+      "hours_left_at_entry": 52.2,
+      "thesis_target_price": 0.445,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
+    },
+    {
+      "logged_at": "2026-06-21T00:19:27.442173+00:00",
+      "strategy": "flow_momentum",
+      "kalshi_ticker": "KXBTCD-26JUN2117-T63499.99",
+      "kalshi_title": "Bitcoin price on Jun 21, 2026?",
+      "side": "no",
+      "contracts": 12,
+      "entry_price": 0.20999999999999996,
+      "cost": 2.52,
+      "yes_mid_at_entry": 0.795,
+      "flow_share_at_entry": 0.921,
+      "flow_volume_at_entry": 342.96,
+      "hours_left_at_entry": 20.7,
+      "thesis_target_price": 0.755,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
     }
   ]
 }
