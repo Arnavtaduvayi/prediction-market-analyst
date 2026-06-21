@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-21T00:19:26.257836+00:00",
-  "n_scanned": 6,
+  "generated_at": "2026-06-21T06:14:25.924720+00:00",
+  "n_scanned": 7,
   "n_signals": 1,
   "signals": [
     {
@@ -8,11 +8,11 @@
       "title": "England vs New Zealand Winner?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.92,
-      "yes_mid": 0.915,
-      "true_prob": 0.935,
+      "fill_price": 0.94,
+      "yes_mid": 0.935,
+      "true_prob": 0.955,
       "edge": 0.02,
-      "hours_left": 81.7,
+      "hours_left": 75.8,
       "close_time": "2026-06-24T10:00:00Z"
     }
   ]
