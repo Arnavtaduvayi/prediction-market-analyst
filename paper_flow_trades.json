@@ -2,7 +2,7 @@
   "strategy": "flow_momentum",
   "started": "2026-06-04T15:55:51.949036+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 55.44999999999996,
+  "bankroll": 52.99999999999996,
   "trades": [
     {
       "logged_at": "2026-06-04T15:55:54.305861+00:00",
@@ -2781,6 +2781,26 @@
       "settled_at": "2026-06-21T07:13:48.220014+00:00",
       "exit_reason": "VOLUME_EXIT",
       "exit_price": 0.4
+    },
+    {
+      "logged_at": "2026-06-21T10:40:27.500483+00:00",
+      "strategy": "flow_momentum",
+      "kalshi_ticker": "KXWT20MATCH-26JUN210930INDRSA-RSA",
+      "kalshi_title": "South Africa vs India Winner?",
+      "side": "yes",
+      "contracts": 7,
+      "entry_price": 0.35,
+      "cost": 2.45,
+      "yes_mid_at_entry": 0.345,
+      "flow_share_at_entry": 0.97,
+      "flow_volume_at_entry": 307.2,
+      "hours_left_at_entry": 54.8,
+      "thesis_target_price": 0.385,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
     }
   ]
 }
