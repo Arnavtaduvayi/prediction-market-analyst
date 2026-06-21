@@ -1,6 +1,19 @@
 {
-  "generated_at": "2026-06-21T21:26:02.019696+00:00",
-  "n_scanned": 3,
-  "n_signals": 0,
-  "signals": []
+  "generated_at": "2026-06-21T23:27:36.394475+00:00",
+  "n_scanned": 10,
+  "n_signals": 1,
+  "signals": [
+    {
+      "ticker": "KXLIUSAELIMINATION-26JUN21-NON",
+      "title": "Will NONE be eliminated from Love Island USA before Jun 22, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.99,
+      "yes_mid": 0.985,
+      "true_prob": 0.99,
+      "edge": 0.02,
+      "hours_left": 4.6,
+      "close_time": "2026-06-22T03:59:00Z"
+    }
+  ]
 }
