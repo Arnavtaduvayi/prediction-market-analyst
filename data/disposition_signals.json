@@ -1,43 +1,6 @@
 {
-  "generated_at": "2026-06-21T10:40:26.378293+00:00",
+  "generated_at": "2026-06-21T13:17:00.930466+00:00",
   "n_scanned": 7,
-  "n_signals": 3,
-  "signals": [
-    {
-      "ticker": "KXBTCD-26JUN2117-T63249.99",
-      "title": "Bitcoin price on Jun 21, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.95,
-      "yes_mid": 0.945,
-      "true_prob": 0.965,
-      "edge": 0.02,
-      "hours_left": 10.4,
-      "close_time": "2026-06-21T21:00:00Z"
-    },
-    {
-      "ticker": "KXBTCD-26JUN2117-T63499.99",
-      "title": "Bitcoin price on Jun 21, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.91,
-      "yes_mid": 0.905,
-      "true_prob": 0.925,
-      "edge": 0.02,
-      "hours_left": 10.4,
-      "close_time": "2026-06-21T21:00:00Z"
-    },
-    {
-      "ticker": "KXWT20MATCH-26JUN210530SRIWIN-WIN",
-      "title": "West Indies vs Sri Lanka Winner?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.91,
-      "yes_mid": 0.905,
-      "true_prob": 0.925,
-      "edge": 0.02,
-      "hours_left": 50.8,
-      "close_time": "2026-06-23T13:30:00Z"
-    }
-  ]
+  "n_signals": 0,
+  "signals": []
 }
