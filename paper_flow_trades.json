@@ -2,7 +2,7 @@
   "strategy": "flow_momentum",
   "started": "2026-06-04T15:55:51.949036+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 58.889999999999944,
+  "bankroll": 56.129999999999946,
   "trades": [
     {
       "logged_at": "2026-06-04T15:55:54.305861+00:00",
@@ -2825,6 +2825,26 @@
       "settled_at": "2026-06-21T13:20:21.903334+00:00",
       "exit_reason": "VOLUME_EXIT",
       "exit_price": 0.09
+    },
+    {
+      "logged_at": "2026-06-21T17:48:43.317652+00:00",
+      "strategy": "flow_momentum",
+      "kalshi_ticker": "KXT20MATCH-26JUN211630LOSSEA-SEA",
+      "kalshi_title": "Seattle Orcas vs Los Angeles Knight Riders Winner?",
+      "side": "yes",
+      "contracts": 6,
+      "entry_price": 0.46,
+      "cost": 2.76,
+      "yes_mid_at_entry": 0.45,
+      "flow_share_at_entry": 0.998,
+      "flow_volume_at_entry": 10426.18,
+      "hours_left_at_entry": 54.7,
+      "thesis_target_price": 0.49,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
     }
   ]
 }
