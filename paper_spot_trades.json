@@ -438,11 +438,11 @@
       "divergence_at_entry": -0.1621,
       "hours_left_at_entry": 22.7,
       "hold_to_settlement": true,
-      "status": "open",
-      "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null
+      "status": "settled",
+      "resolved_yes": true,
+      "pnl": -1.8,
+      "settled_at": "2026-06-21T22:39:16.083802+00:00",
+      "exit_reason": "SETTLED_LOSS"
     },
     {
       "logged_at": "2026-06-21T00:19:26.321271+00:00",
@@ -460,11 +460,11 @@
       "divergence_at_entry": -0.1554,
       "hours_left_at_entry": 20.7,
       "hold_to_settlement": true,
-      "status": "open",
-      "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null
+      "status": "settled",
+      "resolved_yes": true,
+      "pnl": -1.68,
+      "settled_at": "2026-06-21T22:39:16.347108+00:00",
+      "exit_reason": "SETTLED_LOSS"
     },
     {
       "logged_at": "2026-06-21T00:19:26.321302+00:00",
@@ -482,11 +482,11 @@
       "divergence_at_entry": -0.1378,
       "hours_left_at_entry": 20.7,
       "hold_to_settlement": true,
-      "status": "open",
-      "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null
+      "status": "settled",
+      "resolved_yes": true,
+      "pnl": -1.47,
+      "settled_at": "2026-06-21T22:39:16.596366+00:00",
+      "exit_reason": "SETTLED_LOSS"
     },
     {
       "logged_at": "2026-06-21T10:40:26.437712+00:00",
@@ -504,11 +504,11 @@
       "divergence_at_entry": -0.1368,
       "hours_left_at_entry": 10.4,
       "hold_to_settlement": true,
-      "status": "open",
-      "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null
+      "status": "settled",
+      "resolved_yes": true,
+      "pnl": -1.4,
+      "settled_at": "2026-06-21T22:39:16.884294+00:00",
+      "exit_reason": "SETTLED_LOSS"
     }
   ]
 }
