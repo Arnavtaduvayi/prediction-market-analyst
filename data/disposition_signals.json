@@ -1,31 +1,6 @@
 {
-  "generated_at": "2026-06-22T17:47:16.457310+00:00",
-  "n_scanned": 5,
-  "n_signals": 2,
-  "signals": [
-    {
-      "ticker": "KXBTCD-26JUN2217-T63499.99",
-      "title": "Bitcoin price on Jun 22, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.96,
-      "yes_mid": 0.955,
-      "true_prob": 0.975,
-      "edge": 0.02,
-      "hours_left": 3.2,
-      "close_time": "2026-06-22T21:00:00Z"
-    },
-    {
-      "ticker": "KXETHD-26JUN2217-T1699.99",
-      "title": "Ethereum price at Jun 22, 2026 at 5pm EDT?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.98,
-      "yes_mid": 0.965,
-      "true_prob": 0.985,
-      "edge": 0.02,
-      "hours_left": 3.2,
-      "close_time": "2026-06-22T21:00:00Z"
-    }
-  ]
+  "generated_at": "2026-06-22T21:11:17.692720+00:00",
+  "n_scanned": 1,
+  "n_signals": 0,
+  "signals": []
 }
