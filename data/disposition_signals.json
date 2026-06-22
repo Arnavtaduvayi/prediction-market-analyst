@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-06-21T23:27:36.394475+00:00",
-  "n_scanned": 10,
+  "generated_at": "2026-06-22T05:24:49.232757+00:00",
+  "n_scanned": 7,
   "n_signals": 1,
   "signals": [
     {
-      "ticker": "KXLIUSAELIMINATION-26JUN21-NON",
-      "title": "Will NONE be eliminated from Love Island USA before Jun 22, 2026?",
+      "ticker": "KXBTCD-26JUN2217-T62499.99",
+      "title": "Bitcoin price on Jun 22, 2026?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.99,
-      "yes_mid": 0.985,
-      "true_prob": 0.99,
+      "fill_price": 0.92,
+      "yes_mid": 0.915,
+      "true_prob": 0.935,
       "edge": 0.02,
-      "hours_left": 4.6,
-      "close_time": "2026-06-22T03:59:00Z"
+      "hours_left": 15.6,
+      "close_time": "2026-06-22T21:00:00Z"
     }
   ]
 }
