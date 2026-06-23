@@ -5,7 +5,52 @@ from paper-trading on Kalshi.
 
 ---
 
-## v3 — 5-bot portfolio (current)
+## v4 — 7-bot portfolio (current, 2026-06-23)
+
+Retired the three losing/idle strategies and replaced them with five new bots
+chosen as 1 math-heavy + 1 data-edge + 3 balanced. Kept the two least-bad
+performers (Whale-Copy, Disposition). Combined allocation now 7 × $75 = $525.
+
+**Retired → `/legacy`** (history preserved):
+- **Calendar Arb** — 0 trades all run; its single arb condition never appeared.
+- **Spot Convergence** — −39% (2W/21L); the BTC lognormal model was systematically wrong.
+- **Flow Momentum** — −28% (63W/90L); briefly +12% then the momentum edge inverted.
+
+**New bots:**
+- **C: Arb** (`bot_arb.py`) — fee-aware, risk-free. Overround Dutch-book across
+  mutually-exclusive events + same-direction strike-ladder monotonicity.
+- **D: Weather** (`bot_weather.py` + `weather_data.py`) — NWS forecast vs Kalshi
+  temperature brackets (5 cities), Normal(μ,σ) bracket model, future-day only.
+- **E: Reversion** (`bot_reversion.py`) — fade moves away from VWAP on
+  below-average volume; STOP_LOSS protected.
+- **F: Theta** (`bot_theta.py`) — buy late near-certain favorites (never
+  longshots), hold to settlement.
+- **G: Consensus** (`bot_consensus.py`) — trade only when ≥2 of
+  {disposition, flow, reversion} agree.
+
+**Infra:** new `botlib.py` (shared fee/sizing/journal/microstructure helpers),
+a `STOP_LOSS` + side-aware target/stop in `exit_monitor.py`, a transposed
+one-row-per-bot scorecard, and a `tests/` suite (34 unit tests, no network).
+
+### Two correctness lessons from live testing
+1. **`mutually_exclusive` ≠ collectively exhaustive.** The arb bot's first live
+   run "found" a 62¢/contract underround on the *already-decided* 2025 Pope
+   event — buying all listed YES is only safe if one of them must win. Dropped
+   the underround path; kept overround + ladder, which are safe regardless.
+2. **Same-day temperature markets are near-settled.** Weather's first run bet
+   *against* 94%-priced same-day brackets whose highs had likely already
+   occurred. Restricted to future-day markets (lead ≥ 1) where forecast skill
+   still beats a thin market.
+
+### Honest note on "flawless"
+Only the **arb** bot is loss-proof (and therefore often idle — real arbs are
+rare). The rest are positive-expectation, not guaranteed. "Robustness" here
+means fee-aware math, unit tests, stop-losses, position caps, and
+longshot/staleness guards — not a promise of profit.
+
+---
+
+## v3 — 5-bot portfolio
 
 Added three more strategies running side-by-side with the original two.
 All 5 bots share the scanner output and write to independent journals.

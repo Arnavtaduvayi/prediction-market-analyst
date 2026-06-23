@@ -28,16 +28,20 @@ import requests
 
 WHALE_JOURNAL = Path(__file__).parent / "paper_cross_trades.json"
 DISPOSITION_JOURNAL = Path(__file__).parent / "paper_disposition_trades.json"
-CALENDAR_JOURNAL = Path(__file__).parent / "paper_calendar_trades.json"
-SPOT_JOURNAL = Path(__file__).parent / "paper_spot_trades.json"
-FLOW_JOURNAL = Path(__file__).parent / "paper_flow_trades.json"
+ARB_JOURNAL = Path(__file__).parent / "paper_arb_trades.json"
+WEATHER_JOURNAL = Path(__file__).parent / "paper_weather_trades.json"
+REVERSION_JOURNAL = Path(__file__).parent / "paper_reversion_trades.json"
+THETA_JOURNAL = Path(__file__).parent / "paper_theta_trades.json"
+CONSENSUS_JOURNAL = Path(__file__).parent / "paper_consensus_trades.json"
 
 JOURNALS = [
     (WHALE_JOURNAL, "whale"),
     (DISPOSITION_JOURNAL, "disposition"),
-    (CALENDAR_JOURNAL, "calendar"),
-    (SPOT_JOURNAL, "spot"),
-    (FLOW_JOURNAL, "flow"),
+    (ARB_JOURNAL, "arb"),
+    (WEATHER_JOURNAL, "weather"),
+    (REVERSION_JOURNAL, "reversion"),
+    (THETA_JOURNAL, "theta"),
+    (CONSENSUS_JOURNAL, "consensus"),
 ]
 
 KALSHI_API = "https://api.elections.kalshi.com/trade-api/v2"
@@ -143,6 +147,22 @@ def check_exit_triggers(trade: dict, state: dict) -> tuple[str | None, float]:
         exit_price = yes_bid          # we sell to the bid
     else:
         exit_price = 1.0 - yes_ask    # NO bid = 1 - YES ask
+
+    # ── Side-aware target / stop (used by reversion, consensus) ──
+    # These express the exit level directly as a YES-mid threshold, which is
+    # unambiguous for both sides (unlike the legacy thesis_target_price below).
+    tgt = trade.get("target_yes_mid")
+    if tgt is not None:
+        if side == "yes" and yes_mid >= tgt:
+            return "TARGET_HIT", exit_price
+        if side == "no" and yes_mid <= tgt:
+            return "TARGET_HIT", exit_price
+    stop = trade.get("stop_yes_mid")
+    if stop is not None:
+        if side == "yes" and yes_mid <= stop:
+            return "STOP_LOSS", exit_price
+        if side == "no" and yes_mid >= stop:
+            return "STOP_LOSS", exit_price
 
     # ── Trigger 1: target hit ──
     target = trade.get("thesis_target_price")

@@ -21,17 +21,24 @@ from pathlib import Path
 
 WHALE_JOURNAL = Path(__file__).parent / "paper_cross_trades.json"
 DISPOSITION_JOURNAL = Path(__file__).parent / "paper_disposition_trades.json"
-CALENDAR_JOURNAL = Path(__file__).parent / "paper_calendar_trades.json"
-SPOT_JOURNAL = Path(__file__).parent / "paper_spot_trades.json"
-FLOW_JOURNAL = Path(__file__).parent / "paper_flow_trades.json"
+ARB_JOURNAL = Path(__file__).parent / "paper_arb_trades.json"
+WEATHER_JOURNAL = Path(__file__).parent / "paper_weather_trades.json"
+REVERSION_JOURNAL = Path(__file__).parent / "paper_reversion_trades.json"
+THETA_JOURNAL = Path(__file__).parent / "paper_theta_trades.json"
+CONSENSUS_JOURNAL = Path(__file__).parent / "paper_consensus_trades.json"
 
-ALL_JOURNALS = [
-    (WHALE_JOURNAL, "whale-copy"),
-    (DISPOSITION_JOURNAL, "disposition"),
-    (CALENDAR_JOURNAL, "calendar-arb"),
-    (SPOT_JOURNAL, "spot-conv"),
-    (FLOW_JOURNAL, "flow-mom"),
+# (letter, label, strategy one-liner) — drives both signal order and the scorecard.
+BOTS = [
+    ("A", "whale-copy", WHALE_JOURNAL, "Polymarket whales"),
+    ("B", "disposition", DISPOSITION_JOURNAL, "Longshot/favorite"),
+    ("C", "arb", ARB_JOURNAL, "Dutch-book + ladder (risk-free)"),
+    ("D", "weather", WEATHER_JOURNAL, "NWS forecast edge"),
+    ("E", "reversion", REVERSION_JOURNAL, "Fade thin overreactions"),
+    ("F", "theta", THETA_JOURNAL, "Late-favorite convergence"),
+    ("G", "consensus", CONSENSUS_JOURNAL, "Multi-signal agreement"),
 ]
+
+ALL_JOURNALS = [(path, label) for _, label, path, _ in BOTS]
 
 TARGETS_FILE = Path(__file__).parent / "data" / "targets.json"
 INITIAL_BANKROLL = 75.0
@@ -103,17 +110,25 @@ def cmd_signal():
     import disposition; disposition.run(); print()
     import executor_disposition; executor_disposition.run(); print()
 
-    # Bot C: Strike monotonicity arbitrage
-    print("─── BOT C: CALENDAR ARB ───")
-    import bot_calendar; bot_calendar.run(); print()
+    # Bot C: Arbitrage (Dutch-book + strike ladder, risk-free) — own discovery
+    print("─── BOT C: ARB ───")
+    import bot_arb; bot_arb.run(); print()
 
-    # Bot D: BTC spot convergence
-    print("─── BOT D: SPOT CONVERGENCE ───")
-    import bot_spot; bot_spot.run(); print()
+    # Bot D: Weather forecast edge — own discovery
+    print("─── BOT D: WEATHER ───")
+    import bot_weather; bot_weather.run(); print()
 
-    # Bot E: Order flow momentum
-    print("─── BOT E: FLOW MOMENTUM ───")
-    import bot_flow; bot_flow.run()
+    # Bot E: Mean-reversion on thin-volume overreactions
+    print("─── BOT E: REVERSION ───")
+    import bot_reversion; bot_reversion.run(); print()
+
+    # Bot F: Late-favorite settlement convergence
+    print("─── BOT F: THETA ───")
+    import bot_theta; bot_theta.run(); print()
+
+    # Bot G: Multi-signal consensus
+    print("─── BOT G: CONSENSUS ───")
+    import bot_consensus; bot_consensus.run()
 
 
 def cmd_exit():
@@ -156,11 +171,6 @@ def cmd_cancel(reason: str = "manual"):
 
 def cmd_status(json_output: bool = False):
     stats_by_label = {label: journal_stats(path, label) for path, label in ALL_JOURNALS}
-    whale = stats_by_label["whale-copy"]
-    disp  = stats_by_label["disposition"]
-    cal   = stats_by_label["calendar-arb"]
-    spot  = stats_by_label["spot-conv"]
-    flow  = stats_by_label["flow-mom"]
 
     if json_output:
         combined = {
@@ -174,45 +184,31 @@ def cmd_status(json_output: bool = False):
         print(json.dumps(out, indent=2, default=str))
         return
 
-    bots = [("A", "WHALE-COPY", whale, "Polymarket whales"),
-            ("B", "DISPOSITION", disp, "Longshot/favorite"),
-            ("C", "CALENDAR ARB", cal, "Strike monotonicity"),
-            ("D", "SPOT CONV", spot, "BTC fair-value model"),
-            ("E", "FLOW MOM", flow, "Order flow imbalance")]
-
-    bar = "═" * 95
+    # One row per bot — scales cleanly past the old 5-column layout.
+    hdr = (f"  {'Bot':<14}{'Strategy':<32}{'Bankroll':>10}{'P&L':>9}"
+           f"{'Ret%':>8}{'Setl':>6}{'Win%':>6}{'W/L':>9}{'Open':>6}")
+    bar = "═" * len(hdr)
     print(f"\n{bar}")
-    print(f"  PAPER TRADING — 5-BOT SCORECARD")
+    print(f"  PAPER TRADING — {len(BOTS)}-BOT SCORECARD")
     print(bar)
-    header = "  " + f"{'Metric':<18}"
-    for letter, name, _, _ in bots:
-        header += f"{f'Bot {letter}':>15}"
-    print(header)
-    print("  " + f"{'':<18}" + "".join(f"{name:>15}" for _, name, _, _ in bots))
-    print("  " + f"{'─'*18}" + "".join(f"{'─'*15}" for _ in bots))
-
-    def row(label, fmt_fn):
-        line = "  " + f"{label:<18}"
-        for _, _, s, _ in bots:
-            line += f"{fmt_fn(s):>15}"
-        print(line)
-
-    row("Bankroll",      lambda s: f"${s['bankroll']:.2f}")
-    row("P&L",           lambda s: f"${s['total_pnl']:+.2f}")
-    row("Return %",      lambda s: f"{s['return_pct']:+.2f}%")
-    row("Settled",       lambda s: str(s['settled']))
-    row("Win rate",      lambda s: f"{s['win_rate']:.0f}%" if s['settled'] else "—")
-    row("W / L",         lambda s: f"{s['wins']}W/{s['losses']}L")
-    row("Open",          lambda s: str(s['open']))
+    print(hdr)
+    print("  " + "─" * (len(hdr) - 2))
+    for letter, label, _, desc in BOTS:
+        s = stats_by_label[label]
+        win = f"{s['win_rate']:.0f}%" if s["settled"] else "—"
+        wl = f"{s['wins']}/{s['losses']}"
+        print(f"  {letter + ' ' + label:<14}{desc[:31]:<32}"
+              f"{'$' + format(s['bankroll'], '.2f'):>10}{format(s['total_pnl'], '+.2f'):>9}"
+              f"{format(s['return_pct'], '+.1f'):>7}%{s['settled']:>6}{win:>6}{wl:>9}{s['open']:>6}")
     print(bar)
 
-    total_pnl = sum(s["total_pnl"] for _, _, s, _ in bots)
-    total_bank = sum(s["bankroll"] for _, _, s, _ in bots)
-    total_init = sum(s["initial_bankroll"] for _, _, s, _ in bots)
-    total_settled = sum(s["settled"] for _, _, s, _ in bots)
-    total_open = sum(s["open"] for _, _, s, _ in bots)
+    total_pnl = sum(s["total_pnl"] for s in stats_by_label.values())
+    total_bank = sum(s["bankroll"] for s in stats_by_label.values())
+    total_init = sum(s["initial_bankroll"] for s in stats_by_label.values())
+    total_settled = sum(s["settled"] for s in stats_by_label.values())
+    total_open = sum(s["open"] for s in stats_by_label.values())
     print(f"  COMBINED: bankroll ${total_bank:.2f}  P&L ${total_pnl:+.2f}  "
-          f"({total_pnl/total_init*100:+.2f}%)  "
+          f"({total_pnl / total_init * 100:+.2f}%)  "
           f"settled={total_settled}  open={total_open}")
     print(f"{bar}\n")
 
