@@ -1,31 +1,6 @@
 {
-  "generated_at": "2026-06-23T18:09:42.116043+00:00",
-  "n_scanned": 5,
-  "n_signals": 2,
-  "signals": [
-    {
-      "ticker": "KXWT20MATCH-26JUN231330PAKAUS-AUS",
-      "title": "Australia vs Pakistan Winner?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.99,
-      "yes_mid": 0.985,
-      "true_prob": 0.99,
-      "edge": 0.02,
-      "hours_left": 51.3,
-      "close_time": "2026-06-25T21:30:00Z"
-    },
-    {
-      "ticker": "KXBTCD-26JUN2317-T62999.99",
-      "title": "Bitcoin price on Jun 23, 2026?",
-      "type": "longshot_sell",
-      "side": "no",
-      "fill_price": 0.94,
-      "yes_mid": 0.055,
-      "true_prob": 0.9538,
-      "edge": 0.0088,
-      "hours_left": 2.9,
-      "close_time": "2026-06-23T21:00:00Z"
-    }
-  ]
+  "generated_at": "2026-06-23T21:05:49.910452+00:00",
+  "n_scanned": 1,
+  "n_signals": 0,
+  "signals": []
 }
