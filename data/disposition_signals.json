@@ -1,19 +1,31 @@
 {
-  "generated_at": "2026-06-23T12:15:34.535911+00:00",
-  "n_scanned": 10,
-  "n_signals": 1,
+  "generated_at": "2026-06-23T16:06:53.449983+00:00",
+  "n_scanned": 5,
+  "n_signals": 2,
   "signals": [
     {
-      "ticker": "KXBTCD-26JUN2317-T60499.99",
-      "title": "Bitcoin price on Jun 23, 2026?",
+      "ticker": "KXT20MATCH-26JUN230930BBLMYW-MYW",
+      "title": "Mysore Warriors vs Bengaluru Blasters Winner?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.96,
-      "yes_mid": 0.955,
-      "true_prob": 0.975,
+      "fill_price": 0.92,
+      "yes_mid": 0.91,
+      "true_prob": 0.93,
       "edge": 0.02,
-      "hours_left": 8.8,
-      "close_time": "2026-06-23T21:00:00Z"
+      "hours_left": 49.4,
+      "close_time": "2026-06-25T17:30:00Z"
+    },
+    {
+      "ticker": "KXWT20MATCH-26JUN231330PAKAUS-PAK",
+      "title": "Australia vs Pakistan Winner?",
+      "type": "longshot_sell",
+      "side": "no",
+      "fill_price": 0.95,
+      "yes_mid": 0.04,
+      "true_prob": 0.9664,
+      "edge": 0.0064,
+      "hours_left": 53.4,
+      "close_time": "2026-06-25T21:30:00Z"
     }
   ]
 }
