@@ -1,6 +1,19 @@
 {
-  "generated_at": "2026-06-23T21:05:49.910452+00:00",
-  "n_scanned": 1,
-  "n_signals": 0,
-  "signals": []
+  "generated_at": "2026-06-23T22:22:22.996884+00:00",
+  "n_scanned": 3,
+  "n_signals": 1,
+  "signals": [
+    {
+      "ticker": "KXHIGHLAX-26JUN23-B71.5",
+      "title": "Will the **high temp in LA** be 71-72\u00b0 on Jun 23, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.92,
+      "yes_mid": 0.915,
+      "true_prob": 0.935,
+      "edge": 0.02,
+      "hours_left": 9.6,
+      "close_time": "2026-06-24T07:59:00Z"
+    }
+  ]
 }
