@@ -1,19 +1,31 @@
 {
-  "generated_at": "2026-06-25T20:19:59.398068+00:00",
-  "n_scanned": 5,
-  "n_signals": 1,
+  "generated_at": "2026-06-25T22:42:06.561743+00:00",
+  "n_scanned": 8,
+  "n_signals": 2,
   "signals": [
     {
-      "ticker": "KXETHD-26JUN2617-T1489.99",
-      "title": "Ethereum price at Jun 26, 2026 at 5pm EDT?",
+      "ticker": "KXBTCD-26JUN2617-T56999.99",
+      "title": "Bitcoin price on Jun 26, 2026?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.92,
-      "yes_mid": 0.915,
-      "true_prob": 0.935,
+      "fill_price": 0.95,
+      "yes_mid": 0.945,
+      "true_prob": 0.965,
       "edge": 0.02,
-      "hours_left": 24.7,
+      "hours_left": 22.3,
       "close_time": "2026-06-26T21:00:00Z"
+    },
+    {
+      "ticker": "KXRT-SUPE-50",
+      "title": "Supergirl Rotten Tomatoes score?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.99,
+      "yes_mid": 0.985,
+      "true_prob": 0.99,
+      "edge": 0.02,
+      "hours_left": 87.3,
+      "close_time": "2026-06-29T14:00:00Z"
     }
   ]
 }
