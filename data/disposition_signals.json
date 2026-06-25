@@ -1,19 +1,55 @@
 {
-  "generated_at": "2026-06-23T22:22:22.996884+00:00",
-  "n_scanned": 3,
-  "n_signals": 1,
+  "generated_at": "2026-06-25T15:39:31.113138+00:00",
+  "n_scanned": 20,
+  "n_signals": 4,
   "signals": [
     {
-      "ticker": "KXHIGHLAX-26JUN23-B71.5",
-      "title": "Will the **high temp in LA** be 71-72\u00b0 on Jun 23, 2026?",
+      "ticker": "KXBTCD-26JUN2517-T57499.99",
+      "title": "Bitcoin price on Jun 25, 2026?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.92,
-      "yes_mid": 0.915,
-      "true_prob": 0.935,
+      "fill_price": 0.95,
+      "yes_mid": 0.945,
+      "true_prob": 0.965,
       "edge": 0.02,
-      "hours_left": 9.6,
-      "close_time": "2026-06-24T07:59:00Z"
+      "hours_left": 5.4,
+      "close_time": "2026-06-25T21:00:00Z"
+    },
+    {
+      "ticker": "KXWT20MATCH-26JUN250930BANIND-IND",
+      "title": "India vs Bangladesh Winner?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.98,
+      "yes_mid": 0.975,
+      "true_prob": 0.99,
+      "edge": 0.02,
+      "hours_left": 49.9,
+      "close_time": "2026-06-27T17:30:00Z"
+    },
+    {
+      "ticker": "KXWT20MATCH-26JUN251330NEDRSA-NED",
+      "title": "South Africa vs Netherlands Winner?",
+      "type": "longshot_sell",
+      "side": "no",
+      "fill_price": 0.95,
+      "yes_mid": 0.04,
+      "true_prob": 0.9664,
+      "edge": 0.0064,
+      "hours_left": 53.9,
+      "close_time": "2026-06-27T21:30:00Z"
+    },
+    {
+      "ticker": "KXWT20MATCH-26JUN250930BANIND-BAN",
+      "title": "India vs Bangladesh Winner?",
+      "type": "longshot_sell",
+      "side": "no",
+      "fill_price": 0.97,
+      "yes_mid": 0.02,
+      "true_prob": 0.9832,
+      "edge": 0.0032,
+      "hours_left": 49.9,
+      "close_time": "2026-06-27T17:30:00Z"
     }
   ]
 }

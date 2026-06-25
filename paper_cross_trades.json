@@ -1,7 +1,7 @@
 {
   "started": "2026-05-16T19:16:48.401618+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 73.30599999999995,
+  "bankroll": 70.33599999999996,
   "trades": [
     {
       "logged_at": "2026-05-16T19:21:38.603234+00:00",
@@ -1851,6 +1851,29 @@
       "settled_at": "2026-06-23T20:28:31.002583+00:00",
       "exit_reason": "TARGET_HIT",
       "exit_price": 0.98
+    },
+    {
+      "logged_at": "2026-06-25T15:39:31.109943+00:00",
+      "kalshi_ticker": "KXWT20MATCH-26JUN250930BANIND-BAN",
+      "kalshi_title": "India vs Bangladesh Winner?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.99,
+      "cost": 2.97,
+      "yes_mid_at_entry": 0.02,
+      "thesis_estimate": -0.02,
+      "thesis_target_price": -0.014,
+      "thesis_confidence": 0.65,
+      "consensus_votes": 1,
+      "size_multiplier": 0.5,
+      "kelly_fraction": 0.05,
+      "checks_passed": 2,
+      "hours_left_at_entry": 49.9,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
     }
   ],
   "bankroll_topups": [
