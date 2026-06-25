@@ -1,79 +1,19 @@
 {
-  "generated_at": "2026-06-25T17:23:11.662989+00:00",
-  "n_scanned": 16,
-  "n_signals": 6,
+  "generated_at": "2026-06-25T20:19:59.398068+00:00",
+  "n_scanned": 5,
+  "n_signals": 1,
   "signals": [
     {
-      "ticker": "KXBTCD-26JUN2517-T57999.99",
-      "title": "Bitcoin price on Jun 25, 2026?",
+      "ticker": "KXETHD-26JUN2617-T1489.99",
+      "title": "Ethereum price at Jun 26, 2026 at 5pm EDT?",
       "type": "favorite_buy",
       "side": "yes",
       "fill_price": 0.92,
       "yes_mid": 0.915,
       "true_prob": 0.935,
       "edge": 0.02,
-      "hours_left": 3.7,
-      "close_time": "2026-06-25T21:00:00Z"
-    },
-    {
-      "ticker": "KXLIUSAELIMINATIONW-26JUN26-ALA",
-      "title": "Will Alannah be eliminated from Love Island USA Season 8 before Jun 27, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.98,
-      "yes_mid": 0.975,
-      "true_prob": 0.99,
-      "edge": 0.02,
-      "hours_left": 34.6,
-      "close_time": "2026-06-27T03:59:00Z"
-    },
-    {
-      "ticker": "KXNASDAQ100U-26JUN25H1600-T29099.99",
-      "title": "Will the Nasdaq-100 be above 29099.99 at the end of Jun 25, 2026 at 4pm EDT?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.93,
-      "yes_mid": 0.925,
-      "true_prob": 0.945,
-      "edge": 0.02,
-      "hours_left": 2.6,
-      "close_time": "2026-06-25T20:00:00Z"
-    },
-    {
-      "ticker": "KXRT-SUPE-50",
-      "title": "Supergirl Rotten Tomatoes score?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.96,
-      "yes_mid": 0.945,
-      "true_prob": 0.965,
-      "edge": 0.02,
-      "hours_left": 92.6,
-      "close_time": "2026-06-29T14:00:00Z"
-    },
-    {
-      "ticker": "KXSOLD-26JUN2517-T64.9999",
-      "title": "SOL price on Jun 25, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.94,
-      "yes_mid": 0.91,
-      "true_prob": 0.93,
-      "edge": 0.02,
-      "hours_left": 3.6,
-      "close_time": "2026-06-25T21:00:00Z"
-    },
-    {
-      "ticker": "KXWT20MATCH-26JUN251330NEDRSA-RSA",
-      "title": "South Africa vs Netherlands Winner?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.98,
-      "yes_mid": 0.975,
-      "true_prob": 0.99,
-      "edge": 0.02,
-      "hours_left": 52.1,
-      "close_time": "2026-06-27T21:30:00Z"
+      "hours_left": 24.7,
+      "close_time": "2026-06-26T21:00:00Z"
     }
   ]
 }
