@@ -2,7 +2,7 @@
   "strategy": "reversion",
   "started": "2026-06-23T22:27:35.657835+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 60.64999999999999,
+  "bankroll": 60.90999999999999,
   "trades": [
     {
       "logged_at": "2026-06-25T15:39:40.118118+00:00",
@@ -14,16 +14,17 @@
       "entry_price": 0.12,
       "fee": 0.23,
       "cost": 3.95,
-      "status": "open",
+      "status": "exited",
       "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null,
+      "pnl": -3.95,
+      "settled_at": "2026-06-25T20:26:42.240341+00:00",
+      "exit_reason": "STOP_LOSS",
       "yes_mid_at_entry": 0.115,
       "target_yes_mid": 0.2603,
       "stop_yes_mid": 0.055,
       "anchor_vwap": 0.2603,
-      "deviation_at_entry": -0.1453
+      "deviation_at_entry": -0.1453,
+      "exit_price": 0.0
     },
     {
       "logged_at": "2026-06-25T15:39:40.118171+00:00",
@@ -77,16 +78,17 @@
       "entry_price": 0.12,
       "fee": 0.2,
       "cost": 3.32,
-      "status": "open",
+      "status": "exited",
       "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null,
+      "pnl": -3.06,
+      "settled_at": "2026-06-25T20:26:43.521099+00:00",
+      "exit_reason": "STOP_LOSS",
       "yes_mid_at_entry": 0.91,
       "target_yes_mid": 0.7706,
       "stop_yes_mid": 0.97,
       "anchor_vwap": 0.7706,
-      "deviation_at_entry": 0.1394
+      "deviation_at_entry": 0.1394,
+      "exit_price": 0.01
     }
   ]
 }
