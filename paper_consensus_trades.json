@@ -2,6 +2,47 @@
   "strategy": "consensus",
   "started": "2026-06-23T22:27:36.798146+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 75.0,
-  "trades": []
+  "bankroll": 67.83000000000001,
+  "trades": [
+    {
+      "logged_at": "2026-06-25T17:23:25.355433+00:00",
+      "strategy": "consensus",
+      "kalshi_ticker": "KXNASDAQ100U-26JUN25H1600-T29199.99",
+      "kalshi_title": "Will the Nasdaq-100 be above 29199.99 at the end of Jun 25, 2026 at 4pm EDT?",
+      "side": "no",
+      "contracts": 22,
+      "entry_price": 0.17,
+      "fee": 0.22,
+      "cost": 3.96,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "yes_mid_at_entry": 0.845,
+      "target_yes_mid": 0.795,
+      "stop_yes_mid": 0.905,
+      "signals_agree": 2
+    },
+    {
+      "logged_at": "2026-06-25T17:23:25.355478+00:00",
+      "strategy": "consensus",
+      "kalshi_ticker": "KXBRENTD-26JUN2517-T75",
+      "kalshi_title": "Will the brent crude oil close price be above 75 USD/Bbl on June 25, 2026 at 5:00 PM EDT?",
+      "side": "no",
+      "contracts": 7,
+      "entry_price": 0.44,
+      "fee": 0.13,
+      "cost": 3.21,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "yes_mid_at_entry": 0.58,
+      "target_yes_mid": 0.53,
+      "stop_yes_mid": 0.64,
+      "signals_agree": 2
+    }
+  ]
 }

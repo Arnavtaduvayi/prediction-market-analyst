@@ -2,7 +2,7 @@
   "strategy": "theta",
   "started": "2026-06-23T22:27:36.724000+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 72.25,
+  "bankroll": 69.44,
   "trades": [
     {
       "logged_at": "2026-06-23T22:28:23.726165+00:00",
@@ -41,6 +41,25 @@
       "hold_to_settlement": true,
       "yes_mid_at_entry": 0.945,
       "hours_left_at_entry": 5.4
+    },
+    {
+      "logged_at": "2026-06-25T17:23:22.324846+00:00",
+      "strategy": "theta",
+      "kalshi_ticker": "KXNASDAQ100U-26JUN25H1600-T29099.99",
+      "kalshi_title": "Will the Nasdaq-100 be above 29099.99 at the end of Jun 25, 2026 at 4pm EDT?",
+      "side": "yes",
+      "contracts": 3,
+      "entry_price": 0.93,
+      "fee": 0.02,
+      "cost": 2.81,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.925,
+      "hours_left_at_entry": 2.6
     }
   ]
 }
