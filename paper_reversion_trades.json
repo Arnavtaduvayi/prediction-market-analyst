@@ -2,7 +2,7 @@
   "strategy": "reversion",
   "started": "2026-06-23T22:27:35.657835+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 58.92999999999999,
+  "bankroll": 52.98999999999999,
   "trades": [
     {
       "logged_at": "2026-06-25T15:39:40.118118+00:00",
@@ -201,6 +201,48 @@
       "anchor_vwap": 0.3725,
       "deviation_at_entry": 0.1925,
       "exit_price": 0.5
+    },
+    {
+      "logged_at": "2026-06-26T20:04:52.798008+00:00",
+      "strategy": "reversion",
+      "kalshi_ticker": "KXWT20MATCH-26JUN261330SCOSRI-SRI",
+      "kalshi_title": "Sri Lanka vs Scotland Winner?",
+      "side": "no",
+      "contracts": 17,
+      "entry_price": 0.17,
+      "fee": 0.17,
+      "cost": 3.06,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "yes_mid_at_entry": 0.835,
+      "target_yes_mid": 0.6699,
+      "stop_yes_mid": 0.895,
+      "anchor_vwap": 0.6699,
+      "deviation_at_entry": 0.1651
+    },
+    {
+      "logged_at": "2026-06-26T20:04:52.798044+00:00",
+      "strategy": "reversion",
+      "kalshi_ticker": "KXWT20MATCH-26JUN261330SCOSRI-SCO",
+      "kalshi_title": "Sri Lanka vs Scotland Winner?",
+      "side": "yes",
+      "contracts": 16,
+      "entry_price": 0.17,
+      "fee": 0.16,
+      "cost": 2.88,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "yes_mid_at_entry": 0.165,
+      "target_yes_mid": 0.2981,
+      "stop_yes_mid": 0.105,
+      "anchor_vwap": 0.2981,
+      "deviation_at_entry": -0.1331
     }
   ]
 }

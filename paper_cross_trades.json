@@ -1,7 +1,7 @@
 {
   "started": "2026-05-16T19:16:48.401618+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 73.37599999999996,
+  "bankroll": 71.63599999999997,
   "trades": [
     {
       "logged_at": "2026-05-16T19:21:38.603234+00:00",
@@ -1923,6 +1923,29 @@
       "settled_at": "2026-06-26T10:32:14.281455+00:00",
       "exit_reason": "TARGET_HIT",
       "exit_price": 0.89
+    },
+    {
+      "logged_at": "2026-06-26T20:04:44.950536+00:00",
+      "kalshi_ticker": "KXT20MATCH-26JUN261330GLOSOM-GLO",
+      "kalshi_title": "Somerset vs Gloucestershire Winner?",
+      "side": "no",
+      "contracts": 2,
+      "entry_price": 0.87,
+      "cost": 1.74,
+      "yes_mid_at_entry": 0.135,
+      "thesis_estimate": 0.095,
+      "thesis_target_price": 0.101,
+      "thesis_confidence": 0.65,
+      "consensus_votes": 1,
+      "size_multiplier": 0.5,
+      "kelly_fraction": 0.0337,
+      "checks_passed": 2,
+      "hours_left_at_entry": 49.4,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
     }
   ],
   "bankroll_topups": [
