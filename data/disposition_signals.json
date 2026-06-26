@@ -1,43 +1,19 @@
 {
-  "generated_at": "2026-06-26T15:31:50.571508+00:00",
-  "n_scanned": 15,
-  "n_signals": 3,
+  "generated_at": "2026-06-26T18:01:54.619046+00:00",
+  "n_scanned": 6,
+  "n_signals": 1,
   "signals": [
     {
-      "ticker": "KXBTCD-26JUN2617-T57999.99",
-      "title": "Bitcoin price on Jun 26, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.98,
-      "yes_mid": 0.975,
-      "true_prob": 0.99,
-      "edge": 0.02,
-      "hours_left": 5.5,
-      "close_time": "2026-06-26T21:00:00Z"
-    },
-    {
-      "ticker": "KXBTCD-26JUN2617-T58499.99",
-      "title": "Bitcoin price on Jun 26, 2026?",
+      "ticker": "KXINXU-26JUN26H1600-T7324.9999",
+      "title": "Will the S&P 500 be above 7324.9999 on Jun 26, 2026 at 4pm EDT?",
       "type": "favorite_buy",
       "side": "yes",
       "fill_price": 0.95,
-      "yes_mid": 0.945,
-      "true_prob": 0.965,
+      "yes_mid": 0.94,
+      "true_prob": 0.96,
       "edge": 0.02,
-      "hours_left": 5.5,
-      "close_time": "2026-06-26T21:00:00Z"
-    },
-    {
-      "ticker": "KXWTIW-26JUN2614-T71.00",
-      "title": "Will the WTI crude oil settlement price be below 71.00 USD/Bbl on Jun 26, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.98,
-      "yes_mid": 0.975,
-      "true_prob": 0.99,
-      "edge": 0.02,
-      "hours_left": 3.0,
-      "close_time": "2026-06-26T18:30:00Z"
+      "hours_left": 2.0,
+      "close_time": "2026-06-26T20:00:00Z"
     }
   ]
 }

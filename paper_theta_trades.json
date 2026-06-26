@@ -2,7 +2,7 @@
   "strategy": "theta",
   "started": "2026-06-23T22:27:36.724000+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 68.73,
+  "bankroll": 66.82000000000001,
   "trades": [
     {
       "logged_at": "2026-06-23T22:28:23.726165+00:00",
@@ -117,6 +117,25 @@
       "hold_to_settlement": true,
       "yes_mid_at_entry": 0.945,
       "hours_left_at_entry": 5.5
+    },
+    {
+      "logged_at": "2026-06-26T18:02:05.575580+00:00",
+      "strategy": "theta",
+      "kalshi_ticker": "KXINXU-26JUN26H1600-T7324.9999",
+      "kalshi_title": "Will the S&P 500 be above 7324.9999 on Jun 26, 2026 at 4pm EDT?",
+      "side": "yes",
+      "contracts": 2,
+      "entry_price": 0.95,
+      "fee": 0.01,
+      "cost": 1.91,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.94,
+      "hours_left_at_entry": 2.0
     }
   ]
 }
