@@ -2,7 +2,7 @@
   "strategy": "reversion",
   "started": "2026-06-23T22:27:35.657835+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 52.97999999999999,
+  "bankroll": 58.92999999999999,
   "trades": [
     {
       "logged_at": "2026-06-25T15:39:40.118118+00:00",
@@ -102,16 +102,17 @@
       "entry_price": 0.1,
       "fee": 0.21,
       "cost": 3.41,
-      "status": "open",
+      "status": "exited",
       "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null,
+      "pnl": -2.77,
+      "settled_at": "2026-06-26T16:30:31.463336+00:00",
+      "exit_reason": "STOP_LOSS",
       "yes_mid_at_entry": 0.91,
       "target_yes_mid": 0.7374,
       "stop_yes_mid": 0.97,
       "anchor_vwap": 0.7374,
-      "deviation_at_entry": 0.1726
+      "deviation_at_entry": 0.1726,
+      "exit_price": 0.02
     },
     {
       "logged_at": "2026-06-26T09:49:25.156487+00:00",
@@ -167,16 +168,17 @@
       "entry_price": 0.4,
       "fee": 0.12,
       "cost": 2.92,
-      "status": "open",
+      "status": "exited",
       "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null,
+      "pnl": -0.61,
+      "settled_at": "2026-06-26T16:30:31.839310+00:00",
+      "exit_reason": "VOLUME_EXIT",
       "yes_mid_at_entry": 0.63,
       "target_yes_mid": 0.4501,
       "stop_yes_mid": 0.69,
       "anchor_vwap": 0.4501,
-      "deviation_at_entry": 0.1799
+      "deviation_at_entry": 0.1799,
+      "exit_price": 0.33
     },
     {
       "logged_at": "2026-06-26T15:32:01.398407+00:00",
@@ -188,16 +190,17 @@
       "entry_price": 0.45,
       "fee": 0.11,
       "cost": 2.81,
-      "status": "open",
+      "status": "exited",
       "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null,
+      "pnl": 0.19,
+      "settled_at": "2026-06-26T16:30:32.225138+00:00",
+      "exit_reason": "VOLUME_EXIT",
       "yes_mid_at_entry": 0.565,
       "target_yes_mid": 0.3725,
       "stop_yes_mid": 0.625,
       "anchor_vwap": 0.3725,
-      "deviation_at_entry": 0.1925
+      "deviation_at_entry": 0.1925,
+      "exit_price": 0.5
     }
   ]
 }
