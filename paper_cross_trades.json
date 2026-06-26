@@ -1,7 +1,7 @@
 {
   "started": "2026-05-16T19:16:48.401618+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 73.27599999999995,
+  "bankroll": 70.39599999999996,
   "trades": [
     {
       "logged_at": "2026-05-16T19:21:38.603234+00:00",
@@ -1875,6 +1875,29 @@
       "settled_at": "2026-06-25T15:40:18.403527+00:00",
       "exit_reason": "VOLUME_EXIT",
       "exit_price": 0.98
+    },
+    {
+      "logged_at": "2026-06-26T00:20:56.191966+00:00",
+      "kalshi_ticker": "KXT20MATCH-26JUN260830INDIRL-IRL",
+      "kalshi_title": "Ireland vs India Winner?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.96,
+      "cost": 2.88,
+      "yes_mid_at_entry": 0.045,
+      "thesis_estimate": 0.0049999999999999975,
+      "thesis_target_price": 0.011,
+      "thesis_confidence": 0.65,
+      "consensus_votes": 1,
+      "size_multiplier": 0.5,
+      "kelly_fraction": 0.05,
+      "checks_passed": 2,
+      "hours_left_at_entry": 64.2,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
     }
   ],
   "bankroll_topups": [
