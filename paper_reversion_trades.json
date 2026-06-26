@@ -212,16 +212,17 @@
       "entry_price": 0.17,
       "fee": 0.17,
       "cost": 3.06,
-      "status": "open",
+      "status": "exited",
       "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null,
+      "pnl": -3.06,
+      "settled_at": "2026-06-26T21:00:08.438889+00:00",
+      "exit_reason": "STOP_LOSS",
       "yes_mid_at_entry": 0.835,
       "target_yes_mid": 0.6699,
       "stop_yes_mid": 0.895,
       "anchor_vwap": 0.6699,
-      "deviation_at_entry": 0.1651
+      "deviation_at_entry": 0.1651,
+      "exit_price": 0.0
     },
     {
       "logged_at": "2026-06-26T20:04:52.798044+00:00",
@@ -233,16 +234,17 @@
       "entry_price": 0.17,
       "fee": 0.16,
       "cost": 2.88,
-      "status": "open",
+      "status": "exited",
       "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null,
+      "pnl": -2.88,
+      "settled_at": "2026-06-26T21:00:08.716243+00:00",
+      "exit_reason": "STOP_LOSS",
       "yes_mid_at_entry": 0.165,
       "target_yes_mid": 0.2981,
       "stop_yes_mid": 0.105,
       "anchor_vwap": 0.2981,
-      "deviation_at_entry": -0.1331
+      "deviation_at_entry": -0.1331,
+      "exit_price": 0.0
     }
   ]
 }
