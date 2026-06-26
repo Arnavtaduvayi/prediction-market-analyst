@@ -2,7 +2,7 @@
   "strategy": "disposition",
   "started": "2026-05-24T16:20:28.596974+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 62.37000000000004,
+  "bankroll": 60.53000000000004,
   "trades": [
     {
       "logged_at": "2026-05-24T16:20:28.597136+00:00",
@@ -4578,6 +4578,28 @@
       "pnl": 0.06,
       "settled_at": "2026-06-26T21:00:05.961554+00:00",
       "exit_reason": "SETTLED_WIN",
+      "hold_to_settlement": true
+    },
+    {
+      "logged_at": "2026-06-26T23:18:35.695980+00:00",
+      "strategy": "disposition",
+      "kalshi_ticker": "KXT20MATCH-26JUN261730TEXNEW-TEX",
+      "kalshi_title": "MI New York vs Texas Super Kings Winner?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "contracts": 2,
+      "entry_price": 0.92,
+      "cost": 1.84,
+      "yes_mid_at_entry": 0.915,
+      "true_prob_estimate": 0.935,
+      "edge_at_entry": 0.02,
+      "kelly_fraction": 0.03,
+      "hours_left_at_entry": 50.2,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
       "hold_to_settlement": true
     }
   ]

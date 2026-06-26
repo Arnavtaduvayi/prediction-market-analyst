@@ -1,6 +1,19 @@
 {
-  "generated_at": "2026-06-26T21:28:03.441648+00:00",
+  "generated_at": "2026-06-26T23:18:35.693009+00:00",
   "n_scanned": 6,
-  "n_signals": 0,
-  "signals": []
+  "n_signals": 1,
+  "signals": [
+    {
+      "ticker": "KXT20MATCH-26JUN261730TEXNEW-TEX",
+      "title": "MI New York vs Texas Super Kings Winner?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.92,
+      "yes_mid": 0.915,
+      "true_prob": 0.935,
+      "edge": 0.02,
+      "hours_left": 50.2,
+      "close_time": "2026-06-29T01:30:00Z"
+    }
+  ]
 }
