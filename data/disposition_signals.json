@@ -1,19 +1,31 @@
 {
-  "generated_at": "2026-06-26T00:20:56.195132+00:00",
-  "n_scanned": 4,
-  "n_signals": 1,
+  "generated_at": "2026-06-26T05:20:08.816025+00:00",
+  "n_scanned": 17,
+  "n_signals": 2,
   "signals": [
     {
-      "ticker": "KXT20MATCH-26JUN260830INDIRL-IRL",
-      "title": "Ireland vs India Winner?",
-      "type": "longshot_sell",
-      "side": "no",
-      "fill_price": 0.95,
-      "yes_mid": 0.045,
-      "true_prob": 0.9622,
-      "edge": 0.0072,
-      "hours_left": 64.2,
-      "close_time": "2026-06-28T16:30:00Z"
+      "ticker": "KXBTCD-26JUN2617-T57499.99",
+      "title": "Bitcoin price on Jun 26, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.92,
+      "yes_mid": 0.915,
+      "true_prob": 0.935,
+      "edge": 0.02,
+      "hours_left": 15.7,
+      "close_time": "2026-06-26T21:00:00Z"
+    },
+    {
+      "ticker": "KXLIUSAELIMINATIONW-26JUN26-SYD",
+      "title": "Will Sydney be eliminated from Love Island USA Season 8 before Jun 27, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.96,
+      "yes_mid": 0.95,
+      "true_prob": 0.97,
+      "edge": 0.02,
+      "hours_left": 22.7,
+      "close_time": "2026-06-27T03:59:00Z"
     }
   ]
 }

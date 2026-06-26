@@ -2,7 +2,7 @@
   "strategy": "theta",
   "started": "2026-06-23T22:27:36.724000+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 73.53,
+  "bankroll": 70.64,
   "trades": [
     {
       "logged_at": "2026-06-23T22:28:23.726165+00:00",
@@ -79,6 +79,25 @@
       "hold_to_settlement": true,
       "yes_mid_at_entry": 0.945,
       "hours_left_at_entry": 22.3
+    },
+    {
+      "logged_at": "2026-06-26T05:20:17.642675+00:00",
+      "strategy": "theta",
+      "kalshi_ticker": "KXLIUSAELIMINATIONW-26JUN26-SYD",
+      "kalshi_title": "Will Sydney be eliminated from Love Island USA Season 8 before Jun 27, 2026?",
+      "side": "yes",
+      "contracts": 3,
+      "entry_price": 0.96,
+      "fee": 0.01,
+      "cost": 2.89,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.95,
+      "hours_left_at_entry": 22.7
     }
   ]
 }
