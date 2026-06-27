@@ -2,7 +2,7 @@
   "strategy": "reversion",
   "started": "2026-06-23T22:27:35.657835+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 52.98999999999999,
+  "bankroll": 50.329999999999984,
   "trades": [
     {
       "logged_at": "2026-06-25T15:39:40.118118+00:00",
@@ -245,6 +245,27 @@
       "anchor_vwap": 0.2981,
       "deviation_at_entry": -0.1331,
       "exit_price": 0.0
+    },
+    {
+      "logged_at": "2026-06-27T04:13:08.214236+00:00",
+      "strategy": "reversion",
+      "kalshi_ticker": "KXT20MATCH-26JUN262130SEASAN-SEA",
+      "kalshi_title": "San Francisco Unicorns vs Seattle Orcas Winner?",
+      "side": "yes",
+      "contracts": 12,
+      "entry_price": 0.21,
+      "fee": 0.14,
+      "cost": 2.66,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "yes_mid_at_entry": 0.205,
+      "target_yes_mid": 0.37,
+      "stop_yes_mid": 0.145,
+      "anchor_vwap": 0.37,
+      "deviation_at_entry": -0.165
     }
   ]
 }
