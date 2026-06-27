@@ -2,7 +2,7 @@
   "strategy": "reversion",
   "started": "2026-06-23T22:27:35.657835+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 50.329999999999984,
+  "bankroll": 48.94999999999998,
   "trades": [
     {
       "logged_at": "2026-06-25T15:39:40.118118+00:00",
@@ -266,6 +266,27 @@
       "stop_yes_mid": 0.145,
       "anchor_vwap": 0.37,
       "deviation_at_entry": -0.165
+    },
+    {
+      "logged_at": "2026-06-27T07:57:27.564421+00:00",
+      "strategy": "reversion",
+      "kalshi_ticker": "KXNPBGAME-26JUN270100HANHIR-HIR",
+      "kalshi_title": "Hanshin Tigers vs Hiroshima Toyo Carp winner?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.44,
+      "fee": 0.06,
+      "cost": 1.38,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "yes_mid_at_entry": 0.585,
+      "target_yes_mid": 0.4755,
+      "stop_yes_mid": 0.645,
+      "anchor_vwap": 0.4755,
+      "deviation_at_entry": 0.1095
     }
   ]
 }
