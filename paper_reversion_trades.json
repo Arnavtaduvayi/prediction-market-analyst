@@ -2,7 +2,7 @@
   "strategy": "reversion",
   "started": "2026-06-23T22:27:35.657835+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 48.94999999999998,
+  "bankroll": 46.399999999999984,
   "trades": [
     {
       "logged_at": "2026-06-25T15:39:40.118118+00:00",
@@ -287,6 +287,27 @@
       "stop_yes_mid": 0.645,
       "anchor_vwap": 0.4755,
       "deviation_at_entry": 0.1095
+    },
+    {
+      "logged_at": "2026-06-27T12:15:54.148840+00:00",
+      "strategy": "reversion",
+      "kalshi_ticker": "KXBTCD-26JUN2717-T60749.99",
+      "kalshi_title": "Bitcoin price on Jun 27, 2026?",
+      "side": "yes",
+      "contracts": 20,
+      "entry_price": 0.12,
+      "fee": 0.15,
+      "cost": 2.55,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "yes_mid_at_entry": 0.115,
+      "target_yes_mid": 0.2029,
+      "stop_yes_mid": 0.055,
+      "anchor_vwap": 0.2029,
+      "deviation_at_entry": -0.0879
     }
   ]
 }
