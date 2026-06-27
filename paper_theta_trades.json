@@ -2,7 +2,7 @@
   "strategy": "theta",
   "started": "2026-06-23T22:27:36.724000+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 75.82000000000001,
+  "bankroll": 72.9,
   "trades": [
     {
       "logged_at": "2026-06-23T22:28:23.726165+00:00",
@@ -136,6 +136,25 @@
       "hold_to_settlement": true,
       "yes_mid_at_entry": 0.94,
       "hours_left_at_entry": 2.0
+    },
+    {
+      "logged_at": "2026-06-27T22:13:48.521208+00:00",
+      "strategy": "theta",
+      "kalshi_ticker": "KXHIGHLAX-26JUN27-B72.5",
+      "kalshi_title": "Will the **high temp in LA** be 72-73\u00b0 on Jun 27, 2026?",
+      "side": "yes",
+      "contracts": 3,
+      "entry_price": 0.97,
+      "fee": 0.01,
+      "cost": 2.92,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.965,
+      "hours_left_at_entry": 9.8
     }
   ]
 }

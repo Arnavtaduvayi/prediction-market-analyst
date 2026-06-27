@@ -1,7 +1,7 @@
 {
   "started": "2026-05-16T19:16:48.401618+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 73.82599999999995,
+  "bankroll": 71.03599999999994,
   "trades": [
     {
       "logged_at": "2026-05-16T19:21:38.603234+00:00",
@@ -2018,6 +2018,29 @@
       "settled_at": "2026-06-27T12:47:52.786900+00:00",
       "exit_reason": "VOLUME_EXIT",
       "exit_price": 0.88
+    },
+    {
+      "logged_at": "2026-06-27T22:13:40.670826+00:00",
+      "kalshi_ticker": "KXTESTMATCH-26JUN251000SRIWI-SRI",
+      "kalshi_title": "West Indies vs Sri Lanka Winner?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.9299999999999999,
+      "cost": 2.79,
+      "yes_mid_at_entry": 0.075,
+      "thesis_estimate": 0.034999999999999996,
+      "thesis_target_price": 0.041,
+      "thesis_confidence": 0.65,
+      "consensus_votes": 1,
+      "size_multiplier": 0.5,
+      "kelly_fraction": 0.05,
+      "checks_passed": 2,
+      "hours_left_at_entry": 111.8,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
     }
   ],
   "bankroll_topups": [
