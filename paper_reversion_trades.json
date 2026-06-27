@@ -2,7 +2,7 @@
   "strategy": "reversion",
   "started": "2026-06-23T22:27:35.657835+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 48.999999999999986,
+  "bankroll": 46.55999999999999,
   "trades": [
     {
       "logged_at": "2026-06-25T15:39:40.118118+00:00",
@@ -309,6 +309,27 @@
       "anchor_vwap": 0.2029,
       "deviation_at_entry": -0.0879,
       "exit_price": 0.13
+    },
+    {
+      "logged_at": "2026-06-27T18:15:45.046395+00:00",
+      "strategy": "reversion",
+      "kalshi_ticker": "KXWT20MATCH-26JUN271330NZLENG-NZL",
+      "kalshi_title": "England vs New Zealand Winner?",
+      "side": "yes",
+      "contracts": 11,
+      "entry_price": 0.21,
+      "fee": 0.13,
+      "cost": 2.44,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "yes_mid_at_entry": 0.205,
+      "target_yes_mid": 0.3225,
+      "stop_yes_mid": 0.145,
+      "anchor_vwap": 0.3225,
+      "deviation_at_entry": -0.1175
     }
   ]
 }

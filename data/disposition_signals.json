@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-06-27T18:08:37.170839+00:00",
-  "n_scanned": 6,
+  "generated_at": "2026-06-27T18:15:35.241594+00:00",
+  "n_scanned": 7,
   "n_signals": 1,
   "signals": [
     {
-      "ticker": "KXHIGHNY-26JUN27-B78.5",
-      "title": "Will the **high temp in NYC** be 78-79\u00b0 on Jun 27, 2026?",
+      "ticker": "KXBTCD-26JUN2717-T59999.99",
+      "title": "Bitcoin price on Jun 27, 2026?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.98,
-      "yes_mid": 0.975,
-      "true_prob": 0.99,
+      "fill_price": 0.91,
+      "yes_mid": 0.905,
+      "true_prob": 0.925,
       "edge": 0.02,
-      "hours_left": 10.9,
-      "close_time": "2026-06-28T04:59:00Z"
+      "hours_left": 2.8,
+      "close_time": "2026-06-27T21:00:00Z"
     }
   ]
 }
