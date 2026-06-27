@@ -2,7 +2,7 @@
   "strategy": "theta",
   "started": "2026-06-23T22:27:36.724000+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 72.82000000000001,
+  "bankroll": 75.82000000000001,
   "trades": [
     {
       "logged_at": "2026-06-23T22:28:23.726165+00:00",
@@ -90,11 +90,11 @@
       "entry_price": 0.96,
       "fee": 0.01,
       "cost": 2.89,
-      "status": "open",
-      "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null,
+      "status": "settled",
+      "resolved_yes": true,
+      "pnl": 0.11,
+      "settled_at": "2026-06-27T16:35:44.261702+00:00",
+      "exit_reason": "SETTLED_WIN",
       "hold_to_settlement": true,
       "yes_mid_at_entry": 0.95,
       "hours_left_at_entry": 22.7
