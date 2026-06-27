@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-06-27T18:15:35.241594+00:00",
-  "n_scanned": 7,
+  "generated_at": "2026-06-27T20:17:46.345067+00:00",
+  "n_scanned": 2,
   "n_signals": 1,
   "signals": [
     {
-      "ticker": "KXBTCD-26JUN2717-T59999.99",
-      "title": "Bitcoin price on Jun 27, 2026?",
+      "ticker": "KXWT20MATCH-26JUN271330NZLENG-ENG",
+      "title": "England vs New Zealand Winner?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.91,
-      "yes_mid": 0.905,
-      "true_prob": 0.925,
+      "fill_price": 0.99,
+      "yes_mid": 0.985,
+      "true_prob": 0.99,
       "edge": 0.02,
-      "hours_left": 2.8,
-      "close_time": "2026-06-27T21:00:00Z"
+      "hours_left": 49.2,
+      "close_time": "2026-06-29T21:30:00Z"
     }
   ]
 }
