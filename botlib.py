@@ -25,6 +25,12 @@ import requests
 KALSHI_API = "https://api.elections.kalshi.com/trade-api/v2"
 INITIAL_BANKROLL = 75.0
 
+# Series driven by a live, continuously-trading external price (crypto strike
+# ladders). Their Kalshi mid moves because the underlying moved — that's real
+# information, not thin-volume noise — so mean-reversion / fade strategies must
+# steer clear of them (they caused 100% of Reversion's early losses).
+CONTINUOUS_PRICE_PREFIXES = ("KXBTC", "KXETH", "KXSOL", "KXXRP", "KXDOGE", "KXADA", "KXLTC")
+
 # Kalshi general-markets trading fee: ceil(rate * C * P * (1-P)), rounded up to
 # the next cent, charged per order. rate is 0.07 for general markets.
 # https://kalshi.com/docs/kalshi-fee-schedule

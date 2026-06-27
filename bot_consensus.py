@@ -22,6 +22,7 @@ from cooldown import is_in_cooldown
 from botlib import (
     kalshi_fee, kelly_size, recent_trades, vwap, flow_imbalance,
     load_journal, save_journal, open_trades, new_trade,
+    CONTINUOUS_PRICE_PREFIXES,
 )
 
 QUEUE_FILE = Path(__file__).parent / "data" / "queue.json"
@@ -87,6 +88,8 @@ def run():
     candidates = []
     for m in markets:
         ticker = m["ticker"]
+        if ticker.startswith(CONTINUOUS_PRICE_PREFIXES):
+            continue  # same crypto-fade hazard as Reversion (shared VWAP signal)
         if ticker in held or is_in_cooldown(ticker, all_trades):
             continue
         mid = m.get("yes_mid", 0)

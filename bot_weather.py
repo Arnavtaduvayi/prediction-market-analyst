@@ -33,8 +33,8 @@ from weather_data import STATIONS, forecast_high, bracket_probability
 JOURNAL_FILE = Path(__file__).parent / "paper_weather_trades.json"
 STRATEGY = "weather"
 
-MIN_DIVERGENCE = 0.10        # model vs market gap required to act
-MIN_EDGE_DOLLARS = 0.02      # expected $ edge/contract after fee
+MIN_DIVERGENCE = 0.15        # model vs market gap required to act (raised from 0.10)
+MIN_EDGE_DOLLARS = 0.03      # expected $ edge/contract after fee (raised from 0.02)
 # Only trade FUTURE days. A same-day high is mostly already set by afternoon, so
 # the market is near-settled and "divergence" from our forecast is illusory —
 # we'd just be betting against a correct, nearly-resolved price.

@@ -25,6 +25,7 @@ from cooldown import is_in_cooldown
 from botlib import (
     kalshi_fee, kelly_size, recent_trades, vwap,
     load_journal, save_journal, open_trades, new_trade,
+    CONTINUOUS_PRICE_PREFIXES,
 )
 
 QUEUE_FILE = Path(__file__).parent / "data" / "queue.json"
@@ -59,6 +60,8 @@ def run():
     candidates = []
     for m in markets:
         ticker = m["ticker"]
+        if ticker.startswith(CONTINUOUS_PRICE_PREFIXES):
+            continue  # price-driven underlying: moves are information, not noise
         if ticker in held or is_in_cooldown(ticker, all_trades):
             continue
         trades = recent_trades(ticker, WINDOW_MIN)

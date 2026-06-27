@@ -31,10 +31,12 @@ STATIONS = {
     "KXHIGHAUS": ("Austin Camp Mabry", 30.32, -97.76),
 }
 
-# Forecast-high error (°F) by lead time in days. Same-day forecasts are tight;
-# skill degrades further out. Conservative round numbers.
-SIGMA_BY_LEAD = {0: 2.0, 1: 3.0, 2: 4.0, 3: 5.0}
-SIGMA_FAR = 6.0
+# Forecast-high error (°F) by lead time in days. Widened 2026-06-27 after the
+# first cohort went 5W/11L: the old σ was too tight, so the model was
+# overconfident and "found" divergences that were really its own error. Larger σ
+# = humbler model = only flags genuinely large, better-supported mispricings.
+SIGMA_BY_LEAD = {0: 2.5, 1: 4.0, 2: 5.5, 3: 7.0}
+SIGMA_FAR = 8.0
 
 _grid_cache: dict[tuple, str] = {}
 _high_cache: dict[str, dict] = {}

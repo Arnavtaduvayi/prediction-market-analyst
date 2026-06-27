@@ -5,7 +5,27 @@ from paper-trading on Kalshi.
 
 ---
 
-## v4 — 7-bot portfolio (current, 2026-06-23)
+## v4.1 — first-week tuning (2026-06-27)
+
+After ~4 days of (finally-persisting) live data:
+
+- **Workflow persistence bug fixed (2026-06-25):** both workflows `git add`-ed the
+  retired calendar/spot/flow journal paths, which no longer exist — a missing
+  pathspec makes `git add` fail atomically, so *nothing* committed for ~2 days
+  post-deploy. Switched to a `paper_*_trades.json` glob.
+- **Reversion (E) was −34.7% (2W/12L); 100% of losses were crypto strike
+  ladders.** Those reprice on the real underlying move, not noise, so fading
+  them fights genuine information. Added `CONTINUOUS_PRICE_PREFIXES` exclusion
+  (KXBTC/ETH/SOL/...) to Reversion *and* Consensus (shared VWAP signal).
+- **Weather (D) was −15.2% (5W/11L):** σ was too tight → overconfident → bet its
+  own forecast error. Widened σ (next-day 3→4 °F, etc.), raised the divergence
+  gate 0.10→0.15 and min edge 0.02→0.03. Now far pickier (13 → 4 candidates).
+- Winners so far: **Theta** (+1.1%, 7W/0L) and **Consensus** (+0.9%). **Arb**
+  correctly idle.
+
+---
+
+## v4 — 7-bot portfolio (2026-06-23)
 
 Retired the three losing/idle strategies and replaced them with five new bots
 chosen as 1 math-heavy + 1 data-edge + 3 balanced. Kept the two least-bad
