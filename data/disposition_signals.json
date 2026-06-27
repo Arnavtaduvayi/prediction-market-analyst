@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-27T12:15:45.331262+00:00",
-  "n_scanned": 10,
+  "generated_at": "2026-06-27T14:52:35.362256+00:00",
+  "n_scanned": 6,
   "n_signals": 1,
   "signals": [
     {
-      "ticker": "KXBTCD-26JUN2717-T59499.99",
+      "ticker": "KXBTCD-26JUN2717-T59999.99",
       "title": "Bitcoin price on Jun 27, 2026?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.91,
-      "yes_mid": 0.905,
-      "true_prob": 0.925,
+      "fill_price": 0.92,
+      "yes_mid": 0.91,
+      "true_prob": 0.93,
       "edge": 0.02,
-      "hours_left": 8.8,
+      "hours_left": 6.2,
       "close_time": "2026-06-27T21:00:00Z"
     }
   ]
