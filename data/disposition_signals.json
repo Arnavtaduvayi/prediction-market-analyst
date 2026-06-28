@@ -1,42 +1,18 @@
 {
-  "generated_at": "2026-06-27T22:13:40.674173+00:00",
-  "n_scanned": 3,
-  "n_signals": 3,
+  "generated_at": "2026-06-28T00:13:12.526398+00:00",
+  "n_scanned": 8,
+  "n_signals": 1,
   "signals": [
-    {
-      "ticker": "KXHIGHLAX-26JUN27-B72.5",
-      "title": "Will the **high temp in LA** be 72-73\u00b0 on Jun 27, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.97,
-      "yes_mid": 0.965,
-      "true_prob": 0.985,
-      "edge": 0.02,
-      "hours_left": 9.8,
-      "close_time": "2026-06-28T07:59:00Z"
-    },
     {
       "ticker": "KXTESTMATCH-26JUN251000SRIWI-WI",
       "title": "West Indies vs Sri Lanka Winner?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.93,
-      "yes_mid": 0.925,
-      "true_prob": 0.945,
+      "fill_price": 0.97,
+      "yes_mid": 0.96,
+      "true_prob": 0.98,
       "edge": 0.02,
-      "hours_left": 111.8,
-      "close_time": "2026-07-02T14:00:00Z"
-    },
-    {
-      "ticker": "KXTESTMATCH-26JUN251000SRIWI-SRI",
-      "title": "West Indies vs Sri Lanka Winner?",
-      "type": "longshot_sell",
-      "side": "no",
-      "fill_price": 0.92,
-      "yes_mid": 0.075,
-      "true_prob": 0.937,
-      "edge": 0.012,
-      "hours_left": 111.8,
+      "hours_left": 109.8,
       "close_time": "2026-07-02T14:00:00Z"
     }
   ]
