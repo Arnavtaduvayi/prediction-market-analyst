@@ -1,6 +1,43 @@
 {
-  "generated_at": "2026-06-28T14:09:52.781972+00:00",
-  "n_scanned": 7,
-  "n_signals": 0,
-  "signals": []
+  "generated_at": "2026-06-28T16:23:03.586245+00:00",
+  "n_scanned": 10,
+  "n_signals": 3,
+  "signals": [
+    {
+      "ticker": "KXBTCD-26JUN2817-T58499.99",
+      "title": "Bitcoin price on Jun 28, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.98,
+      "yes_mid": 0.97,
+      "true_prob": 0.99,
+      "edge": 0.02,
+      "hours_left": 4.7,
+      "close_time": "2026-06-28T21:00:00Z"
+    },
+    {
+      "ticker": "KXLIUSAELIMINATION-26JUN28-NON",
+      "title": "Will NONE be eliminated from Love Island USA before Jun 29, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.98,
+      "yes_mid": 0.975,
+      "true_prob": 0.99,
+      "edge": 0.02,
+      "hours_left": 11.6,
+      "close_time": "2026-06-29T03:59:00Z"
+    },
+    {
+      "ticker": "KXT20MATCH-26JUN280930YORDER-DER",
+      "title": "Derbyshire vs Yorkshire Winner?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.94,
+      "yes_mid": 0.935,
+      "true_prob": 0.955,
+      "edge": 0.02,
+      "hours_left": 49.1,
+      "close_time": "2026-06-30T17:30:00Z"
+    }
+  ]
 }
