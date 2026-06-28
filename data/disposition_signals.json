@@ -1,6 +1,31 @@
 {
-  "generated_at": "2026-06-28T20:21:56.302714+00:00",
-  "n_scanned": 2,
-  "n_signals": 0,
-  "signals": []
+  "generated_at": "2026-06-28T22:12:14.248801+00:00",
+  "n_scanned": 8,
+  "n_signals": 2,
+  "signals": [
+    {
+      "ticker": "KXHIGHCHI-26JUN28-T82",
+      "title": "Will the high temp in Chicago be <82\u00b0 on Jun 28, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.97,
+      "yes_mid": 0.965,
+      "true_prob": 0.985,
+      "edge": 0.02,
+      "hours_left": 7.8,
+      "close_time": "2026-06-29T05:59:00Z"
+    },
+    {
+      "ticker": "KXHIGHLAX-26JUN28-B71.5",
+      "title": "Will the **high temp in LA** be 71-72\u00b0 on Jun 28, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.99,
+      "yes_mid": 0.985,
+      "true_prob": 0.99,
+      "edge": 0.02,
+      "hours_left": 9.8,
+      "close_time": "2026-06-29T07:59:00Z"
+    }
+  ]
 }
