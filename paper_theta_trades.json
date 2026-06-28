@@ -2,7 +2,7 @@
   "strategy": "theta",
   "started": "2026-06-23T22:27:36.724000+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 75.9,
+  "bankroll": 73.06,
   "trades": [
     {
       "logged_at": "2026-06-23T22:28:23.726165+00:00",
@@ -155,6 +155,25 @@
       "hold_to_settlement": true,
       "yes_mid_at_entry": 0.965,
       "hours_left_at_entry": 9.8
+    },
+    {
+      "logged_at": "2026-06-28T18:15:40.223873+00:00",
+      "strategy": "theta",
+      "kalshi_ticker": "KXBTCD-26JUN2817-T58999.99",
+      "kalshi_title": "Bitcoin price on Jun 28, 2026?",
+      "side": "yes",
+      "contracts": 3,
+      "entry_price": 0.94,
+      "fee": 0.02,
+      "cost": 2.84,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.935,
+      "hours_left_at_entry": 2.8
     }
   ]
 }
