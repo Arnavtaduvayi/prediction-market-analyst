@@ -1,7 +1,7 @@
 {
   "started": "2026-05-16T19:16:48.401618+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 72.11599999999994,
+  "bankroll": 73.93599999999994,
   "trades": [
     {
       "logged_at": "2026-05-16T19:21:38.603234+00:00",
@@ -2060,11 +2060,12 @@
       "kelly_fraction": 0.0337,
       "checks_passed": 2,
       "hours_left_at_entry": 9.1,
-      "status": "open",
+      "status": "exited",
       "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null
+      "pnl": 0.08,
+      "settled_at": "2026-06-28T14:19:56.376208+00:00",
+      "exit_reason": "TARGET_HIT",
+      "exit_price": 0.91
     }
   ],
   "bankroll_topups": [
