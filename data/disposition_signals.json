@@ -1,43 +1,6 @@
 {
-  "generated_at": "2026-06-28T11:56:29.339670+00:00",
-  "n_scanned": 11,
-  "n_signals": 3,
-  "signals": [
-    {
-      "ticker": "KXNPBGAME-26JUN280500HOKSAI-HOK",
-      "title": "Hokkaido Nippon-Ham Fighters vs Saitama Seibu Lions winner?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.98,
-      "yes_mid": 0.96,
-      "true_prob": 0.98,
-      "edge": 0.02,
-      "hours_left": 45.1,
-      "close_time": "2026-06-30T09:00:00Z"
-    },
-    {
-      "ticker": "KXT20MATCH-26JUN280830INDIRL-IND",
-      "title": "Ireland vs India Winner?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.91,
-      "yes_mid": 0.905,
-      "true_prob": 0.925,
-      "edge": 0.02,
-      "hours_left": 52.6,
-      "close_time": "2026-06-30T16:30:00Z"
-    },
-    {
-      "ticker": "KXWT20MATCH-26JUN280530BANRSA-RSA",
-      "title": "South Africa vs Bangladesh Winner?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.98,
-      "yes_mid": 0.965,
-      "true_prob": 0.985,
-      "edge": 0.02,
-      "hours_left": 49.6,
-      "close_time": "2026-06-30T13:30:00Z"
-    }
-  ]
+  "generated_at": "2026-06-28T14:09:52.781972+00:00",
+  "n_scanned": 7,
+  "n_signals": 0,
+  "signals": []
 }
