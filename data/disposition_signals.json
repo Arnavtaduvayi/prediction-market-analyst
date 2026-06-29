@@ -1,6 +1,31 @@
 {
-  "generated_at": "2026-06-29T16:04:13.893263+00:00",
-  "n_scanned": 0,
-  "n_signals": 0,
-  "signals": []
+  "generated_at": "2026-06-29T18:19:59.127947+00:00",
+  "n_scanned": 5,
+  "n_signals": 2,
+  "signals": [
+    {
+      "ticker": "KXWT20MATCH-26JUN300930WINAUS-AUS",
+      "title": "Australia vs West Indies Winner?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.92,
+      "yes_mid": 0.915,
+      "true_prob": 0.935,
+      "edge": 0.02,
+      "hours_left": 71.2,
+      "close_time": "2026-07-02T17:30:00Z"
+    },
+    {
+      "ticker": "KXWTI-26JUN3014-T67.99",
+      "title": "Will the WTI crude oil settlement price be above 67.99 USD/Bbl on Jun 30, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.94,
+      "yes_mid": 0.935,
+      "true_prob": 0.955,
+      "edge": 0.02,
+      "hours_left": 24.2,
+      "close_time": "2026-06-30T18:30:00Z"
+    }
+  ]
 }
