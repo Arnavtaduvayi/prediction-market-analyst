@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-06-29T20:56:01.408987+00:00",
-  "n_scanned": 6,
+  "generated_at": "2026-06-29T22:18:17.699751+00:00",
+  "n_scanned": 5,
   "n_signals": 1,
   "signals": [
     {
-      "ticker": "KXWTI-26JUN3014-T67.99",
-      "title": "Will the WTI crude oil settlement price be above 67.99 USD/Bbl on Jun 30, 2026?",
+      "ticker": "KXHIGHLAX-26JUN29-B72.5",
+      "title": "Will the **high temp in LA** be 72-73\u00b0 on Jun 29, 2026?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.96,
-      "yes_mid": 0.955,
-      "true_prob": 0.975,
+      "fill_price": 0.98,
+      "yes_mid": 0.975,
+      "true_prob": 0.99,
       "edge": 0.02,
-      "hours_left": 21.6,
-      "close_time": "2026-06-30T18:30:00Z"
+      "hours_left": 9.7,
+      "close_time": "2026-06-30T07:59:00Z"
     }
   ]
 }

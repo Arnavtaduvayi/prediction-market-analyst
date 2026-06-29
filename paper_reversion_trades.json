@@ -2,7 +2,7 @@
   "strategy": "reversion",
   "started": "2026-06-23T22:27:35.657835+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 49.749999999999986,
+  "bankroll": 47.18999999999998,
   "trades": [
     {
       "logged_at": "2026-06-25T15:39:40.118118+00:00",
@@ -331,6 +331,27 @@
       "anchor_vwap": 0.3225,
       "deviation_at_entry": -0.1175,
       "exit_price": 0.29
+    },
+    {
+      "logged_at": "2026-06-29T22:18:25.866865+00:00",
+      "strategy": "reversion",
+      "kalshi_ticker": "KXRANKLISTSONGSPOTUSA-26JUL01-DRA",
+      "kalshi_title": "Will Drake be #1 on the Any Spotify Daily Top Songs USA chart in June 2026?",
+      "side": "no",
+      "contracts": 9,
+      "entry_price": 0.27,
+      "fee": 0.13,
+      "cost": 2.56,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "yes_mid_at_entry": 0.74,
+      "target_yes_mid": 0.6506,
+      "stop_yes_mid": 0.8,
+      "anchor_vwap": 0.6506,
+      "deviation_at_entry": 0.0894
     }
   ]
 }
