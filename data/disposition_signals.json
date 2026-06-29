@@ -1,55 +1,43 @@
 {
-  "generated_at": "2026-06-29T06:02:43.276097+00:00",
-  "n_scanned": 13,
-  "n_signals": 4,
+  "generated_at": "2026-06-29T11:22:08.984343+00:00",
+  "n_scanned": 9,
+  "n_signals": 3,
   "signals": [
     {
-      "ticker": "KXBTCD-26JUN2917-T57749.99",
+      "ticker": "KXBTCD-26JUN2917-T57999.99",
       "title": "Bitcoin price on Jun 29, 2026?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.94,
-      "yes_mid": 0.935,
-      "true_prob": 0.955,
+      "fill_price": 0.95,
+      "yes_mid": 0.94,
+      "true_prob": 0.96,
       "edge": 0.02,
-      "hours_left": 15.0,
+      "hours_left": 9.7,
       "close_time": "2026-06-29T21:00:00Z"
     },
     {
-      "ticker": "KXH200Q-26JUN30-4.990",
-      "title": "Will the H200 compute per hour price be above $4.99 by Jun 30?",
+      "ticker": "KXETHD-26JUN2917-T1509.99",
+      "title": "Ethereum price at Jun 29, 2026 at 5pm EDT?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.97,
-      "yes_mid": 0.965,
-      "true_prob": 0.985,
+      "fill_price": 0.96,
+      "yes_mid": 0.955,
+      "true_prob": 0.975,
       "edge": 0.02,
-      "hours_left": 46.0,
-      "close_time": "2026-07-01T03:59:59Z"
+      "hours_left": 9.7,
+      "close_time": "2026-06-29T21:00:00Z"
     },
     {
-      "ticker": "KXINXU-26JUN29H1600-T7299.9999",
-      "title": "Will the S&P 500 be above 7299.9999 on Jun 29, 2026 at 4pm EDT?",
+      "ticker": "KXTESTMATCH-26JUN280330BANZIM-ZIM",
+      "title": "Zimbabwe vs Bangladesh Winner?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.93,
-      "yes_mid": 0.92,
-      "true_prob": 0.94,
+      "fill_price": 0.92,
+      "yes_mid": 0.905,
+      "true_prob": 0.925,
       "edge": 0.02,
-      "hours_left": 14.0,
-      "close_time": "2026-06-29T20:00:00Z"
-    },
-    {
-      "ticker": "KXWTI-26JUN2914-T66.99",
-      "title": "Will the WTI crude oil settlement price be above 66.99 USD/Bbl on Jun 29, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.97,
-      "yes_mid": 0.965,
-      "true_prob": 0.985,
-      "edge": 0.02,
-      "hours_left": 12.5,
-      "close_time": "2026-06-29T18:30:00Z"
+      "hours_left": 140.2,
+      "close_time": "2026-07-05T07:30:00Z"
     }
   ]
 }

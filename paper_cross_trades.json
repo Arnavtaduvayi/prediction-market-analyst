@@ -1,7 +1,7 @@
 {
   "started": "2026-05-16T19:16:48.401618+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 71.20599999999993,
+  "bankroll": 69.48599999999993,
   "trades": [
     {
       "logged_at": "2026-05-16T19:21:38.603234+00:00",
@@ -2084,6 +2084,29 @@
       "kelly_fraction": 0.0486,
       "checks_passed": 2,
       "hours_left_at_entry": 81.7,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
+    },
+    {
+      "logged_at": "2026-06-29T11:22:08.980815+00:00",
+      "kalshi_ticker": "KXINXU-26JUN29H1600-T7449.9999",
+      "kalshi_title": "Will the S&P 500 be above 7449.9999 on Jun 29, 2026 at 4pm EDT?",
+      "side": "no",
+      "contracts": 2,
+      "entry_price": 0.86,
+      "cost": 1.72,
+      "yes_mid_at_entry": 0.145,
+      "thesis_estimate": 0.10499999999999998,
+      "thesis_target_price": 0.111,
+      "thesis_confidence": 0.65,
+      "consensus_votes": 1,
+      "size_multiplier": 0.5,
+      "kelly_fraction": 0.0313,
+      "checks_passed": 2,
+      "hours_left_at_entry": 8.7,
       "status": "open",
       "resolved_yes": null,
       "pnl": null,
