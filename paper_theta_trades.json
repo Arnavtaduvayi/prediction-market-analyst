@@ -2,7 +2,7 @@
   "strategy": "theta",
   "started": "2026-06-23T22:27:36.724000+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 73.14,
+  "bankroll": 67.47,
   "trades": [
     {
       "logged_at": "2026-06-23T22:28:23.726165+00:00",
@@ -193,6 +193,44 @@
       "hold_to_settlement": true,
       "yes_mid_at_entry": 0.965,
       "hours_left_at_entry": 7.8
+    },
+    {
+      "logged_at": "2026-06-29T00:20:05.211639+00:00",
+      "strategy": "theta",
+      "kalshi_ticker": "KXBTCD-26JUN2917-T56499.99",
+      "kalshi_title": "Bitcoin price on Jun 29, 2026?",
+      "side": "yes",
+      "contracts": 3,
+      "entry_price": 0.95,
+      "fee": 0.01,
+      "cost": 2.86,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.94,
+      "hours_left_at_entry": 20.7
+    },
+    {
+      "logged_at": "2026-06-29T00:20:05.211662+00:00",
+      "strategy": "theta",
+      "kalshi_ticker": "KXHIGHCHI-26JUN28-B82.5",
+      "kalshi_title": "Will the high temp in Chicago be 82-83\u00b0 on Jun 28, 2026?",
+      "side": "yes",
+      "contracts": 3,
+      "entry_price": 0.93,
+      "fee": 0.02,
+      "cost": 2.81,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.92,
+      "hours_left_at_entry": 5.7
     }
   ]
 }

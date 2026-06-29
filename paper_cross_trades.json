@@ -1,7 +1,7 @@
 {
   "started": "2026-05-16T19:16:48.401618+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 73.93599999999994,
+  "bankroll": 71.20599999999993,
   "trades": [
     {
       "logged_at": "2026-05-16T19:21:38.603234+00:00",
@@ -2066,6 +2066,29 @@
       "settled_at": "2026-06-28T14:19:56.376208+00:00",
       "exit_reason": "TARGET_HIT",
       "exit_price": 0.91
+    },
+    {
+      "logged_at": "2026-06-29T00:19:55.711117+00:00",
+      "kalshi_ticker": "KXTESTMATCH-26JUN250600NZENG-ENG",
+      "kalshi_title": "England vs New Zealand Winner?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.91,
+      "cost": 2.73,
+      "yes_mid_at_entry": 0.095,
+      "thesis_estimate": 0.055,
+      "thesis_target_price": 0.061,
+      "thesis_confidence": 0.65,
+      "consensus_votes": 1,
+      "size_multiplier": 0.5,
+      "kelly_fraction": 0.0486,
+      "checks_passed": 2,
+      "hours_left_at_entry": 81.7,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
     }
   ],
   "bankroll_topups": [
