@@ -1,43 +1,6 @@
 {
-  "generated_at": "2026-06-29T11:22:08.984343+00:00",
-  "n_scanned": 9,
-  "n_signals": 3,
-  "signals": [
-    {
-      "ticker": "KXBTCD-26JUN2917-T57999.99",
-      "title": "Bitcoin price on Jun 29, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.95,
-      "yes_mid": 0.94,
-      "true_prob": 0.96,
-      "edge": 0.02,
-      "hours_left": 9.7,
-      "close_time": "2026-06-29T21:00:00Z"
-    },
-    {
-      "ticker": "KXETHD-26JUN2917-T1509.99",
-      "title": "Ethereum price at Jun 29, 2026 at 5pm EDT?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.96,
-      "yes_mid": 0.955,
-      "true_prob": 0.975,
-      "edge": 0.02,
-      "hours_left": 9.7,
-      "close_time": "2026-06-29T21:00:00Z"
-    },
-    {
-      "ticker": "KXTESTMATCH-26JUN280330BANZIM-ZIM",
-      "title": "Zimbabwe vs Bangladesh Winner?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.92,
-      "yes_mid": 0.905,
-      "true_prob": 0.925,
-      "edge": 0.02,
-      "hours_left": 140.2,
-      "close_time": "2026-07-05T07:30:00Z"
-    }
-  ]
+  "generated_at": "2026-06-29T16:04:13.893263+00:00",
+  "n_scanned": 0,
+  "n_signals": 0,
+  "signals": []
 }
