@@ -2,7 +2,7 @@
   "strategy": "theta",
   "started": "2026-06-23T22:27:36.724000+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 71.99000000000001,
+  "bankroll": 69.15,
   "trades": [
     {
       "logged_at": "2026-06-23T22:28:23.726165+00:00",
@@ -345,6 +345,25 @@
       "hold_to_settlement": true,
       "yes_mid_at_entry": 0.955,
       "hours_left_at_entry": 21.6
+    },
+    {
+      "logged_at": "2026-06-30T15:39:35.499436+00:00",
+      "strategy": "theta",
+      "kalshi_ticker": "KXWTI-26JUN3014-T68.99",
+      "kalshi_title": "Will the WTI crude oil settlement price be above 68.99 USD/Bbl on Jun 30, 2026?",
+      "side": "yes",
+      "contracts": 3,
+      "entry_price": 0.94,
+      "fee": 0.02,
+      "cost": 2.84,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.93,
+      "hours_left_at_entry": 2.8
     }
   ]
 }
