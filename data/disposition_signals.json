@@ -1,31 +1,6 @@
 {
-  "generated_at": "2026-06-30T20:16:22.201599+00:00",
-  "n_scanned": 3,
-  "n_signals": 2,
-  "signals": [
-    {
-      "ticker": "KXHIGHNY-26JUN30-B87.5",
-      "title": "Will the **high temp in NYC** be 87-88\u00b0 on Jun 30, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.99,
-      "yes_mid": 0.985,
-      "true_prob": 0.99,
-      "edge": 0.02,
-      "hours_left": 8.7,
-      "close_time": "2026-07-01T04:59:00Z"
-    },
-    {
-      "ticker": "KXRANKLISTSONGSPOTUSA-26JUL01-MAL",
-      "title": "Will Malcolm Todd be #1 on the Any Spotify Daily Top Songs USA chart in June 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.98,
-      "yes_mid": 0.97,
-      "true_prob": 0.99,
-      "edge": 0.02,
-      "hours_left": 17.7,
-      "close_time": "2026-07-01T14:00:00Z"
-    }
-  ]
+  "generated_at": "2026-06-30T22:21:28.300579+00:00",
+  "n_scanned": 1,
+  "n_signals": 0,
+  "signals": []
 }
