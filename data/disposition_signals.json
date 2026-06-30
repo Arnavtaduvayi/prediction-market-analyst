@@ -1,43 +1,31 @@
 {
-  "generated_at": "2026-06-30T18:08:37.942771+00:00",
-  "n_scanned": 12,
-  "n_signals": 3,
+  "generated_at": "2026-06-30T20:16:22.201599+00:00",
+  "n_scanned": 3,
+  "n_signals": 2,
   "signals": [
+    {
+      "ticker": "KXHIGHNY-26JUN30-B87.5",
+      "title": "Will the **high temp in NYC** be 87-88\u00b0 on Jun 30, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.99,
+      "yes_mid": 0.985,
+      "true_prob": 0.99,
+      "edge": 0.02,
+      "hours_left": 8.7,
+      "close_time": "2026-07-01T04:59:00Z"
+    },
     {
       "ticker": "KXRANKLISTSONGSPOTUSA-26JUL01-MAL",
       "title": "Will Malcolm Todd be #1 on the Any Spotify Daily Top Songs USA chart in June 2026?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.99,
-      "yes_mid": 0.975,
-      "true_prob": 0.99,
-      "edge": 0.02,
-      "hours_left": 19.9,
-      "close_time": "2026-07-01T14:00:00Z"
-    },
-    {
-      "ticker": "KXSOLD-26JUN3017-T70.9999",
-      "title": "SOL price on Jun 30, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
       "fill_price": 0.98,
-      "yes_mid": 0.975,
+      "yes_mid": 0.97,
       "true_prob": 0.99,
       "edge": 0.02,
-      "hours_left": 2.9,
-      "close_time": "2026-06-30T21:00:00Z"
-    },
-    {
-      "ticker": "KXBTC-26JUL0317-B59750",
-      "title": "Bitcoin price range on Jul 3, 2026?",
-      "type": "longshot_sell",
-      "side": "no",
-      "fill_price": 0.9,
-      "yes_mid": 0.085,
-      "true_prob": 0.9286,
-      "edge": 0.0136,
-      "hours_left": 74.9,
-      "close_time": "2026-07-03T21:00:00Z"
+      "hours_left": 17.7,
+      "close_time": "2026-07-01T14:00:00Z"
     }
   ]
 }
