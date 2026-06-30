@@ -2,7 +2,7 @@
   "strategy": "reversion",
   "started": "2026-06-23T22:27:35.657835+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 48.74999999999998,
+  "bankroll": 53.369999999999976,
   "trades": [
     {
       "logged_at": "2026-06-25T15:39:40.118118+00:00",
@@ -364,16 +364,17 @@
       "entry_price": 0.23,
       "fee": 0.14,
       "cost": 2.67,
-      "status": "open",
+      "status": "exited",
       "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null,
+      "pnl": 1.95,
+      "settled_at": "2026-06-30T08:39:47.544326+00:00",
+      "exit_reason": "TARGET_HIT",
       "yes_mid_at_entry": 0.225,
       "target_yes_mid": 0.3424,
       "stop_yes_mid": 0.165,
       "anchor_vwap": 0.3424,
-      "deviation_at_entry": -0.1174
+      "deviation_at_entry": -0.1174,
+      "exit_price": 0.42
     }
   ]
 }
