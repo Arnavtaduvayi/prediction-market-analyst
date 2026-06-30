@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-06-30T05:16:07.585552+00:00",
-  "n_scanned": 14,
+  "generated_at": "2026-06-30T09:58:12.331829+00:00",
+  "n_scanned": 5,
   "n_signals": 1,
   "signals": [
     {
-      "ticker": "KXBTCD-26JUN3017-T57749.99",
-      "title": "Bitcoin price on Jun 30, 2026?",
+      "ticker": "KXWT20MATCH-26JUN300930WINAUS-AUS",
+      "title": "Australia vs West Indies Winner?",
       "type": "favorite_buy",
       "side": "yes",
       "fill_price": 0.91,
       "yes_mid": 0.905,
       "true_prob": 0.925,
       "edge": 0.02,
-      "hours_left": 15.8,
-      "close_time": "2026-06-30T21:00:00Z"
+      "hours_left": 55.5,
+      "close_time": "2026-07-02T17:30:00Z"
     }
   ]
 }
