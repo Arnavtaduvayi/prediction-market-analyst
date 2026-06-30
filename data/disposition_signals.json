@@ -1,18 +1,42 @@
 {
-  "generated_at": "2026-06-30T09:58:12.331829+00:00",
-  "n_scanned": 5,
-  "n_signals": 1,
+  "generated_at": "2026-06-30T12:21:51.712282+00:00",
+  "n_scanned": 9,
+  "n_signals": 3,
   "signals": [
     {
       "ticker": "KXWT20MATCH-26JUN300930WINAUS-AUS",
       "title": "Australia vs West Indies Winner?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.91,
-      "yes_mid": 0.905,
-      "true_prob": 0.925,
+      "fill_price": 0.92,
+      "yes_mid": 0.915,
+      "true_prob": 0.935,
       "edge": 0.02,
-      "hours_left": 55.5,
+      "hours_left": 53.2,
+      "close_time": "2026-07-02T17:30:00Z"
+    },
+    {
+      "ticker": "KXWTI-26JUN3014-T68.99",
+      "title": "Will the WTI crude oil settlement price be above 68.99 USD/Bbl on Jun 30, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.98,
+      "yes_mid": 0.975,
+      "true_prob": 0.99,
+      "edge": 0.02,
+      "hours_left": 6.1,
+      "close_time": "2026-06-30T18:30:00Z"
+    },
+    {
+      "ticker": "KXWT20MATCH-26JUN300930WINAUS-WIN",
+      "title": "Australia vs West Indies Winner?",
+      "type": "longshot_sell",
+      "side": "no",
+      "fill_price": 0.91,
+      "yes_mid": 0.085,
+      "true_prob": 0.9286,
+      "edge": 0.0136,
+      "hours_left": 53.2,
       "close_time": "2026-07-02T17:30:00Z"
     }
   ]

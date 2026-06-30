@@ -1,7 +1,7 @@
 {
   "started": "2026-05-16T19:16:48.401618+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 74.36599999999993,
+  "bankroll": 70.68599999999992,
   "trades": [
     {
       "logged_at": "2026-05-16T19:21:38.603234+00:00",
@@ -2113,6 +2113,29 @@
       "settled_at": "2026-06-29T14:30:45.993753+00:00",
       "exit_reason": "TARGET_HIT",
       "exit_price": 0.94
+    },
+    {
+      "logged_at": "2026-06-30T12:21:51.709477+00:00",
+      "kalshi_ticker": "KXWT20MATCH-26JUN300930WINAUS-WIN",
+      "kalshi_title": "Australia vs West Indies Winner?",
+      "side": "no",
+      "contracts": 4,
+      "entry_price": 0.92,
+      "cost": 3.68,
+      "yes_mid_at_entry": 0.085,
+      "thesis_estimate": 0.045000000000000005,
+      "thesis_target_price": 0.051,
+      "thesis_confidence": 0.65,
+      "consensus_votes": 1,
+      "size_multiplier": 0.5,
+      "kelly_fraction": 0.05,
+      "checks_passed": 2,
+      "hours_left_at_entry": 53.2,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null
     }
   ],
   "bankroll_topups": [
