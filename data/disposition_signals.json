@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-06-29T22:18:17.699751+00:00",
+  "generated_at": "2026-06-30T00:16:57.886754+00:00",
   "n_scanned": 5,
   "n_signals": 1,
   "signals": [
     {
-      "ticker": "KXHIGHLAX-26JUN29-B72.5",
-      "title": "Will the **high temp in LA** be 72-73\u00b0 on Jun 29, 2026?",
+      "ticker": "KXLIUSAELIMINATION-26JUN29-NON",
+      "title": "Will NONE be eliminated from Love Island USA before Jun 30, 2026?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.98,
-      "yes_mid": 0.975,
+      "fill_price": 0.99,
+      "yes_mid": 0.985,
       "true_prob": 0.99,
       "edge": 0.02,
-      "hours_left": 9.7,
-      "close_time": "2026-06-30T07:59:00Z"
+      "hours_left": 3.7,
+      "close_time": "2026-06-30T03:59:00Z"
     }
   ]
 }
