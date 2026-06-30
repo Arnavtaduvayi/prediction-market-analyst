@@ -2,7 +2,7 @@
   "strategy": "reversion",
   "started": "2026-06-23T22:27:35.657835+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 51.41999999999998,
+  "bankroll": 48.74999999999998,
   "trades": [
     {
       "logged_at": "2026-06-25T15:39:40.118118+00:00",
@@ -353,6 +353,27 @@
       "anchor_vwap": 0.6506,
       "deviation_at_entry": 0.0894,
       "exit_price": 0.47
+    },
+    {
+      "logged_at": "2026-06-30T05:16:13.330412+00:00",
+      "strategy": "reversion",
+      "kalshi_ticker": "KXWTI-26JUN3014-T70.99",
+      "kalshi_title": "Will the WTI crude oil settlement price be above 70.99 USD/Bbl on Jun 30, 2026?",
+      "side": "yes",
+      "contracts": 11,
+      "entry_price": 0.23,
+      "fee": 0.14,
+      "cost": 2.67,
+      "status": "open",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "yes_mid_at_entry": 0.225,
+      "target_yes_mid": 0.3424,
+      "stop_yes_mid": 0.165,
+      "anchor_vwap": 0.3424,
+      "deviation_at_entry": -0.1174
     }
   ]
 }
