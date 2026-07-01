@@ -1,6 +1,55 @@
 {
-  "generated_at": "2026-07-01T12:47:19.259141+00:00",
-  "n_scanned": 12,
-  "n_signals": 0,
-  "signals": []
+  "generated_at": "2026-07-01T15:50:53.136605+00:00",
+  "n_scanned": 17,
+  "n_signals": 4,
+  "signals": [
+    {
+      "ticker": "KXBTCD-26JUL0117-T58499.99",
+      "title": "Bitcoin price on Jul 1, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.97,
+      "yes_mid": 0.965,
+      "true_prob": 0.985,
+      "edge": 0.02,
+      "hours_left": 5.2,
+      "close_time": "2026-07-01T21:00:00Z"
+    },
+    {
+      "ticker": "KXBTCD-26JUL0317-T54999.99",
+      "title": "Bitcoin price on Jul 3, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.99,
+      "yes_mid": 0.98,
+      "true_prob": 0.99,
+      "edge": 0.02,
+      "hours_left": 53.2,
+      "close_time": "2026-07-03T21:00:00Z"
+    },
+    {
+      "ticker": "KXWT20MATCH-26JUL011000ESSWAR-WAR",
+      "title": "Warwickshire vs Essex Winner?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.93,
+      "yes_mid": 0.92,
+      "true_prob": 0.94,
+      "edge": 0.02,
+      "hours_left": 50.2,
+      "close_time": "2026-07-03T18:00:00Z"
+    },
+    {
+      "ticker": "KXWT20MATCH-26JUL011000ESSWAR-ESS",
+      "title": "Warwickshire vs Essex Winner?",
+      "type": "longshot_sell",
+      "side": "no",
+      "fill_price": 0.91,
+      "yes_mid": 0.08,
+      "true_prob": 0.9328,
+      "edge": 0.0128,
+      "hours_left": 50.2,
+      "close_time": "2026-07-03T18:00:00Z"
+    }
+  ]
 }
