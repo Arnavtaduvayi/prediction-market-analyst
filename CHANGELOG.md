@@ -5,6 +5,17 @@ from paper-trading on Kalshi.
 
 ---
 
+## v4.2 — retire Weather (2026-07-01)
+
+Weather finished at **−45% (10W/22L)** — a **31% win rate before *and* after** the
+2026-06-27 σ recalibration. Consistent across 32 settled trades = not variance:
+the NWS-normal model doesn't beat the market on temperature brackets. Retired to
+`legacy/` (code, journal, tests). Roster is now **6 bots (A–F)**; Reversion,
+Theta, Consensus re-lettered D/E/F. Reversion's crypto-exclusion fix, by
+contrast, is working — it recovered from −$26 toward −$21 with no new losses.
+
+---
+
 ## v4.1 — first-week tuning (2026-06-27)
 
 After ~4 days of (finally-persisting) live data:

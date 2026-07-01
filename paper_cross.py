@@ -22,7 +22,6 @@ from pathlib import Path
 WHALE_JOURNAL = Path(__file__).parent / "paper_cross_trades.json"
 DISPOSITION_JOURNAL = Path(__file__).parent / "paper_disposition_trades.json"
 ARB_JOURNAL = Path(__file__).parent / "paper_arb_trades.json"
-WEATHER_JOURNAL = Path(__file__).parent / "paper_weather_trades.json"
 REVERSION_JOURNAL = Path(__file__).parent / "paper_reversion_trades.json"
 THETA_JOURNAL = Path(__file__).parent / "paper_theta_trades.json"
 CONSENSUS_JOURNAL = Path(__file__).parent / "paper_consensus_trades.json"
@@ -32,10 +31,9 @@ BOTS = [
     ("A", "whale-copy", WHALE_JOURNAL, "Polymarket whales"),
     ("B", "disposition", DISPOSITION_JOURNAL, "Longshot/favorite"),
     ("C", "arb", ARB_JOURNAL, "Dutch-book + ladder (risk-free)"),
-    ("D", "weather", WEATHER_JOURNAL, "NWS forecast edge"),
-    ("E", "reversion", REVERSION_JOURNAL, "Fade thin overreactions"),
-    ("F", "theta", THETA_JOURNAL, "Late-favorite convergence"),
-    ("G", "consensus", CONSENSUS_JOURNAL, "Multi-signal agreement"),
+    ("D", "reversion", REVERSION_JOURNAL, "Fade thin overreactions"),
+    ("E", "theta", THETA_JOURNAL, "Late-favorite convergence"),
+    ("F", "consensus", CONSENSUS_JOURNAL, "Multi-signal agreement"),
 ]
 
 ALL_JOURNALS = [(path, label) for _, label, path, _ in BOTS]
@@ -114,20 +112,16 @@ def cmd_signal():
     print("─── BOT C: ARB ───")
     import bot_arb; bot_arb.run(); print()
 
-    # Bot D: Weather forecast edge — own discovery
-    print("─── BOT D: WEATHER ───")
-    import bot_weather; bot_weather.run(); print()
-
-    # Bot E: Mean-reversion on thin-volume overreactions
-    print("─── BOT E: REVERSION ───")
+    # Bot D: Mean-reversion on thin-volume overreactions
+    print("─── BOT D: REVERSION ───")
     import bot_reversion; bot_reversion.run(); print()
 
-    # Bot F: Late-favorite settlement convergence
-    print("─── BOT F: THETA ───")
+    # Bot E: Late-favorite settlement convergence
+    print("─── BOT E: THETA ───")
     import bot_theta; bot_theta.run(); print()
 
-    # Bot G: Multi-signal consensus
-    print("─── BOT G: CONSENSUS ───")
+    # Bot F: Multi-signal consensus
+    print("─── BOT F: CONSENSUS ───")
     import bot_consensus; bot_consensus.run()
 
 

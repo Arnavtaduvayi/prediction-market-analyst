@@ -29,7 +29,6 @@ import requests
 WHALE_JOURNAL = Path(__file__).parent / "paper_cross_trades.json"
 DISPOSITION_JOURNAL = Path(__file__).parent / "paper_disposition_trades.json"
 ARB_JOURNAL = Path(__file__).parent / "paper_arb_trades.json"
-WEATHER_JOURNAL = Path(__file__).parent / "paper_weather_trades.json"
 REVERSION_JOURNAL = Path(__file__).parent / "paper_reversion_trades.json"
 THETA_JOURNAL = Path(__file__).parent / "paper_theta_trades.json"
 CONSENSUS_JOURNAL = Path(__file__).parent / "paper_consensus_trades.json"
@@ -38,7 +37,6 @@ JOURNALS = [
     (WHALE_JOURNAL, "whale"),
     (DISPOSITION_JOURNAL, "disposition"),
     (ARB_JOURNAL, "arb"),
-    (WEATHER_JOURNAL, "weather"),
     (REVERSION_JOURNAL, "reversion"),
     (THETA_JOURNAL, "theta"),
     (CONSENSUS_JOURNAL, "consensus"),

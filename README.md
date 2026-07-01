@@ -1,36 +1,32 @@
-# Prediction Market Analyst — 7-Bot Paper Trading System
+# Prediction Market Analyst — 6-Bot Paper Trading System
 
 A multi-strategy paper-trading bot for Kalshi (CFTC-regulated, US-legal).
-Runs seven completely different strategies side-by-side to discover what
+Runs six completely different strategies side-by-side to discover what
 actually has edge.
 
-> **Status:** Paper trading only. Currently testing 7 strategies in parallel.
+> **Status:** Paper trading only. Currently testing 6 strategies in parallel.
 > See live results in `paper_*_trades.json` files — workflows commit them
 > after every run.
 
-## The 7 bots
+## The 6 bots
 
 | Bot | Strategy | Edge thesis | Type |
 |---|---|---|---|
 | **A: Whale-Copy** | Follow top Polymarket whale trades to Kalshi equivalents | Polymarket leads price discovery (academic) | follow |
 | **B: Disposition** | Buy heavy favorites (YES > $0.90) / sell extreme longshots (< $0.10), hold to settlement | Whelan paper on 72M Kalshi trades | statistical |
 | **C: Arb** | Overround Dutch-book across mutually-exclusive events + strike-ladder monotonicity, all fee-aware | Pure math — locked spread, can't lose | **math, risk-free** |
-| **D: Weather** | NWS probabilistic forecast vs Kalshi temperature brackets (5 cities), bet material divergence | Short-range forecast skill beats thin temp markets | **data edge** |
-| **E: Reversion** | Fade price moves away from VWAP on *below-average* volume (overreaction, not news) | Mean reversion of noise; stop-loss protected | balanced |
-| **F: Theta** | Buy near-certain favorites in their final window, hold to settlement; never longshots | Late favorites converge to $1 slowly | balanced |
-| **G: Consensus** | Trade only when ≥2 independent signals (disposition/flow/reversion) agree | Signal agreement filters false positives | balanced/ensemble |
+| **D: Reversion** | Fade price moves away from VWAP on *below-average* volume (overreaction, not news); excludes crypto strike ladders | Mean reversion of noise; stop-loss protected | balanced |
+| **E: Theta** | Buy near-certain favorites in their final window, hold to settlement; never longshots | Late favorites converge to $1 slowly | balanced |
+| **F: Consensus** | Trade only when ≥2 independent signals (disposition/flow/reversion) agree | Signal agreement filters false positives | balanced/ensemble |
 
-Each bot has its own $75 paper bankroll. Combined paper-mode allocation: $525.
+Each bot has its own $75 paper bankroll. Combined paper-mode allocation: $450.
 
-### Two correctness guards worth knowing (learned the hard way in live testing)
+### A correctness guard worth knowing (learned the hard way in live testing)
 - **Arb only sells overround / trades ladders — never buys all YES (underround).**
   Kalshi's `mutually_exclusive` flag means *at most one* outcome wins, not that
   one of the *listed* outcomes must (a decided election's winner can drop off the
   list). Buy-all is only risk-free if collectively exhaustive, which isn't
   guaranteed; sell-all and ladder arbs are safe regardless.
-- **Weather only trades future-day markets (lead ≥ 1).** A same-day high is
-  mostly set by afternoon, so the market is near-settled and any "divergence"
-  from our forecast is illusory.
 
 ## Architecture
 
@@ -132,5 +128,8 @@ Preserved in `/legacy` with their full trade history for reference:
 - **Spot Convergence** (`bot_spot.py`) — -39% (2W/21L). The BTC lognormal
   fair-value model was systematically on the wrong side.
 - **Flow Momentum** (`bot_flow.py`) — -28% (63W/90L). Briefly +12%, then the
-  momentum edge inverted. The new **Reversion (E)** bot takes the opposite
+  momentum edge inverted. The **Reversion** bot takes the opposite
   (mean-reverting) stance on *thin* volume.
+- **Weather** (`bot_weather.py` + `weather_data.py`) — -45% (10W/22L). Stuck at
+  a 31% win rate before *and* after recalibration: the NWS-normal model simply
+  didn't beat the market. Retired 2026-07-01.
