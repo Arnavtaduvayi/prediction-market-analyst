@@ -1,6 +1,31 @@
 {
-  "generated_at": "2026-06-30T22:21:28.300579+00:00",
-  "n_scanned": 1,
-  "n_signals": 0,
-  "signals": []
+  "generated_at": "2026-07-01T00:18:57.138303+00:00",
+  "n_scanned": 5,
+  "n_signals": 2,
+  "signals": [
+    {
+      "ticker": "KXFABLERESTORE-27-26JUL03",
+      "title": "Will it be reported by any of the Source Agencies that general access to Fable 5 is restored for US customers before Jul 3, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.92,
+      "yes_mid": 0.91,
+      "true_prob": 0.93,
+      "edge": 0.02,
+      "hours_left": 51.7,
+      "close_time": "2026-07-03T03:59:00Z"
+    },
+    {
+      "ticker": "KXLIUKELIMINATION-26JUN30-NON",
+      "title": "Will NONE be eliminated from Love Island UK before Jul 1, 2026?",
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.99,
+      "yes_mid": 0.985,
+      "true_prob": 0.99,
+      "edge": 0.02,
+      "hours_left": 3.7,
+      "close_time": "2026-07-01T03:59:00Z"
+    }
+  ]
 }
