@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-07-02T14:26:26.519780+00:00",
-  "n_scanned": 9,
+  "generated_at": "2026-07-02T16:59:58.198890+00:00",
+  "n_scanned": 6,
   "n_signals": 1,
   "signals": [
     {
-      "ticker": "KXBTCD-26JUL0217-T62999.99",
+      "ticker": "KXBTCD-26JUL0217-T60499.99",
       "title": "Bitcoin price on Jul 2, 2026?",
-      "type": "longshot_sell",
-      "side": "no",
-      "fill_price": 0.91,
-      "yes_mid": 0.08,
-      "true_prob": 0.9328,
-      "edge": 0.0128,
-      "hours_left": 6.6,
+      "type": "favorite_buy",
+      "side": "yes",
+      "fill_price": 0.95,
+      "yes_mid": 0.94,
+      "true_prob": 0.96,
+      "edge": 0.02,
+      "hours_left": 4.0,
       "close_time": "2026-07-02T21:00:00Z"
     }
   ]
