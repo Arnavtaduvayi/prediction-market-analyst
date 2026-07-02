@@ -1,31 +1,31 @@
 {
-  "generated_at": "2026-07-02T18:43:46.162165+00:00",
-  "n_scanned": 10,
+  "generated_at": "2026-07-02T20:26:56.014350+00:00",
+  "n_scanned": 5,
   "n_signals": 2,
   "signals": [
     {
-      "ticker": "KXBTCD-26JUL0217-T59999.99",
-      "title": "Bitcoin price on Jul 2, 2026?",
+      "ticker": "KXBTCD-26JUL0317-T59499.99",
+      "title": "Bitcoin price on Jul 3, 2026?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.99,
-      "yes_mid": 0.985,
-      "true_prob": 0.99,
+      "fill_price": 0.96,
+      "yes_mid": 0.955,
+      "true_prob": 0.975,
       "edge": 0.02,
-      "hours_left": 2.3,
-      "close_time": "2026-07-02T21:00:00Z"
+      "hours_left": 24.6,
+      "close_time": "2026-07-03T21:00:00Z"
     },
     {
-      "ticker": "KXBTCD-26JUL0217-T60749.99",
-      "title": "Bitcoin price on Jul 2, 2026?",
+      "ticker": "KXBTCD-26JUL0317-T59999.99",
+      "title": "Bitcoin price on Jul 3, 2026?",
       "type": "favorite_buy",
       "side": "yes",
-      "fill_price": 0.98,
-      "yes_mid": 0.975,
-      "true_prob": 0.99,
+      "fill_price": 0.92,
+      "yes_mid": 0.91,
+      "true_prob": 0.93,
       "edge": 0.02,
-      "hours_left": 2.3,
-      "close_time": "2026-07-02T21:00:00Z"
+      "hours_left": 24.6,
+      "close_time": "2026-07-03T21:00:00Z"
     }
   ]
 }
