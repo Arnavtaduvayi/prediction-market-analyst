@@ -1,19 +1,6 @@
 {
-  "generated_at": "2026-07-01T22:26:04.129744+00:00",
-  "n_scanned": 6,
-  "n_signals": 1,
-  "signals": [
-    {
-      "ticker": "KXHIGHTDAL-26JUL01-B96.5",
-      "title": "Will the maximum temperature be 96-97\u00b0 on Jul 1, 2026?",
-      "type": "favorite_buy",
-      "side": "yes",
-      "fill_price": 0.99,
-      "yes_mid": 0.985,
-      "true_prob": 0.99,
-      "edge": 0.02,
-      "hours_left": 7.6,
-      "close_time": "2026-07-02T06:00:00Z"
-    }
-  ]
+  "generated_at": "2026-07-02T00:19:09.518065+00:00",
+  "n_scanned": 1,
+  "n_signals": 0,
+  "signals": []
 }
