@@ -36,6 +36,10 @@ CONTINUOUS_PRICE_PREFIXES = ("KXBTC", "KXETH", "KXSOL", "KXXRP", "KXDOGE", "KXAD
 # https://kalshi.com/docs/kalshi-fee-schedule
 DEFAULT_FEE_RATE = 0.07
 
+# Maker (resting limit order) fee: 25% of the taker rate per the June 2026 fee
+# schedule. Charged only when a resting order actually executes.
+MAKER_FEE_RATE = 0.0175
+
 
 # ── time ────────────────────────────────────────────────────────────────────
 
@@ -146,6 +150,106 @@ def new_trade(ticker: str, title: str, side: str, contracts: int,
     }
     trade.update(extra)
     return trade
+
+
+# ── resting (maker) orders ──────────────────────────────────────────────────
+#
+# Paper-mode maker execution. A resting order reserves its cost at placement
+# (like real exchange collateral) and becomes an open position only under a
+# deliberately pessimistic fill rule:
+#
+#   FILLED  iff a later trade printed STRICTLY THROUGH the limit price.
+#
+# Price priority means the book cannot trade below a resting bid until every
+# order at or above that price — including ours, regardless of queue position —
+# has been exhausted. A print at exactly the limit is NOT counted (we may have
+# been behind others at that level). This can only understate fills, never
+# invent them, so any P&L the maker bots show is a floor, not a hope.
+
+def new_resting_order(ticker: str, title: str, side: str, contracts: int,
+                      limit_price: float, strategy: str, *,
+                      expire_hours: float, **extra) -> dict:
+    """Resting limit buy for `side` at `limit_price` (in that side's terms)."""
+    fee = kalshi_fee(limit_price, contracts, rate=MAKER_FEE_RATE)
+    cost = round(contracts * limit_price + fee, 2)
+    order = {
+        "logged_at": now_iso(),
+        "strategy": strategy,
+        "kalshi_ticker": ticker,
+        "kalshi_title": title,
+        "side": side,
+        "contracts": contracts,
+        "entry_price": round(limit_price, 4),
+        "fee": round(fee, 4),
+        "cost": cost,
+        "status": "resting",
+        "expire_hours": expire_hours,
+        "filled_at": None,
+        "resolved_yes": None,
+        "pnl": None,
+        "settled_at": None,
+        "exit_reason": None,
+    }
+    order.update(extra)
+    return order
+
+
+def resting_orders(data: dict) -> list[dict]:
+    return [t for t in data.get("trades", []) if t.get("status") == "resting"]
+
+
+def _printed_through(order: dict, prints: list[dict]) -> bool:
+    """True if any trade printed strictly through the order's limit."""
+    limit = order["entry_price"]
+    key = "yes_price_dollars" if order["side"] == "yes" else "no_price_dollars"
+    for t in prints:
+        try:
+            px = float(t.get(key) or 0)
+        except (ValueError, TypeError):
+            continue
+        if 0 < px < limit:
+            return True
+    return False
+
+
+def check_resting_fills(data: dict, label: str) -> int:
+    """
+    Advance every resting order in a journal: fill / expire / hold.
+    Mutates `data` (caller saves). Returns number of state changes.
+    """
+    changed = 0
+    for order in resting_orders(data):
+        placed = parse_iso(order["logged_at"])
+        if placed is None:
+            continue
+        age_h = (datetime.now(timezone.utc) - placed).total_seconds() / 3600
+        minutes = int(age_h * 60) + 2
+        prints = recent_trades(order["kalshi_ticker"], minutes=minutes)
+        # Only prints after placement count (recent_trades may reach further back).
+        prints = [t for t in prints
+                  if (parse_iso(t.get("created_time", "")) or placed) > placed]
+
+        if _printed_through(order, prints):
+            order["status"] = "open"
+            order["filled_at"] = now_iso()
+            changed += 1
+            print(f"    [{label}] FILLED    {order['kalshi_ticker']:<42} "
+                  f"{order['side'].upper()} {order['contracts']}x @ ${order['entry_price']:.3f} (maker)")
+            continue
+
+        market = get_json(f"{KALSHI_API}/markets/{order['kalshi_ticker']}").get("market", {})
+        market_done = market.get("status") in ("closed", "settled", "determined", "finalized")
+        if age_h > order.get("expire_hours", 24) or market_done:
+            order["status"] = "expired"
+            order["pnl"] = 0.0
+            order["settled_at"] = now_iso()
+            order["exit_reason"] = "UNFILLED_CLOSE" if market_done else "UNFILLED_EXPIRY"
+            data["bankroll"] += order["cost"]
+            changed += 1
+            print(f"    [{label}] EXPIRED   {order['kalshi_ticker']:<42} "
+                  f"unfilled after {age_h:.1f}h — ${order['cost']:.2f} refunded")
+        time.sleep(0.15)
+    return changed
 
 
 # ── sizing ──────────────────────────────────────────────────────────────────

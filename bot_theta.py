@@ -1,18 +1,24 @@
 """
-bot_theta.py — Bot F: Settlement-convergence on near-certain favorites (balanced)
+bot_theta.py — Bot T: Late-favorite convergence, maker execution (v2)
 
-Heavy favorites near the end of their life converge to $1.00 slowly: a market
-trading at $0.95 with 6 hours left and nothing left to decide is, on average,
-underpriced by the last few cents. We harvest that convergence.
+v1 result (21 settled, now in legacy/paper_theta_v1_trades.json): 95.2% win
+rate at a 95.2% average entry price — the taker ask was EXACTLY fair value.
+Every trade paid the ask and the spread+fee ate the convergence edge to the
+cent. That's not a broken signal; it's a broken execution model.
 
-Distinct from Bot B (Disposition):
-  - FAVORITES ONLY. We never buy longshots — the <$0.10 "buy NO" leg is exactly
-    the trap that keeps Disposition net-negative, so this bot refuses to touch it.
-  - TIME-GATED to the final window, where convergence is most reliable and theta
-    is fastest. Disposition enters at any horizon.
+v2 keeps the identical signal (strong favorites in their final window) and
+changes only the execution: rest a YES bid one tick above the current best bid
+instead of lifting the ask. Taking v1's own measurement — true probability ≈
+the ask — buying 2-3¢ below the ask is buying below fair value, and the entry
+improvement IS the edge:
 
-Holds to settlement (the edge is the convergence to resolution). Position cap +
-small per-trade cap keep the occasional favorite upset survivable.
+    edge = yes_ask - our_limit - maker_fee   (require ≥ 1¢)
+
+The open question v2 exists to answer: do resting bids on favorites fill only
+when news breaks against them (adverse selection)? If the filled-trade win
+rate stays near v1's 95%, the strategy nets ~+2%/trade. If it degrades below
+our entry price, maker execution doesn't rescue favorites and we retire it.
+Fills use botlib's pessimistic printed-through rule, so paper P&L is a floor.
 """
 
 import json
@@ -20,7 +26,8 @@ from pathlib import Path
 
 from cooldown import is_in_cooldown
 from botlib import (
-    kalshi_fee, kelly_size, load_journal, save_journal, open_trades, new_trade,
+    MAKER_FEE_RATE, kalshi_fee, kelly_size, load_journal, save_journal,
+    open_trades, resting_orders, new_resting_order, check_resting_fills,
 )
 
 QUEUE_FILE = Path(__file__).parent / "data" / "queue.json"
@@ -28,33 +35,38 @@ JOURNAL_FILE = Path(__file__).parent / "paper_theta_trades.json"
 STRATEGY = "theta"
 
 MIN_MID = 0.92              # only strong favorites
-MAX_MID = 0.985            # not so extreme there's nothing left to capture
-MAX_HOURS = 24             # final window only
-MIN_HOURS = 1
-# Convergence edge: late favorites settle YES slightly more often than their
-# price implies (Whelan: buyers of >$0.50 contracts earn a small positive
-# return). This bump is what must clear the bid-ask spread for theta to act —
-# without it, buying at yes_ask (always > mid) can never show positive EV.
-FAVORITE_EDGE = 0.025
+MAX_MID = 0.985             # not so extreme there's nothing left to capture
+MAX_HOURS = 24              # final window only
+MIN_HOURS = 2               # need time for a resting bid to fill pre-close
+MIN_EDGE = 0.01             # ask - limit - maker fee, in dollars
 KELLY_MULT = 0.25
 PER_TRADE_CAP_PCT = 0.04
-MAX_OPEN_POSITIONS = 10
-MIN_EDGE_DOLLARS = 0.005   # convergence edges are small
+MAX_OPEN_POSITIONS = 10     # filled + resting combined
+EXPIRE_HOURS = 6            # stale quotes re-price on later runs
+
+
+def yes_quote(yes_bid: float, yes_ask: float) -> float:
+    """Rest one tick above best YES bid, never crossing the ask."""
+    return round(min(yes_bid + 0.01, yes_ask - 0.01), 4)
 
 
 def run():
+    data = load_journal(JOURNAL_FILE, STRATEGY)
+
+    if resting_orders(data):
+        print(f"[theta] Checking {len(resting_orders(data))} resting quotes...")
+        check_resting_fills(data, STRATEGY)
+        save_journal(data, JOURNAL_FILE)
+
     if not QUEUE_FILE.exists():
         print("[theta] No queue — run scanner.py first")
         return
     markets = json.loads(QUEUE_FILE.read_text()).get("markets", [])
-    if not markets:
-        print("[theta] No markets in queue")
-        return
 
-    data = load_journal(JOURNAL_FILE, STRATEGY)
     all_trades = data["trades"]
-    held = {t["kalshi_ticker"] for t in open_trades(data)}
-    slots = max(0, MAX_OPEN_POSITIONS - len(held))
+    live = open_trades(data) + resting_orders(data)
+    held = {t["kalshi_ticker"] for t in live}
+    slots = max(0, MAX_OPEN_POSITIONS - len(live))
 
     print(f"[theta] Scanning {len(markets)} markets for late favorites...")
     candidates = []
@@ -64,19 +76,21 @@ def run():
             continue
         mid = m.get("yes_mid", 0)
         hours = m.get("hours_left", 0)
-        if not (MIN_MID <= mid <= MAX_MID):
+        if not (MIN_MID <= mid <= MAX_MID) or not (MIN_HOURS <= hours <= MAX_HOURS):
             continue
-        if not (MIN_HOURS <= hours <= MAX_HOURS):
+        yes_bid, yes_ask = m.get("yes_bid", 0), m.get("yes_ask", 0)
+        if yes_bid <= 0 or yes_ask >= 1:
             continue
-        fill = round(m.get("yes_ask", 0), 4)   # buy the favorite (YES)
-        if fill <= 0 or fill >= 1 or m.get("ask_size", 0) <= 0:
+        limit = yes_quote(yes_bid, yes_ask)
+        if limit <= 0:
             continue
-        p_win = min(mid + FAVORITE_EDGE, 0.99)   # convergence-adjusted probability
-        edge = p_win - fill - kalshi_fee(fill, 1)
-        if edge < MIN_EDGE_DOLLARS:
+        # v1's measurement: the ask is fair value. Entry improvement is the edge.
+        p_win = min(yes_ask, 0.99)
+        edge = p_win - limit - kalshi_fee(limit, 1, rate=MAKER_FEE_RATE)
+        if edge < MIN_EDGE:
             continue
         candidates.append({
-            "ticker": ticker, "title": m.get("title", ""), "fill": fill,
+            "ticker": ticker, "title": m.get("title", ""), "limit": limit,
             "p_win": p_win, "mid": mid, "hours": hours, "edge": round(edge, 4),
         })
 
@@ -87,27 +101,27 @@ def run():
     for c in candidates:
         if placed >= slots:
             break
-        kf = kelly_size(c["p_win"], c["fill"], KELLY_MULT, PER_TRADE_CAP_PCT)
+        kf = kelly_size(c["p_win"], c["limit"], KELLY_MULT, PER_TRADE_CAP_PCT)
         if kf <= 0:
             continue
-        contracts = max(1, int((kf * data["bankroll"]) / c["fill"]))
-        fee = kalshi_fee(c["fill"], contracts)
-        cost = round(contracts * c["fill"] + fee, 2)
-        if cost > data["bankroll"] or cost < 0.30:
-            continue
-        trade = new_trade(
-            c["ticker"], c["title"], "yes", contracts, c["fill"], STRATEGY,
-            fee=fee, hold_to_settlement=True,
+        contracts = max(1, int((kf * data["bankroll"]) / c["limit"]))
+        order = new_resting_order(
+            c["ticker"], c["title"], "yes", contracts, c["limit"], STRATEGY,
+            expire_hours=min(EXPIRE_HOURS, max(1.0, c["hours"] - 1)),
+            hold_to_settlement=True,
             yes_mid_at_entry=c["mid"], hours_left_at_entry=c["hours"],
+            edge_at_entry=c["edge"],
         )
-        data["bankroll"] -= cost
-        data["trades"].append(trade)
+        if order["cost"] > data["bankroll"] or order["cost"] < 0.30:
+            continue
+        data["bankroll"] -= order["cost"]
+        data["trades"].append(order)
         placed += 1
-        print(f"  [theta] {c['ticker']:<40} YES {contracts}x @ ${c['fill']:.3f}  "
-              f"mid={c['mid']:.3f}  {c['hours']:.1f}h left")
+        print(f"  [theta] {c['ticker']:<40} YES {contracts}x resting @ ${c['limit']:.3f}  "
+              f"ask={c['p_win']:.3f}  {c['hours']:.1f}h left")
 
     save_journal(data, JOURNAL_FILE)
-    print(f"  [theta] {placed} new trades. Bankroll: ${data['bankroll']:.2f}")
+    print(f"  [theta] {placed} new quotes. Bankroll: ${data['bankroll']:.2f}")
 
 
 if __name__ == "__main__":

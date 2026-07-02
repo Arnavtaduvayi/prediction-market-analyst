@@ -1,135 +1,116 @@
-# Prediction Market Analyst — 6-Bot Paper Trading System
+# Prediction Market Analyst — v5 Paper Trading System
 
-A multi-strategy paper-trading bot for Kalshi (CFTC-regulated, US-legal).
-Runs six completely different strategies side-by-side to discover what
-actually has edge.
+A multi-strategy paper-trading bot for Kalshi (CFTC-regulated, US-legal), with
+Polymarket as a cross-venue signal source. v5 is a data-driven rebuild: six
+weeks and 380 settled paper trades of v1-v4 showed that *taker* strategies on
+efficient series bleed to spread+fees no matter how good the win rate looks
+(disposition hit 93% and still lost money). v5 keeps only what the data and
+the math support, and executes as a **maker** wherever possible.
 
-> **Status:** Paper trading only. Currently testing 6 strategies in parallel.
-> See live results in `paper_*_trades.json` files — workflows commit them
-> after every run.
+> **Status:** Paper trading only. Live results in `paper_*_trades.json`,
+> committed by GitHub Actions after every run. `CHANGELOG.md` has the full
+> v4 post-mortem with the P&L decomposition behind this roster.
 
-## The 6 bots
+## The 4 bots
 
 | Bot | Strategy | Edge thesis | Type |
 |---|---|---|---|
-| **A: Whale-Copy** | Follow top Polymarket whale trades to Kalshi equivalents | Polymarket leads price discovery (academic) | follow |
-| **B: Disposition** | Buy heavy favorites (YES > $0.90) / sell extreme longshots (< $0.10), hold to settlement | Whelan paper on 72M Kalshi trades | statistical |
-| **C: Arb** | Overround Dutch-book across mutually-exclusive events + strike-ladder monotonicity, all fee-aware | Pure math — locked spread, can't lose | **math, risk-free** |
-| **D: Reversion** | Fade price moves away from VWAP on *below-average* volume (overreaction, not news); excludes crypto strike ladders | Mean reversion of noise; stop-loss protected | balanced |
-| **E: Theta** | Buy near-certain favorites in their final window, hold to settlement; never longshots | Late favorites converge to $1 slowly | balanced |
-| **F: Consensus** | Trade only when ≥2 independent signals (disposition/flow/reversion) agree | Signal agreement filters false positives | balanced/ensemble |
+| **S: Seller** | Sell longshots (buy NO at 85-96¢ when YES ≲ 10¢), maker entries, hold to settlement | Favorite-longshot bias — Whelan's 72M-trade study **and** our own book: +4.6%/trade over 37 sells vs −4.4%/trade over 221 favorite buys | statistical |
+| **T: Theta** | Late-favorite convergence, maker entries | v1 measured the taker ask = exactly fair value (95.2% WR at 95.2% avg entry). Buying 2-3¢ *below* the ask is buying below measured fair value | execution-alpha |
+| **C: Arb** | Overround Dutch-book + strike-ladder monotonicity, fee-aware | Pure math — locked spread | **math, risk-free** |
+| **X: Xvenue** | Kalshi↔Polymarket verified pairs: hard arb when YES+NO < $1 all-in; otherwise rest Kalshi bids ≥3¢ inside Polymarket's fair value | Polymarket leads price discovery (deep, 1¢-spread books vs Kalshi's 20-60¢ spreads on the same event) | structural |
 
-Each bot has its own $75 paper bankroll. Combined paper-mode allocation: $450.
+Each bot has its own $75 paper bankroll ($300 total).
 
-### A correctness guard worth knowing (learned the hard way in live testing)
-- **Arb only sells overround / trades ladders — never buys all YES (underround).**
-  Kalshi's `mutually_exclusive` flag means *at most one* outcome wins, not that
-  one of the *listed* outcomes must (a decided election's winner can drop off the
-  list). Buy-all is only risk-free if collectively exhaustive, which isn't
-  guaranteed; sell-all and ladder arbs are safe regardless.
+## Why maker execution is the load-bearing change
+
+Kalshi taker fee: `ceil(0.07·C·P·(1−P))`; maker fee is **25% of that** (June
+2026 schedule). On a $0.95 favorite the taker pays the ask *plus* ~1¢/contract
+— that combination single-handedly turned two positive-signal bots negative in
+v1-v4. Resting one tick above the bid instead flips the spread from a cost to
+an income.
+
+Paper fills are simulated **pessimistically**: a resting bid at `L` counts as
+filled only if a later trade prints *strictly through* `L` (price priority
+guarantees our order would have filled first, regardless of queue position).
+A print at exactly `L` does not count. Paper maker P&L is therefore a floor.
+
+## Cross-venue pair discipline (the v0 lesson)
+
+`data/xvenue_pairs.json` is the only source of Kalshi↔Polymarket pairs, and
+every entry is human-verified for resolution equivalence (same source, same
+number). No fuzzy matching — v0 lost money on "semantically similar but
+different" markets, and curation found live traps (Kalshi `KXCPIYOY` is
+headline CPI; Polymarket's monthly event is *core* CPI — not a pair).
+`python3 bot_xvenue.py propose` suggests candidates for human review only.
 
 ## Architecture
 
 ```
-  scanner.py → data/queue.json   (depth ≥$100, vol ≥$5k, 2h–7d, no sports)
-        │  shared by the queue-driven bots (B, E, F, G)
+  scanner.py → data/queue.json   (vol ≥$5k, depth $100/side OR 100 contracts,
+        │                         2h-7d, no sports)
         ▼
-  ┌────────────┬────────────┬────────────┬────────────┐
-  ▼            ▼            ▼            ▼            ▼
- brain+       disposition  reversion    theta       consensus
- executor     +exec_disp   (E)          (F)         (G)
- (A)          (B)
-                                                    arb (C) ─┐  own discovery:
-                                                    weather(D)┘  /events, /markets
-        │            │            │            │            │
-        ▼            ▼            ▼            ▼            ▼
-   paper_cross   paper_       paper_       paper_       paper_arb /
-   _trades       disposition  reversion    theta        paper_weather /
-   .json         _trades      _trades      _trades      paper_consensus ...
-                                   │
-                                   ▼
-                          ┌─────────────────┐
-                          │  exit_monitor   │  hourly on all 7 journals:
-                          │     .py         │  TARGET_HIT / STOP_LOSS /
-                          └─────────────────┘  VOLUME_EXIT / STALE / SETTLED
+  ┌────────────┬────────────┐
+  ▼            ▼            ▼ (own discovery)
+ seller       theta        arb (Kalshi /events)
+ (S)          (T)          xvenue (pair map + Polymarket Gamma API)
+        │            │            │
+        ▼            ▼            ▼
+  paper_seller_  paper_theta_  paper_arb_ / paper_xvenue_
+  trades.json    trades.json   trades.json
+                     │
+                     ▼
+            ┌─────────────────┐   hourly on all 4 journals:
+            │  exit_monitor   │   resting-fill checks, TARGET_HIT /
+            │      .py        │   STOP_LOSS / SETTLED, arb-pair locks,
+            └─────────────────┘   exit-side taker fees charged
 
-  botlib.py — shared fee math, sizing, journal + microstructure helpers (C–G)
+  botlib.py — fee math (taker + maker), resting-order lifecycle,
+              pessimistic fill simulation, sizing, journals
 ```
 
-Bots **A, B, E, F, G** consume the shared `queue.json`. Bots **C (arb)** and
-**D (weather)** do their own discovery (Kalshi `/events` and temperature
-`/markets`, plus `api.weather.gov`) because their opportunities live outside the
-filtered queue.
+## Universal rules
 
-## Universal rules (apply to all bots)
-
-- **Cooldown** (`cooldown.py`): no re-entering the same Kalshi ticker for 24h after a non-resolution exit (incl. STOP_LOSS). Prevents bid-ask spread bleed from re-entry loops.
-- **Fee-aware** (`botlib.kalshi_fee`): every new bot prices Kalshi's `ceil(0.07·C·P·(1-P))` fee into cost, so no phantom edges.
-- **Position cap**: each bot has its own MAX_OPEN_POSITIONS (6-12 depending on bot)
-- **Kelly sizing**: Quarter-Kelly with strategy-specific per-trade caps (4-20% of bankroll; arb highest since it's risk-free)
-- **Scanner filter**: shared by the queue-driven bots — depth ≥$100/side, 24h vol ≥$5k, 2h-7d to resolution, no sports
+- **Cooldown** (`cooldown.py`): no re-entry for 24h after a non-resolution exit. Expired (unfilled) quotes do NOT trigger cooldown — re-quoting is normal.
+- **Fee-aware**: taker `0.07·C·P·(1−P)` and maker `0.0175·C·P·(1−P)` on Kalshi; Polymarket US taker `0.06·C·P·(1−P)` modeled on xvenue's poly legs. Exits pay the taker fee too.
+- **Correlation guards**: seller takes one position per *event* (ladder strikes are perfectly correlated) and caps positions per series.
+- **Position caps + quarter-Kelly** with per-trade caps (arb/xvenue-lock highest — risk-free).
 
 ## Usage
 
 ```bash
-# Run the full 7-bot signal pipeline
-python3 paper_cross.py signal
-
-# Run exit checks across all 7 journals
-python3 paper_cross.py exit
-
-# Side-by-side scorecard (one row per bot) + --json variant
-python3 paper_cross.py status
-python3 paper_cross.py status --json
-
-# Run a single new bot standalone (C/D self-discover; E/F/G need a fresh queue)
-python3 bot_arb.py        # or bot_weather.py / bot_reversion.py / bot_theta.py / bot_consensus.py
-
-# Unit tests for the math + risk logic (no network)
-python3 -m unittest discover -s tests -t .
-
-# Cancel all open positions in all bots
+python3 paper_cross.py signal      # scanner + all 4 bots
+python3 paper_cross.py exit        # resting fills + exits + settlements
+python3 paper_cross.py status      # scorecard (+ --json)
 python3 paper_cross.py cancel <reason>
 
-# Refresh Polymarket whale list (weekly)
-python3 targets.py --candidates 150
+python3 bot_xvenue.py propose      # candidate pairs for HUMAN review
+
+python3 -m unittest discover -s tests -t .   # 48 tests, no network
 ```
 
-## GitHub Actions (current setup)
-
-Three workflows run in the cloud — laptop independence. They call
-`paper_cross.py signal`/`exit`, so the 7-bot roster is picked up automatically;
-no workflow edits were needed for the v2 roster.
+## GitHub Actions
 
 | Workflow | Schedule | Job |
 |---|---|---|
-| `paper-signal.yml` | Every hour at :07 | Full 7-bot pipeline |
-| `paper-exit.yml` | Every hour at :23 | Exit triggers + settlements |
-| `paper-targets.yml` | Sundays 12:37 UTC | Refresh whale list |
+| `paper-signal.yml` | Hourly at :07 | Full 4-bot pipeline |
+| `paper-exit.yml` | Hourly at :23 | Resting fills + exits + settlements |
 
-All journals committed back to repo on every run.
+## Honest expectations
 
-## Production deployment — VPS
+Only **arb** and **xvenue hard-arb** trades are loss-proof, and they are rare
+at hourly cadence. Seller and theta are positive-expectation bets on a
+documented bias plus a cheaper execution path — the paper phase exists to
+measure whether maker fills suffer adverse selection worse than the entry
+improvement. Nothing here is a guarantee; the system is built so that *if* it
+loses, the journals say exactly which assumption failed.
 
-For continuous monitoring with sub-minute polling, see [`docs/VPS.md`](docs/VPS.md). One-command deploy on Hetzner CX22 ($4.55/mo).
+## Retired strategies (full history in `/legacy`)
 
-## Current results
-
-Live numbers in each `paper_*_trades.json`. Updated by GitHub Actions after every workflow run. The `CHANGELOG.md` tracks major findings.
-
-## Retired bots (legacy)
-
-Preserved in `/legacy` with their full trade history for reference:
-
-- **v1** — weather temperature strategy + naive cross-platform matcher. Retired
-  after 8 settled trades returned -$0.91 (too many false matches, no exits).
-- **Calendar Arb** (`bot_calendar.py`) — 0 trades its entire run; the one arb
-  condition it checked never appeared. Superseded by the broader **Arb (C)** bot.
-- **Spot Convergence** (`bot_spot.py`) — -39% (2W/21L). The BTC lognormal
-  fair-value model was systematically on the wrong side.
-- **Flow Momentum** (`bot_flow.py`) — -28% (63W/90L). Briefly +12%, then the
-  momentum edge inverted. The **Reversion** bot takes the opposite
-  (mean-reverting) stance on *thin* volume.
-- **Weather** (`bot_weather.py` + `weather_data.py`) — -45% (10W/22L). Stuck at
-  a 31% win rate before *and* after recalibration: the NWS-normal model simply
-  didn't beat the market. Retired 2026-07-01.
+- **Whale-copy** (v1-v4): −0.3% over 93 settled; 48.4% WR vs 53.7% breakeven — no edge.
+- **Disposition** (v2-v4): −11.7%; its favorite_buy leg (−4.4%/trade, n=221) was the entire loss; its longshot_sell leg (+4.6%/trade, n=37) was promoted to Bot S.
+- **Reversion** (v4): −28.8%. Fading moves fights real information.
+- **Consensus** (v4): +0.9% on n=3; its input signals were retired underneath it.
+- **Weather** (v4): −45%, 31% WR before and after recalibration.
+- **Longshot-buy** (built, never deployed): buying longshots is the documented −EV side; superseded by Bot S selling them.
+- Older: Calendar Arb (0 trades), Spot Convergence (−39%), Flow Momentum (−28%), v0 weather + naive cross-matcher.

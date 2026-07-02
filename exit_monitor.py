@@ -13,9 +13,15 @@ Three exit triggers per open position:
   3. STALE_THESIS  : 24h since entry AND |price change| < 2% → thesis isn't playing out
 
 Also handles SETTLEMENT — if the market resolved while open, we settle here
-(fallback to old behavior in case all exit triggers missed).
+(fallback to old behavior in case all exit triggers missed). Cross-venue
+arb_pair trades settle at $1/pair regardless of outcome (the opposite leg on
+the other venue pays whenever this one doesn't). Early exits are charged the
+Kalshi taker fee they would actually pay.
 
-Output: updates paper_cross_trades.json, prints actions taken.
+v5: also advances resting maker quotes (botlib.check_resting_fills) before
+running exit checks, so fills promoted at :23 settle without waiting for :07.
+
+Output: updates each bot journal, prints actions taken.
 Designed to run hourly via cron, not just twice a day.
 """
 
@@ -26,20 +32,18 @@ from pathlib import Path
 
 import requests
 
-WHALE_JOURNAL = Path(__file__).parent / "paper_cross_trades.json"
-DISPOSITION_JOURNAL = Path(__file__).parent / "paper_disposition_trades.json"
-ARB_JOURNAL = Path(__file__).parent / "paper_arb_trades.json"
-REVERSION_JOURNAL = Path(__file__).parent / "paper_reversion_trades.json"
+import botlib
+
+SELLER_JOURNAL = Path(__file__).parent / "paper_seller_trades.json"
 THETA_JOURNAL = Path(__file__).parent / "paper_theta_trades.json"
-CONSENSUS_JOURNAL = Path(__file__).parent / "paper_consensus_trades.json"
+ARB_JOURNAL = Path(__file__).parent / "paper_arb_trades.json"
+XVENUE_JOURNAL = Path(__file__).parent / "paper_xvenue_trades.json"
 
 JOURNALS = [
-    (WHALE_JOURNAL, "whale"),
-    (DISPOSITION_JOURNAL, "disposition"),
-    (ARB_JOURNAL, "arb"),
-    (REVERSION_JOURNAL, "reversion"),
+    (SELLER_JOURNAL, "seller"),
     (THETA_JOURNAL, "theta"),
-    (CONSENSUS_JOURNAL, "consensus"),
+    (ARB_JOURNAL, "arb"),
+    (XVENUE_JOURNAL, "xvenue"),
 ]
 
 KALSHI_API = "https://api.elections.kalshi.com/trade-api/v2"
@@ -212,8 +216,14 @@ def settle_or_exit(trade: dict) -> tuple[str, float]:
     # Settled?
     if state.get("status") in ("settled", "determined", "finalized") and state.get("settlement") is not None:
         resolved_yes = state["settlement"] >= 0.99
-        won = (resolved_yes if side == "yes" else not resolved_yes)
-        pnl = round((contracts * 1.0 - cost) if won else -cost, 2)
+        if trade.get("arb_pair"):
+            # Cross-venue locked pair: the opposite leg on the other venue pays
+            # $1 whenever this one doesn't — payout is $1/pair either way.
+            won = True
+            pnl = round(contracts * 1.0 - cost, 2)
+        else:
+            won = (resolved_yes if side == "yes" else not resolved_yes)
+            pnl = round((contracts * 1.0 - cost) if won else -cost, 2)
         trade["status"] = "settled"
         trade["resolved_yes"] = resolved_yes
         trade["pnl"] = pnl
@@ -224,14 +234,16 @@ def settle_or_exit(trade: dict) -> tuple[str, float]:
     # Exit triggers?
     reason, exit_price = check_exit_triggers(trade, state)
     if reason:
-        # Realize the PnL at the current exit price
-        gross = contracts * exit_price
+        # Realize PnL at the exit price, net of the taker fee the exit pays.
+        exit_fee = botlib.kalshi_fee(exit_price, contracts)
+        gross = contracts * exit_price - exit_fee
         pnl = round(gross - cost, 2)
         trade["status"] = "exited"
         trade["pnl"] = pnl
         trade["settled_at"] = datetime.now(timezone.utc).isoformat()
         trade["exit_reason"] = reason
         trade["exit_price"] = round(exit_price, 4)
+        trade["exit_fee"] = round(exit_fee, 4)
         return reason, gross
 
     return "HOLD", 0.0
@@ -240,6 +252,14 @@ def settle_or_exit(trade: dict) -> tuple[str, float]:
 def process_journal(path: Path, label: str):
     """Run exit checks for one bot's journal."""
     data = load_journal(path)
+
+    # Advance resting maker quotes first — a fill here can settle below.
+    resting = [t for t in data["trades"] if t.get("status") == "resting"]
+    if resting:
+        print(f"  [{label}] Checking {len(resting)} resting quotes...")
+        if botlib.check_resting_fills(data, label):
+            save_journal(data, path)
+
     open_trades = [t for t in data["trades"] if t["status"] == "open"]
 
     if not open_trades:
@@ -261,7 +281,7 @@ def process_journal(path: Path, label: str):
 
 def run():
     ts = datetime.now().isoformat(timespec='seconds')
-    print(f"[{ts}] Exit monitor — all 5 bots")
+    print(f"[{ts}] Exit monitor — {len(JOURNALS)} journals")
     for path, label in JOURNALS:
         process_journal(path, label)
 

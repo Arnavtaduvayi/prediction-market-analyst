@@ -1,0 +1,36 @@
+{
+  "_readme": [
+    "Human-verified Kalshi <-> Polymarket market pairs for bot_xvenue.py.",
+    "A pair may ONLY be added after reading BOTH venues' resolution rules and",
+    "confirming they settle on the same source and the same number. The v0",
+    "text-similarity matcher lost money on 'semantically similar but different'",
+    "markets — this file is the guard against repeating that.",
+    "",
+    "Known traps found while curating (do NOT add without checking):",
+    "  - Kalshi KXCPIYOY is HEADLINE CPI YoY; Polymarket's monthly event is",
+    "    CORE CPI YoY. Different numbers. Not a pair.",
+    "  - Kalshi mention-markets settle on official transcripts; Polymarket's",
+    "    settle on video/oracle judgment. Not pairs.",
+    "",
+    "Instances are derived programmatically: the Kalshi date token (e.g. 26JUL)",
+    "must match the Polymarket event's endDate month+year. Outcomes map via",
+    "outcome_map: kalshi ticker suffix -> polymarket groupItemTitle."
+  ],
+  "verified_pairs": [
+    {
+      "id": "fed-decision",
+      "verified": "2026-07-02",
+      "note": "Both settle on the FOMC statement's federal-funds target range change. Kalshi: KXFEDDECISION-<YY><MON>-<outcome>. Polymarket event title 'Fed Decision in <Month>?'.",
+      "kalshi_series": "KXFEDDECISION",
+      "poly_search": "Fed Decision in",
+      "poly_title_pattern": "Fed Decision in {month}?",
+      "outcome_map": {
+        "H0": "No change",
+        "H25": "25 bps increase",
+        "H26": "50+ bps increase",
+        "C25": "25 bps decrease",
+        "C26": "50+ bps decrease"
+      }
+    }
+  ]
+}

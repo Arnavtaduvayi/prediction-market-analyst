@@ -36,6 +36,11 @@ TARGETS_FILE = Path(__file__).parent / "data" / "targets.json"
 # Loosened from guide defaults because Kalshi has less liquidity than Polymarket.
 MIN_GAP = 0.05              # 5% min price gap
 MIN_DEPTH_USD = 100.0       # $100 on each side of book (was $200)
+# Dollar depth systematically kills longshot books (500 contracts resting at a
+# 5¢ ask is only $25 "deep") — exactly the markets the seller bot needs. A
+# book is also acceptable on raw contract count; the 24h volume filter still
+# screens out dead markets.
+MIN_DEPTH_CONTRACTS = 100
 MIN_HOURS = 2               # at least 2h to resolution
 MAX_HOURS = 168             # at most 7d
 MIN_24H_VOLUME = 5_000      # $5k minimum daily volume
@@ -155,11 +160,12 @@ def score_market(market: dict) -> dict | None:
 
     mid = (yes_bid + yes_ask) / 2
 
-    # Depth check: convert contract count to dollar value at the price
+    # Depth check: dollar value OR raw contract count (see MIN_DEPTH_CONTRACTS)
     bid_value_usd = bid_size * yes_bid
     ask_value_usd = ask_size * yes_ask
     depth_usd = min(bid_value_usd, ask_value_usd)
-    if depth_usd < MIN_DEPTH_USD:
+    depth_contracts = min(bid_size, ask_size)
+    if depth_usd < MIN_DEPTH_USD and depth_contracts < MIN_DEPTH_CONTRACTS:
         return {"ticker": ticker, "killed": f"thin_book_${depth_usd:.0f}"}
 
     # Volume check (proxies real liquidity)

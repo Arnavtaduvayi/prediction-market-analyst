@@ -25,6 +25,50 @@ class TestKalshiFee(unittest.TestCase):
         self.assertEqual(botlib.kalshi_fee(0.99, 1), 0.01)
 
 
+class TestMakerFee(unittest.TestCase):
+    def test_quarter_of_taker_rate(self):
+        # 0.0175 * 100 * 0.5 * 0.5 = 0.4375 -> 0.44 (vs taker 1.75)
+        self.assertEqual(botlib.kalshi_fee(0.50, 100, rate=botlib.MAKER_FEE_RATE), 0.44)
+
+    def test_still_rounds_up(self):
+        # 0.0175 * 1 * 0.93 * 0.07 = 0.00114 -> full cent
+        self.assertEqual(botlib.kalshi_fee(0.93, 1, rate=botlib.MAKER_FEE_RATE), 0.01)
+
+
+class TestRestingOrders(unittest.TestCase):
+    def _order(self, side="no", limit=0.93):
+        return botlib.new_resting_order("TICK", "t", side, 3, limit, "x",
+                                        expire_hours=8)
+
+    def test_construction(self):
+        o = self._order()
+        self.assertEqual(o["status"], "resting")
+        self.assertEqual(o["entry_price"], 0.93)
+        self.assertEqual(o["fee"], botlib.kalshi_fee(0.93, 3, rate=botlib.MAKER_FEE_RATE))
+        self.assertEqual(o["cost"], round(3 * 0.93 + o["fee"], 2))
+
+    def test_printed_through_requires_strictly_better(self):
+        o = self._order(side="no", limit=0.93)
+        at_limit = [{"no_price_dollars": "0.93"}]
+        through = [{"no_price_dollars": "0.92"}]
+        worse = [{"no_price_dollars": "0.95"}]
+        self.assertFalse(botlib._printed_through(o, at_limit))   # queue-pessimism
+        self.assertTrue(botlib._printed_through(o, through))
+        self.assertFalse(botlib._printed_through(o, worse))
+
+    def test_printed_through_uses_side_price(self):
+        o = self._order(side="yes", limit=0.62)
+        # a YES print at 0.61 is through a YES bid at 0.62
+        self.assertTrue(botlib._printed_through(o, [{"yes_price_dollars": "0.61"}]))
+        self.assertFalse(botlib._printed_through(o, [{"yes_price_dollars": "0.63"}]))
+
+    def test_bad_prints_ignored(self):
+        o = self._order()
+        self.assertFalse(botlib._printed_through(o, [{"no_price_dollars": None},
+                                                     {"no_price_dollars": "junk"},
+                                                     {}]))
+
+
 class TestKellySize(unittest.TestCase):
     def test_positive_edge_capped(self):
         # f* = (0.6 - 0.4)/1 = 0.2; *0.25 = 0.05; cap 0.05 -> 0.05

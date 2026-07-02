@@ -5,6 +5,64 @@ from paper-trading on Kalshi.
 
 ---
 
+## v5 — data-driven rebuild: sell longshots, quote as maker, anchor to Polymarket (2026-07-02)
+
+Full P&L decomposition of v1-v4 (380 settled trades, combined **−$30.63 /
+−5.83%**) showed the losses were a *cost-structure* problem, not a signal
+problem:
+
+- **Disposition: 93.0% win rate and still −11.7%.** At a $0.949 average entry
+  the breakeven win rate is 94.9% — the taker ask plus fees ate the entire
+  documented favorites edge. Split by leg: **favorite_buy −4.4%/trade
+  (n=221)** vs **longshot_sell +4.6%/trade (n=37, 97.3% WR)**. Our own book
+  reproduces the Whelan favorite-longshot asymmetry: the tradeable side is
+  SELLING longshots, not buying favorites.
+- **Crypto favorite-buying was the single worst segment** (−7.9%/trade,
+  −$9.41 of the −$8.79 total): KXBTCD hourlies are the venue's most
+  efficiently-priced series (market makers price them off live spot).
+  Interestingly longshot-*selling* worked fine there (+8.5%, 12/12) — lottery
+  buyers overpay for cheap YES everywhere.
+- **Theta: 95.2% WR at 95.2% average entry** — the taker ask was fair value
+  to the cent. The signal finds real favorites; paying the ask forfeits it.
+- **Whale-copy: 48.4% WR vs 53.7% breakeven** over 93 settled — negative
+  signal, retired. **Reversion −28.8%** — retired. **Consensus** built on the
+  retired signals — retired. The legacy bots also charged **zero paper fees**,
+  so their live numbers would have been worse.
+
+**The v5 roster** (S seller / T theta / C arb / X xvenue) attacks the cost
+structure directly:
+
+1. **Maker execution infrastructure** (`botlib`): resting limit orders at 25%
+   of taker fees (June 2026 schedule), with a *pessimistic* paper fill rule —
+   filled only if a later trade prints strictly through the limit. Maker P&L
+   is a floor by construction.
+2. **Bot S (seller)** — the empirically profitable leg promoted to its own
+   bot: buy NO at 85-96¢ on ~3-10¢ longshots, maker entries, one position per
+   event, hold to settlement.
+3. **Bot T (theta v2)** — identical signal to v1, entries via resting bids.
+   Using v1's own measurement (ask = fair value), the entry improvement is
+   the edge. The experiment: does adverse selection on fills eat the 2-3¢?
+4. **Bot X (xvenue)** — Kalshi↔Polymarket verified pairs. Polymarket relaunched
+   US-regulated in Dec 2025; its macro books are institutional-grade (July
+   2026 Fed: $6.4M/day, 1¢ spread) while Kalshi's same-event books show
+   20-60¢ spreads. Tier 1 locks hard arbs (YES+NO across venues < $1
+   all-in, settles $1/pair regardless of outcome); Tier 2 rests Kalshi bids
+   ≥3¢ inside Polymarket's mid. Pairs live in `data/xvenue_pairs.json`,
+   human-verified only (curation immediately caught KXCPIYOY=headline vs
+   Polymarket=core CPI — the v0 fuzzy-match trap, dodged).
+   First live run placed a YES bid at $0.62 on KXFEDDECISION-26OCT-H0 against
+   a Polymarket fair value of 0.655 ($164k resting book).
+5. **Honesty fixes**: exits now pay the taker fee they'd actually incur;
+   scanner accepts contract-count depth (dollar-depth silently excluded every
+   longshot book — 500 contracts at 5¢ is $25 "deep"); arb-pair settlement
+   pays the lock regardless of which side resolves.
+
+Retired journals preserved in `/legacy` (whale, disposition, reversion,
+consensus, theta-v1). Fresh $75 bankrolls; combined allocation now 4 × $75 =
+$300.
+
+---
+
 ## v4.2 — retire Weather (2026-07-01)
 
 Weather finished at **−45% (10W/22L)** — a **31% win rate before *and* after** the

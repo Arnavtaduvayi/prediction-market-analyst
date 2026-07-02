@@ -2,7 +2,7 @@
   "strategy": "disposition",
   "started": "2026-05-24T16:20:28.596974+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 55.84000000000006,
+  "bankroll": 66.21000000000006,
   "trades": [
     {
       "logged_at": "2026-05-24T16:20:28.597136+00:00",
@@ -5497,12 +5497,14 @@
       "edge_at_entry": 0.0136,
       "kelly_fraction": 0.03,
       "hours_left_at_entry": 74.9,
-      "status": "open",
+      "status": "cancelled",
       "resolved_yes": null,
-      "pnl": null,
+      "pnl": 0.0,
       "settled_at": null,
       "exit_reason": null,
-      "hold_to_settlement": true
+      "hold_to_settlement": true,
+      "cancelled_at": "2026-07-02T21:30:55.895616+00:00",
+      "cancel_reason": "retired_v5_restructure"
     },
     {
       "logged_at": "2026-06-30T20:16:22.204801+00:00",
@@ -5629,12 +5631,14 @@
       "edge_at_entry": 0.02,
       "kelly_fraction": 0.0,
       "hours_left_at_entry": 53.2,
-      "status": "open",
+      "status": "cancelled",
       "resolved_yes": null,
-      "pnl": null,
+      "pnl": 0.0,
       "settled_at": null,
       "exit_reason": null,
-      "hold_to_settlement": true
+      "hold_to_settlement": true,
+      "cancelled_at": "2026-07-02T21:30:55.895621+00:00",
+      "cancel_reason": "retired_v5_restructure"
     },
     {
       "logged_at": "2026-07-01T15:50:53.139852+00:00",
@@ -5739,12 +5743,14 @@
       "edge_at_entry": 0.02,
       "kelly_fraction": 0.03,
       "hours_left_at_entry": 15.9,
-      "status": "open",
+      "status": "cancelled",
       "resolved_yes": null,
-      "pnl": null,
+      "pnl": 0.0,
       "settled_at": null,
       "exit_reason": null,
-      "hold_to_settlement": true
+      "hold_to_settlement": true,
+      "cancelled_at": "2026-07-02T21:30:55.895623+00:00",
+      "cancel_reason": "retired_v5_restructure"
     },
     {
       "logged_at": "2026-07-02T14:26:26.523090+00:00",
@@ -5761,12 +5767,14 @@
       "edge_at_entry": 0.0128,
       "kelly_fraction": 0.03,
       "hours_left_at_entry": 6.6,
-      "status": "open",
+      "status": "cancelled",
       "resolved_yes": null,
-      "pnl": null,
+      "pnl": 0.0,
       "settled_at": null,
       "exit_reason": null,
-      "hold_to_settlement": true
+      "hold_to_settlement": true,
+      "cancelled_at": "2026-07-02T21:30:55.895625+00:00",
+      "cancel_reason": "retired_v5_restructure"
     },
     {
       "logged_at": "2026-07-02T16:59:58.202412+00:00",
@@ -5783,12 +5791,14 @@
       "edge_at_entry": 0.02,
       "kelly_fraction": 0.03,
       "hours_left_at_entry": 4.0,
-      "status": "open",
+      "status": "cancelled",
       "resolved_yes": null,
-      "pnl": null,
+      "pnl": 0.0,
       "settled_at": null,
       "exit_reason": null,
-      "hold_to_settlement": true
+      "hold_to_settlement": true,
+      "cancelled_at": "2026-07-02T21:30:55.895626+00:00",
+      "cancel_reason": "retired_v5_restructure"
     },
     {
       "logged_at": "2026-07-02T18:43:46.165619+00:00",
@@ -5805,12 +5815,14 @@
       "edge_at_entry": 0.02,
       "kelly_fraction": 0.0,
       "hours_left_at_entry": 2.3,
-      "status": "open",
+      "status": "cancelled",
       "resolved_yes": null,
-      "pnl": null,
+      "pnl": 0.0,
       "settled_at": null,
       "exit_reason": null,
-      "hold_to_settlement": true
+      "hold_to_settlement": true,
+      "cancelled_at": "2026-07-02T21:30:55.895627+00:00",
+      "cancel_reason": "retired_v5_restructure"
     },
     {
       "logged_at": "2026-07-02T18:43:46.165668+00:00",
@@ -5827,12 +5839,14 @@
       "edge_at_entry": 0.02,
       "kelly_fraction": 0.03,
       "hours_left_at_entry": 2.3,
-      "status": "open",
+      "status": "cancelled",
       "resolved_yes": null,
-      "pnl": null,
+      "pnl": 0.0,
       "settled_at": null,
       "exit_reason": null,
-      "hold_to_settlement": true
+      "hold_to_settlement": true,
+      "cancelled_at": "2026-07-02T21:30:55.895628+00:00",
+      "cancel_reason": "retired_v5_restructure"
     },
     {
       "logged_at": "2026-07-02T20:26:56.017353+00:00",
@@ -5849,12 +5863,14 @@
       "edge_at_entry": 0.02,
       "kelly_fraction": 0.03,
       "hours_left_at_entry": 24.6,
-      "status": "open",
+      "status": "cancelled",
       "resolved_yes": null,
-      "pnl": null,
+      "pnl": 0.0,
       "settled_at": null,
       "exit_reason": null,
-      "hold_to_settlement": true
+      "hold_to_settlement": true,
+      "cancelled_at": "2026-07-02T21:30:55.895630+00:00",
+      "cancel_reason": "retired_v5_restructure"
     },
     {
       "logged_at": "2026-07-02T20:26:56.017395+00:00",
@@ -5871,12 +5887,14 @@
       "edge_at_entry": 0.02,
       "kelly_fraction": 0.03,
       "hours_left_at_entry": 24.6,
-      "status": "open",
+      "status": "cancelled",
       "resolved_yes": null,
-      "pnl": null,
+      "pnl": 0.0,
       "settled_at": null,
       "exit_reason": null,
-      "hold_to_settlement": true
+      "hold_to_settlement": true,
+      "cancelled_at": "2026-07-02T21:30:55.895631+00:00",
+      "cancel_reason": "retired_v5_restructure"
     }
   ]
 }
