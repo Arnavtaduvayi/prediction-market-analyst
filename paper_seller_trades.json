@@ -2,7 +2,7 @@
   "strategy": "seller",
   "started": "2026-07-02T21:25:52.382780+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 69.37,
+  "bankroll": 66.48,
   "trades": [
     {
       "logged_at": "2026-07-02T21:28:12.600327+00:00",
@@ -44,6 +44,27 @@
       "exit_reason": null,
       "hold_to_settlement": true,
       "yes_mid_at_entry": 0.05,
+      "edge_at_entry": 0.01
+    },
+    {
+      "logged_at": "2026-07-03T08:19:25.019493+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXRTX5090WS-26JUL03-0.750",
+      "kalshi_title": "Will the NVIDIA RTX 5090 compute per hour price be above $0.75 at 4 PM ET on Jul 03?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.96,
+      "fee": 0.01,
+      "cost": 2.89,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.04,
       "edge_at_entry": 0.01
     }
   ]
