@@ -58,7 +58,13 @@ SPORTS_PREFIXES = {
     "KXWTACHALLENGER", "KXITFMATCH", "KXFIGHTMENTION", "KXEUROVISION",
     "KXUAEPL", "KXINTLFRIENDLY", "KXLALIGA2", "KXPGATOUR",
     "KXPGAR3LEAD", "KXPGATOP5", "KXMLBTBL", "KXWNBAGAME",
-    "KXIPL", "KXIPLGAME",  # cricket
+    "KXIPL", "KXIPLGAME",          # cricket (IPL)
+    "KXT20MATCH", "KXWT20MATCH",   # T20 cricket (men's + women's) — high upset rate
+    "KXODIMATCH", "KXWODIMATCH",   # ODI cricket
+    "KXTESTMATCH",                 # Test cricket
+    "KXKBOGAME", "KXKBO",          # Korean Baseball Organization
+    "KXNPBGAME", "KXNPB",          # Nippon Professional Baseball (Japan)
+    "KXLPGAGAME", "KXNPSGAME",     # golf tours
 }
 
 
