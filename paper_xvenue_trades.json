@@ -2,7 +2,7 @@
   "strategy": "xvenue",
   "started": "2026-07-02T14:35:58.460466+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 44.28,
+  "bankroll": 41.59,
   "trades": [
     {
       "logged_at": "2026-07-02T14:35:59.581939+00:00",
@@ -194,6 +194,30 @@
       "yes_mid_at_entry": 0.62,
       "divergence_at_entry": -0.055,
       "poly_event": "fed-decision-in-september-762",
+      "pair_id": "fed-decision"
+    },
+    {
+      "logged_at": "2026-07-11T16:06:41.876172+00:00",
+      "strategy": "xvenue",
+      "kalshi_ticker": "KXFEDDECISION-26OCT-C25",
+      "kalshi_title": "Will the Federal Reserve Cut rates by 25bps at their October 2026 meeting?",
+      "side": "yes",
+      "contracts": 24,
+      "entry_price": 0.11,
+      "fee": 0.05,
+      "cost": 2.69,
+      "status": "resting",
+      "expire_hours": 24,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "target_yes_mid": 0.14,
+      "poly_mid_at_entry": 0.14,
+      "yes_mid_at_entry": 0.085,
+      "divergence_at_entry": 0.055,
+      "poly_event": "fed-decision-in-october-20260617190323537",
       "pair_id": "fed-decision"
     }
   ]
