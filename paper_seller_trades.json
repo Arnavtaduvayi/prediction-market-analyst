@@ -2,7 +2,7 @@
   "strategy": "seller",
   "started": "2026-07-02T21:25:52.382780+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 38.290000000000006,
+  "bankroll": 35.61000000000001,
   "trades": [
     {
       "logged_at": "2026-07-02T21:28:12.600327+00:00",
@@ -1536,6 +1536,27 @@
       "hold_to_settlement": true,
       "yes_mid_at_entry": 0.035,
       "edge_at_entry": 0.015
+    },
+    {
+      "logged_at": "2026-07-12T18:05:45.809549+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXETHD-26JUL1217-T1839.99",
+      "kalshi_title": "Ethereum price at Jul 12, 2026 at 5pm EDT?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.89,
+      "fee": 0.01,
+      "cost": 2.68,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.09,
+      "edge_at_entry": 0.03
     }
   ]
 }
