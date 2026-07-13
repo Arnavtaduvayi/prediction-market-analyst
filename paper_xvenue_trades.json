@@ -2,7 +2,7 @@
   "strategy": "xvenue",
   "started": "2026-07-02T14:35:58.460466+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 44.34,
+  "bankroll": 45.010000000000005,
   "trades": [
     {
       "logged_at": "2026-07-02T14:35:59.581939+00:00",
@@ -208,19 +208,21 @@
       "entry_price": 0.11,
       "fee": 0.05,
       "cost": 2.69,
-      "status": "open",
+      "status": "exited",
       "expire_hours": 24,
       "filled_at": "2026-07-11T21:02:19.326949+00:00",
       "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null,
+      "pnl": -2.02,
+      "settled_at": "2026-07-13T04:06:20.161623+00:00",
+      "exit_reason": "VOLUME_EXIT",
       "target_yes_mid": 0.14,
       "poly_mid_at_entry": 0.14,
       "yes_mid_at_entry": 0.085,
       "divergence_at_entry": 0.055,
       "poly_event": "fed-decision-in-october-20260617190323537",
-      "pair_id": "fed-decision"
+      "pair_id": "fed-decision",
+      "exit_price": 0.03,
+      "exit_fee": 0.05
     }
   ]
 }
