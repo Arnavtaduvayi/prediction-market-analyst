@@ -2,7 +2,7 @@
   "strategy": "seller",
   "started": "2026-07-02T21:25:52.382780+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 55.77,
+  "bankroll": 58.77,
   "trades": [
     {
       "logged_at": "2026-07-02T21:28:12.600327+00:00",
@@ -1862,13 +1862,13 @@
       "entry_price": 0.92,
       "fee": 0.01,
       "cost": 2.77,
-      "status": "open",
+      "status": "settled",
       "expire_hours": 8,
       "filled_at": "2026-07-15T11:43:43.941927+00:00",
-      "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null,
+      "resolved_yes": false,
+      "pnl": 0.23,
+      "settled_at": "2026-07-15T14:16:18.984214+00:00",
+      "exit_reason": "SETTLED_WIN",
       "hold_to_settlement": true,
       "yes_mid_at_entry": 0.075,
       "edge_at_entry": 0.015
