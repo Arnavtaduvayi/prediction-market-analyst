@@ -2,7 +2,7 @@
   "strategy": "seller",
   "started": "2026-07-02T21:25:52.382780+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 56.11,
+  "bankroll": 53.25,
   "trades": [
     {
       "logged_at": "2026-07-02T21:28:12.600327+00:00",
@@ -1925,6 +1925,27 @@
       "entry_price": 0.92,
       "fee": 0.01,
       "cost": 2.77,
+      "status": "open",
+      "expire_hours": 8,
+      "filled_at": "2026-07-16T09:23:39.373972+00:00",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.075,
+      "edge_at_entry": 0.015
+    },
+    {
+      "logged_at": "2026-07-16T09:23:39.375703+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXHIGHLAX-26JUL16-T86",
+      "kalshi_title": "Will the **high temp in LA** be >86\u00b0 on Jul 16, 2026?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.95,
+      "fee": 0.01,
+      "cost": 2.86,
       "status": "resting",
       "expire_hours": 8,
       "filled_at": null,
@@ -1933,8 +1954,8 @@
       "settled_at": null,
       "exit_reason": null,
       "hold_to_settlement": true,
-      "yes_mid_at_entry": 0.075,
-      "edge_at_entry": 0.015
+      "yes_mid_at_entry": 0.05,
+      "edge_at_entry": 0.01
     }
   ]
 }
