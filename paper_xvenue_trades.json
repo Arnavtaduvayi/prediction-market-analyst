@@ -2,7 +2,7 @@
   "strategy": "xvenue",
   "started": "2026-07-02T14:35:58.460466+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 36.260000000000005,
+  "bankroll": 34.230000000000004,
   "trades": [
     {
       "logged_at": "2026-07-02T14:35:59.581939+00:00",
@@ -267,6 +267,30 @@
       "poly_mid_at_entry": 0.6,
       "yes_mid_at_entry": 0.655,
       "divergence_at_entry": -0.055,
+      "poly_event": "fed-decision-in-october-20260617190323537",
+      "pair_id": "fed-decision"
+    },
+    {
+      "logged_at": "2026-07-16T20:09:29.405921+00:00",
+      "strategy": "xvenue",
+      "kalshi_ticker": "KXFEDDECISION-26OCT-H0",
+      "kalshi_title": "Will the Federal Reserve Hike rates by 0bps at their October 2026 meeting?",
+      "side": "no",
+      "contracts": 8,
+      "entry_price": 0.25,
+      "fee": 0.03,
+      "cost": 2.03,
+      "status": "resting",
+      "expire_hours": 24,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "target_yes_mid": 0.68,
+      "poly_mid_at_entry": 0.68,
+      "yes_mid_at_entry": 0.75,
+      "divergence_at_entry": -0.07,
       "poly_event": "fed-decision-in-october-20260617190323537",
       "pair_id": "fed-decision"
     }
