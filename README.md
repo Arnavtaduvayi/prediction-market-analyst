@@ -1,4 +1,54 @@
-# Prediction Market Analyst — v5 Paper Trading System
+# Prediction Market Analyst
+
+## v6: Live Polymarket roster (new)
+
+Direct Polymarket execution via the [Bullpen CLI](https://cli.bullpen.fi)
+(Bullpen owns auth/signing — no private keys in this repo). Five bots, each
+with its own $100 paper bankroll and journal:
+
+| Bot | File | Strategy | Risk profile |
+|---|---|---|---|
+| **P: Copy** | `bot_copy.py` | Copies top leaderboard traders. Paper mode mirrors roster fills from the tracker feed into a journal; live mode uses Bullpen's *server-side* copy subscriptions (mirrors entries **and** exits in near-real-time — unlike the retired v1-v4 polling whale-copy). Selection hard-filters dormant wallets, thin track records and leaderboard farmers; rotation pauses (never deletes) underperformers. | bounded by per-trade / daily / budget caps |
+| **D: Arb** | `bot_polyarb.py` | Dutch-book baskets: multi-outcome markets where Σ asks < $1, and negRisk families where the **NO basket** costs < N−1 (the only side that's risk-free without an exhaustiveness assumption). | locked at entry, modulo leg fills |
+| **N: Seller** | `bot_polyseller.py` | Longshot-NO at 90-97¢, ≤72h to resolution, liquid books only — the one leg with a documented +4.6%/trade edge in our own 380-trade book. | positive-EV bet, capped losses |
+| **T: Theta** | `bot_polytheta.py` | Late-favorite convergence with **maker** entries: rest a bid 1 tick below the ask on 90-97¢ favorites ≤24h out (v1 measured the taker ask = fair value; never pay it). Paper fills use the pessimistic strictly-through rule, so paper P&L is a floor. | +EV if fills aren't pure adverse selection — that's what the journal measures |
+| **W: Whaleflow** | `bot_whaleflow.py` | Follows BUYS from wallets with ≥$100k lifetime profit, requiring confirmation (2 distinct whales or one ≥$3k swing within 6h); mirrors whale sells as exits. The retired whale-copy's thesis, rebuilt on profitability-filtered wallets with minutes (not hours) of lag. | speculative — journal decides if it lives |
+
+### Safety model
+
+- `live_config.json` ships with `"live": false` — **everything is paper by
+  default**: every bot simulates fills into its journal (copy mirrors real
+  roster fills; theta uses pessimistic maker-fill simulation) and intended
+  orders are logged to `data/live_actions.jsonl`. Flip to live only after the
+  journals earn it.
+- Every mutating command passes one gate (`polylib.execute`) that requires
+  live=true AND an authenticated CLI session AND no kill switch.
+- Kill switch: auto-halts all bots and pauses copy subs if realized P&L drops
+  below `-kill_switch_drawdown_usd`; manual via `live_cross.py halt/resume`.
+
+### Going live
+
+```bash
+bullpen login                      # interactive — must be you
+bullpen polymarket preflight       # check balance + approvals
+python3 live_cross.py cycle        # one full dry-run pass
+# review data/live_actions.jsonl, then flip "live": true in live_config.json
+./scripts/install_live_schedule.sh # launchd: cycle every 10 min
+python3 live_cross.py status       # scorecard any time
+```
+
+Copy trading runs on Bullpen's servers — it keeps working when this machine
+is asleep. The local schedule drives arb/seller entries, settlement,
+redemption and the kill switch.
+
+**Nothing here guarantees profit.** Only the arb baskets are structurally
+loss-proof, and they are rare. Copy and seller are measured bets with capped
+downside — the journals exist so the data, not hope, decides what keeps
+running.
+
+---
+
+## v5 Paper Trading System (Kalshi)
 
 A multi-strategy paper-trading bot for Kalshi (CFTC-regulated, US-legal), with
 Polymarket as a cross-venue signal source. v5 is a data-driven rebuild: six

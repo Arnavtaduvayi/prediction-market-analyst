@@ -14,3 +14,12 @@ data/queue.json
 data/thesis.json
 *.log
 .DS_Store
+
+# live bot local state
+data/live_halt.json
+data/live_actions.jsonl
+data/poly_cooldown.json
+data/copy_roster.json
+data/whaleflow_obs.json
+data/live_cycle.lock
+live_*_trades.json

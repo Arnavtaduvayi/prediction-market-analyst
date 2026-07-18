@@ -5,6 +5,62 @@ from paper-trading on Kalshi.
 
 ---
 
+## v6 — live Polymarket roster via Bullpen CLI (2026-07-18)
+
+First live-execution capability. All prior versions were Kalshi paper trading
+with Polymarket as a signal source; v6 trades Polymarket directly through the
+Bullpen CLI (Turnkey-managed signing, server-selected wallet — no keys here).
+
+**New roster** (`live_cross.py` orchestrating, `live_config.json` gating):
+
+- **P: Copy** (`bot_copy.py`). Not a revival of the retired whale-copy — that
+  bot polled fills and re-entered minutes later (48.4% WR vs 53.7% breakeven,
+  no edge after lag). v6 uses Bullpen's *server-side* copy subscriptions,
+  which mirror entries and exits in near-real-time with hard per-trade /
+  daily / budget / per-market caps. The bot owns what the data said matters:
+  picking whom to copy (reject dormant wallets — the #1 all-time-PnL address
+  last traded Nov 2024 — thin track records, flagged farm bots) and rotating
+  out underperformers by pausing, never deleting (delete kills mirror-sells
+  on open positions).
+- **D: Arb** (`bot_polyarb.py`). Dutch-book baskets. Deliberate choice: on
+  negRisk families only the NO-side basket (cost < N−1) is traded — the
+  YES-side basket is risk-free only if the family is exhaustive, which is a
+  resolution-rules judgment call, i.e. the v0 trap with better makeup.
+- **N: Seller** (`bot_polyseller.py`). The +4.6%/trade longshot-sell leg,
+  ported to Polymarket where 1-2¢ spreads and no taker fee remove the cost
+  structure that made the Kalshi paper version bleed (92% WR, −4.9%).
+
+**Safety:** dry-run by default (`live: false`); single execution gate
+requiring live + auth + no-halt; audit log of every intended order; kill
+switch on realized drawdown that also pauses copy subs and cancels orders.
+
+### v6.1 — five-bot paper roster (2026-07-18, same day)
+
+Expanded to five strategies, all running as *measurable paper* until the
+journals justify going live:
+
+- **T: Theta** (`bot_polytheta.py`) — the v1 late-favorite signal with maker
+  execution: rest a bid one tick under the ask on 90-97¢ favorites ≤24h from
+  resolution, 2h order expiry. Paper fills use v5's pessimistic
+  strictly-through rule. The open question it measures: do maker fills on
+  favorites suffer adverse selection worse than the entry discount?
+- **W: Whaleflow** (`bot_whaleflow.py`) — follows buys from ≥$100k-lifetime-
+  profit wallets seen on the public trade feed, with confirmation (2 whales
+  or one ≥$3k swing in a 6h rolling window); mirrors whale sells as exits.
+  Explicitly a re-test of the retired whale-copy thesis with the three
+  variables the post-mortem flagged (profitability filter, confirmation,
+  lag) fixed. The journal decides if it lives.
+- **P: Copy** gained a paper mode: roster wallets go on the tracker
+  watchlist and their fills are mirrored from `tracker feed` into a journal
+  at the trader's own fill price — measuring exactly what live subscriptions
+  would do (minus slippage, so paper is a mild ceiling).
+
+Auth-validity fix: `account.logged_in` stays true on an expired,
+refresh-rejected token; the execution gate now trusts
+`access_token_valid`/`token_valid` only.
+
+---
+
 ## v5 — data-driven rebuild: sell longshots, quote as maker, anchor to Polymarket (2026-07-02)
 
 Full P&L decomposition of v1-v4 (380 settled trades, combined **−$30.63 /
