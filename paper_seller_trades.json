@@ -2,7 +2,7 @@
   "strategy": "seller",
   "started": "2026-07-02T21:25:52.382780+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 50.289999999999985,
+  "bankroll": 47.54999999999998,
   "trades": [
     {
       "logged_at": "2026-07-02T21:28:12.600327+00:00",
@@ -3248,6 +3248,27 @@
       "entry_price": 0.93,
       "fee": 0.01,
       "cost": 2.8,
+      "status": "open",
+      "expire_hours": 8,
+      "filled_at": "2026-07-25T21:05:01.793885+00:00",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.07,
+      "edge_at_entry": 0.01
+    },
+    {
+      "logged_at": "2026-07-25T21:05:01.797712+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXBTC-26JUL3117-B64250",
+      "kalshi_title": "Bitcoin price range on Jul 31, 2026?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.91,
+      "fee": 0.01,
+      "cost": 2.74,
       "status": "resting",
       "expire_hours": 8,
       "filled_at": null,
@@ -3256,7 +3277,7 @@
       "settled_at": null,
       "exit_reason": null,
       "hold_to_settlement": true,
-      "yes_mid_at_entry": 0.07,
+      "yes_mid_at_entry": 0.09,
       "edge_at_entry": 0.01
     }
   ]
