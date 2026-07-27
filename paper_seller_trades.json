@@ -2,7 +2,7 @@
   "strategy": "seller",
   "started": "2026-07-02T21:25:52.382780+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 35.11999999999998,
+  "bankroll": 32.22999999999998,
   "trades": [
     {
       "logged_at": "2026-07-02T21:28:12.600327+00:00",
@@ -3521,9 +3521,9 @@
       "entry_price": 0.9,
       "fee": 0.01,
       "cost": 2.71,
-      "status": "resting",
+      "status": "open",
       "expire_hours": 8,
-      "filled_at": null,
+      "filled_at": "2026-07-27T14:56:54.082230+00:00",
       "resolved_yes": null,
       "pnl": null,
       "settled_at": null,
@@ -3605,6 +3605,27 @@
       "entry_price": 0.94,
       "fee": 0.01,
       "cost": 2.83,
+      "status": "open",
+      "expire_hours": 8,
+      "filled_at": "2026-07-27T14:56:54.155515+00:00",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.055,
+      "edge_at_entry": 0.015
+    },
+    {
+      "logged_at": "2026-07-27T14:56:54.159058+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXNETFLIXRANKSHOW-26JUL27-RAN",
+      "kalshi_title": "Top US Netflix Show on Jul 27, 2026?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.96,
+      "fee": 0.01,
+      "cost": 2.89,
       "status": "resting",
       "expire_hours": 8,
       "filled_at": null,
@@ -3613,7 +3634,7 @@
       "settled_at": null,
       "exit_reason": null,
       "hold_to_settlement": true,
-      "yes_mid_at_entry": 0.055,
+      "yes_mid_at_entry": 0.035,
       "edge_at_entry": 0.015
     }
   ]
