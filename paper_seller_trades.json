@@ -2,7 +2,7 @@
   "strategy": "seller",
   "started": "2026-07-02T21:25:52.382780+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 39.95999999999998,
+  "bankroll": 34.35999999999998,
   "trades": [
     {
       "logged_at": "2026-07-02T21:28:12.600327+00:00",
@@ -3867,6 +3867,48 @@
       "hold_to_settlement": true,
       "yes_mid_at_entry": 0.095,
       "edge_at_entry": 0.015
+    },
+    {
+      "logged_at": "2026-07-28T17:43:37.098065+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXBTCD-26JUL2817-T64249.99",
+      "kalshi_title": "Bitcoin price on Jul 28, 2026?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.96,
+      "fee": 0.01,
+      "cost": 2.89,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.035,
+      "edge_at_entry": 0.015
+    },
+    {
+      "logged_at": "2026-07-28T17:43:37.098087+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXINXU-26JUL28H1600-T7459.9999",
+      "kalshi_title": "Will the S&P 500 be above 7459.9999 on Jul 28, 2026 at 4pm EDT?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.9,
+      "fee": 0.01,
+      "cost": 2.71,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.1,
+      "edge_at_entry": 0.01
     }
   ]
 }
