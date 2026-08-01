@@ -2,7 +2,7 @@
   "strategy": "seller",
   "started": "2026-07-02T21:25:52.382780+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 34.46999999999996,
+  "bankroll": 28.779999999999966,
   "trades": [
     {
       "logged_at": "2026-07-02T21:28:12.600327+00:00",
@@ -4655,6 +4655,27 @@
       "entry_price": 0.92,
       "fee": 0.01,
       "cost": 2.77,
+      "status": "open",
+      "expire_hours": 8,
+      "filled_at": "2026-08-01T11:25:56.486922+00:00",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.08,
+      "edge_at_entry": 0.01
+    },
+    {
+      "logged_at": "2026-08-01T11:25:56.490410+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXKLEAGUESPREAD-26AUG01GAWBUC-GAW2",
+      "kalshi_title": "Gangwon wins by more than 1.5 goals?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.95,
+      "fee": 0.01,
+      "cost": 2.86,
       "status": "resting",
       "expire_hours": 8,
       "filled_at": null,
@@ -4663,8 +4684,29 @@
       "settled_at": null,
       "exit_reason": null,
       "hold_to_settlement": true,
-      "yes_mid_at_entry": 0.08,
-      "edge_at_entry": 0.01
+      "yes_mid_at_entry": 0.04,
+      "edge_at_entry": 0.02
+    },
+    {
+      "logged_at": "2026-08-01T11:25:56.490427+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXKLEAGUETOTAL-26AUG01GAWBUC-5",
+      "kalshi_title": "Will over 4.5 goals be scored?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.94,
+      "fee": 0.01,
+      "cost": 2.83,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.055,
+      "edge_at_entry": 0.015
     }
   ]
 }
