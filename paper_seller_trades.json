@@ -2,7 +2,7 @@
   "strategy": "seller",
   "started": "2026-07-02T21:25:52.382780+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 62.73999999999992,
+  "bankroll": 57.139999999999915,
   "trades": [
     {
       "logged_at": "2026-07-02T21:28:12.600327+00:00",
@@ -6660,6 +6660,48 @@
       "hold_to_settlement": true,
       "yes_mid_at_entry": 0.08,
       "edge_at_entry": 0.01
+    },
+    {
+      "logged_at": "2026-08-04T21:22:20.769336+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXHIGHTSFO-26AUG04-B78.5",
+      "kalshi_title": "Will the maximum temperature be 78-79\u00b0 on Aug 4, 2026?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.96,
+      "fee": 0.01,
+      "cost": 2.89,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.035,
+      "edge_at_entry": 0.015
+    },
+    {
+      "logged_at": "2026-08-04T21:22:20.769357+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXLEAGUESCUPGAME-26AUG04VANALA-ALA",
+      "kalshi_title": "Vancouver vs Atlante Winner?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.9,
+      "fee": 0.01,
+      "cost": 2.71,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.095,
+      "edge_at_entry": 0.015
     }
   ]
 }
