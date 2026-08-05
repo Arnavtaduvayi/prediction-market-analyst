@@ -2,7 +2,7 @@
   "strategy": "seller",
   "started": "2026-07-02T21:25:52.382780+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 58.07999999999991,
+  "bankroll": 52.419999999999916,
   "trades": [
     {
       "logged_at": "2026-07-02T21:28:12.600327+00:00",
@@ -6828,6 +6828,48 @@
       "hold_to_settlement": true,
       "yes_mid_at_entry": 0.04,
       "edge_at_entry": 0.01
+    },
+    {
+      "logged_at": "2026-08-05T12:08:17.695084+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXBTCD-26AUG0517-T64999.99",
+      "kalshi_title": "Bitcoin price on Aug 5, 2026?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.93,
+      "fee": 0.01,
+      "cost": 2.8,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.065,
+      "edge_at_entry": 0.015
+    },
+    {
+      "logged_at": "2026-08-05T12:08:17.695112+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXLPLMATCH-26AUG050530GALJAF-GAL",
+      "kalshi_title": "Jaffna Kings vs Galle Marvels men's cricket match: Galle Marvels wins",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.95,
+      "fee": 0.01,
+      "cost": 2.86,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.045,
+      "edge_at_entry": 0.015
     }
   ]
 }
