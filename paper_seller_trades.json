@@ -2,7 +2,7 @@
   "strategy": "seller",
   "started": "2026-07-02T21:25:52.382780+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 41.13999999999993,
+  "bankroll": 38.27999999999993,
   "trades": [
     {
       "logged_at": "2026-07-02T21:28:12.600327+00:00",
@@ -7374,6 +7374,27 @@
       "hold_to_settlement": true,
       "yes_mid_at_entry": 0.055,
       "edge_at_entry": 0.015
+    },
+    {
+      "logged_at": "2026-08-06T09:47:01.567522+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXBTCD-26AUG0617-T65749.99",
+      "kalshi_title": "Bitcoin price on Aug 6, 2026?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.95,
+      "fee": 0.01,
+      "cost": 2.86,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.05,
+      "edge_at_entry": 0.01
     }
   ]
 }
