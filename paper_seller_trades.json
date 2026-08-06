@@ -2,7 +2,7 @@
   "strategy": "seller",
   "started": "2026-07-02T21:25:52.382780+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 56.27999999999993,
+  "bankroll": 50.73999999999993,
   "trades": [
     {
       "logged_at": "2026-07-02T21:28:12.600327+00:00",
@@ -7395,6 +7395,48 @@
       "hold_to_settlement": true,
       "yes_mid_at_entry": 0.05,
       "edge_at_entry": 0.01
+    },
+    {
+      "logged_at": "2026-08-06T12:10:46.949428+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXHIGHNY-26AUG06-T88",
+      "kalshi_title": "Will the **high temp in NYC** be <88\u00b0 on Aug 6, 2026?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.9,
+      "fee": 0.01,
+      "cost": 2.71,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.095,
+      "edge_at_entry": 0.015
+    },
+    {
+      "logged_at": "2026-08-06T12:10:46.949456+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXUECLGAME-26AUG06AJASHE-TIE",
+      "kalshi_title": "Ajax vs Shelbourne Winner?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.94,
+      "fee": 0.01,
+      "cost": 2.83,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.055,
+      "edge_at_entry": 0.015
     }
   ]
 }
