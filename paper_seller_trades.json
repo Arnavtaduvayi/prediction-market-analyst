@@ -2,7 +2,7 @@
   "strategy": "seller",
   "started": "2026-07-02T21:25:52.382780+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 51.409999999999954,
+  "bankroll": 48.549999999999955,
   "trades": [
     {
       "logged_at": "2026-07-02T21:28:12.600327+00:00",
@@ -11490,6 +11490,27 @@
       "hold_to_settlement": true,
       "yes_mid_at_entry": 0.075,
       "edge_at_entry": 0.015
+    },
+    {
+      "logged_at": "2026-08-11T22:55:06.669323+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXCONMEBOLSUDTOTAL-26AUG11BOCREC-6",
+      "kalshi_title": "Will over 5.5 goals be scored?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.95,
+      "fee": 0.01,
+      "cost": 2.86,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.05,
+      "edge_at_entry": 0.01
     }
   ]
 }
