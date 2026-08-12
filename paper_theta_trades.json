@@ -2,7 +2,7 @@
   "strategy": "theta",
   "started": "2026-07-02T21:25:52.386350+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 76.14000000000001,
+  "bankroll": 73.31000000000002,
   "trades": [
     {
       "logged_at": "2026-07-15T00:02:59.743944+00:00",
@@ -178,6 +178,28 @@
       "hold_to_settlement": true,
       "yes_mid_at_entry": 0.965,
       "hours_left_at_entry": 2.1,
+      "edge_at_entry": 0.01
+    },
+    {
+      "logged_at": "2026-08-12T16:07:27.235242+00:00",
+      "strategy": "theta",
+      "kalshi_ticker": "KXGOLDD-26AUG1217-T4386",
+      "kalshi_title": "Will the gold close price be above 4386 USD/t.oz on August 12, 2026 at 5:00 PM EDT?",
+      "side": "yes",
+      "contracts": 3,
+      "entry_price": 0.94,
+      "fee": 0.01,
+      "cost": 2.83,
+      "status": "resting",
+      "expire_hours": 3.9000000000000004,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.945,
+      "hours_left_at_entry": 4.9,
       "edge_at_entry": 0.01
     }
   ]
