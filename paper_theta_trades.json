@@ -2,7 +2,7 @@
   "strategy": "theta",
   "started": "2026-07-02T21:25:52.386350+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 73.73000000000002,
+  "bankroll": 70.81000000000002,
   "trades": [
     {
       "logged_at": "2026-07-15T00:02:59.743944+00:00",
@@ -267,6 +267,28 @@
       "yes_mid_at_entry": 0.97,
       "hours_left_at_entry": 6.5,
       "edge_at_entry": 0.02
+    },
+    {
+      "logged_at": "2026-08-16T10:33:00.403807+00:00",
+      "strategy": "theta",
+      "kalshi_ticker": "KXALBUMEQUIV-NOM26AUG13-55K",
+      "kalshi_title": "Will No Me Arrepiento de Sentir Tanto by KAROL G have above 55000 Album Equivalent Units during the August 07, 2026 - August 13, 2026 tracking week?",
+      "side": "yes",
+      "contracts": 3,
+      "entry_price": 0.97,
+      "fee": 0.01,
+      "cost": 2.92,
+      "status": "resting",
+      "expire_hours": 2.5,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.975,
+      "hours_left_at_entry": 3.5,
+      "edge_at_entry": 0.01
     }
   ]
 }
