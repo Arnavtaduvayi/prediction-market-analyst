@@ -2,7 +2,7 @@
   "strategy": "seller",
   "started": "2026-07-02T21:25:52.382780+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 48.42999999999992,
+  "bankroll": 45.65999999999992,
   "trades": [
     {
       "logged_at": "2026-07-02T21:28:12.600327+00:00",
@@ -16970,6 +16970,27 @@
       "exit_reason": "UNFILLED_CLOSE",
       "hold_to_settlement": true,
       "yes_mid_at_entry": 0.06,
+      "edge_at_entry": 0.01
+    },
+    {
+      "logged_at": "2026-08-19T22:34:54.096860+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXDIMAYORGAME-26AUG19ADRLLA-ADR",
+      "kalshi_title": "Aguilas Doradas Rionegro vs Llaneros Winner?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.92,
+      "fee": 0.01,
+      "cost": 2.77,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.08,
       "edge_at_entry": 0.01
     }
   ]
