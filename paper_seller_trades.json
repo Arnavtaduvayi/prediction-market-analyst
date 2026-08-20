@@ -2,7 +2,7 @@
   "strategy": "seller",
   "started": "2026-07-02T21:25:52.382780+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 40.60999999999993,
+  "bankroll": 35.09999999999993,
   "trades": [
     {
       "logged_at": "2026-07-02T21:28:12.600327+00:00",
@@ -17181,6 +17181,48 @@
       "hold_to_settlement": true,
       "yes_mid_at_entry": 0.045,
       "edge_at_entry": 0.015
+    },
+    {
+      "logged_at": "2026-08-20T09:44:24.993502+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXLOLGAME-26AUG200400HLEDK-DK",
+      "kalshi_title": "Will Dplus KIA win the Hanwha Life Esports vs. Dplus KIA League of Legends match?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.9,
+      "fee": 0.01,
+      "cost": 2.71,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.075,
+      "edge_at_entry": 0.035
+    },
+    {
+      "logged_at": "2026-08-20T09:44:24.993543+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXDOTA2GAME-26AUG200100BETVSN-BET",
+      "kalshi_title": "Will BetBoom Team win the BetBoom Team vs. TEAM VISION Dota 2 match?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.93,
+      "fee": 0.01,
+      "cost": 2.8,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.07,
+      "edge_at_entry": 0.01
     }
   ]
 }
