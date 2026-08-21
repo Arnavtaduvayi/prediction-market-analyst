@@ -2,7 +2,7 @@
   "strategy": "seller",
   "started": "2026-07-02T21:25:52.382780+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 39.31999999999991,
+  "bankroll": 39.409999999999904,
   "trades": [
     {
       "logged_at": "2026-07-02T21:28:12.600327+00:00",
@@ -17885,6 +17885,27 @@
       "entry_price": 0.95,
       "fee": 0.01,
       "cost": 2.86,
+      "status": "expired",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": 0.0,
+      "settled_at": "2026-08-21T10:40:12.782365+00:00",
+      "exit_reason": "UNFILLED_CLOSE",
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.045,
+      "edge_at_entry": 0.015
+    },
+    {
+      "logged_at": "2026-08-21T10:40:12.947506+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXJLEAGUETOTAL-26AUG21REYVVN-6",
+      "kalshi_title": "Will over 5.5 goals be scored?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.92,
+      "fee": 0.01,
+      "cost": 2.77,
       "status": "resting",
       "expire_hours": 8,
       "filled_at": null,
@@ -17893,8 +17914,8 @@
       "settled_at": null,
       "exit_reason": null,
       "hold_to_settlement": true,
-      "yes_mid_at_entry": 0.045,
-      "edge_at_entry": 0.015
+      "yes_mid_at_entry": 0.06,
+      "edge_at_entry": 0.03
     }
   ]
 }
