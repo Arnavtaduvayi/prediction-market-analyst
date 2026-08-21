@@ -2,7 +2,7 @@
   "strategy": "theta",
   "started": "2026-07-02T21:25:52.386350+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 74.26000000000002,
+  "bankroll": 71.43000000000002,
   "trades": [
     {
       "logged_at": "2026-07-15T00:02:59.743944+00:00",
@@ -398,6 +398,28 @@
       "hold_to_settlement": true,
       "yes_mid_at_entry": 0.955,
       "hours_left_at_entry": 17.8,
+      "edge_at_entry": 0.01
+    },
+    {
+      "logged_at": "2026-08-21T18:51:04.338352+00:00",
+      "strategy": "theta",
+      "kalshi_ticker": "KXSILVERW-26AUG2117-T68.99",
+      "kalshi_title": "Will the silver close price be above 68.99 USD/t.oz on August 21, 2026 at 5:00 PM EDT?",
+      "side": "yes",
+      "contracts": 3,
+      "entry_price": 0.94,
+      "fee": 0.01,
+      "cost": 2.83,
+      "status": "resting",
+      "expire_hours": 1.2000000000000002,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.945,
+      "hours_left_at_entry": 2.2,
       "edge_at_entry": 0.01
     }
   ]
