@@ -2,7 +2,7 @@
   "strategy": "seller",
   "started": "2026-07-02T21:25:52.382780+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 30.499999999999904,
+  "bankroll": 27.609999999999904,
   "trades": [
     {
       "logged_at": "2026-07-02T21:28:12.600327+00:00",
@@ -18629,6 +18629,27 @@
       "exit_reason": "SETTLED_WIN",
       "hold_to_settlement": true,
       "yes_mid_at_entry": 0.095,
+      "edge_at_entry": 0.015
+    },
+    {
+      "logged_at": "2026-08-22T06:54:59.015646+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXJ2LEAGUEGAME-26AUG22HCSARD-HCS",
+      "kalshi_title": "Sapporo vs Omiya ArdijaA Winner?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.96,
+      "fee": 0.01,
+      "cost": 2.89,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.035,
       "edge_at_entry": 0.015
     }
   ]
