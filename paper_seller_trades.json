@@ -2,7 +2,7 @@
   "strategy": "seller",
   "started": "2026-07-02T21:25:52.382780+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 12.61999999999989,
+  "bankroll": 12.70999999999989,
   "trades": [
     {
       "logged_at": "2026-07-02T21:28:12.600327+00:00",
@@ -19880,6 +19880,27 @@
       "entry_price": 0.96,
       "fee": 0.01,
       "cost": 2.89,
+      "status": "expired",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": 0.0,
+      "settled_at": "2026-08-23T19:29:39.735200+00:00",
+      "exit_reason": "UNFILLED_CLOSE",
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.035,
+      "edge_at_entry": 0.015
+    },
+    {
+      "logged_at": "2026-08-23T19:29:39.897898+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXSERIEAGAME-26AUG23ATASAS-SAS",
+      "kalshi_title": "Atalanta vs Sassuolo Winner?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.93,
+      "fee": 0.01,
+      "cost": 2.8,
       "status": "resting",
       "expire_hours": 8,
       "filled_at": null,
@@ -19888,7 +19909,7 @@
       "settled_at": null,
       "exit_reason": null,
       "hold_to_settlement": true,
-      "yes_mid_at_entry": 0.035,
+      "yes_mid_at_entry": 0.065,
       "edge_at_entry": 0.015
     }
   ]
