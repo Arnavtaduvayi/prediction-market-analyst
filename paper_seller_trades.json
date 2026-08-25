@@ -2,7 +2,7 @@
   "strategy": "seller",
   "started": "2026-07-02T21:25:52.382780+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 21.209999999999887,
+  "bankroll": 15.729999999999885,
   "trades": [
     {
       "logged_at": "2026-07-02T21:28:12.600327+00:00",
@@ -21203,6 +21203,27 @@
       "entry_price": 0.92,
       "fee": 0.01,
       "cost": 2.77,
+      "status": "open",
+      "expire_hours": 8,
+      "filled_at": "2026-08-25T13:05:17.396055+00:00",
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.07,
+      "edge_at_entry": 0.02
+    },
+    {
+      "logged_at": "2026-08-25T13:05:17.412229+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXHIGHMIA-26AUG25-B94.5",
+      "kalshi_title": "Will the maximum temperature be 94-95\u00b0 on Aug 25, 2026?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.91,
+      "fee": 0.01,
+      "cost": 2.74,
       "status": "resting",
       "expire_hours": 8,
       "filled_at": null,
@@ -21211,8 +21232,29 @@
       "settled_at": null,
       "exit_reason": null,
       "hold_to_settlement": true,
-      "yes_mid_at_entry": 0.07,
-      "edge_at_entry": 0.02
+      "yes_mid_at_entry": 0.085,
+      "edge_at_entry": 0.015
+    },
+    {
+      "logged_at": "2026-08-25T13:05:17.412254+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXUCLWGAME-26AUG25BRAFAK-FAK",
+      "kalshi_title": "Brann vs Austria Wien Winner?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.91,
+      "fee": 0.01,
+      "cost": 2.74,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.085,
+      "edge_at_entry": 0.015
     }
   ]
 }
