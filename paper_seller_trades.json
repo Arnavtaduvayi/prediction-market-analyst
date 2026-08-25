@@ -2,7 +2,7 @@
   "strategy": "seller",
   "started": "2026-07-02T21:25:52.382780+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 19.139999999999883,
+  "bankroll": 13.539999999999884,
   "trades": [
     {
       "logged_at": "2026-07-02T21:28:12.600327+00:00",
@@ -21318,6 +21318,48 @@
       "hold_to_settlement": true,
       "yes_mid_at_entry": 0.095,
       "edge_at_entry": 0.015
+    },
+    {
+      "logged_at": "2026-08-25T17:40:09.650388+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXBTCMAXMON-BTC-26AUG31-9000000",
+      "kalshi_title": "Will BTC trimmed mean be above $90000.00 by 11:59 PM ET on Aug 31, 2026?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.92,
+      "fee": 0.01,
+      "cost": 2.77,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.08,
+      "edge_at_entry": 0.01
+    },
+    {
+      "logged_at": "2026-08-25T17:40:09.650414+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXUCLWTOTAL-26AUG25BRAFAK-5",
+      "kalshi_title": "Will over 4.5 goals be scored?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.94,
+      "fee": 0.01,
+      "cost": 2.83,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.06,
+      "edge_at_entry": 0.01
     }
   ]
 }
