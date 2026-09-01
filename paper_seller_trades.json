@@ -2,7 +2,7 @@
   "strategy": "seller",
   "started": "2026-07-02T21:25:52.382780+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 40.609999999999864,
+  "bankroll": 34.94999999999986,
   "trades": [
     {
       "logged_at": "2026-07-02T21:28:12.600327+00:00",
@@ -22935,6 +22935,48 @@
       "hold_to_settlement": true,
       "yes_mid_at_entry": 0.045,
       "edge_at_entry": 0.015
+    },
+    {
+      "logged_at": "2026-09-01T14:45:49.583490+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXNASDAQ100U-26SEP01H1600-T29369.99",
+      "kalshi_title": "Will the Nasdaq-100 be above 29369.99 at the end of Sep 1, 2026 at 4pm EDT?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.92,
+      "fee": 0.01,
+      "cost": 2.77,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.065,
+      "edge_at_entry": 0.025
+    },
+    {
+      "logged_at": "2026-09-01T14:45:49.583513+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXTFF1LIGTOTAL-26SEP01BANANT-3",
+      "kalshi_title": "Will over 2.5 goals be scored?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.96,
+      "fee": 0.01,
+      "cost": 2.89,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.04,
+      "edge_at_entry": 0.01
     }
   ]
 }
