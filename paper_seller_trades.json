@@ -2,7 +2,7 @@
   "strategy": "seller",
   "started": "2026-07-02T21:25:52.382780+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 42.44999999999987,
+  "bankroll": 42.47999999999987,
   "trades": [
     {
       "logged_at": "2026-07-02T21:28:12.600327+00:00",
@@ -23702,13 +23702,13 @@
       "entry_price": 0.96,
       "fee": 0.01,
       "cost": 2.89,
-      "status": "resting",
+      "status": "expired",
       "expire_hours": 8,
       "filled_at": null,
       "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null,
+      "pnl": 0.0,
+      "settled_at": "2026-09-05T12:37:09.477346+00:00",
+      "exit_reason": "UNFILLED_EXPIRY",
       "hold_to_settlement": true,
       "yes_mid_at_entry": 0.035,
       "edge_at_entry": 0.015
@@ -23733,6 +23733,27 @@
       "hold_to_settlement": true,
       "yes_mid_at_entry": 0.04,
       "edge_at_entry": 0.01
+    },
+    {
+      "logged_at": "2026-09-05T12:37:09.646463+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXEWSLGAME-26SEP05CFCAVL-TIE",
+      "kalshi_title": "Tie is the result",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.95,
+      "fee": 0.01,
+      "cost": 2.86,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.045,
+      "edge_at_entry": 0.015
     }
   ]
 }
