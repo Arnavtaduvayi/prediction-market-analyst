@@ -2,7 +2,7 @@
   "strategy": "seller",
   "started": "2026-07-02T21:25:52.382780+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 36.15999999999986,
+  "bankroll": 33.29999999999986,
   "trades": [
     {
       "logged_at": "2026-07-02T21:28:12.600327+00:00",
@@ -24080,6 +24080,27 @@
       "entry_price": 0.96,
       "fee": 0.01,
       "cost": 2.89,
+      "status": "expired",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": 0.0,
+      "settled_at": "2026-09-06T21:14:09.327811+00:00",
+      "exit_reason": "UNFILLED_CLOSE",
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.035,
+      "edge_at_entry": 0.015
+    },
+    {
+      "logged_at": "2026-09-06T21:14:09.498158+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXLIGAPORTUGALGAME-26SEP06GILACV-GIL",
+      "kalshi_title": "Vicente Barcelos wins",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.96,
+      "fee": 0.01,
+      "cost": 2.89,
       "status": "resting",
       "expire_hours": 8,
       "filled_at": null,
@@ -24090,6 +24111,27 @@
       "hold_to_settlement": true,
       "yes_mid_at_entry": 0.035,
       "edge_at_entry": 0.015
+    },
+    {
+      "logged_at": "2026-09-06T21:14:09.498184+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXLIGAPORTUGALTOTAL-26SEP06GILACV-3",
+      "kalshi_title": "Will over 2.5 goals be scored?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.95,
+      "fee": 0.01,
+      "cost": 2.86,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.05,
+      "edge_at_entry": 0.01
     }
   ]
 }
