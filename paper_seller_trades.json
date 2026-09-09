@@ -2,7 +2,7 @@
   "strategy": "seller",
   "started": "2026-07-02T21:25:52.382780+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 2.3999999999998702,
+  "bankroll": 2.51999999999987,
   "trades": [
     {
       "logged_at": "2026-07-02T21:28:12.600327+00:00",
@@ -24815,9 +24815,9 @@
       "entry_price": 0.92,
       "fee": 0.01,
       "cost": 2.77,
-      "status": "resting",
+      "status": "open",
       "expire_hours": 8,
-      "filled_at": null,
+      "filled_at": "2026-09-09T21:39:44.782935+00:00",
       "resolved_yes": null,
       "pnl": null,
       "settled_at": null,
@@ -24899,9 +24899,9 @@
       "entry_price": 0.94,
       "fee": 0.01,
       "cost": 2.83,
-      "status": "resting",
+      "status": "open",
       "expire_hours": 8,
-      "filled_at": null,
+      "filled_at": "2026-09-09T21:39:44.880375+00:00",
       "resolved_yes": null,
       "pnl": null,
       "settled_at": null,
@@ -24941,6 +24941,27 @@
       "entry_price": 0.95,
       "fee": 0.01,
       "cost": 2.86,
+      "status": "expired",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": 0.0,
+      "settled_at": "2026-09-09T21:39:45.049188+00:00",
+      "exit_reason": "UNFILLED_CLOSE",
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.05,
+      "edge_at_entry": 0.01
+    },
+    {
+      "logged_at": "2026-09-09T21:39:45.214211+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXCONMEBOLLIBGAME-26SEP09PALLDU-LDU",
+      "kalshi_title": "LDU Quito wins",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.91,
+      "fee": 0.01,
+      "cost": 2.74,
       "status": "resting",
       "expire_hours": 8,
       "filled_at": null,
@@ -24949,8 +24970,8 @@
       "settled_at": null,
       "exit_reason": null,
       "hold_to_settlement": true,
-      "yes_mid_at_entry": 0.05,
-      "edge_at_entry": 0.01
+      "yes_mid_at_entry": 0.085,
+      "edge_at_entry": 0.015
     }
   ]
 }
