@@ -2,7 +2,7 @@
   "strategy": "seller",
   "started": "2026-07-02T21:25:52.382780+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 37.16999999999986,
+  "bankroll": 31.50999999999986,
   "trades": [
     {
       "logged_at": "2026-07-02T21:28:12.600327+00:00",
@@ -25644,6 +25644,48 @@
       "hold_to_settlement": true,
       "yes_mid_at_entry": 0.05,
       "edge_at_entry": 0.01
+    },
+    {
+      "logged_at": "2026-09-12T10:38:02.015497+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXLOLMAP-26SEP120500IGAL-2-IG",
+      "kalshi_title": "Invictus Gaming wins map 2",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.96,
+      "fee": 0.01,
+      "cost": 2.89,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.03,
+      "edge_at_entry": 0.02
+    },
+    {
+      "logged_at": "2026-09-12T10:38:02.015516+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXBTCD-26SEP1217-T77999.99",
+      "kalshi_title": "Bitcoin price on Sep 12, 2026?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.92,
+      "fee": 0.01,
+      "cost": 2.77,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.075,
+      "edge_at_entry": 0.015
     }
   ]
 }
