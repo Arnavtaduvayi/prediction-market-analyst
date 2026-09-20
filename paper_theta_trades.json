@@ -2,7 +2,7 @@
   "strategy": "theta",
   "started": "2026-07-02T21:25:52.386350+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 71.68,
+  "bankroll": 69.73,
   "trades": [
     {
       "logged_at": "2026-07-15T00:02:59.743944+00:00",
@@ -575,6 +575,28 @@
       "yes_mid_at_entry": 0.97,
       "hours_left_at_entry": 8.4,
       "edge_at_entry": 0.02
+    },
+    {
+      "logged_at": "2026-09-20T18:42:48.331816+00:00",
+      "strategy": "theta",
+      "kalshi_ticker": "KXAAAGASW-26SEP21-4.4700",
+      "kalshi_title": "Will average **gas prices** be above $4.4700?",
+      "side": "yes",
+      "contracts": 2,
+      "entry_price": 0.97,
+      "fee": 0.01,
+      "cost": 1.95,
+      "status": "resting",
+      "expire_hours": 6,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.975,
+      "hours_left_at_entry": 9.3,
+      "edge_at_entry": 0.01
     }
   ]
 }
