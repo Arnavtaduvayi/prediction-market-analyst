@@ -2,7 +2,7 @@
   "strategy": "seller",
   "started": "2026-07-02T21:25:52.382780+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 17.409999999999872,
+  "bankroll": 14.639999999999873,
   "trades": [
     {
       "logged_at": "2026-07-02T21:28:12.600327+00:00",
@@ -28163,6 +28163,27 @@
       "exit_reason": null,
       "hold_to_settlement": true,
       "yes_mid_at_entry": 0.045,
+      "edge_at_entry": 0.015
+    },
+    {
+      "logged_at": "2026-09-22T18:46:07.413460+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXAPRPOTUS-26SEP25-39.8",
+      "kalshi_title": "Will the President's approval rating be between 39.7 and 39.9 according to RealClearPolitics?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.92,
+      "fee": 0.01,
+      "cost": 2.77,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.075,
       "edge_at_entry": 0.015
     }
   ]
