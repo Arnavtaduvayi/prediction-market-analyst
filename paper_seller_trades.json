@@ -2,7 +2,7 @@
   "strategy": "seller",
   "started": "2026-07-02T21:25:52.382780+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 29.719999999999878,
+  "bankroll": 24.029999999999877,
   "trades": [
     {
       "logged_at": "2026-07-02T21:28:12.600327+00:00",
@@ -28752,6 +28752,48 @@
       "hold_to_settlement": true,
       "yes_mid_at_entry": 0.055,
       "edge_at_entry": 0.015
+    },
+    {
+      "logged_at": "2026-09-25T13:38:40.937150+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXAFCONGAME-26SEP25MOZSEN-TIE",
+      "kalshi_title": "Tie is the result",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.93,
+      "fee": 0.01,
+      "cost": 2.8,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.07,
+      "edge_at_entry": 0.01
+    },
+    {
+      "logged_at": "2026-09-25T13:38:40.937173+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXTRUMPAPPROVE-26SEP25-E38.6",
+      "kalshi_title": "Will Trump's RCP approval average be exactly 38.6 on Sep 25, 2026?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.96,
+      "fee": 0.01,
+      "cost": 2.89,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.04,
+      "edge_at_entry": 0.01
     }
   ]
 }
