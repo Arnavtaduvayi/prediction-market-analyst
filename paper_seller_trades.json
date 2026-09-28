@@ -2,7 +2,7 @@
   "strategy": "seller",
   "started": "2026-07-02T21:25:52.382780+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 11.39999999999988,
+  "bankroll": 8.689999999999879,
   "trades": [
     {
       "logged_at": "2026-07-02T21:28:12.600327+00:00",
@@ -29540,6 +29540,27 @@
       "entry_price": 0.95,
       "fee": 0.01,
       "cost": 2.86,
+      "status": "expired",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": 0.0,
+      "settled_at": "2026-09-28T00:33:45.095583+00:00",
+      "exit_reason": "UNFILLED_CLOSE",
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.045,
+      "edge_at_entry": 0.015
+    },
+    {
+      "logged_at": "2026-09-28T00:33:45.271122+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXBTCD-26SEP2817-T86749.99",
+      "kalshi_title": "Bitcoin price on Sep 28, 2026?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.94,
+      "fee": 0.01,
+      "cost": 2.83,
       "status": "resting",
       "expire_hours": 8,
       "filled_at": null,
@@ -29548,8 +29569,29 @@
       "settled_at": null,
       "exit_reason": null,
       "hold_to_settlement": true,
-      "yes_mid_at_entry": 0.045,
+      "yes_mid_at_entry": 0.055,
       "edge_at_entry": 0.015
+    },
+    {
+      "logged_at": "2026-09-28T00:33:45.271145+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXWNBATOTAL-26SEP27WSHATL-175",
+      "kalshi_title": "Over 174.5 points scored",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.91,
+      "fee": 0.01,
+      "cost": 2.74,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.09,
+      "edge_at_entry": 0.01
     }
   ]
 }
