@@ -2,7 +2,7 @@
   "strategy": "seller",
   "started": "2026-07-02T21:25:52.382780+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 27.20999999999988,
+  "bankroll": 21.42999999999988,
   "trades": [
     {
       "logged_at": "2026-07-02T21:28:12.600327+00:00",
@@ -32468,6 +32468,48 @@
       "exit_reason": "SETTLED_WIN",
       "hold_to_settlement": true,
       "yes_mid_at_entry": 0.095,
+      "edge_at_entry": 0.015
+    },
+    {
+      "logged_at": "2026-10-11T20:11:23.348576+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXHORMUZPEAK-26OCT11-T8",
+      "kalshi_title": "Will the highest single-day number of transit calls through the Strait of Hormuz be more than 8 from Oct 5, 2026 to Oct 11, 2026?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.96,
+      "fee": 0.01,
+      "cost": 2.89,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.035,
+      "edge_at_entry": 0.015
+    },
+    {
+      "logged_at": "2026-10-11T20:11:23.348599+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXLIGUE1GAME-26OCT11ESTOLM-EST",
+      "kalshi_title": "Troyes wins",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.96,
+      "fee": 0.01,
+      "cost": 2.89,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.035,
       "edge_at_entry": 0.015
     }
   ]
