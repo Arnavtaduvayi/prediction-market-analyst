@@ -2,7 +2,7 @@
   "strategy": "theta",
   "started": "2026-07-02T21:25:52.386350+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 72.37,
+  "bankroll": 70.42,
   "trades": [
     {
       "logged_at": "2026-07-15T00:02:59.743944+00:00",
@@ -707,6 +707,28 @@
       "yes_mid_at_entry": 0.93,
       "hours_left_at_entry": 12.9,
       "edge_at_entry": 0.02
+    },
+    {
+      "logged_at": "2026-10-19T23:33:23.071997+00:00",
+      "strategy": "theta",
+      "kalshi_ticker": "KXHIGHDEN-26OCT19-B71.5",
+      "kalshi_title": "Will the maximum temperature be 71-72\u00b0 on Oct 19, 2026?",
+      "side": "yes",
+      "contracts": 2,
+      "entry_price": 0.97,
+      "fee": 0.01,
+      "cost": 1.95,
+      "status": "resting",
+      "expire_hours": 6,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.975,
+      "hours_left_at_entry": 7.5,
+      "edge_at_entry": 0.01
     }
   ]
 }
