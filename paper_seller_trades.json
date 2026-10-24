@@ -2,7 +2,7 @@
   "strategy": "seller",
   "started": "2026-07-02T21:25:52.382780+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 8.159999999999878,
+  "bankroll": 2.649999999999878,
   "trades": [
     {
       "logged_at": "2026-07-02T21:28:12.600327+00:00",
@@ -36269,6 +36269,48 @@
       "exit_reason": "SETTLED_WIN",
       "hold_to_settlement": true,
       "yes_mid_at_entry": 0.075,
+      "edge_at_entry": 0.015
+    },
+    {
+      "logged_at": "2026-10-24T23:06:24.360706+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXBRASILEIROGAME-26OCT24VDGCOR-VDG",
+      "kalshi_title": "Vasco da Gama wins",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.92,
+      "fee": 0.01,
+      "cost": 2.77,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.0725,
+      "edge_at_entry": 0.0175
+    },
+    {
+      "logged_at": "2026-10-24T23:06:24.360729+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXECULPGAME-26OCT24LDUMAC-LDU",
+      "kalshi_title": "LDU Quito wins",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.91,
+      "fee": 0.01,
+      "cost": 2.74,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.085,
       "edge_at_entry": 0.015
     }
   ]
