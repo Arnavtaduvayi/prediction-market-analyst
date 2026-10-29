@@ -2,7 +2,7 @@
   "strategy": "seller",
   "started": "2026-07-02T21:25:52.382780+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 7.159999999999881,
+  "bankroll": 1.7599999999998817,
   "trades": [
     {
       "logged_at": "2026-07-02T21:28:12.600327+00:00",
@@ -36900,6 +36900,48 @@
       "hold_to_settlement": true,
       "yes_mid_at_entry": 0.0925,
       "edge_at_entry": 0.0175
+    },
+    {
+      "logged_at": "2026-10-29T02:23:12.241000+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXBRASILEIROGAME-26OCT28CRBOT-TIE",
+      "kalshi_title": "Tie is the result",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.895,
+      "fee": 0.01,
+      "cost": 2.69,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.0975,
+      "edge_at_entry": 0.0175
+    },
+    {
+      "logged_at": "2026-10-29T02:23:12.241029+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXLIGAMXSCORE-26OCT28AMETIJ-AME2TIJ1",
+      "kalshi_title": "Final score CF America wins 2-1?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.9,
+      "fee": 0.01,
+      "cost": 2.71,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.1,
+      "edge_at_entry": 0.01
     }
   ]
 }
