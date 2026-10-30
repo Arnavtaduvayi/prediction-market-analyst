@@ -2,7 +2,7 @@
   "strategy": "seller",
   "started": "2026-07-02T21:25:52.382780+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 8.199999999999882,
+  "bankroll": 5.4299999999998825,
   "trades": [
     {
       "logged_at": "2026-07-02T21:28:12.600327+00:00",
@@ -36953,9 +36953,9 @@
       "entry_price": 0.94,
       "fee": 0.01,
       "cost": 2.83,
-      "status": "resting",
+      "status": "open",
       "expire_hours": 8,
-      "filled_at": null,
+      "filled_at": "2026-10-30T01:52:20.684255+00:00",
       "resolved_yes": null,
       "pnl": null,
       "settled_at": null,
@@ -37005,6 +37005,27 @@
       "hold_to_settlement": true,
       "yes_mid_at_entry": 0.1,
       "edge_at_entry": 0.01
+    },
+    {
+      "logged_at": "2026-10-30T01:52:20.714004+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXDWTSELIMINATION-26NOV03-MHIG",
+      "kalshi_title": "Will Maura Higgins and their partner be eliminated from Dancing with the Stars Season 35 before Nov 3, 2026?",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.92,
+      "fee": 0.01,
+      "cost": 2.77,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.075,
+      "edge_at_entry": 0.015
     }
   ]
 }
