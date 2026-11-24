@@ -2,7 +2,7 @@
   "strategy": "seller",
   "started": "2026-07-02T21:25:52.382780+00:00",
   "initial_bankroll": 75.0,
-  "bankroll": 28.569999999999887,
+  "bankroll": 28.689999999999884,
   "trades": [
     {
       "logged_at": "2026-07-02T21:28:12.600327+00:00",
@@ -41216,13 +41216,13 @@
       "entry_price": 0.95,
       "fee": 0.01,
       "cost": 2.86,
-      "status": "resting",
+      "status": "expired",
       "expire_hours": 8,
       "filled_at": null,
       "resolved_yes": null,
-      "pnl": null,
-      "settled_at": null,
-      "exit_reason": null,
+      "pnl": 0.0,
+      "settled_at": "2026-11-24T05:54:30.870296+00:00",
+      "exit_reason": "UNFILLED_CLOSE",
       "hold_to_settlement": true,
       "yes_mid_at_entry": 0.045,
       "edge_at_entry": 0.015
@@ -41310,6 +41310,27 @@
       "hold_to_settlement": true,
       "yes_mid_at_entry": 0.06,
       "edge_at_entry": 0.01
+    },
+    {
+      "logged_at": "2026-11-24T05:54:31.041415+00:00",
+      "strategy": "seller",
+      "kalshi_ticker": "KXUCLGAME-26NOV24SLORBB-SLO",
+      "kalshi_title": "Slovan Bratislava wins",
+      "side": "no",
+      "contracts": 3,
+      "entry_price": 0.91,
+      "fee": 0.01,
+      "cost": 2.74,
+      "status": "resting",
+      "expire_hours": 8,
+      "filled_at": null,
+      "resolved_yes": null,
+      "pnl": null,
+      "settled_at": null,
+      "exit_reason": null,
+      "hold_to_settlement": true,
+      "yes_mid_at_entry": 0.085,
+      "edge_at_entry": 0.015
     }
   ]
 }
